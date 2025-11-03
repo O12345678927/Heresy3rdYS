@@ -114,7 +114,7 @@
     <categoryEntry id="63f1-e6e8-f6f6-a4f0" name="Aircraft" hidden="false"/>
     <categoryEntry id="19d7-9c74-2140-5851" name="Fortification" hidden="false"/>
     <categoryEntry id="d666-e2c9-b6cc-5716" name="Towering" hidden="false"/>
-    <categoryEntry id="5929-ad51-d006-e008" name="Titanic" hidden="false"/>
+    <categoryEntry id="5929-ad51-d006-e008" name="Super-Heavy" hidden="false"/>
     <categoryEntry id="4c3e-9310-a516-3590" name="Beast" hidden="false"/>
     <categoryEntry id="4c00-2578-faf5-6918" name="Chaos" hidden="false"/>
     <categoryEntry id="b2a9-ede5-7a83-4da8" name="Slaanesh" hidden="false"/>

@@ -117,292 +117,23 @@
     <categoryEntry id="5929-ad51-d006-e008" name="Titanic" hidden="false"/>
     <categoryEntry id="4c3e-9310-a516-3590" name="Beast" hidden="false"/>
     <categoryEntry id="4c00-2578-faf5-6918" name="Chaos" hidden="false"/>
-    <categoryEntry id="bb67-f191-6562-acc7" name="Faction: Chaos Knights" hidden="false"/>
-    <categoryEntry id="d1d8-6ae0-1be7-e9e" name="Faction: Tyranids" hidden="false">
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="10a0-a45c-f379-bb06" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="500" field="10a0-a45c-f379-bb06" id="d345-5a54-3609-7600">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1000" field="10a0-a45c-f379-bb06" id="8a58-5a9f-9d23-5682">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1500" field="10a0-a45c-f379-bb06" id="8438-8892-1129-d075">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry id="1015-db48-a2fa-c7da" name="Faction: Drukhari" hidden="false">
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="4d8f-6e09-606e-788e" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="500" field="4d8f-6e09-606e-788e" id="f5a0-b59-1410-a903">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1000" field="4d8f-6e09-606e-788e" id="2e33-3f3b-a0f6-a6bd">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1500" field="4d8f-6e09-606e-788e" id="2e5f-b5f2-28bb-573e">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry id="4378-1827-4988-be4e" name="Faction: Asuryani" hidden="false"/>
-    <categoryEntry id="fa45-57e-930e-602b" name="Faction: Astra Militarum" hidden="false"/>
-    <categoryEntry id="b5e4-3253-c157-54fd" name="Faction: Imperial Knights" hidden="false">
-      <modifiers>
-        <modifier type="set" value="1" field="807c-44c1-6f7d-dfb8">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="3" field="807c-44c1-6f7d-dfb8">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="807c-44c1-6f7d-dfb8">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="807c-44c1-6f7d-dfb8" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="1e42-dfae-cbdd-207d" name="Faction: Heretic Astartes" hidden="false">
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="fbba-7f7e-16a1-370a" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="500" field="fbba-7f7e-16a1-370a" id="4fa7-457c-8229-7e77">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1000" field="fbba-7f7e-16a1-370a" id="94e5-8ddd-5373-00cf">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1500" field="fbba-7f7e-16a1-370a" id="a7d0-0334-fd3e-416b">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry id="fd71-afa6-b13b-7fda" name="Faction: Adepta Sororitas" hidden="false"/>
-    <categoryEntry id="ee0-cf31-4fb5-6b26" name="Faction: Necrons" hidden="false"/>
-    <categoryEntry id="571f-ec3a-a5a2-751a" name="Faction: Legiones Daemonica" hidden="false">
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="f70b-465d-493f-52e3" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="250" field="f70b-465d-493f-52e3" id="4796-8c50-4a43-66c8">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="500" field="f70b-465d-493f-52e3" id="bc6-87f4-482b-c1cd">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="750" field="f70b-465d-493f-52e3" id="b336-af46-e756-ab15">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry id="b2a9-ede5-7a83-4da8" name="Slaanesh" hidden="false"/>
     <categoryEntry id="ed0d-8e2a-225c-2340" name="Nurgle" hidden="false"/>
     <categoryEntry id="4bd-5ee0-f179-2fc5" name="Khorne" hidden="false"/>
     <categoryEntry id="b188-114f-6ba5-79a1" name="Tzeentch" hidden="false"/>
-    <categoryEntry id="6e7-40c-58d9-e402" name="Faction: Adeptus Astartes" hidden="false"/>
-    <categoryEntry id="5418-f86b-6e76-c5a" name="Faction: Adeptus Mechanicus" hidden="false">
-      <modifiers>
-        <modifier type="set" value="250" field="dee8-c245-3c3c-86b6" id="5155-3d32-76df-053b">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="500" field="dee8-c245-3c3c-86b6" id="2f2a-1769-3b72-b003">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="750" field="dee8-c245-3c3c-86b6" id="464a-d2f8-101b-1fab">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="dee8-c245-3c3c-86b6" includeChildSelections="true" includeChildForces="true" negative="false"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="226b-cf1e-353a-ae7f" name="Faction: Genestealer Cults" hidden="false"/>
-    <categoryEntry id="bd1d-c1a5-6ca2-c791" name="Faction: World Eaters" hidden="false"/>
-    <categoryEntry id="8474-765-16a9-f00d" name="Faction: Leagues of Votann" hidden="false"/>
-    <categoryEntry id="9888-ddb2-a141-6037" name="Faction: Death Guard" hidden="false"/>
-    <categoryEntry id="3d58-2655-391e-ecc" name="Faction: T&apos;au Empire" hidden="false"/>
-    <categoryEntry id="eea5-aeaf-bbf0-d5ee" name="Faction: Adeptus Custodes" hidden="false"/>
-    <categoryEntry id="56cc-5f43-2403-8da0" name="Faction: Orks" hidden="false"/>
-    <categoryEntry id="7002-1fbb-7571-e8e7" name="Faction: Thousand Sons" hidden="false"/>
-    <categoryEntry id="d564-3284-bf44-b873" name="Faction: Grey Knights" hidden="false"/>
+    <categoryEntry id="bd1d-c1a5-6ca2-c791" name="Faction: 12 World Eaters" hidden="false"/>
+    <categoryEntry id="9888-ddb2-a141-6037" name="Faction: 14Death Guard" hidden="false"/>
+    <categoryEntry id="7002-1fbb-7571-e8e7" name="Faction: 15 Thousand Sons" hidden="false"/>
     <categoryEntry id="5128-90b-e4a5-dcbd" name="Faction: Agents of the Imperium" hidden="false"/>
-    <categoryEntry id="aab1-4f05-fabe-5ba5" name="Faction: Dark Angels" hidden="false"/>
-    <categoryEntry id="65e4-13-4fa8-b36c" name="Faction: Salamanders" hidden="false"/>
-    <categoryEntry id="d39c-9989-db7f-d815" name="Faction: Deathwatch" hidden="false"/>
-    <categoryEntry id="62ac-ef42-27b4-ae7" name="Faction: Blood Angels" hidden="false"/>
-    <categoryEntry id="1a2d-2f00-c054-4dcb" name="Faction: Ultramarines" hidden="false"/>
-    <categoryEntry id="a0d9-c115-2a-8330" name="Faction: Space Wolves" hidden="false"/>
-    <categoryEntry id="9249-acae-2882-d95" name="Faction: Black Templars" hidden="false"/>
-    <categoryEntry id="84b7-7194-3b84-1b0c" name="Faction: Raven Guard" hidden="false"/>
-    <categoryEntry id="b88e-1b0c-b79f-5cdf" name="Faction: Iron Hands" hidden="false"/>
-    <categoryEntry id="97aa-d0e4-71c7-96c3" name="Faction: Imperial Fists" hidden="false"/>
-    <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: White Scars" hidden="false"/>
+    <categoryEntry id="aab1-4f05-fabe-5ba5" name="Faction: 01 Dark Angels" hidden="false"/>
+    <categoryEntry id="65e4-13-4fa8-b36c" name="Faction: 18 Salamanders" hidden="false"/>
+    <categoryEntry id="62ac-ef42-27b4-ae7" name="Faction: 09 Blood Angels" hidden="false"/>
+    <categoryEntry id="1a2d-2f00-c054-4dcb" name="Faction: 13 Ultramarines" hidden="false"/>
+    <categoryEntry id="a0d9-c115-2a-8330" name="Faction: 06 Space Wolves" hidden="false"/>
+    <categoryEntry id="84b7-7194-3b84-1b0c" name="Faction: 19 Raven Guard" hidden="false"/>
+    <categoryEntry id="b88e-1b0c-b79f-5cdf" name="Faction: 10 Iron Hands" hidden="false"/>
+    <categoryEntry id="97aa-d0e4-71c7-96c3" name="Faction: 07 Imperial Fists" hidden="false"/>
+    <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: 05 White Scars" hidden="false"/>
     <categoryEntry id="5c0e-4c31-d51b-e470" name="Warlord" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16ac-a6c9-6d9a-d6d5" type="min"/>
@@ -422,54 +153,11 @@
     <categoryEntry name="Armiger" id="4c40-ab9-54af-d290" hidden="false"/>
     <categoryEntry name="Questoris" id="e4d6-1a77-132b-f39d"/>
     <categoryEntry name="Dominus" id="af4c-b971-a31c-669c"/>
-    <categoryEntry name="Allied Units" hidden="false" id="887b-ab87-92a2-20f5">
-      <modifiers>
-        <modifier type="set" value="Brood Brothers" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="500" field="4d8f-6e09-606e-788e" id="4ff4-f313-206c-fcb0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1000" field="4d8f-6e09-606e-788e" id="934b-e7e4-b560-2d8c">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1500" field="4d8f-6e09-606e-788e" id="d1e5-86a2-d34b-13b3">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4d8f-6e09-606e-788e" includeChildSelections="true" includeChildForces="true" negative="false"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Allied Units" hidden="false" id="887b-ab87-92a2-20f5"/>
     <categoryEntry name="Acastus" hidden="false" id="f76f-29c1-de9-74c2"/>
     <categoryEntry name="Cerastus" hidden="false" id="481c-3b2e-5c99-c248"/>
     <categoryEntry name="Artillery" hidden="false" id="8cab-448d-37b7-32bc"/>
     <categoryEntry name="Order of Battle" id="ac7e-be7b-eb02-4752" hidden="false"/>
-    <categoryEntry name="Faction: Harlequins" id="a5a2-d0c0-0349-d226" hidden="false"/>
-    <categoryEntry name="Faction: Ynnari" id="9a21-190a-9d31-35d2" hidden="false"/>
     <categoryEntry name="Tyrannic War Veteran" id="26fe-d7cb-eb8f-77d4" hidden="false">
       <comment>Crusade content</comment>
     </categoryEntry>
@@ -517,12 +205,11 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="CUSTOM" id="e169-ce70-ee9d-cecc" hidden="false"/>
-    <categoryEntry name="Faction: Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
-    <categoryEntry name="Faction: Black Legion" id="cce6-0071-67df-c4e7" hidden="false"/>
-    <categoryEntry name="Faction: Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
-    <categoryEntry name="Faction: Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
-    <categoryEntry name="Faction: Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
-    <categoryEntry name="Faction: Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
+    <categoryEntry name="Faction: 20 Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
+    <categoryEntry name="Faction: 03 Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
+    <categoryEntry name="Faction: 04 Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
+    <categoryEntry name="Faction: 08 Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
+    <categoryEntry name="Faction: 17 Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
     <categoryEntry id="876c-9691-cd73-0502" name="HH3-0 Lord of War" hidden="false"/>
     <categoryEntry id="8f3c-6f46-1ee4-507a" name="HH3-0 Warlord" hidden="false"/>
     <categoryEntry id="ba9c-84df-1ce6-c776" name="HH3-1 High Command" hidden="false"/>
@@ -538,6 +225,7 @@
     <categoryEntry id="6f29-635a-b3d7-321a" name="HH3-7 Heavy Assault" hidden="false"/>
     <categoryEntry id="e1f4-4d21-8e8b-ced1" name="HH3-11 Heavy Transport" hidden="false"/>
     <categoryEntry id="46ab-9d40-180a-231e" name="HH3-12 Armour" hidden="false"/>
+    <categoryEntry name="Faction: Adeptus Astartes" id="6e7-40c-58d9-e402" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -623,18 +311,6 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="771b-70a4-6eca-ca13" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="771b-70a4-6eca-ca13">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bdc0-c0d-72d7-87e2" shared="true" id="6850-9e2d-ee40-9fdb"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="880c-c7e-4a43-a0c1" shared="true" id="ebb2-e80e-a08a-e168"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </categoryLink>
         <categoryLink name="Battleline" hidden="false" id="ceb5-d65a-179b-cfdd" targetId="e338-111e-d0c6-b687" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="9447-a1b3-41e2-8e71" targetId="cf47-a0d7-7207-29dc" primary="false"/>
@@ -1725,7 +1401,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Precision" id="e2aa-a903-21c9-9a9b" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+            <infoLink name="4Precision" id="e2aa-a903-21c9-9a9b" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -1743,18 +1419,11 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="2"/>
           </costs>
           <infoLinks>
-            <infoLink name="Lethal Hits" id="ea3c-d126-6581-9c0d" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+            <infoLink name="4Lethal Hits" id="ea3c-d126-6581-9c0d" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="045e-f0f0-0c25-9a3c" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5108-f98-63c2-53cb" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
               <comment>Master-worked</comment>
@@ -2000,7 +1669,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Sustained Hits" id="7729-92d6-11fd-8079" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="4Sustained Hits" id="7729-92d6-11fd-8079" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -2049,7 +1718,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Scouts" id="a312-8941-6a90-db23" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="4Scouts" id="a312-8941-6a90-db23" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="9&quot;" field="name" join=" "/>
                   </modifiers>
@@ -2094,7 +1763,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="985a-b647-e243-3b3f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="4Feel No Pain" id="985a-b647-e243-3b3f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="5+" field="name" join=" "/>
                   </modifiers>
@@ -2209,7 +1878,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Stealth" id="5f2c-04a4-18d1-29a2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Stealth" id="5f2c-04a4-18d1-29a2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Death Incarnate (Aura)" hidden="false" id="d522-6da9-2b6e-1854">
@@ -2512,7 +2181,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="ae9d-f329-6a26-2288" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="4Feel No Pain" id="ae9d-f329-6a26-2288" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -2551,7 +2220,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Scouts" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="4Scouts" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="9&quot;" field="name" join=" "/>
                   </modifiers>
@@ -2766,7 +2435,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="4Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Predatory Urge" hidden="false" id="3235-b0da-b04d-ef17">
@@ -2973,7 +2642,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Stealth" id="ce48-cc2a-f75e-658d" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Stealth" id="ce48-cc2a-f75e-658d" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lead From The Front" hidden="false" id="774e-76a1-64d6-26ae">
@@ -3014,7 +2683,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrators" id="55f1-55c1-b3a7-2f99" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="4Infiltrators" id="55f1-55c1-b3a7-2f99" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Horror-hardened" hidden="false" id="3b34-7366-3e49-0716">
@@ -3139,7 +2808,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Stealth" id="a276-06fd-afa7-fad0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Stealth" id="a276-06fd-afa7-fad0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heroic Constitution" hidden="false" id="e914-a455-0679-84a1">
@@ -3263,7 +2932,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="f4dc-92c4-3280-8e72" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="4Feel No Pain" id="f4dc-92c4-3280-8e72" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -3500,7 +3169,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="0398-a57e-e8d9-b0a0" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="4Feel No Pain" id="0398-a57e-e8d9-b0a0" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -3544,7 +3213,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrators" id="e6d9-3e84-e61f-22f3" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="4Infiltrators" id="e6d9-3e84-e61f-22f3" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="United By Adversity" hidden="false" id="e4b1-08bd-20fc-e2cc">
@@ -3891,7 +3560,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Sustained Hits" id="86e3-1496-abf2-6f4b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="4Sustained Hits" id="86e3-1496-abf2-6f4b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="a8b4-f920-4c98-0550">
@@ -4241,7 +3910,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="4a71-e625-47ad-091f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="4Feel No Pain" id="4a71-e625-47ad-091f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Drop Zone Defenders" hidden="false" id="4082-4ec3-f741-cb68">
@@ -4436,7 +4105,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Scouts" id="6300-6e6a-5a25-e9d4" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="4Scouts" id="6300-6e6a-5a25-e9d4" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
@@ -4667,7 +4336,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Fights First" id="84cd-97a2-17f8-f101" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+                <infoLink name="4Fights First" id="84cd-97a2-17f8-f101" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Enhanced Endurance" hidden="false" id="b2c8-aaa5-4dfb-fbe9">
@@ -4768,7 +4437,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Stealth" id="e478-ecc1-acbb-cef9" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Stealth" id="e478-ecc1-acbb-cef9" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4915,7 +4584,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Stealth" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Stealth" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stalwarts" hidden="false" id="6d14-584a-16d2-932c">
@@ -5059,7 +4728,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="4Feel No Pain" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" hidden="false" id="9fb1-e766-6b60-793f">
@@ -5107,7 +4776,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </modifierGroup>
               </modifierGroups>
               <infoLinks>
-                <infoLink name="Assault" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="4Assault" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="bd62-2817-efff-a103">
@@ -5298,7 +4967,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Scouts" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="4Scouts" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
@@ -5502,7 +5171,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrators" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="4Infiltrators" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warp Focus (Psychic)" hidden="false" id="5190-d5c0-1c38-2697">
@@ -5775,7 +5444,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain" id="7e23-f156-3254-c948" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                    <infoLink name="4Feel No Pain" id="7e23-f156-3254-c948" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dolmen Key" hidden="false" id="5ca0-58ef-7b1f-bd83">
@@ -5821,7 +5490,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Deep Strike" id="40e5-6240-f490-7841" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+                    <infoLink name="4Deep Strike" id="40e5-6240-f490-7841" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Vantachren&apos;s Mirror" hidden="false" id="b81f-84ba-2c6b-60f9">
@@ -5867,7 +5536,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Stealth" id="f95f-dde4-6d29-5b60" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                    <infoLink name="4Stealth" id="f95f-dde4-6d29-5b60" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -6194,9 +5863,9 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Lethal Hits" id="f8df-411c-2f49-7716" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-                    <infoLink name="Sustained Hits" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                    <infoLink name="Precision" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                    <infoLink name="4Lethal Hits" id="f8df-411c-2f49-7716" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                    <infoLink name="4Sustained Hits" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                    <infoLink name="4Precision" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -6389,7 +6058,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Lone Operative" id="d495-11d7-00cf-4686" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                    <infoLink name="4Lone Operative" id="d495-11d7-00cf-4686" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lantern of Detestation" hidden="false" id="6aa0-1222-ba18-6665">
@@ -6580,7 +6249,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Assault" id="2feb-cf1f-0058-be49" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="4Assault" id="2feb-cf1f-0058-be49" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Null-field Disruptor" hidden="false" id="dba3-045b-5786-9d39">
@@ -7020,7 +6689,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Deep Strike" id="2112-ff9a-7443-9d68" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+                    <infoLink name="4Deep Strike" id="2112-ff9a-7443-9d68" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7079,7 +6748,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Devastating Wounds" id="eeea-7900-bac9-d131" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="4Devastating Wounds" id="eeea-7900-bac9-d131" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Gloaming Mantle" hidden="false" id="e361-55a9-8723-0118">
@@ -7125,8 +6794,8 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Stealth" id="e867-6ee3-04ca-75c7" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-                    <infoLink name="Lone Operative" id="7c9b-b292-0a2b-fea5" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                    <infoLink name="4Stealth" id="e867-6ee3-04ca-75c7" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                    <infoLink name="4Lone Operative" id="7c9b-b292-0a2b-fea5" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lyreth&apos;s Mirror" hidden="false" id="918e-897b-3958-8ac6">
@@ -7215,7 +6884,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain" id="fc3e-81ef-fa4f-b8aa" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                    <infoLink name="4Feel No Pain" id="fc3e-81ef-fa4f-b8aa" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                       <modifiers>
                         <modifier type="append" value="5+" field="name" join=" "/>
                       </modifiers>
@@ -7441,7 +7110,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Deep Strike" id="db10-cb75-7f59-5720" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+                    <infoLink name="4Deep Strike" id="db10-cb75-7f59-5720" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Weapon of Renown" hidden="false" id="13d0-c7e2-1702-ff13">
@@ -7493,8 +7162,8 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Devastating Wounds" id="2807-ea1e-dc0a-3d59" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                    <infoLink name="Anti-" id="c3ee-c53d-f362-5fe5" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                    <infoLink name="4Devastating Wounds" id="2807-ea1e-dc0a-3d59" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="4Anti-" id="c3ee-c53d-f362-5fe5" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Exorcist&apos;s Thurible" hidden="false" id="55d0-f3d4-6890-aa99">
@@ -7540,7 +7209,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain" id="e42a-7953-1dc6-850a" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                    <infoLink name="4Feel No Pain" id="e42a-7953-1dc6-850a" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7677,7 +7346,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Sustained Hits" id="470d-656c-08d7-1df9" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                    <infoLink name="4Sustained Hits" id="470d-656c-08d7-1df9" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                   </infoLinks>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -8121,7 +7790,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Anti-" id="22a4-0330-7c8c-11ca" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="4Anti-" id="22a4-0330-7c8c-11ca" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -8161,7 +7830,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain" id="37a1-4cee-41c4-34ad" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="4Feel No Pain" id="37a1-4cee-41c4-34ad" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -8385,7 +8054,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Fights First" id="4044-f647-fded-050e" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+                <infoLink name="4Fights First" id="4044-f647-fded-050e" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gargantuan Rage" hidden="false" id="a4b0-aae0-e3b9-d952" sortIndex="9">
@@ -8415,7 +8084,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Sustained Hits" id="5516-19a9-d714-1bd8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="4Sustained Hits" id="5516-19a9-d714-1bd8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -8551,13 +8220,13 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Scouts" id="52a9-9537-ab07-2985" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="4Scouts" id="52a9-9537-ab07-2985" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Lone Operative" id="7e73-95e8-4033-d113" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
-                <infoLink name="Stealth" id="f5ef-e0bb-bd27-fbc8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="4Lone Operative" id="7e73-95e8-4033-d113" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                <infoLink name="4Stealth" id="f5ef-e0bb-bd27-fbc8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nodal Map" hidden="false" id="7e66-6018-d32e-dda3">
@@ -8947,7 +8616,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Anti-" id="5422-edab-3e98-ef3e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="4Anti-" id="5422-edab-3e98-ef3e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Inspirational Champions" hidden="false" id="2c04-6753-170b-2708">

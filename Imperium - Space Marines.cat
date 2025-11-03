@@ -6010,6 +6010,6 @@ by 1.</characteristic>
     </profileType>
   </profileTypes>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Ranged Weapons" id="81e7-aa08-8ef9-4858" targetId="879e-8fed-32e3-ec277"/>
+    <catalogueLink type="catalogue" name="Ranged Weapons" id="81e7-aa08-8ef9-4858" targetId="879e-8fed-32e3-ec277" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

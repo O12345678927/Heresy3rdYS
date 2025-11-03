@@ -4975,4 +4975,7 @@ If this unit has the **^^Infantry^^** keyword:
     <infoLink name="Oath of Moment" id="001d-723a-56e2-f202" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
     <infoLink name="Templar Vows" id="19ab-a61f-9a09-a0f0" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
   </infoLinks>
+  <entryLinks>
+    <entryLink import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="d7ed-9ed8-5c47-564f" type="selectionEntry" targetId="98db-fff3-b1b2-e22f"/>
+  </entryLinks>
 </catalogue>

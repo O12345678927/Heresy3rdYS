@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer Horus Heresy 3rd YS-Friendly" revision="79" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="78" battleScribeVersion="2.03" type="gameSystem">
   <publications>
-    <publication id="48fc-15aa-b307-9443" name="Age of Darkness 3rd Rulebook" shortName="BRB"/>
+    <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
-    <publication id="e282-e443-d774-87bf" name="Liber Astartes/Hereticus 3rd" shortName="Liber A/H"/>
   </publications>
   <costTypes>
     <costType id="51b2-306e-1021-d207" name="pts" defaultCostLimit="-1" hidden="false">
@@ -118,22 +117,292 @@
     <categoryEntry id="5929-ad51-d006-e008" name="Titanic" hidden="false"/>
     <categoryEntry id="4c3e-9310-a516-3590" name="Beast" hidden="false"/>
     <categoryEntry id="4c00-2578-faf5-6918" name="Chaos" hidden="false"/>
+    <categoryEntry id="bb67-f191-6562-acc7" name="Faction: Chaos Knights" hidden="false"/>
+    <categoryEntry id="d1d8-6ae0-1be7-e9e" name="Faction: Tyranids" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="10a0-a45c-f379-bb06" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="500" field="10a0-a45c-f379-bb06" id="d345-5a54-3609-7600">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1000" field="10a0-a45c-f379-bb06" id="8a58-5a9f-9d23-5682">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1500" field="10a0-a45c-f379-bb06" id="8438-8892-1129-d075">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry id="1015-db48-a2fa-c7da" name="Faction: Drukhari" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="4d8f-6e09-606e-788e" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="500" field="4d8f-6e09-606e-788e" id="f5a0-b59-1410-a903">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1000" field="4d8f-6e09-606e-788e" id="2e33-3f3b-a0f6-a6bd">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1500" field="4d8f-6e09-606e-788e" id="2e5f-b5f2-28bb-573e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" includeChildSelections="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry id="4378-1827-4988-be4e" name="Faction: Asuryani" hidden="false"/>
+    <categoryEntry id="fa45-57e-930e-602b" name="Faction: Astra Militarum" hidden="false"/>
+    <categoryEntry id="b5e4-3253-c157-54fd" name="Faction: Imperial Knights" hidden="false">
+      <modifiers>
+        <modifier type="set" value="1" field="807c-44c1-6f7d-dfb8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="807c-44c1-6f7d-dfb8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="807c-44c1-6f7d-dfb8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="e4d6-1a77-132b-f39d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="af4c-b971-a31c-669c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="f76f-29c1-de9-74c2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="481c-3b2e-5c99-c248" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="807c-44c1-6f7d-dfb8" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="1e42-dfae-cbdd-207d" name="Faction: Heretic Astartes" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="fbba-7f7e-16a1-370a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="500" field="fbba-7f7e-16a1-370a" id="4fa7-457c-8229-7e77">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1000" field="fbba-7f7e-16a1-370a" id="94e5-8ddd-5373-00cf">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1500" field="fbba-7f7e-16a1-370a" id="a7d0-0334-fd3e-416b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry id="fd71-afa6-b13b-7fda" name="Faction: Adepta Sororitas" hidden="false"/>
+    <categoryEntry id="ee0-cf31-4fb5-6b26" name="Faction: Necrons" hidden="false"/>
+    <categoryEntry id="571f-ec3a-a5a2-751a" name="Faction: Legiones Daemonica" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="f70b-465d-493f-52e3" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="250" field="f70b-465d-493f-52e3" id="4796-8c50-4a43-66c8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="500" field="f70b-465d-493f-52e3" id="bc6-87f4-482b-c1cd">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="750" field="f70b-465d-493f-52e3" id="b336-af46-e756-ab15">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry id="b2a9-ede5-7a83-4da8" name="Slaanesh" hidden="false"/>
     <categoryEntry id="ed0d-8e2a-225c-2340" name="Nurgle" hidden="false"/>
     <categoryEntry id="4bd-5ee0-f179-2fc5" name="Khorne" hidden="false"/>
     <categoryEntry id="b188-114f-6ba5-79a1" name="Tzeentch" hidden="false"/>
-    <categoryEntry id="bd1d-c1a5-6ca2-c791" name="Faction: 12 World Eaters" hidden="false"/>
-    <categoryEntry id="9888-ddb2-a141-6037" name="Faction: 14 Death Guard" hidden="false"/>
-    <categoryEntry id="7002-1fbb-7571-e8e7" name="Faction: 15 Thousand Sons" hidden="false"/>
-    <categoryEntry id="aab1-4f05-fabe-5ba5" name="Faction: 01 Dark Angels" hidden="false"/>
-    <categoryEntry id="65e4-13-4fa8-b36c" name="Faction: 18 Salamanders" hidden="false"/>
-    <categoryEntry id="62ac-ef42-27b4-ae7" name="Faction: 09 Blood Angels" hidden="false"/>
-    <categoryEntry id="1a2d-2f00-c054-4dcb" name="Faction: 13 Ultramarines" hidden="false"/>
-    <categoryEntry id="a0d9-c115-2a-8330" name="Faction: 06 Space Wolves" hidden="false"/>
-    <categoryEntry id="84b7-7194-3b84-1b0c" name="Faction: 19 Raven Guard" hidden="false"/>
-    <categoryEntry id="b88e-1b0c-b79f-5cdf" name="Faction: 10 Iron Hands" hidden="false"/>
-    <categoryEntry id="97aa-d0e4-71c7-96c3" name="Faction: 07 Imperial Fists" hidden="false"/>
-    <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: 05 White Scars" hidden="false"/>
+    <categoryEntry id="6e7-40c-58d9-e402" name="Faction: Adeptus Astartes" hidden="false"/>
+    <categoryEntry id="5418-f86b-6e76-c5a" name="Faction: Adeptus Mechanicus" hidden="false">
+      <modifiers>
+        <modifier type="set" value="250" field="dee8-c245-3c3c-86b6" id="5155-3d32-76df-053b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="500" field="dee8-c245-3c3c-86b6" id="2f2a-1769-3b72-b003">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="750" field="dee8-c245-3c3c-86b6" id="464a-d2f8-101b-1fab">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="dee8-c245-3c3c-86b6" includeChildSelections="true" includeChildForces="true" negative="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="226b-cf1e-353a-ae7f" name="Faction: Genestealer Cults" hidden="false"/>
+    <categoryEntry id="bd1d-c1a5-6ca2-c791" name="Faction: World Eaters" hidden="false"/>
+    <categoryEntry id="8474-765-16a9-f00d" name="Faction: Leagues of Votann" hidden="false"/>
+    <categoryEntry id="9888-ddb2-a141-6037" name="Faction: Death Guard" hidden="false"/>
+    <categoryEntry id="3d58-2655-391e-ecc" name="Faction: T&apos;au Empire" hidden="false"/>
+    <categoryEntry id="eea5-aeaf-bbf0-d5ee" name="Faction: Adeptus Custodes" hidden="false"/>
+    <categoryEntry id="56cc-5f43-2403-8da0" name="Faction: Orks" hidden="false"/>
+    <categoryEntry id="7002-1fbb-7571-e8e7" name="Faction: Thousand Sons" hidden="false"/>
+    <categoryEntry id="d564-3284-bf44-b873" name="Faction: Grey Knights" hidden="false"/>
+    <categoryEntry id="5128-90b-e4a5-dcbd" name="Faction: Agents of the Imperium" hidden="false"/>
+    <categoryEntry id="aab1-4f05-fabe-5ba5" name="Faction: Dark Angels" hidden="false"/>
+    <categoryEntry id="65e4-13-4fa8-b36c" name="Faction: Salamanders" hidden="false"/>
+    <categoryEntry id="d39c-9989-db7f-d815" name="Faction: Deathwatch" hidden="false"/>
+    <categoryEntry id="62ac-ef42-27b4-ae7" name="Faction: Blood Angels" hidden="false"/>
+    <categoryEntry id="1a2d-2f00-c054-4dcb" name="Faction: Ultramarines" hidden="false"/>
+    <categoryEntry id="a0d9-c115-2a-8330" name="Faction: Space Wolves" hidden="false"/>
+    <categoryEntry id="9249-acae-2882-d95" name="Faction: Black Templars" hidden="false"/>
+    <categoryEntry id="84b7-7194-3b84-1b0c" name="Faction: Raven Guard" hidden="false"/>
+    <categoryEntry id="b88e-1b0c-b79f-5cdf" name="Faction: Iron Hands" hidden="false"/>
+    <categoryEntry id="97aa-d0e4-71c7-96c3" name="Faction: Imperial Fists" hidden="false"/>
+    <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: White Scars" hidden="false"/>
     <categoryEntry id="5c0e-4c31-d51b-e470" name="Warlord" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16ac-a6c9-6d9a-d6d5" type="min"/>
@@ -153,10 +422,54 @@
     <categoryEntry name="Armiger" id="4c40-ab9-54af-d290" hidden="false"/>
     <categoryEntry name="Questoris" id="e4d6-1a77-132b-f39d"/>
     <categoryEntry name="Dominus" id="af4c-b971-a31c-669c"/>
+    <categoryEntry name="Allied Units" hidden="false" id="887b-ab87-92a2-20f5">
+      <modifiers>
+        <modifier type="set" value="Brood Brothers" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="500" field="4d8f-6e09-606e-788e" id="4ff4-f313-206c-fcb0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1000" field="4d8f-6e09-606e-788e" id="934b-e7e4-b560-2d8c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1500" field="4d8f-6e09-606e-788e" id="d1e5-86a2-d34b-13b3">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4d8f-6e09-606e-788e" includeChildSelections="true" includeChildForces="true" negative="false"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry name="Acastus" hidden="false" id="f76f-29c1-de9-74c2"/>
     <categoryEntry name="Cerastus" hidden="false" id="481c-3b2e-5c99-c248"/>
     <categoryEntry name="Artillery" hidden="false" id="8cab-448d-37b7-32bc"/>
     <categoryEntry name="Order of Battle" id="ac7e-be7b-eb02-4752" hidden="false"/>
+    <categoryEntry name="Faction: Harlequins" id="a5a2-d0c0-0349-d226" hidden="false"/>
+    <categoryEntry name="Faction: Ynnari" id="9a21-190a-9d31-35d2" hidden="false"/>
     <categoryEntry name="Tyrannic War Veteran" id="26fe-d7cb-eb8f-77d4" hidden="false">
       <comment>Crusade content</comment>
     </categoryEntry>
@@ -204,48 +517,47 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="CUSTOM" id="e169-ce70-ee9d-cecc" hidden="false"/>
-    <categoryEntry name="Faction: 20 Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
-    <categoryEntry name="Faction: 03 Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
-    <categoryEntry name="Faction: 04 Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
-    <categoryEntry name="Faction: 08 Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
-    <categoryEntry name="Faction: 17 Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
-    <categoryEntry id="14c3-6a70-bc6d-2e55" name="HH3-0 Warlord" hidden="false"/>
-    <categoryEntry id="c548-0174-245a-9537" name="HH3-0 Lord of War" hidden="false"/>
-    <categoryEntry id="1e50-f81c-39e8-5d95" name="HH3-1 High Command" hidden="false"/>
-    <categoryEntry id="9d31-1e03-1e0b-0080" name="HH3-2 Command" hidden="false"/>
-    <categoryEntry id="53be-aed6-5afe-c30c" name="HH3-3 Retinue" hidden="false"/>
-    <categoryEntry id="99b5-605e-eab5-4fff" name="HH3-4 Elites" hidden="false"/>
-    <categoryEntry id="1acb-3973-1a60-14f3" name="HH3-10 War-Engine" hidden="false"/>
-    <categoryEntry id="1e25-06ce-95d0-86be" name="HH3-6 Transport" hidden="false"/>
-    <categoryEntry id="3f9e-db54-2218-9b4f" name="HH3-8 Heavy Transport" hidden="false"/>
-    <categoryEntry id="fcff-c7a5-307c-e342" name="HH3-13 Support" hidden="false"/>
-    <categoryEntry id="5cd3-9a80-1b9f-566d" name="HH3-7 Heavy Assault" hidden="false"/>
-    <categoryEntry id="9c25-a1a9-7962-5e55" name="HH3-11 Fast Attack" hidden="false"/>
-    <categoryEntry id="7785-21ec-2342-fb45" name="HH3-9 Armour" hidden="false"/>
-    <categoryEntry id="6be2-df57-ce5e-516a" name="HH3-12 Recon" hidden="false"/>
-    <categoryEntry id="5fad-8298-679a-0be1" name="HH3-5 Troops" hidden="false"/>
-    <categoryEntry id="1e7a-e25d-50b0-67c3" name="Faction: 16 Sons of Horus" hidden="false"/>
+    <categoryEntry name="Faction: Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
+    <categoryEntry name="Faction: Black Legion" id="cce6-0071-67df-c4e7" hidden="false"/>
+    <categoryEntry name="Faction: Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
+    <categoryEntry name="Faction: Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
+    <categoryEntry name="Faction: Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
+    <categoryEntry name="Faction: Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
       <categoryLinks>
         <categoryLink id="d5de-ee57-ad4b-e4b7" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+        <categoryLink id="16fc-8e39-ee82-cf96" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
+        <categoryLink id="c932-1176-dc9-b390" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f08b-2179-601f-9af" type="min"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="f08b-2179-601f-9af">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bdc0-c0d-72d7-87e2" shared="true" id="1fe4-8f37-4c24-271"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="880c-c7e-4a43-a0c1" shared="true" id="f16a-b2cd-1da5-4050"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink id="b3ba-1e1a-a92d-60d2" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
+        <categoryLink id="6d77-b79d-3ccb-6bf6" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink id="f5d5-b603-69b3-411c" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
+        <categoryLink id="6503-057c-cb62-badb" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
+        <categoryLink id="87ea-37d2-7b40-c708" name="Beast" hidden="false" targetId="4c3e-9310-a516-3590" primary="false"/>
+        <categoryLink id="8e39-465e-7cfc-3085" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
+        <categoryLink id="2c76-65c5-bad0-8208" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink id="8243-857b-2133-8887" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
+        <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
+        <categoryLink id="9198-c35d-71cd-eea3" name="Fortification" hidden="false" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
-        <categoryLink name="HH3-0 Warlord" hidden="false" id="b69c-0c5f-39bc-bef3" targetId="14c3-6a70-bc6d-2e55"/>
-        <categoryLink name="HH3-0 Lord of War" hidden="false" id="c616-a78a-3874-9adf" targetId="c548-0174-245a-9537"/>
-        <categoryLink name="HH3-1 High Command" hidden="false" id="702a-59b4-cef9-05bc" targetId="1e50-f81c-39e8-5d95"/>
-        <categoryLink name="HH3-2 Command" hidden="false" id="fbea-daa4-05c1-2968" targetId="9d31-1e03-1e0b-0080"/>
-        <categoryLink name="HH3-3 Retinue" hidden="false" id="c2b3-6b64-d852-c2c6" targetId="53be-aed6-5afe-c30c"/>
-        <categoryLink name="HH3-4 Elites" hidden="false" id="6be4-22bd-7cbb-f35f" targetId="99b5-605e-eab5-4fff"/>
-        <categoryLink name="HH3-5 Troops" hidden="false" id="7a72-fa6a-02ae-0a0b" targetId="5fad-8298-679a-0be1"/>
-        <categoryLink name="HH3-6 Transport" hidden="false" id="7ece-8272-243c-2152" targetId="1e25-06ce-95d0-86be"/>
-        <categoryLink name="HH3-7 Heavy Assault" hidden="false" id="e9d5-3bea-e154-ad55" targetId="5cd3-9a80-1b9f-566d"/>
-        <categoryLink name="HH3-8 Heavy Transport" hidden="false" id="6142-d5a9-cb1f-eb5b" targetId="3f9e-db54-2218-9b4f"/>
-        <categoryLink name="HH3-9 Armour" hidden="false" id="b52c-1cb0-a417-2d64" targetId="7785-21ec-2342-fb45"/>
-        <categoryLink name="HH3-10 War-Engine" hidden="false" id="d123-044f-12cd-8fdf" targetId="1acb-3973-1a60-14f3"/>
-        <categoryLink name="HH3-11 Fast Attack" hidden="false" id="da1f-f373-f850-0c0a" targetId="9c25-a1a9-7962-5e55"/>
-        <categoryLink name="HH3-12 Recon" hidden="false" id="1f9b-f167-c917-119d" targetId="6be2-df57-ce5e-516a"/>
-        <categoryLink name="HH3-13 Support" hidden="false" id="642d-0a42-57a7-66d7" targetId="fcff-c7a5-307c-e342"/>
+        <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
@@ -315,7 +627,12 @@
           <modifiers>
             <modifier type="set" value="0" field="771b-70a4-6eca-ca13">
               <conditionGroups>
-                <conditionGroup type="or"/>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bdc0-c0d-72d7-87e2" shared="true" id="6850-9e2d-ee40-9fdb"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="880c-c7e-4a43-a0c1" shared="true" id="ebb2-e80e-a08a-e168"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
@@ -331,6 +648,7 @@
         <categoryLink name="Dedicated Transport" hidden="false" id="8ef9-4038-9434-2ed0" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Fortification" hidden="false" id="9521-ccd2-1cb5-eef5" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink name="Unit" hidden="false" id="4657-058c-657b-3d14" targetId="1160-70ae-a862-b1a8" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="8d77-c7df-e1a3-0680" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="215f-8816-ff04-d1ef">
@@ -731,262 +1049,145 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="335" hidden="false">
-      <description>During Step 3 of any Shooting Attack, a Player may choose to have a Model under their control make attacks with two Weapons rather than one if both Weapons have the Pistol Special Rule.</description>
-    </rule>
-    <rule id="8367-374c-f87-c627" name="Force [X]" publicationId="48fc-15aa-b307-9443" page="331" hidden="false">
-      <description>When selected to be used as part of a Combat or Shooting Attack, a Willpower Check may be made for the Model that will use this Weapon to make attacks. If it is successful then the Characteristic listed as X is doubled (if that Characteristic is AP, then the AP is instead changed to AP 2). If a double is rolled when making this Willpower Check then the Model using the Weapon to make attacks suffers Perils of the Warp.</description>
-    </rule>
-    <rule id="be1e-ac8e-1e2c-3528" name="Deflagarate [X]" publicationId="48fc-15aa-b307-9443" page="329" hidden="false">
-      <description>At the end of Step 9 of the Shooting Attack process for any Fire Group or Strike Group that includes Weapons with the Deflagrate (X) Special Rule, create a new Fire Group or Strike Group that must then be selected in Step 10 and resolved. This new Fire Group or Strike Group includes a number of Hits equal to the number of Unsaved Wounds caused by the Fire Group or Strike Group that triggered its creation. These Hits all have a Strength equal to the value of X attached to the variant of Deflagrate (X) Special Rule possessed by Weapons in the preceding Fire Group or Strike Group, an AP of &apos;-&apos;, a Damage of 1 and no Special Rules.</description>
-    </rule>
-    <rule id="fc8a-8c24-bae9-cc1c" name="Assault Vehicle" publicationId="48fc-15aa-b307-9443" page="326" hidden="false">
-      <description>A Unit that is Disembarked from another Model that has the Assault Vehicle Special Rule may have a Charge declared for it in the Charge Sub-Phase of the same Player Turn without being forced to make a Disordered Charge.</description>
-    </rule>
-    <rule id="115b-79dc-f723-d761" name="Detonation" publicationId="48fc-15aa-b307-9443" page="329" hidden="false">
-      <description>A Weapon or attack with this Special Rule may only be selected during Step 2 of any Combat in the Fight Sub-Phase if the Unit making attacks I only Locked in Combat with enemy Units composed of Models with the Vehicle Type and Models with a Movement Characteristic of &apos;-&apos;. If a Unit Locked in Combat with any enemy Units that include any Models that do not have the Vehicle Type or a Movement Characteristic of &apos;0&apos; or &apos;-&apos; then no Model may use a Weapon or other attack that has this Special Rule.
+    <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[PISTOL]** in their profile are known as Pistols. If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player’s Shooting phase even while it is within Engagement Range of one or more enemy units. When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. In such circumstances, a Pistol can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit. 
 
+If a model is equipped with one or more Pistols, unless it is a **^^Monster^^** or **^^Vehicle^^** model, it can either shoot with its Pistols or with all of its other ranged weapons. Declare whether such a model will shoot with its Pistols or its other ranged weapons before selecting targets.</description>
+    </rule>
+    <rule id="8367-374c-f87-c627" name="Hazardous" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Weapons with **[HAZARDOUS]** in their profile are known as Hazardous weapons. Each time a unit is selected to shoot or fight, after that unit has resolved all of its attacks, for each Hazardous weapon that targets were selected for when resolving those attacks, that unit must take one Hazardous test. To do so, roll one D6: on a 1, that test is failed. For each failed test you must resolve the following sequence (resolve each failed test one at a time): 
 
-A Weapon or other attack with this Special Rule may also be used to make attacks targeting a Model with the Building Type or a Terrain Piece that has a Toughness or Armour Characteristic.</description>
+■ If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons. 
+■ Otherwise, if possible, select one model in that unit (excluding **^^Character^^** models) equipped with one or more Hazardous weapons. 
+■ Otherwise, select one **^^Character^^** model in that unit equipped with one or more Hazardous weapons. 
+
+If a model was selected, that unit suffers 3 mortal wounds and when allocating those mortal wounds, they must be allocated to the selected model. 
+
+If a unit from a player’s army is selected as the target of the Fire Overwatch Stratagem in their opponent’s Charge phase, any mortal wounds inflicted by Hazardous tests are allocated after the charging unit has ended its Charge move.</description>
+    </rule>
+    <rule id="b4dd-3e1f-41cb-218f" name="Leader" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+      <description>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are destroyed (pg 12), it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack successfully wounds an Attached unit, that attack cannot be allocated to a Character model in that unit, even if that Character model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to Character models in that unit.
+
+Each time the last model in a Bodyguard unit is destroyed, each CHARACTER unit that is part of that Attached unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
+
+Each time the last model in a CHARACTER unit that is attached to a Bodyguard unit is destroyed and there is not another CHARACTER unit attached, that Attached unit’s Bodyguard unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
+
+Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.</description>
+    </rule>
+    <rule id="be1e-ac8e-1e2c-3528" name="Devastating Wounds" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Weapons with **[DEVASTATING WOUNDS]** in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>
+      <alias>DEVASTATING WOUNDS</alias>
+    </rule>
+    <rule id="fc8a-8c24-bae9-cc1c" name="Assault" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[ASSAULT]** in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
+    </rule>
+    <rule id="115b-79dc-f723-d761" name="Extra Attacks" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Weapons with **[EXTRA ATTACKS]** in their profile are known as Extra Attacks weapons. Each time the bearer of one or more Extra Attacks weapons fights, it makes attacks with each of the Extra Attacks melee weapons it is equipped with and it makes attacks with one of the melee weapons it is equipped with that does not have the [EXTRA ATTACKS] ability (if any). The number of attacks made with an Extra Attacks weapon cannot be modified by other rules, unless that weapon’s name is explicitly specified in that rule.</description>
     </rule>
     <rule id="cf93-ad4d-2f08-a79d" name="Twin-linked" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
     </rule>
-    <rule id="4111-82e3-9444-e942" name="Armourbane" publicationId="48fc-15aa-b307-9443" page="326" hidden="false">
-      <description>A Weapon with this Special Rule is an &apos;Armourbane Weapon&apos;
-When making Armour Penetration Tests for an Armourbane Weapon, a result that is equal to, or grater than, the target Armour Value inflicts a Penetrating Hit. An Armourbane Weapon can never inflict a Glancing Hit, and any Rule that would force them to do so instead inflicts a Penetrating Hit.</description>
+    <rule id="4111-82e3-9444-e942" name="Anti-" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
     </rule>
-    <rule id="1897-c22c-9597-12b1" name="Support Unit" publicationId="48fc-15aa-b307-9443" page="337" hidden="false">
-      <description>A Unit that includes any Models with the Support Unit (X) Special Rule may only ever score a maximum number of Victory Points equal to the value of X for Controlling an Objective, regardless of the Value of that Objective, or any other Special Rules Models in that Unit might have (such as the Line (X) Special Rule).</description>
+    <rule id="1897-c22c-9597-12b1" name="Sustained Hits" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Weapons with **[SUSTAINED HITS X]** in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, if a Critical Hit is rolled, that attack scores a number of additional hits on the target as denoted by ‘x’</description>
+      <alias>SUSTAINED HITS</alias>
     </rule>
-    <rule id="1202-10a8-78e9-4c67" name="Heavy [X]" publicationId="48fc-15aa-b307-9443" page="331" hidden="false">
-      <description>When making a Shooting Attack with a Weapon that has the Heavy (X) Special Rule, a modifier of +1 is added to a Characteristic if the Model with that Weapon is part of a Unit that remained Stationary in the Controlling Player’s previous Movement Phase. If the Characteristic listed is AP, then instead it improves the AP by one Step. The value of X in the specific variant of the Heavy (X) Special Rule determines which Characteristic gains the +1 modifier.</description>
+    <rule id="1202-10a8-78e9-4c67" name="Heavy" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+      <description>Weapons with **[HEAVY]** in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model’s unit Remained Stationary this turn, add 1 to that attack’s Hit roll.</description>
     </rule>
     <rule id="7cdb-fb99-44a9-8849" name="Melta" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[MELTA X]** in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
     </rule>
-    <rule id="9bf4-280f-bbe2-6fbb" name="Feel No Pain [X]" publicationId="48fc-15aa-b307-9443" page="330" hidden="false">
-      <description>A Model with the Feel No Pain (X) Special Rule gains a Feel No Pain Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process or Step 8 of the Initiative Step of the Fight Sub-Phase process to discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Feel No Pain Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
+    <rule id="9bf4-280f-bbe2-6fbb" name="Feel No Pain" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
+      <description>Some models have &apos;Feel No Pain x+&apos; listed in their abilities. Each time a model with this ability suffers damage and so would lose a wound (including wounds lost due to mortal wounds), roll one D6: if the result is greater than or equal to the number denoted by &apos;x: that wound is ignored and is not lost. If a model has more than one Feel No Pain ability, you can only use one of those abilities each time that model suffers damage and so would lose a wound.</description>
     </rule>
-    <rule id="6c1f-1cf7-ff25-c99e" name="Blast [X]" page="327" hidden="false">
-      <description>When making attacks with a Weapon that has the Blast (X) Special Rule, before any Hit Tests are made, a Blast Marker must first be placed to determine how many Hits may be inflicted by the attack. The Player making the attack must place the Blast Marker indicated in brackets as part of the Special Rule so that the hole in the middle is entirely over the base of any one model in the Target Unit. Once the blast Marker has been placed, the Player making the attack must make a Hit Test for the attack, and each Model from the Target Unit that is fully or partially under the Blast Marker will suffer 1 Hit if the Hit Test is successful.
+    <rule id="6c1f-1cf7-ff25-c99e" name="Blast" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+      <description>Weapons with **[BLAST]** in their profile are known as Blast weapons, and they make a random number of attacks. Each time you determine how many attacks are made with a Blast weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model’s army (including its own unit).</description>
+    </rule>
+    <rule id="9143-31ae-e0a6-6007" name="Precision" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+      <description>Weapons with **[PRECISION]** in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a Character model in that unit is visible to the attacking model, the attacking model’s player can choose to have that attack allocated to that Character model instead of following the normal attack sequence.</description>
+    </rule>
+    <rule id="4ddd-4e29-acdd-5e6d" name="Indirect Fire" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+      <description>Weapons with **[INDIRECT FIRE]** in their profile are known as Indirect Fire weapons, and attacks can be made with them even if the target is not visible to the attacking model. These attacks can destroy enemy models in a target unit even though none may have been visible to the attacking unit when you selected that target.
 
 
-Hits on Other Units
-If any Models form Units other than the Target Unit are fully or partially covered by the Blast Marker, then a new Fire Group must be created for those Hits and set to one side. Continue resolving the Shooting Attack on the original Target Unit, and once that Shooting Attack has been completely resolved begin a new Shooting Attack to resolve those additional Fire Groups generated for Units other than the original Target Unit.
+If no models in a target unit are visible to the attacking unit when you select that target, then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, subtract 1 from that attack’s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack. Weapons with the **[TORRENT]** ability cannot be fired using the **[INDIRECT FIRE]** ability.</description>
+    </rule>
+    <rule id="2ebc-abdf-8129-6c57" name="Lance" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[LANCE]** in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack’s Wound roll.</description>
+    </rule>
+    <rule id="d1d1-611e-5191-1095" name="Lethal Hits" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[LETHAL HITS]** in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target.</description>
+      <alias>LETHAL HITS</alias>
+    </rule>
+    <rule id="4640-43e7-30b-215a" name="Ignores Cover" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[IGNORES COVER]** in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack.</description>
+    </rule>
+    <rule id="c5c8-8b58-b8b6-7786" name="Rapid Fire" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[RAPID FIRE X]** in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half that weapon’s range, the Attacks characteristic of that weapon is increased by the amount denoted by ‘x’.</description>
+    </rule>
+    <rule id="5edf-d619-23e0-9b56" name="Torrent" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>Weapons with **[TORRENT]** in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.</description>
+    </rule>
+    <rule id="ada6-bac1-ffe0-d6f7" name="Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+      <description>Some units have ‘Scouts x&quot;’ listed in their abilities. If every model in a unit has this ability, then at the start of the first battle round, before the first turn begins, it can make a Normal move of up to x&quot;, with the exception that, while making that move, the distance moved by each model in that unit can be greater than that model&apos;s Move characteristic, as long as it is not greater than x&quot;. 
 
+DEDICATED TRANSPORT models can make use of any Scouts x&quot; ability listed in their abilities, or a Scouts x&quot; ability that a unit that starts the battle embarked within that DEDICATED TRANSPORT  model has (provided only models with this ability are embarked within that Dedicated Transport model), regardless of how that embarked unit gained this ability (e.g. listed in their abilities, conferred by an Enhancement or by an attached Character, etc.). 
 
-If the Hit Test is unsuccessful then no Hits are inflicted and the Player making the attack must make a Scatter Roll for the Blast Marker (see the Rules for Scatter in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). Once a Scatter Roll has been made for the Blast Marker and it has been moved, one Hit is inflicted on a Unit for each Model from that Unit that is wholly or partially covered by the Blast Marker.</description>
+A unit that moves using this ability must end that move more than 9&quot; horizontally away from all enemy models. If both players have units that can do this, the player who is taking the first turn moves their units first.</description>
     </rule>
-    <rule id="9143-31ae-e0a6-6007" name="Precision [X]" publicationId="48fc-15aa-b307-9443" page="335" hidden="false">
-      <description>When any Hit Test is made for an attack with the Precision (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or great than the value of X attached to this variant of the Precision (X) Special Rule, then if a Hit is inflicted by that roll, that Hit becomes a &apos;Precision Hit&apos;.
+    <rule id="c05d-f4c3-f091-4938" name="Infiltrators" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+      <description>During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9&quot; horizontally away from the enemy deployment zone and all enemy models.</description>
+    </rule>
+    <rule id="7cb5-dd6b-dd87-ad3b" name="Deep Strike" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+      <description>During the Declare Battle Formations step, if every model in a unit has this ability, you can set it up in Reserves instead of setting it up on the battlefield. If you do, in the Reinforcements step of one of your Movement phases you can set up this unit anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.
 
+If a unit with the Deep Strike ability arrives from Strategic Reserves, the controlling player can choose for that unit to be set up either using the rules for Strategic Reserves or using the Deep Strike ability.</description>
+    </rule>
+    <rule id="b68a-5ded-65ac-98c" name="Deadly Demise" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
+      <description>Some models have &apos;Deadly Demise x&apos; listed in their abilities. When such a model is destroyed, roll one D6 before removing it from play (if such a model is a TRANSPORT, roll before any embarked models disembark). On a 6, each unit within 6&quot; of that model suffers a number of mortal wounds denoted by &apos;x&apos; (if this is a random number, roll separately for each unit within 6&quot;).</description>
+    </rule>
+    <rule id="bec5-4288-34a6-ccfa" name="Stealth" publicationId="48fc-15aa-b307-9443" page="20" hidden="false">
+      <description>If every model in a unit has this ability, then each time a ranged attack is made against it, subtract 1 from that attack’s Hit roll.</description>
+    </rule>
+    <rule id="5e13-1624-d280-418d" name="Super-Heavy Walker" hidden="false">
+      <description>Each time a model with this ability makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and sections of terrain features that are 4&quot; or less in height. 
+When doing so:
+- It can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them.
+- It can also move through sections of terrain features that are more than 4&quot; in height, but if it does, after it has moved, roll one D6: on a 1, that model is Battle-shocked.</description>
+    </rule>
+    <rule id="a8a0-8fe7-898-e0f3" name="Lone Operative" publicationId="48fc-15aa-b307-9443" page="19" hidden="false">
+      <description>Unless part of an Attached unit, this unit can only be selected as the target of a ranged attack if the attacking model is within 12&quot;.</description>
+    </rule>
+    <rule id="eec5-5f54-9c03-c305" name="Hover" publicationId="48fc-15aa-b307-9443" page="53" hidden="false">
+      <description>Some **^^Aircraft^^** models have &apos;Hover&apos; listed in their abilities. When you are instructed to Declare Battle Formations, before doing anything else, you must first declare which models from your army with this ability will be in Hover mode.
 
-These Precision Hits must form a separate Fire Group or Strike Group. Wound Tests are made as normal for Precision Hits and cause Precision wounds. In Step 8 of the Shooting Attack process or Step 7 of the Initiative Step sequence, when selecting a Target Model for a Fire Group or Strike Group that is made up of Precision wounds, the Target Model is not selected using the normal Rules. Instead the attacking Player chooses which Model in the Target Unit will be the Target Model, and may select any Model that is a part of that Unit.
-
-
-Note that Models Engaged in a Challenge cannot use this Special Rule to allocate Hits to any Model other than the enemy Model that is Engaged in the same Challenge and that any attacks which are made as Snap Shots, or for Weapons or attacks that have either the Blast (X) , Barrage (X), Template or Reaping Blow (X) Special Rules, may never trigger the Precision (X) Special Rule no matter what the result of the Hit Test is.</description>
+If a model is in Hover mode, then until the end of the battle, its Move characteristic is changed to 20&quot;, it loses the **^^Aircraft^^** keyword and it loses all associated rules for being an **^^Aircraft^^** model. Models in Hover mode do not start the battle in Reserves, but you can choose to place them into Strategic Reserves following the normal rules if you wish.</description>
     </rule>
-    <rule id="4ddd-4e29-acdd-5e6d" name="Light Transport" publicationId="48fc-15aa-b307-9443" page="332" hidden="false">
-      <description>Models that have any variant of Bulky may not Embark on a Model with this Special Rule.</description>
+    <rule id="24-c886-e8ba-5a89" name="Fights First" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
+      <description>Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability.</description>
     </rule>
-    <rule id="4640-43e7-30b-215a" name="Impact [X]" publicationId="48fc-15aa-b307-9443" page="332" hidden="false">
-      <description>If a Unit that includes any Models with the Impact (X) Special Rule or any Models that have any Weapons with the Impact (X) Special Rule, and that Unit makes a successful Charge, then this Special Rule is triggered. Once triggered, until the end of that Assault Phase, when making Melee Attacks for Models in that Unit, each Model or Weapon that is selected for one of those Models, that has a variant of this Special Rule, gains a modifier of +1 to any Characteristics that is the value of X.</description>
-    </rule>
-    <rule id="c5c8-8b58-b8b6-7786" name="Shock [X]" publicationId="48fc-15aa-b307-9443" page="336" hidden="false">
-      <description>When making a Hit Test for a Weapon with this Special Rule against a Target Unit that includes any Models with the Vehicle Type or Walker Type, the result of the Hit Test before any modifiers are applied must be checked. If any Hit Test for a Weapon with the Shock (X) Special Rule results in a &apos;5&apos; or &apos;6&apos; before any modifiers are applied, then all Models with the Vehicle Type or Walker Type in the Target Unit gain a Status at the end of Step 11 of the Shooting Attack process or Step 10 of the Initiative Step process. The Status gained in indicated by the value of X attached to that variant of the Shock (X) Special Rule. If the Model already has the stated Status or the attack would apply the Status multiple times there is no additional effect and this Special Rule never causes a Model to lose Wounds or Hull Points. Hits inflicted by a Weapon with this Special Rule must still have Wound Tests or Armour Penetration Tests made for them, and are not discarded if they trigger this Special Rule.</description>
-    </rule>
-    <rule id="5edf-d619-23e0-9b56" name="Suppressive [X]" publicationId="48fc-15aa-b307-9443" page="338" hidden="false">
-      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Suppressed Status, and if the Check is passed then there is no further effect. The value of X attached to this Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
-    </rule>
-    <rule id="ada6-bac1-ffe0-d6f7" name="Shred [X]" publicationId="48fc-15aa-b307-9443" page="336" hidden="false">
-      <description>When any Wound Test is made for an attack with the Shred (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Shred (X) Special Rule, then if a wound is inflicted by that Wound Test , the Damage of that wound is increased by 1. Note that the Shred (X) Special Rule may only be triggered by a Wound Test and has no effect when making an Armour Penetration Test.</description>
-    </rule>
-    <rule id="c05d-f4c3-f091-4938" name="Infiltrate [X]" publicationId="48fc-15aa-b307-9443" page="332" hidden="false">
-      <description>At the start of a Mission, when deploying Units, the Controlling Player of a Unit that is composed entirely of Models with the Infiltrate (X) Special Rule may choose to deploy that Unit outside of that Player’s Deployment Zone. That Unit may be deployed anywhere that is either in the Controlling Player’s Deployment Zone or outside of the Opposing Player’s Deployment Zone and is at least a number of inches equal to the highest value of X attached to any variant of the Infiltrate (X) Special Rule in that Unit away from any Enemy Model.
-
-
-Units deployed using the Infiltrate (X) Special Rule are deployed at the same time as other Units under a Player’s control, unless the specific Rules of a given Mission state otherwise. The Infiltrate (X) Special Rule only has an effect when deploying Units before the start of the First Turn of a Battle, and Units deploying on the Battlefield after the First Turn has begun gain no benefit from this Special Rule. A Unit that is deployed outside of the Controlling Player’s Deployment Zone by means of this Special Rule may not have a Charge declared for in the Firs Battle Turn.</description>
-    </rule>
-    <rule id="7cb5-dd6b-dd87-ad3b" name="Deep Strike" publicationId="48fc-15aa-b307-9443" page="328" hidden="false">
-      <description>A Unit that includes only Models with the Deep Strike Special Rule that enters play from Reserves may make a Deep Strike instead of deploying a described in the Reserves Rules. No more than one Unit may attempt a Deep Strike in a given Player Turn. The Unit attempting a Deep Strike may have another Unit without the Deep Strike Special Rule Embarked Upon it if the Deep Striking Unit includes models with the Transport Sub-Type (note that some Missions may allow more Units to attempt a Deep Strike in the same Player Turn. This will be specifically noted in the Mission Special Rules section of that Mission.) Note that in Missions where the Reserves Mission Special Rule is not in use, the Deep Strike Special Rule has no effect. Furthermore, Units may not make use of the Deep Strike Special Rule during the first Battle Turn, even if they enter play from Reserves.
-
-
-To perform a Deep Strike, the Active Player must declare an Eligible Unit that has entered play from Reserves in the Reserves Sub-Phase as the Deep Striking Unit. The Active Player must then select one Model from that Unit and place it anywhere on the Battlefield. This Model must be placed at least 1&quot;&quot; away from any enemy Model, Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and withing 6&quot;&quot; of the first Model placed. No Models may be placed within 1&quot;&quot; of an enemy Model, any Battle Field Edge or a piece of Impassable Terrain. Any Models that cannot be placed using these Rules must be Removed as a Casualty immediately. This deployment must take place during the Reserve Sub-Phase, and a Unit that deploys as a Deep Strike may not move in the Move Sub-Phase of the same Player Turn or have a Charge declared for it in the Charge Sub-Phase of the same Player Turn, but may make Shooting Attacks as normal. A Unit that is Embarked on a Model that is deployed as part of a Deep Strike may Disembark during the Move Sub-Phase of the same Player Turn, but may not make any move other than the move made to Disembark and may not have a Charge declared for it in the Charge Sub-Phase of the same Player Turn.
-
-
-Enemy Units may declare Intercept Reactions against a Unit deployed as part of a Deep Strike, but not Reposition Reactions.</description>
-    </rule>
-    <rule id="b68a-5ded-65ac-98c" name="Critical Hit [X]" publicationId="48fc-15aa-b307-9443" page="328" hidden="false">
-      <description>When any Hit Test is made for an attack with the Critical Hit (X) Special Rule, if the result of the Dice Roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Critical Hit (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Critical Hit&apos;.
-
-
-A Critical Hit automatically inflicts a wound without any dice being rolled, counting as the roll of a &apos;6&apos; for any variable Special Rules that might be triggered by a Wound Test, and increases the Damage of the Hit by +1.</description>
-    </rule>
-    <rule id="bec5-4288-34a6-ccfa" name="Shrouded [X]" publicationId="48fc-15aa-b307-9443" page="337" hidden="false">
-      <description>A Model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Shrouded Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
-    </rule>
-    <rule id="5e13-1624-d280-418d" name="Stun [X]" hidden="false" page="337">
-      <description>If a Shooting Attack made for a Weapon or Model with this Special Rules inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Stunned Status. The value of X is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an Attack with this Special Rule</description>
-    </rule>
-    <rule id="a8a0-8fe7-898-e0f3" name="Limited [X]" publicationId="48fc-15aa-b307-9443" page="333" hidden="false">
-      <description>A Limited Weapon can only be used X times per Battle</description>
-    </rule>
-    <rule id="eec5-5f54-9c03-c305" name="Heedless" publicationId="48fc-15aa-b307-9443" page="332" hidden="false">
-      <description>A Unit that includes any Models with this Special Rule cannot Control or Contest any Object Marker - this overrides any other Rule or Special Rule that may apply to the Unit regardless of the source of the Rule or effect.</description>
-    </rule>
-    <rule id="24-c886-e8ba-5a89" name="Firing Protocols" publicationId="48fc-15aa-b307-9443" page="331" hidden="false">
-      <description>A Model with the Firing Protocols (X) Special Rule that makes attacks as part of a Shooting Attack, may make attacks with a number of Weapons equal to the value of X attached to the specific variant of the Firing Protocols (X) Special Rule. The Model must have more than one Ranged Weapon to make use of this Special Rule and may not use the same Weapon more than once in the same Shooting Attack.</description>
-    </rule>
-    <rule id="e9c4-2bb8-12ee-cd1b" name="Reaping Blow [X]" publicationId="48fc-15aa-b307-9443" page="336" hidden="false">
-      <description>If a Model is outnumbered in Combat and either has this Special Rule or is made to attack with a Weapon that has this Special Rule, then that Model gains a bonus to its Attacks Characteristic equal to the value of X attached to the variant of this Special Rule it has access to. To be considered outnumbered, the total number of friendly Models Locked in Combat in the same Combat must be less than the total number of enemy Models Locked in Combat in the same Combat - Models with the Bulky (X) Special Rule count as a number of Models equal to the value of X in the Variant of the Bulky (X) Special Rule that Model has. This Special Rule has no effect during the Challenge Sub-Phase, and no Model that is Engaged in a Challenge may gain additional Attacks due to this Special Rule.</description>
+    <rule id="e9c4-2bb8-12ee-cd1b" name="Psychic" publicationId="48fc-15aa-b307-9443" page="38" hidden="false">
+      <description>Some weapons and abilities can only be used by **^^Psykers^^**. Such weapons and abilities are tagged with the word &apos;Psychic&apos;. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack.</description>
     </rule>
     <rule id="13b2-6518-dab3-7ea1" name="Firing Deck" page="17" hidden="false">
       <description>Some **^^Transport^^** models have ‘Firing Deck x’ listed in their abilities. Each time such a model is selected to shoot in the Shooting phase, you can select up to ‘x’ models embarked within it whose units have not already shot this phase. Then, for each of those embarked models, you can select one ranged weapon that embarked model is equipped with (excluding weapons with the **[ONE SHOT]** ability). Until that **^^Transport^^** model has resolved all of its attacks, it counts as being equipped with all of the weapons you selected in this way, in addition to its other weapons. Until the end of the phase, those selected models’ units are not eligible to shoot.</description>
     </rule>
-    <rule id="cd26-1611-860a-91e4" name="Officer of the Line [X]" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
-      <description>If a Model with this Special Rule is selected to fill a Command Slot in any Detachment in the Crusade Force Organization Chart, then the Controlling Player may select a number of Auxiliary Detachments equal to the value of X in the specific variant of this Special Rule instead of just one.</description>
+    <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
+      <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
-    <rule name="Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
-      <description>A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</description>
+    <rule name="Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
+      <description>Models with the Bulky [X] Ability take up X spaces when inside a transport and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
     </rule>
-    <rule name="Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="330">
-      <description>When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X) Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 12&quot; of any Model with the Fear (X) Special Rule. If a Unit would be affected by multiple instances of the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier.</description>
+    <rule name="Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="32">
+      <description>Units with this Ability provide a negative modifier to Leadership Tests equal to X to Enemy Units within 6&quot;</description>
     </rule>
-    <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
-      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Pinned Status, if the Check is passed then there is no further effect. The value of the X attached to this Special Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
-    </rule>
-    <rule id="6588-b4d9-0338-b007" name="Barrage [X]" page="326" hidden="false">
-      <description>If a Unit for which a Shooting attack is made includes any Models with one or more Barrage Weapons, then in Step 2 of the Shooting Attack process they may ignore the restriction on requiring Line of Sight to a Target Unit. If a Player uses Barrage to declare a Shooting Attack on a Unit that the attacking Unit cannot draw a Line of Sight to, then in Step 3 of the Shooting Attack process that Player may only declare attacks with Weapons that have this Special Rule.
+    <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
+      <description>Weapons with **[PINNING]** in their profile are known as Pinning weapons. After a Unit makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Enemy Unit must succeed on a Leadership test or become Pinned until the end of your Opponent&apos;s Turn.
 
-
-
-If a Barrage Weapon with the Blast (X) Special Rule is used to attack a Unit without a Line of Sight to that Unit, then no Hit Test is made and an Indirect Scatter Roll must be made for the Blast Marker placed as part of the attack. If such a Weapon makes more than a single attack then a separate Indirect Scatter Roll is made for each attack. When making an Indirect Scatter Roll for such an attack, the number of Dice rolled alongside the Scatter Dice is determined by the value of X for the Weapon with the Barrage (X) Special Rule, the value of these Dice is then totalled to find the distance the attack Scatters.</description>
-    </rule>
-    <rule id="5806-94d7-e43c-6bf5" name="Battlesmith [X]" page="326" hidden="false">
-      <description>In the Controlling Player&apos;s Movement Phase as the Active Player, when a Model with the Battlesmith (X) Special Rule has been selected, but either before or after it has been moved, the Controlling Player of that Model may activate this Special Rule. Once activated, the Controlling Player of the Model with the Battlesmith (X) Special Rule hereafter referred to as the &apos;Acting Model&apos;, must select one friendly Model within 6&quot;&quot; of the Acting Model. The Model selected must have the Vehicle, Automata, or Walker Type and is hereafter referred to as the &apos;Target Model&apos;. Once a Target Model has been selected, the Player controlling the Acting Model must make an Intelligence Check for the Acting Model.
-
-
-If the Check is failed there is no further effect, but if the Check is passed then the Player controlling the Acting Model may select one of the following options:
-
-
-
-
-    Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
-
-
-    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.
-
-
-
-
-Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.</description>
-    </rule>
-    <rule id="71d1-7c66-c8ef-2a7c" name="Breaching [X]" page="327" hidden="false">
-      <description>When any Wound Test is made for an attack with the Breaching (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Breaching (X) Special Rule, then if a wound is inflicted by that Wound Test, that wound becomes a &apos;Breaching Wound&apos;.
-
-
-A Breaching Wound is always treated as having an AP of 2 regardless of the Characteristics of the Weapon used to make the attack.</description>
-    </rule>
-    <rule id="5097-a49f-fd7a-aeb8" name="Auto-Repair [X]" publicationId="48fc-15aa-b307-9443" page="326" hidden="false">
-      <description>If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</description>
-    </rule>
-    <rule id="d556-bb60-fb92-ac00" name="Duellist&apos;s Edge [X]" publicationId="48fc-15aa-b307-9443" page="329" hidden="false">
-      <description>In Step 3 of the Challenge Sub-Phase, the Focus Step, if a Player has declared that the Model under their control will use a Weapon with the Duellist&apos;s Edge (X) Special Rule or has the Duellist&apos;s Edge (X) Special Rule, then that Player gains a bonus equal to the value of X on the Focus Roll.</description>
-    </rule>
-    <rule id="c3f2-d00c-706c-dbaa" name="Eternal Warrior [X]" publicationId="48fc-15aa-b307-9443" page="329" hidden="false">
-      <description>When a Model with the Eternal Warrior (X) Special Rule is allocated an Unsaved Wound, the Damage of the Unsaved Wound is reduced by the value of X attached o the specific variant of the Eternal Warrior (X) Special Rule. The effects of this Special Rule cannot reduce the Damage of an Unsaved Wound to less than 1, regardless of the value of X.</description>
-    </rule>
-    <rule id="5d29-3acf-e8da-5527" name="Expendable [X]" publicationId="48fc-15aa-b307-9443" page="329" hidden="false">
-      <description>The number of Victory Points scored by the opponent when a Unit that includes only Models with this Special Rule is entirely Removed as Casualties, for example, as part of the Vanguard (X) Special Rule, First Strike (X) or Slay the Warlord (X) Mission Special Rule, is reduced by the value of X, to a minimum of 1. If a Unit includes Models with different variants of this Special Rule, then the lowest value of X that was present on any Model in that Unit at the start of the Player Turn in which the last Model in the Unit is Removed as a Casualty is used to determine the effect of this Special Rule on that Unit.
-
-
-Note that, if, at the start of the Player Turn a Unit includes any Models that do not have this Special Rule, then this Special Rule has no effect on that Unit for the duration of that Player Turn regardless of how many other Models in the Unit may have any variant of this Special Rule.</description>
-    </rule>
-    <rule id="c1c8-8ad0-cda6-adae" name="Explodes [X]" publicationId="48fc-15aa-b307-9443" page="330" hidden="false">
-      <description>Before a Model with the Explodes (X) Special Rule is Removed as a Casualty, the Controlling Player must roll a Dice. If the result of that roll equals or exceeds the value of X attached to this variant of the Explodes (X) Special Rule, the Model explodes. Every Unit with one or more models within 6&quot; of an exploding Model suffers a number of Hits equal to the Base Wounds Characteristic of Base Hull Points Characteristic of the exploding Model. Each such Hit has a Strength of 8, an AP of &apos;-&apos;, and a Damage of 1. Once all Hits caused by this Special Rule have been resolved, the Model with the Explodes (X) Special Rule is Removed as a Casualty as normal.</description>
-    </rule>
-    <rule id="43bd-036d-5a23-07ec" name="Fast [X]" publicationId="48fc-15aa-b307-9443" page="330" hidden="false">
-      <description>When the Player controlling a Unit that is composed entirely of Models with the Fast Special Rule elects to have that Unit Rush, add the value of X to the distance the Unit can move. Likewise, when a Unit composed entirely of Models with the Fast Special Rule is required to make a Charge Move, add X to the Charge Roll. If there are multiple variants of Fast in a Unit, the lowest is used.</description>
-    </rule>
-    <rule id="26e1-97b4-6a01-9fa1" name="Hatred [X]" publicationId="48fc-15aa-b307-9443" page="331" hidden="false">
-      <description>When Locked in Combat, or Engaged in a Challenge, with any enemy Models that have the Type or Trait that is the value of X, then all Models with this variant of the Hatred (X) Special Rule gain a bonus of +1 to all Wound Tests made in that Combat.</description>
-    </rule>
-    <rule id="f4b1-6054-27f0-1d14" name="Line [X]" publicationId="48fc-15aa-b307-9443" page="333" hidden="false">
-      <description>If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
-
-
-Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
-    </rule>
-    <rule id="0c54-58fb-7d4b-8244" name="Move Through Cover" publicationId="48fc-15aa-b307-9443" page="333" hidden="false">
-      <description>A Unit that includes at least one Model with the Move Through Cover Special Rule ignores the effects of Difficult Terrain and Dangerous Terrain. If called upon to take a Dangerous Terrain Test then such a Unit is assumed to automatically pass without any Dice being rolled.</description>
-    </rule>
-    <rule id="de3a-d7d0-a8a2-a8e4" name="Ordnance [X]" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
-      <description>When making a Shooting Attack with a Weapon that has the Ordnance (X) Special Rule, a modifier of x2 is applied to a Characteristic if the Model with that Weapon is part of a Unit that remained stationary in the Controlling Player&apos;s previous Movement Phase (if that Characteristic is AP, then the AP is instead changed to AP 2). The value of X in the specific variant of the Ordnance (X) Special Rule determines which Characteristics gains the x2 Modifier.</description>
-    </rule>
-    <rule id="6d57-6ce6-1bc5-36e5" name="Outflank" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
-      <description>A Unit made up entirely of Models with this Special Rule that enters play from Reserves may do so from any point on the Battlefield Edge. The Unit may not enter play from any point that is within the Opposing Player&apos;s Deployment Zone or withing 7&quot;&quot; of any enemy Model.
-
-
-Note that a Unit Embarked on a Model with the Outflank Special Rule does not need to have the Outflank Special Rule in order for the Model it is Embarked upon to benefit from it. A Model that enters the Battlefield from a point outside of the Controlling Player&apos;s Deployment Zone by means of this Special Rule, and any Units Embarked on such a Model, may not have a Charge declared for them in the Player Turn on which they enter play.</description>
-    </rule>
-    <rule name="Panic [X]" id="5e50-fc80-736f-cda4" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
-      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Leadership Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Routed Status, if the Check is passed then there is no further effect. The value of X attached to this Special Rule is applied as a negative modifier to the Leadership Characteristics of Models in the Target Unit when making Checks caused by an attack with this Special Rule. If the attack includes multiple Weapons with different variations of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
-    </rule>
-    <rule name="Phage [X]" id="24cf-93e4-6987-b91e" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
-      <description>If an attack made for a Weapon or Model with this Special Rule inflicts one or more Unsaved Wounds on a Target Unit, then once the Shooting attack or Initiative Step in which the Unsaved Wound was inflicted has been completely resolved, all remaining Models in the Unit that was the target of the attack must reduce the Characteristic that is the value of X for that variant of the Phage (X) Special Rule, but no individual Characteristic may be reduced by more than 1 by the Phage (X) Special Rule no matter how many Unsaved Wounds with any variant of that Special Rule are allocated to Models in that Unit.</description>
-    </rule>
-    <rule id="1185-553b-bda0-70cf" name="Poisoned [X]" publicationId="48fc-15aa-b307-9443" page="335" hidden="false">
-      <description>When making Wound Tests for Hits that have the Poisoned (X) Special Rule, if the result of any Dice rolled is equal to or greater than the value of X attached to the specific variant of this Special Rule then a wound is caused automatically, regardless of the Toughness Characteristic used to determine the Target Number. A Hit that has this Special Rule may still inflict a wound by passing a Wound Test as normal, instead of using this Special Rule, but never inflicts more than 1 wound if it would both pass the Wound Test and trigger the Poisoned (X) Special Rule. Wounds caused using the Poisoned (X) Special Rule retain the AP and Damage Characteristics of the Weapon and Saving Throws and Damage Mitigation Tests may be made to discard them as normal. The Poisoned (X) Special Rule has no effect on Models that have the Vehicle Type, and limited effect on Models with the Automata or Walker Types (See the Rules for Walkers and Automata in the Warhammer: The Horus Heresy - Age of Darkness Rulebook).</description>
-    </rule>
-    <rule id="aa2e-ddbb-740f-ee9c" name="Rending [X]" publicationId="48fc-15aa-b307-9443" page="336" hidden="false">
-      <description>When any Hit Test is made for an attack with the Rending (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Rending (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Rending Hit&apos;.
-
-
-When required to make a Wound Test for a Rending Hit, no Dice are rolled and the Wound Test succeeds automatically regardless of the Weapon&apos;s Strength or the Target&apos;s Toughness Characteristic. The Wound Test is treated as if the result had been &apos;6&apos; for the purposes of any Rules that would be triggered on certain results of a Wound Test. Wounds caused by a Rending Hit use the AP and Damage Characteristic of the Weapon used to make the attack and retain any Special Rules that Weapon had.
-
-
-If the Target Unit for an attack made with a Weapon that has this Special Rule includes any Models with the Vehicle Type, then this Special Rule has no effect.</description>
-    </rule>
-    <rule id="8114-a714-c55d-fd54" name="Skyfire" publicationId="48fc-15aa-b307-9443" page="337" hidden="false">
-      <description>A Hit Test made for a Weapon with the Skyfire Special Rule ignores any Rule that would require attacks made targeting an enemy Unit that contains any Models with the Flyer Sub-Type to be made as Snap Shots. Instead such an attack makes a normal Hit Test using the Ballistic Skill Characteristic of the attacking Model - this includes attacks made as part of any Reaction. A Unit that includes any Models with any Tactical Status may not benefit from the effects of this Special Rule.</description>
-    </rule>
-    <rule id="160e-08d5-20ab-ab2f" name="Template" publicationId="48fc-15aa-b307-9443" page="338" hidden="false">
-      <description>When making attacks for a Weapon or other effect that has the Template Special Rule, or otherwise uses a Template , no Hit Tests are made for the attack. Instead, when directed to make Hit Tests for such an attack, a single Template is placed to determine how many Hits are generated. A Template must be placed so that its narrow end is touching the Base of the Model, the edge of a Model&apos;s Hull (if it has the Vehicle Type) or other point being used to make the attack, and so that no part of the Template covers or touches a friendly Model&apos;s Base, Hull or otherwise would inflict Hits on a friendly Model. Within these restrictions, the Player making the attack may place the Template in an orientation of their choosing as long as at least one Model from the original Target Unit remains under the Template. If the Template cannot be placed under these restrictions, such as if it cannot be placed without covering or touching friendly Models, then no attack may be made.
-
-
-Once the Template has been placed, a number of Hits using the Profile of the Weapon or effect are inflicted on the Target Unit equal to the number of Models touched or covered by the Template. If the Weapon or attack has a Firepower Characteristic greater than 1 then only a single Model touched or covered by the Template is equal to the Firepower Characteristic of the attack or Weapon. If more than one enemy Unit has Models that are touched or covered by the Template in its final position, then Hits are inflicted on all such Units as noted above, Hits on Units other than the original target form a new Fire Group that must be placed to one side and used to resolve a separate Shooting Attack on the additional Target Unit once all attacks and Fire Groups from the original Shooting Attack have been fully resolved. When resolving Armour Penetration Tests for Hits inflicted by a Weapon with this Special Rule, the position of the Model that was used to make the attack is used to determine which Armour Facing is used.</description>
-    </rule>
-    <rule id="5fd3-921c-823c-01b9" name="Vanguard [X]" publicationId="48fc-15aa-b307-9443" page="339" hidden="false">
-      <description>A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
-
-
-
-
-    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
-
-
-    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
-
-
-
-
-Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</description>
-    </rule>
-    <rule id="0d74-4d3b-89d8-6742" name="Overload [X]" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
-      <description>When the Controlling Player declares that attacks will be made for a Model using a Weapon or Profile that has the Overload (X) Special Rule, any Hit Tests made for those attacks that result in a number that is equal to or less than the value of X attached to the variant of the Overload Special Rule that the Weapon had, before any modifiers are applied to the roll, are Misfires.
-
-
-For Weapons that do not make Hit Tests, such as Weapons with the Template Special Rule, instead roll a number of Dice equal to the Firepower Characteristic of the Weapon used to make the attack after the attack has been declared and the number of Models hit is determined. Each Dice that results in a number equal to or less than the value of X attached to the variant of the Overload Special Rule that the Weapon had creates a Misfire. This does not affect the number of Hits on the Target Unit created by this attack.
-
-
-For each Misfire, the Unit for which the Hit Tests were made suffer a Hit - these Hits must form a new Fire Group or Strike Group, referred to as the &apos;Misfire Group&apos;.
-
-
-Once the current Shooting Attack and any Reactions triggered by it have been fully resolved, the Misfire Group must be resolved. A Misfire Group is resolved in the same way as any other Fire Group or Strike Group, using the Profile of the Weapon used for the Fire Group or Strike Group it was created from. Wounds, Glancing Hits, or Penetrating Hits from this Misfire Group are allocated by the Controlling Player, and must be allocated toa Model that made attacks as part of the Fire Group or Strike Group that generated the Misfire Group. If a Hit from a Misfire Group is generated by an attack made by a Model with the Vehicle Type, then it is resolved against the lowest Armour Value from all of the Model&apos;s facings.
-
-
-Hits, Wounds, or Casualties inflicted upon a Unit as a result of this Special Rule do not cause Leadership or Cool Checks, and Hits inflicted as part of a Misfire Group do not trigger any Special Rules that take effect as a result of a certain value on a Hit Test.</description>
+While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1000,84 +1201,6 @@ Hits, Wounds, or Casualties inflicted upon a Unit as a result of this Special Ru
     <profile name="Lord of Deceit (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8332-466b-a51f-63ab">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f485-48df-b509-e5f2">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
-The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.Cost:
-
-
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.Target:
-
-
-For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.Process:
-
-
-
-
-    The Active Player continues to resolve this Shooting Attack as normal.
-
-
-    All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.
-
-
-
-</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d558-a560-792f-f693">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
-The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
-
-
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
-
-
-The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
-
-
-
-
-    Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
-
-
-    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.
-
-
-
-</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Shield Wall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0243-86d0-befb-d1a0">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
-The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.Cost:
-
-
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.Target:
-
-
-For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.Process:
-
-
-
-
-    The Active Player continues to resolve this Shooting Attack as normal.
-
-
-    All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared
-
-
-
-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1346,7 +1469,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Precision [X]" id="e2aa-a903-21c9-9a9b" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+            <infoLink name="Precision" id="e2aa-a903-21c9-9a9b" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -1364,13 +1487,17 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="2"/>
           </costs>
           <infoLinks>
-            <infoLink name="Armourbane" id="ea3c-d126-6581-9c0d" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+            <infoLink name="Lethal Hits" id="ea3c-d126-6581-9c0d" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="045e-f0f0-0c25-9a3c" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5108-f98-63c2-53cb" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
@@ -1617,7 +1744,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Support Unit" id="7729-92d6-11fd-8079" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="Sustained Hits" id="7729-92d6-11fd-8079" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -1666,7 +1793,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shred [X]" id="a312-8941-6a90-db23" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="Scouts" id="a312-8941-6a90-db23" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="9&quot;" field="name" join=" "/>
                   </modifiers>
@@ -1711,7 +1838,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="985a-b647-e243-3b3f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="Feel No Pain" id="985a-b647-e243-3b3f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="5+" field="name" join=" "/>
                   </modifiers>
@@ -1826,7 +1953,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shrouded [X]" id="5f2c-04a4-18d1-29a2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Stealth" id="5f2c-04a4-18d1-29a2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Death Incarnate (Aura)" hidden="false" id="d522-6da9-2b6e-1854">
@@ -2129,7 +2256,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="ae9d-f329-6a26-2288" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="Feel No Pain" id="ae9d-f329-6a26-2288" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -2168,7 +2295,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shred [X]" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="Scouts" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="9&quot;" field="name" join=" "/>
                   </modifiers>
@@ -2383,7 +2510,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Assault Vehicle" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Predatory Urge" hidden="false" id="3235-b0da-b04d-ef17">
@@ -2590,7 +2717,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shrouded [X]" id="ce48-cc2a-f75e-658d" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Stealth" id="ce48-cc2a-f75e-658d" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lead From The Front" hidden="false" id="774e-76a1-64d6-26ae">
@@ -2631,7 +2758,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrate [X]" id="55f1-55c1-b3a7-2f99" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="Infiltrators" id="55f1-55c1-b3a7-2f99" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Horror-hardened" hidden="false" id="3b34-7366-3e49-0716">
@@ -2756,7 +2883,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shrouded [X]" id="a276-06fd-afa7-fad0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Stealth" id="a276-06fd-afa7-fad0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heroic Constitution" hidden="false" id="e914-a455-0679-84a1">
@@ -2880,7 +3007,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="f4dc-92c4-3280-8e72" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="Feel No Pain" id="f4dc-92c4-3280-8e72" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -3117,7 +3244,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="0398-a57e-e8d9-b0a0" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                <infoLink name="Feel No Pain" id="0398-a57e-e8d9-b0a0" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
                     <modifier type="append" value="6+" field="name" join=" "/>
                   </modifiers>
@@ -3161,7 +3288,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrate [X]" id="e6d9-3e84-e61f-22f3" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="Infiltrators" id="e6d9-3e84-e61f-22f3" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="United By Adversity" hidden="false" id="e4b1-08bd-20fc-e2cc">
@@ -3508,7 +3635,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Support Unit" id="86e3-1496-abf2-6f4b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="Sustained Hits" id="86e3-1496-abf2-6f4b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="a8b4-f920-4c98-0550">
@@ -3858,7 +3985,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="4a71-e625-47ad-091f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="Feel No Pain" id="4a71-e625-47ad-091f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Drop Zone Defenders" hidden="false" id="4082-4ec3-f741-cb68">
@@ -4053,7 +4180,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shred [X]" id="6300-6e6a-5a25-e9d4" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="Scouts" id="6300-6e6a-5a25-e9d4" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
@@ -4284,7 +4411,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Firing Protocols" id="84cd-97a2-17f8-f101" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+                <infoLink name="Fights First" id="84cd-97a2-17f8-f101" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Enhanced Endurance" hidden="false" id="b2c8-aaa5-4dfb-fbe9">
@@ -4385,7 +4512,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shrouded [X]" id="e478-ecc1-acbb-cef9" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Stealth" id="e478-ecc1-acbb-cef9" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4532,7 +4659,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shrouded [X]" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Stealth" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stalwarts" hidden="false" id="6d14-584a-16d2-932c">
@@ -4676,7 +4803,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="Feel No Pain" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" hidden="false" id="9fb1-e766-6b60-793f">
@@ -4724,7 +4851,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </modifierGroup>
               </modifierGroups>
               <infoLinks>
-                <infoLink name="Assault Vehicle" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="Assault" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="bd62-2817-efff-a103">
@@ -4915,7 +5042,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shred [X]" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="Scouts" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
@@ -5119,7 +5246,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrate [X]" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+                <infoLink name="Infiltrators" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warp Focus (Psychic)" hidden="false" id="5190-d5c0-1c38-2697">
@@ -5392,7 +5519,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain [X]" id="7e23-f156-3254-c948" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                    <infoLink name="Feel No Pain" id="7e23-f156-3254-c948" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dolmen Key" hidden="false" id="5ca0-58ef-7b1f-bd83">
@@ -5484,7 +5611,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Shrouded [X]" id="f95f-dde4-6d29-5b60" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                    <infoLink name="Stealth" id="f95f-dde4-6d29-5b60" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -5811,9 +5938,9 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Armourbane" id="f8df-411c-2f49-7716" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                    <infoLink name="Support Unit" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                    <infoLink name="Precision [X]" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                    <infoLink name="Lethal Hits" id="f8df-411c-2f49-7716" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                    <infoLink name="Sustained Hits" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                    <infoLink name="Precision" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -6006,7 +6133,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Limited [X]" id="d495-11d7-00cf-4686" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                    <infoLink name="Lone Operative" id="d495-11d7-00cf-4686" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lantern of Detestation" hidden="false" id="6aa0-1222-ba18-6665">
@@ -6197,7 +6324,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Assault Vehicle" id="2feb-cf1f-0058-be49" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="Assault" id="2feb-cf1f-0058-be49" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Null-field Disruptor" hidden="false" id="dba3-045b-5786-9d39">
@@ -6696,7 +6823,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Deflagarate [X]" id="eeea-7900-bac9-d131" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="Devastating Wounds" id="eeea-7900-bac9-d131" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Gloaming Mantle" hidden="false" id="e361-55a9-8723-0118">
@@ -6742,8 +6869,8 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Shrouded [X]" id="e867-6ee3-04ca-75c7" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-                    <infoLink name="Limited [X]" id="7c9b-b292-0a2b-fea5" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                    <infoLink name="Stealth" id="e867-6ee3-04ca-75c7" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                    <infoLink name="Lone Operative" id="7c9b-b292-0a2b-fea5" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lyreth&apos;s Mirror" hidden="false" id="918e-897b-3958-8ac6">
@@ -6832,7 +6959,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain [X]" id="fc3e-81ef-fa4f-b8aa" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                    <infoLink name="Feel No Pain" id="fc3e-81ef-fa4f-b8aa" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                       <modifiers>
                         <modifier type="append" value="5+" field="name" join=" "/>
                       </modifiers>
@@ -7110,8 +7237,8 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Deflagarate [X]" id="2807-ea1e-dc0a-3d59" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                    <infoLink name="Armourbane" id="c3ee-c53d-f362-5fe5" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                    <infoLink name="Devastating Wounds" id="2807-ea1e-dc0a-3d59" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="Anti-" id="c3ee-c53d-f362-5fe5" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Exorcist&apos;s Thurible" hidden="false" id="55d0-f3d4-6890-aa99">
@@ -7157,7 +7284,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Feel No Pain [X]" id="e42a-7953-1dc6-850a" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                    <infoLink name="Feel No Pain" id="e42a-7953-1dc6-850a" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7294,7 +7421,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Support Unit" id="470d-656c-08d7-1df9" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                    <infoLink name="Sustained Hits" id="470d-656c-08d7-1df9" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                   </infoLinks>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -7738,7 +7865,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Armourbane" id="22a4-0330-7c8c-11ca" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Anti-" id="22a4-0330-7c8c-11ca" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -7778,7 +7905,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Feel No Pain [X]" id="37a1-4cee-41c4-34ad" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+                <infoLink name="Feel No Pain" id="37a1-4cee-41c4-34ad" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -8002,7 +8129,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Firing Protocols" id="4044-f647-fded-050e" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+                <infoLink name="Fights First" id="4044-f647-fded-050e" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gargantuan Rage" hidden="false" id="a4b0-aae0-e3b9-d952" sortIndex="9">
@@ -8032,7 +8159,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Support Unit" id="5516-19a9-d714-1bd8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                <infoLink name="Sustained Hits" id="5516-19a9-d714-1bd8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -8168,13 +8295,13 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Shred [X]" id="52a9-9537-ab07-2985" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                <infoLink name="Scouts" id="52a9-9537-ab07-2985" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
                   <modifiers>
                     <modifier type="append" value="6&quot;" field="name" join=" "/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Limited [X]" id="7e73-95e8-4033-d113" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
-                <infoLink name="Shrouded [X]" id="f5ef-e0bb-bd27-fbc8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Lone Operative" id="7e73-95e8-4033-d113" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+                <infoLink name="Stealth" id="f5ef-e0bb-bd27-fbc8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Nodal Map" hidden="false" id="7e66-6018-d32e-dda3">
@@ -8564,7 +8691,7 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Armourbane" id="5422-edab-3e98-ef3e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Anti-" id="5422-edab-3e98-ef3e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Inspirational Champions" hidden="false" id="2c04-6753-170b-2708">

@@ -1048,12 +1048,12 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="8bf7-8812-923d-29e4" name="4Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[PISTOL]** in their profile are known as Pistols. If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player’s Shooting phase even while it is within Engagement Range of one or more enemy units. When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. In such circumstances, a Pistol can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit. 
 
 If a model is equipped with one or more Pistols, unless it is a **^^Monster^^** or **^^Vehicle^^** model, it can either shoot with its Pistols or with all of its other ranged weapons. Declare whether such a model will shoot with its Pistols or its other ranged weapons before selecting targets.</description>
     </rule>
-    <rule id="8367-374c-f87-c627" name="Hazardous" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+    <rule id="8367-374c-f87-c627" name="4Hazardous" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[HAZARDOUS]** in their profile are known as Hazardous weapons. Each time a unit is selected to shoot or fight, after that unit has resolved all of its attacks, for each Hazardous weapon that targets were selected for when resolving those attacks, that unit must take one Hazardous test. To do so, roll one D6: on a 1, that test is failed. For each failed test you must resolve the following sequence (resolve each failed test one at a time): 
 
 ■ If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons. 
@@ -1064,7 +1064,7 @@ If a model was selected, that unit suffers 3 mortal wounds and when allocating t
 
 If a unit from a player’s army is selected as the target of the Fire Overwatch Stratagem in their opponent’s Charge phase, any mortal wounds inflicted by Hazardous tests are allocated after the charging unit has ended its Charge move.</description>
     </rule>
-    <rule id="b4dd-3e1f-41cb-218f" name="Leader" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+    <rule id="b4dd-3e1f-41cb-218f" name="4Leader" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are destroyed (pg 12), it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack successfully wounds an Attached unit, that attack cannot be allocated to a Character model in that unit, even if that Character model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to Character models in that unit.
 
 Each time the last model in a Bodyguard unit is destroyed, each CHARACTER unit that is part of that Attached unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
@@ -1073,120 +1073,377 @@ Each time the last model in a CHARACTER unit that is attached to a Bodyguard uni
 
 Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.</description>
     </rule>
-    <rule id="be1e-ac8e-1e2c-3528" name="Devastating Wounds" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+    <rule id="be1e-ac8e-1e2c-3528" name="4Devastating Wounds" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[DEVASTATING WOUNDS]** in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>
       <alias>DEVASTATING WOUNDS</alias>
     </rule>
-    <rule id="fc8a-8c24-bae9-cc1c" name="Assault" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="fc8a-8c24-bae9-cc1c" name="4Assault" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[ASSAULT]** in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
     </rule>
-    <rule id="115b-79dc-f723-d761" name="Extra Attacks" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+    <rule id="115b-79dc-f723-d761" name="4Extra Attacks" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[EXTRA ATTACKS]** in their profile are known as Extra Attacks weapons. Each time the bearer of one or more Extra Attacks weapons fights, it makes attacks with each of the Extra Attacks melee weapons it is equipped with and it makes attacks with one of the melee weapons it is equipped with that does not have the [EXTRA ATTACKS] ability (if any). The number of attacks made with an Extra Attacks weapon cannot be modified by other rules, unless that weapon’s name is explicitly specified in that rule.</description>
     </rule>
-    <rule id="cf93-ad4d-2f08-a79d" name="Twin-linked" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="cf93-ad4d-2f08-a79d" name="4Twin-linked" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
     </rule>
-    <rule id="4111-82e3-9444-e942" name="Anti-" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+    <rule id="4111-82e3-9444-e942" name="4Anti-" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
     </rule>
-    <rule id="1897-c22c-9597-12b1" name="Sustained Hits" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+    <rule id="1897-c22c-9597-12b1" name="4Sustained Hits" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[SUSTAINED HITS X]** in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, if a Critical Hit is rolled, that attack scores a number of additional hits on the target as denoted by ‘x’</description>
       <alias>SUSTAINED HITS</alias>
     </rule>
-    <rule id="1202-10a8-78e9-4c67" name="Heavy" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+    <rule id="1202-10a8-78e9-4c67" name="4Heavy" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[HEAVY]** in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model’s unit Remained Stationary this turn, add 1 to that attack’s Hit roll.</description>
     </rule>
-    <rule id="7cdb-fb99-44a9-8849" name="Melta" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+    <rule id="7cdb-fb99-44a9-8849" name="4Melta" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[MELTA X]** in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
     </rule>
-    <rule id="9bf4-280f-bbe2-6fbb" name="Feel No Pain" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
+    <rule id="9bf4-280f-bbe2-6fbb" name="4Feel No Pain" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
       <description>Some models have &apos;Feel No Pain x+&apos; listed in their abilities. Each time a model with this ability suffers damage and so would lose a wound (including wounds lost due to mortal wounds), roll one D6: if the result is greater than or equal to the number denoted by &apos;x: that wound is ignored and is not lost. If a model has more than one Feel No Pain ability, you can only use one of those abilities each time that model suffers damage and so would lose a wound.</description>
     </rule>
-    <rule id="6c1f-1cf7-ff25-c99e" name="Blast" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+    <rule id="6c1f-1cf7-ff25-c99e" name="4Blast" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[BLAST]** in their profile are known as Blast weapons, and they make a random number of attacks. Each time you determine how many attacks are made with a Blast weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model’s army (including its own unit).</description>
     </rule>
-    <rule id="9143-31ae-e0a6-6007" name="Precision" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+    <rule id="9143-31ae-e0a6-6007" name="4Precision" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[PRECISION]** in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a Character model in that unit is visible to the attacking model, the attacking model’s player can choose to have that attack allocated to that Character model instead of following the normal attack sequence.</description>
     </rule>
-    <rule id="4ddd-4e29-acdd-5e6d" name="Indirect Fire" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+    <rule id="4ddd-4e29-acdd-5e6d" name="4Indirect Fire" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[INDIRECT FIRE]** in their profile are known as Indirect Fire weapons, and attacks can be made with them even if the target is not visible to the attacking model. These attacks can destroy enemy models in a target unit even though none may have been visible to the attacking unit when you selected that target.
 
 
 If no models in a target unit are visible to the attacking unit when you select that target, then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, subtract 1 from that attack’s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack. Weapons with the **[TORRENT]** ability cannot be fired using the **[INDIRECT FIRE]** ability.</description>
     </rule>
-    <rule id="2ebc-abdf-8129-6c57" name="Lance" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="2ebc-abdf-8129-6c57" name="4Lance" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[LANCE]** in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack’s Wound roll.</description>
     </rule>
-    <rule id="d1d1-611e-5191-1095" name="Lethal Hits" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="d1d1-611e-5191-1095" name="4Lethal Hits" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[LETHAL HITS]** in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target.</description>
       <alias>LETHAL HITS</alias>
     </rule>
-    <rule id="4640-43e7-30b-215a" name="Ignores Cover" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="4640-43e7-30b-215a" name="4Ignores Cover" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[IGNORES COVER]** in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack.</description>
     </rule>
-    <rule id="c5c8-8b58-b8b6-7786" name="Rapid Fire" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="c5c8-8b58-b8b6-7786" name="4Rapid Fire" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[RAPID FIRE X]** in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half that weapon’s range, the Attacks characteristic of that weapon is increased by the amount denoted by ‘x’.</description>
     </rule>
-    <rule id="5edf-d619-23e0-9b56" name="Torrent" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+    <rule id="5edf-d619-23e0-9b56" name="4Torrent" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[TORRENT]** in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.</description>
     </rule>
-    <rule id="ada6-bac1-ffe0-d6f7" name="Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+    <rule id="ada6-bac1-ffe0-d6f7" name="4Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>Some units have ‘Scouts x&quot;’ listed in their abilities. If every model in a unit has this ability, then at the start of the first battle round, before the first turn begins, it can make a Normal move of up to x&quot;, with the exception that, while making that move, the distance moved by each model in that unit can be greater than that model&apos;s Move characteristic, as long as it is not greater than x&quot;. 
 
 DEDICATED TRANSPORT models can make use of any Scouts x&quot; ability listed in their abilities, or a Scouts x&quot; ability that a unit that starts the battle embarked within that DEDICATED TRANSPORT  model has (provided only models with this ability are embarked within that Dedicated Transport model), regardless of how that embarked unit gained this ability (e.g. listed in their abilities, conferred by an Enhancement or by an attached Character, etc.). 
 
 A unit that moves using this ability must end that move more than 9&quot; horizontally away from all enemy models. If both players have units that can do this, the player who is taking the first turn moves their units first.</description>
     </rule>
-    <rule id="c05d-f4c3-f091-4938" name="Infiltrators" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+    <rule id="c05d-f4c3-f091-4938" name="4Infiltrators" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9&quot; horizontally away from the enemy deployment zone and all enemy models.</description>
     </rule>
-    <rule id="7cb5-dd6b-dd87-ad3b" name="Deep Strike" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+    <rule id="7cb5-dd6b-dd87-ad3b" name="4Deep Strike" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>During the Declare Battle Formations step, if every model in a unit has this ability, you can set it up in Reserves instead of setting it up on the battlefield. If you do, in the Reinforcements step of one of your Movement phases you can set up this unit anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.
 
 If a unit with the Deep Strike ability arrives from Strategic Reserves, the controlling player can choose for that unit to be set up either using the rules for Strategic Reserves or using the Deep Strike ability.</description>
     </rule>
-    <rule id="b68a-5ded-65ac-98c" name="Deadly Demise" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
+    <rule id="b68a-5ded-65ac-98c" name="4Deadly Demise" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
       <description>Some models have &apos;Deadly Demise x&apos; listed in their abilities. When such a model is destroyed, roll one D6 before removing it from play (if such a model is a TRANSPORT, roll before any embarked models disembark). On a 6, each unit within 6&quot; of that model suffers a number of mortal wounds denoted by &apos;x&apos; (if this is a random number, roll separately for each unit within 6&quot;).</description>
     </rule>
-    <rule id="bec5-4288-34a6-ccfa" name="Stealth" publicationId="48fc-15aa-b307-9443" page="20" hidden="false">
+    <rule id="bec5-4288-34a6-ccfa" name="4Stealth" publicationId="48fc-15aa-b307-9443" page="20" hidden="false">
       <description>If every model in a unit has this ability, then each time a ranged attack is made against it, subtract 1 from that attack’s Hit roll.</description>
     </rule>
-    <rule id="5e13-1624-d280-418d" name="Super-Heavy Walker" hidden="false">
+    <rule id="5e13-1624-d280-418d" name="4Super-Heavy Walker" hidden="false">
       <description>Each time a model with this ability makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and sections of terrain features that are 4&quot; or less in height. 
 When doing so:
 - It can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them.
 - It can also move through sections of terrain features that are more than 4&quot; in height, but if it does, after it has moved, roll one D6: on a 1, that model is Battle-shocked.</description>
     </rule>
-    <rule id="a8a0-8fe7-898-e0f3" name="Lone Operative" publicationId="48fc-15aa-b307-9443" page="19" hidden="false">
+    <rule id="a8a0-8fe7-898-e0f3" name="4Lone Operative" publicationId="48fc-15aa-b307-9443" page="19" hidden="false">
       <description>Unless part of an Attached unit, this unit can only be selected as the target of a ranged attack if the attacking model is within 12&quot;.</description>
     </rule>
-    <rule id="eec5-5f54-9c03-c305" name="Hover" publicationId="48fc-15aa-b307-9443" page="53" hidden="false">
+    <rule id="eec5-5f54-9c03-c305" name="4Hover" publicationId="48fc-15aa-b307-9443" page="53" hidden="false">
       <description>Some **^^Aircraft^^** models have &apos;Hover&apos; listed in their abilities. When you are instructed to Declare Battle Formations, before doing anything else, you must first declare which models from your army with this ability will be in Hover mode.
 
 If a model is in Hover mode, then until the end of the battle, its Move characteristic is changed to 20&quot;, it loses the **^^Aircraft^^** keyword and it loses all associated rules for being an **^^Aircraft^^** model. Models in Hover mode do not start the battle in Reserves, but you can choose to place them into Strategic Reserves following the normal rules if you wish.</description>
     </rule>
-    <rule id="24-c886-e8ba-5a89" name="Fights First" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
+    <rule id="24-c886-e8ba-5a89" name="4Fights First" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
       <description>Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability.</description>
     </rule>
-    <rule id="e9c4-2bb8-12ee-cd1b" name="Psychic" publicationId="48fc-15aa-b307-9443" page="38" hidden="false">
+    <rule id="e9c4-2bb8-12ee-cd1b" name="4Psychic" publicationId="48fc-15aa-b307-9443" page="38" hidden="false">
       <description>Some weapons and abilities can only be used by **^^Psykers^^**. Such weapons and abilities are tagged with the word &apos;Psychic&apos;. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack.</description>
     </rule>
-    <rule id="13b2-6518-dab3-7ea1" name="Firing Deck" page="17" hidden="false">
+    <rule id="13b2-6518-dab3-7ea1" name="4Firing Deck" page="17" hidden="false">
       <description>Some **^^Transport^^** models have ‘Firing Deck x’ listed in their abilities. Each time such a model is selected to shoot in the Shooting phase, you can select up to ‘x’ models embarked within it whose units have not already shot this phase. Then, for each of those embarked models, you can select one ranged weapon that embarked model is equipped with (excluding weapons with the **[ONE SHOT]** ability). Until that **^^Transport^^** model has resolved all of its attacks, it counts as being equipped with all of the weapons you selected in this way, in addition to its other weapons. Until the end of the phase, those selected models’ units are not eligible to shoot.</description>
     </rule>
-    <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
+    <rule id="cd26-1611-860a-91e4" name="4One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
-    <rule name="Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
+    <rule name="4Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
       <description>Models with the Bulky [X] Ability take up X spaces when inside a transport and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
     </rule>
-    <rule name="Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="32">
+    <rule name="4Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="32">
       <description>Units with this Ability provide a negative modifier to Leadership Tests equal to X to Enemy Units within 6&quot;</description>
     </rule>
-    <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
+    <rule name="4Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
       <description>Weapons with **[PINNING]** in their profile are known as Pinning weapons. After a Unit makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Enemy Unit must succeed on a Leadership test or become Pinned until the end of your Opponent&apos;s Turn.
 
 While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it</description>
+    </rule>
+    <rule name="Armourbane" id="9ff9-792a-c539-5ad7" hidden="false" publicationId="48fc-15aa-b307-9443" page="326">
+      <description>A Weapon with this Special Rule is an &apos;Armourbane Weapon&apos;
+When making Armour Penetration Tests for an Armourbane Weapon, a result that is equal to, or grater than, the target Armour Value inflicts a Penetrating Hit. An Armourbane Weapon can never inflict a Glancing Hit, and any Rule that would force them to do so instead inflicts a Penetrating Hit.</description>
+    </rule>
+    <rule name="Assault Vehicle" id="9572-5c6c-cfe0-1e77" hidden="false" publicationId="48fc-15aa-b307-9443" page="326">
+      <description>A Unit that is Disembarked from another Model that has the Assault Vehicle Special Rule may have a Charge declared for it in the Charge Sub-Phase of the same Player Turn without being forced to make a Disordered Charge.</description>
+    </rule>
+    <rule name="Auto-Repair [X]" id="5097-a49f-fd7a-aeb8" hidden="false" publicationId="48fc-15aa-b307-9443" page="326">
+      <description>If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</description>
+    </rule>
+    <rule name="Barrage [X]" id="6588-b4d9-0338-b007" hidden="false" page="326">
+      <description>If a Unit for which a Shooting attack is made includes any Models with one or more Barrage Weapons, then in Step 2 of the Shooting Attack process they may ignore the restriction on requiring Line of Sight to a Target Unit. If a Player uses Barrage to declare a Shooting Attack on a Unit that the attacking Unit cannot draw a Line of Sight to, then in Step 3 of the Shooting Attack process that Player may only declare attacks with Weapons that have this Special Rule.
+
+
+
+If a Barrage Weapon with the Blast (X) Special Rule is used to attack a Unit without a Line of Sight to that Unit, then no Hit Test is made and an Indirect Scatter Roll must be made for the Blast Marker placed as part of the attack. If such a Weapon makes more than a single attack then a separate Indirect Scatter Roll is made for each attack. When making an Indirect Scatter Roll for such an attack, the number of Dice rolled alongside the Scatter Dice is determined by the value of X for the Weapon with the Barrage (X) Special Rule, the value of these Dice is then totalled to find the distance the attack Scatters.</description>
+    </rule>
+    <rule name="Battlesmith [X]" id="5806-94d7-e43c-6bf5" hidden="false" page="326">
+      <description>In the Controlling Player&apos;s Movement Phase as the Active Player, when a Model with the Battlesmith (X) Special Rule has been selected, but either before or after it has been moved, the Controlling Player of that Model may activate this Special Rule. Once activated, the Controlling Player of the Model with the Battlesmith (X) Special Rule hereafter referred to as the &apos;Acting Model&apos;, must select one friendly Model within 6&quot;&quot; of the Acting Model. The Model selected must have the Vehicle, Automata, or Walker Type and is hereafter referred to as the &apos;Target Model&apos;. Once a Target Model has been selected, the Player controlling the Acting Model must make an Intelligence Check for the Acting Model.
+
+
+If the Check is failed there is no further effect, but if the Check is passed then the Player controlling the Acting Model may select one of the following options:
+
+
+
+
+    Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+
+    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.
+
+
+
+
+Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.</description>
+    </rule>
+    <rule name="Blast [X]" id="6da9-8b75-82b3-c8d6" hidden="false" page="327">
+      <description>When making attacks with a Weapon that has the Blast (X) Special Rule, before any Hit Tests are made, a Blast Marker must first be placed to determine how many Hits may be inflicted by the attack. The Player making the attack must place the Blast Marker indicated in brackets as part of the Special Rule so that the hole in the middle is entirely over the base of any one model in the Target Unit. Once the blast Marker has been placed, the Player making the attack must make a Hit Test for the attack, and each Model from the Target Unit that is fully or partially under the Blast Marker will suffer 1 Hit if the Hit Test is successful.
+
+
+Hits on Other Units
+If any Models form Units other than the Target Unit are fully or partially covered by the Blast Marker, then a new Fire Group must be created for those Hits and set to one side. Continue resolving the Shooting Attack on the original Target Unit, and once that Shooting Attack has been completely resolved begin a new Shooting Attack to resolve those additional Fire Groups generated for Units other than the original Target Unit.
+
+
+If the Hit Test is unsuccessful then no Hits are inflicted and the Player making the attack must make a Scatter Roll for the Blast Marker (see the Rules for Scatter in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). Once a Scatter Roll has been made for the Blast Marker and it has been moved, one Hit is inflicted on a Unit for each Model from that Unit that is wholly or partially covered by the Blast Marker.</description>
+    </rule>
+    <rule name="Breaching [X]" id="71d1-7c66-c8ef-2a7c" hidden="false" page="327">
+      <description>When any Wound Test is made for an attack with the Breaching (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Breaching (X) Special Rule, then if a wound is inflicted by that Wound Test, that wound becomes a &apos;Breaching Wound&apos;.
+
+
+A Breaching Wound is always treated as having an AP of 2 regardless of the Characteristics of the Weapon used to make the attack.</description>
+    </rule>
+    <rule name="Bulky [X]" id="1b80-a31e-2799-3a05" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
+      <description>A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</description>
+    </rule>
+    <rule name="Critical Hit [X]" id="371f-f3b6-41b2-8337" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
+      <description>When any Hit Test is made for an attack with the Critical Hit (X) Special Rule, if the result of the Dice Roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Critical Hit (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Critical Hit&apos;.
+
+
+A Critical Hit automatically inflicts a wound without any dice being rolled, counting as the roll of a &apos;6&apos; for any variable Special Rules that might be triggered by a Wound Test, and increases the Damage of the Hit by +1.</description>
+    </rule>
+    <rule name="Deep Strike" id="63d7-88b8-443d-dbb6" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
+      <description>A Unit that includes only Models with the Deep Strike Special Rule that enters play from Reserves may make a Deep Strike instead of deploying a described in the Reserves Rules. No more than one Unit may attempt a Deep Strike in a given Player Turn. The Unit attempting a Deep Strike may have another Unit without the Deep Strike Special Rule Embarked Upon it if the Deep Striking Unit includes models with the Transport Sub-Type (note that some Missions may allow more Units to attempt a Deep Strike in the same Player Turn. This will be specifically noted in the Mission Special Rules section of that Mission.) Note that in Missions where the Reserves Mission Special Rule is not in use, the Deep Strike Special Rule has no effect. Furthermore, Units may not make use of the Deep Strike Special Rule during the first Battle Turn, even if they enter play from Reserves.
+
+
+To perform a Deep Strike, the Active Player must declare an Eligible Unit that has entered play from Reserves in the Reserves Sub-Phase as the Deep Striking Unit. The Active Player must then select one Model from that Unit and place it anywhere on the Battlefield. This Model must be placed at least 1&quot;&quot; away from any enemy Model, Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and withing 6&quot;&quot; of the first Model placed. No Models may be placed within 1&quot;&quot; of an enemy Model, any Battle Field Edge or a piece of Impassable Terrain. Any Models that cannot be placed using these Rules must be Removed as a Casualty immediately. This deployment must take place during the Reserve Sub-Phase, and a Unit that deploys as a Deep Strike may not move in the Move Sub-Phase of the same Player Turn or have a Charge declared for it in the Charge Sub-Phase of the same Player Turn, but may make Shooting Attacks as normal. A Unit that is Embarked on a Model that is deployed as part of a Deep Strike may Disembark during the Move Sub-Phase of the same Player Turn, but may not make any move other than the move made to Disembark and may not have a Charge declared for it in the Charge Sub-Phase of the same Player Turn.
+
+
+Enemy Units may declare Intercept Reactions against a Unit deployed as part of a Deep Strike, but not Reposition Reactions.</description>
+    </rule>
+    <rule name="Deflagarate [X]" id="120c-56fc-32c0-6453" hidden="false" publicationId="48fc-15aa-b307-9443" page="329">
+      <description>At the end of Step 9 of the Shooting Attack process for any Fire Group or Strike Group that includes Weapons with the Deflagrate (X) Special Rule, create a new Fire Group or Strike Group that must then be selected in Step 10 and resolved. This new Fire Group or Strike Group includes a number of Hits equal to the number of Unsaved Wounds caused by the Fire Group or Strike Group that triggered its creation. These Hits all have a Strength equal to the value of X attached to the variant of Deflagrate (X) Special Rule possessed by Weapons in the preceding Fire Group or Strike Group, an AP of &apos;-&apos;, a Damage of 1 and no Special Rules.</description>
+    </rule>
+    <rule name="Detonation" id="c4aa-f48a-8c62-2836" hidden="false" publicationId="48fc-15aa-b307-9443" page="329">
+      <description>A Weapon or attack with this Special Rule may only be selected during Step 2 of any Combat in the Fight Sub-Phase if the Unit making attacks I only Locked in Combat with enemy Units composed of Models with the Vehicle Type and Models with a Movement Characteristic of &apos;-&apos;. If a Unit Locked in Combat with any enemy Units that include any Models that do not have the Vehicle Type or a Movement Characteristic of &apos;0&apos; or &apos;-&apos; then no Model may use a Weapon or other attack that has this Special Rule.
+
+
+A Weapon or other attack with this Special Rule may also be used to make attacks targeting a Model with the Building Type or a Terrain Piece that has a Toughness or Armour Characteristic.</description>
+    </rule>
+    <rule name="Duellist&apos;s Edge [X]" id="d556-bb60-fb92-ac00" hidden="false" publicationId="48fc-15aa-b307-9443" page="329">
+      <description>In Step 3 of the Challenge Sub-Phase, the Focus Step, if a Player has declared that the Model under their control will use a Weapon with the Duellist&apos;s Edge (X) Special Rule or has the Duellist&apos;s Edge (X) Special Rule, then that Player gains a bonus equal to the value of X on the Focus Roll.</description>
+    </rule>
+    <rule name="Eternal Warrior [X]" id="c3f2-d00c-706c-dbaa" hidden="false" publicationId="48fc-15aa-b307-9443" page="329">
+      <description>When a Model with the Eternal Warrior (X) Special Rule is allocated an Unsaved Wound, the Damage of the Unsaved Wound is reduced by the value of X attached o the specific variant of the Eternal Warrior (X) Special Rule. The effects of this Special Rule cannot reduce the Damage of an Unsaved Wound to less than 1, regardless of the value of X.</description>
+    </rule>
+    <rule name="Expendable [X]" id="5d29-3acf-e8da-5527" hidden="false" publicationId="48fc-15aa-b307-9443" page="329">
+      <description>The number of Victory Points scored by the opponent when a Unit that includes only Models with this Special Rule is entirely Removed as Casualties, for example, as part of the Vanguard (X) Special Rule, First Strike (X) or Slay the Warlord (X) Mission Special Rule, is reduced by the value of X, to a minimum of 1. If a Unit includes Models with different variants of this Special Rule, then the lowest value of X that was present on any Model in that Unit at the start of the Player Turn in which the last Model in the Unit is Removed as a Casualty is used to determine the effect of this Special Rule on that Unit.
+
+
+Note that, if, at the start of the Player Turn a Unit includes any Models that do not have this Special Rule, then this Special Rule has no effect on that Unit for the duration of that Player Turn regardless of how many other Models in the Unit may have any variant of this Special Rule.</description>
+    </rule>
+    <rule name="Explodes [X]" id="c1c8-8ad0-cda6-adae" hidden="false" publicationId="48fc-15aa-b307-9443" page="330">
+      <description>Before a Model with the Explodes (X) Special Rule is Removed as a Casualty, the Controlling Player must roll a Dice. If the result of that roll equals or exceeds the value of X attached to this variant of the Explodes (X) Special Rule, the Model explodes. Every Unit with one or more models within 6&quot; of an exploding Model suffers a number of Hits equal to the Base Wounds Characteristic of Base Hull Points Characteristic of the exploding Model. Each such Hit has a Strength of 8, an AP of &apos;-&apos;, and a Damage of 1. Once all Hits caused by this Special Rule have been resolved, the Model with the Explodes (X) Special Rule is Removed as a Casualty as normal.</description>
+    </rule>
+    <rule name="Fast [X]" id="43bd-036d-5a23-07ec" hidden="false" publicationId="48fc-15aa-b307-9443" page="330">
+      <description>When the Player controlling a Unit that is composed entirely of Models with the Fast Special Rule elects to have that Unit Rush, add the value of X to the distance the Unit can move. Likewise, when a Unit composed entirely of Models with the Fast Special Rule is required to make a Charge Move, add X to the Charge Roll. If there are multiple variants of Fast in a Unit, the lowest is used.</description>
+    </rule>
+    <rule name="Fear [X]" id="2ff0-5a29-67e8-3a16" hidden="false" publicationId="48fc-15aa-b307-9443" page="330">
+      <description>When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X) Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 12&quot; of any Model with the Fear (X) Special Rule. If a Unit would be affected by multiple instances of the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier.</description>
+    </rule>
+    <rule name="Feel No Pain [X]" id="3adb-ef17-9b73-dd6a" hidden="false" publicationId="48fc-15aa-b307-9443" page="330">
+      <description>A Model with the Feel No Pain (X) Special Rule gains a Feel No Pain Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process or Step 8 of the Initiative Step of the Fight Sub-Phase process to discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Feel No Pain Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
+    </rule>
+    <rule name="Firing Deck" id="56a1-363a-abd5-d85c" hidden="false" page="17">
+      <description>Some **^^Transport^^** models have ‘Firing Deck x’ listed in their abilities. Each time such a model is selected to shoot in the Shooting phase, you can select up to ‘x’ models embarked within it whose units have not already shot this phase. Then, for each of those embarked models, you can select one ranged weapon that embarked model is equipped with (excluding weapons with the **[ONE SHOT]** ability). Until that **^^Transport^^** model has resolved all of its attacks, it counts as being equipped with all of the weapons you selected in this way, in addition to its other weapons. Until the end of the phase, those selected models’ units are not eligible to shoot.</description>
+    </rule>
+    <rule name="Firing Protocols" id="94a5-ed51-244c-c66b" hidden="false" publicationId="48fc-15aa-b307-9443" page="331">
+      <description>A Model with the Firing Protocols (X) Special Rule that makes attacks as part of a Shooting Attack, may make attacks with a number of Weapons equal to the value of X attached to the specific variant of the Firing Protocols (X) Special Rule. The Model must have more than one Ranged Weapon to make use of this Special Rule and may not use the same Weapon more than once in the same Shooting Attack.</description>
+    </rule>
+    <rule name="Force [X]" id="e070-309d-b64a-c2b9" hidden="false" publicationId="48fc-15aa-b307-9443" page="331">
+      <description>When selected to be used as part of a Combat or Shooting Attack, a Willpower Check may be made for the Model that will use this Weapon to make attacks. If it is successful then the Characteristic listed as X is doubled (if that Characteristic is AP, then the AP is instead changed to AP 2). If a double is rolled when making this Willpower Check then the Model using the Weapon to make attacks suffers Perils of the Warp.</description>
+    </rule>
+    <rule name="Hatred [X]" id="26e1-97b4-6a01-9fa1" hidden="false" publicationId="48fc-15aa-b307-9443" page="331">
+      <description>When Locked in Combat, or Engaged in a Challenge, with any enemy Models that have the Type or Trait that is the value of X, then all Models with this variant of the Hatred (X) Special Rule gain a bonus of +1 to all Wound Tests made in that Combat.</description>
+    </rule>
+    <rule name="Heavy [X]" id="a47e-9194-f346-638f" hidden="false" publicationId="48fc-15aa-b307-9443" page="331">
+      <description>When making a Shooting Attack with a Weapon that has the Heavy (X) Special Rule, a modifier of +1 is added to a Characteristic if the Model with that Weapon is part of a Unit that remained Stationary in the Controlling Player’s previous Movement Phase. If the Characteristic listed is AP, then instead it improves the AP by one Step. The value of X in the specific variant of the Heavy (X) Special Rule determines which Characteristic gains the +1 modifier.</description>
+    </rule>
+    <rule name="Heedless" id="fef9-aada-1005-6de8" hidden="false" publicationId="48fc-15aa-b307-9443" page="332">
+      <description>A Unit that includes any Models with this Special Rule cannot Control or Contest any Object Marker - this overrides any other Rule or Special Rule that may apply to the Unit regardless of the source of the Rule or effect.</description>
+    </rule>
+    <rule name="Impact [X]" id="86ab-16ff-a13a-feff" hidden="false" publicationId="48fc-15aa-b307-9443" page="332">
+      <description>If a Unit that includes any Models with the Impact (X) Special Rule or any Models that have any Weapons with the Impact (X) Special Rule, and that Unit makes a successful Charge, then this Special Rule is triggered. Once triggered, until the end of that Assault Phase, when making Melee Attacks for Models in that Unit, each Model or Weapon that is selected for one of those Models, that has a variant of this Special Rule, gains a modifier of +1 to any Characteristics that is the value of X.</description>
+    </rule>
+    <rule name="Infiltrate [X]" id="3c27-c1a7-cf76-6d6f" hidden="false" publicationId="48fc-15aa-b307-9443" page="332">
+      <description>At the start of a Mission, when deploying Units, the Controlling Player of a Unit that is composed entirely of Models with the Infiltrate (X) Special Rule may choose to deploy that Unit outside of that Player’s Deployment Zone. That Unit may be deployed anywhere that is either in the Controlling Player’s Deployment Zone or outside of the Opposing Player’s Deployment Zone and is at least a number of inches equal to the highest value of X attached to any variant of the Infiltrate (X) Special Rule in that Unit away from any Enemy Model.
+
+
+Units deployed using the Infiltrate (X) Special Rule are deployed at the same time as other Units under a Player’s control, unless the specific Rules of a given Mission state otherwise. The Infiltrate (X) Special Rule only has an effect when deploying Units before the start of the First Turn of a Battle, and Units deploying on the Battlefield after the First Turn has begun gain no benefit from this Special Rule. A Unit that is deployed outside of the Controlling Player’s Deployment Zone by means of this Special Rule may not have a Charge declared for in the Firs Battle Turn.</description>
+    </rule>
+    <rule name="Light Transport" id="d101-1af2-18eb-1fbc" hidden="false" publicationId="48fc-15aa-b307-9443" page="332">
+      <description>Models that have any variant of Bulky may not Embark on a Model with this Special Rule.</description>
+    </rule>
+    <rule name="Limited [X]" id="cce9-4c79-c2c6-54d0" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
+      <description>A Limited Weapon can only be used X times per Battle</description>
+    </rule>
+    <rule name="Line [X]" id="f4b1-6054-27f0-1d14" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
+      <description>If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
+
+
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
+    </rule>
+    <rule name="Melta" id="a308-380a-3eeb-fc1b" hidden="false" publicationId="48fc-15aa-b307-9443" page="26">
+      <description>Weapons with **[MELTA X]** in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
+    </rule>
+    <rule name="Move Through Cover" id="0c54-58fb-7d4b-8244" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
+      <description>A Unit that includes at least one Model with the Move Through Cover Special Rule ignores the effects of Difficult Terrain and Dangerous Terrain. If called upon to take a Dangerous Terrain Test then such a Unit is assumed to automatically pass without any Dice being rolled.</description>
+    </rule>
+    <rule name="Officer of the Line [X]" id="e0c5-841b-43f8-db28" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
+      <description>If a Model with this Special Rule is selected to fill a Command Slot in any Detachment in the Crusade Force Organization Chart, then the Controlling Player may select a number of Auxiliary Detachments equal to the value of X in the specific variant of this Special Rule instead of just one.</description>
+    </rule>
+    <rule name="Ordnance [X]" id="de3a-d7d0-a8a2-a8e4" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
+      <description>When making a Shooting Attack with a Weapon that has the Ordnance (X) Special Rule, a modifier of x2 is applied to a Characteristic if the Model with that Weapon is part of a Unit that remained stationary in the Controlling Player&apos;s previous Movement Phase (if that Characteristic is AP, then the AP is instead changed to AP 2). The value of X in the specific variant of the Ordnance (X) Special Rule determines which Characteristics gains the x2 Modifier.</description>
+    </rule>
+    <rule name="Outflank" id="6d57-6ce6-1bc5-36e5" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
+      <description>A Unit made up entirely of Models with this Special Rule that enters play from Reserves may do so from any point on the Battlefield Edge. The Unit may not enter play from any point that is within the Opposing Player&apos;s Deployment Zone or withing 7&quot;&quot; of any enemy Model.
+
+
+Note that a Unit Embarked on a Model with the Outflank Special Rule does not need to have the Outflank Special Rule in order for the Model it is Embarked upon to benefit from it. A Model that enters the Battlefield from a point outside of the Controlling Player&apos;s Deployment Zone by means of this Special Rule, and any Units Embarked on such a Model, may not have a Charge declared for them in the Player Turn on which they enter play.</description>
+    </rule>
+    <rule name="Overload [X]" id="0d74-4d3b-89d8-6742" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
+      <description>When the Controlling Player declares that attacks will be made for a Model using a Weapon or Profile that has the Overload (X) Special Rule, any Hit Tests made for those attacks that result in a number that is equal to or less than the value of X attached to the variant of the Overload Special Rule that the Weapon had, before any modifiers are applied to the roll, are Misfires.
+
+
+For Weapons that do not make Hit Tests, such as Weapons with the Template Special Rule, instead roll a number of Dice equal to the Firepower Characteristic of the Weapon used to make the attack after the attack has been declared and the number of Models hit is determined. Each Dice that results in a number equal to or less than the value of X attached to the variant of the Overload Special Rule that the Weapon had creates a Misfire. This does not affect the number of Hits on the Target Unit created by this attack.
+
+
+For each Misfire, the Unit for which the Hit Tests were made suffer a Hit - these Hits must form a new Fire Group or Strike Group, referred to as the &apos;Misfire Group&apos;.
+
+
+Once the current Shooting Attack and any Reactions triggered by it have been fully resolved, the Misfire Group must be resolved. A Misfire Group is resolved in the same way as any other Fire Group or Strike Group, using the Profile of the Weapon used for the Fire Group or Strike Group it was created from. Wounds, Glancing Hits, or Penetrating Hits from this Misfire Group are allocated by the Controlling Player, and must be allocated toa Model that made attacks as part of the Fire Group or Strike Group that generated the Misfire Group. If a Hit from a Misfire Group is generated by an attack made by a Model with the Vehicle Type, then it is resolved against the lowest Armour Value from all of the Model&apos;s facings.
+
+
+Hits, Wounds, or Casualties inflicted upon a Unit as a result of this Special Rule do not cause Leadership or Cool Checks, and Hits inflicted as part of a Misfire Group do not trigger any Special Rules that take effect as a result of a certain value on a Hit Test.</description>
+    </rule>
+    <rule name="Panic [X]" id="5e50-fc80-736f-cda4" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
+      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Leadership Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Routed Status, if the Check is passed then there is no further effect. The value of X attached to this Special Rule is applied as a negative modifier to the Leadership Characteristics of Models in the Target Unit when making Checks caused by an attack with this Special Rule. If the attack includes multiple Weapons with different variations of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+    </rule>
+    <rule name="Phage [X]" id="24cf-93e4-6987-b91e" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
+      <description>If an attack made for a Weapon or Model with this Special Rule inflicts one or more Unsaved Wounds on a Target Unit, then once the Shooting attack or Initiative Step in which the Unsaved Wound was inflicted has been completely resolved, all remaining Models in the Unit that was the target of the attack must reduce the Characteristic that is the value of X for that variant of the Phage (X) Special Rule, but no individual Characteristic may be reduced by more than 1 by the Phage (X) Special Rule no matter how many Unsaved Wounds with any variant of that Special Rule are allocated to Models in that Unit.</description>
+    </rule>
+    <rule name="Pinning [X]" id="3d1a-b8b0-930a-d39d" hidden="false" publicationId="48fc-15aa-b307-9443" page="334">
+      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Pinned Status, if the Check is passed then there is no further effect. The value of the X attached to this Special Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+    </rule>
+    <rule name="Pistol" id="7ddb-8578-0bbf-029f" hidden="false" publicationId="48fc-15aa-b307-9443" page="335">
+      <description>During Step 3 of any Shooting Attack, a Player may choose to have a Model under their control make attacks with two Weapons rather than one if both Weapons have the Pistol Special Rule.</description>
+    </rule>
+    <rule name="Poisoned [X]" id="1185-553b-bda0-70cf" hidden="false" publicationId="48fc-15aa-b307-9443" page="335">
+      <description>When making Wound Tests for Hits that have the Poisoned (X) Special Rule, if the result of any Dice rolled is equal to or greater than the value of X attached to the specific variant of this Special Rule then a wound is caused automatically, regardless of the Toughness Characteristic used to determine the Target Number. A Hit that has this Special Rule may still inflict a wound by passing a Wound Test as normal, instead of using this Special Rule, but never inflicts more than 1 wound if it would both pass the Wound Test and trigger the Poisoned (X) Special Rule. Wounds caused using the Poisoned (X) Special Rule retain the AP and Damage Characteristics of the Weapon and Saving Throws and Damage Mitigation Tests may be made to discard them as normal. The Poisoned (X) Special Rule has no effect on Models that have the Vehicle Type, and limited effect on Models with the Automata or Walker Types (See the Rules for Walkers and Automata in the Warhammer: The Horus Heresy - Age of Darkness Rulebook).</description>
+    </rule>
+    <rule name="Precision [X]" id="136e-fa7c-23e5-edb0" hidden="false" publicationId="48fc-15aa-b307-9443" page="335">
+      <description>When any Hit Test is made for an attack with the Precision (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or great than the value of X attached to this variant of the Precision (X) Special Rule, then if a Hit is inflicted by that roll, that Hit becomes a &apos;Precision Hit&apos;.
+
+
+These Precision Hits must form a separate Fire Group or Strike Group. Wound Tests are made as normal for Precision Hits and cause Precision wounds. In Step 8 of the Shooting Attack process or Step 7 of the Initiative Step sequence, when selecting a Target Model for a Fire Group or Strike Group that is made up of Precision wounds, the Target Model is not selected using the normal Rules. Instead the attacking Player chooses which Model in the Target Unit will be the Target Model, and may select any Model that is a part of that Unit.
+
+
+Note that Models Engaged in a Challenge cannot use this Special Rule to allocate Hits to any Model other than the enemy Model that is Engaged in the same Challenge and that any attacks which are made as Snap Shots, or for Weapons or attacks that have either the Blast (X) , Barrage (X), Template or Reaping Blow (X) Special Rules, may never trigger the Precision (X) Special Rule no matter what the result of the Hit Test is.</description>
+    </rule>
+    <rule name="Reaping Blow [X]" id="da32-5ba3-09cd-ce68" hidden="false" publicationId="48fc-15aa-b307-9443" page="336">
+      <description>If a Model is outnumbered in Combat and either has this Special Rule or is made to attack with a Weapon that has this Special Rule, then that Model gains a bonus to its Attacks Characteristic equal to the value of X attached to the variant of this Special Rule it has access to. To be considered outnumbered, the total number of friendly Models Locked in Combat in the same Combat must be less than the total number of enemy Models Locked in Combat in the same Combat - Models with the Bulky (X) Special Rule count as a number of Models equal to the value of X in the Variant of the Bulky (X) Special Rule that Model has. This Special Rule has no effect during the Challenge Sub-Phase, and no Model that is Engaged in a Challenge may gain additional Attacks due to this Special Rule.</description>
+    </rule>
+    <rule name="Rending [X]" id="aa2e-ddbb-740f-ee9c" hidden="false" publicationId="48fc-15aa-b307-9443" page="336">
+      <description>When any Hit Test is made for an attack with the Rending (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Rending (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Rending Hit&apos;.
+
+
+When required to make a Wound Test for a Rending Hit, no Dice are rolled and the Wound Test succeeds automatically regardless of the Weapon&apos;s Strength or the Target&apos;s Toughness Characteristic. The Wound Test is treated as if the result had been &apos;6&apos; for the purposes of any Rules that would be triggered on certain results of a Wound Test. Wounds caused by a Rending Hit use the AP and Damage Characteristic of the Weapon used to make the attack and retain any Special Rules that Weapon had.
+
+
+If the Target Unit for an attack made with a Weapon that has this Special Rule includes any Models with the Vehicle Type, then this Special Rule has no effect.</description>
+    </rule>
+    <rule name="Shock [X]" id="48b2-777f-b668-2846" hidden="false" publicationId="48fc-15aa-b307-9443" page="336">
+      <description>When making a Hit Test for a Weapon with this Special Rule against a Target Unit that includes any Models with the Vehicle Type or Walker Type, the result of the Hit Test before any modifiers are applied must be checked. If any Hit Test for a Weapon with the Shock (X) Special Rule results in a &apos;5&apos; or &apos;6&apos; before any modifiers are applied, then all Models with the Vehicle Type or Walker Type in the Target Unit gain a Status at the end of Step 11 of the Shooting Attack process or Step 10 of the Initiative Step process. The Status gained in indicated by the value of X attached to that variant of the Shock (X) Special Rule. If the Model already has the stated Status or the attack would apply the Status multiple times there is no additional effect and this Special Rule never causes a Model to lose Wounds or Hull Points. Hits inflicted by a Weapon with this Special Rule must still have Wound Tests or Armour Penetration Tests made for them, and are not discarded if they trigger this Special Rule.</description>
+    </rule>
+    <rule name="Shred [X]" id="8668-b512-ce91-aa45" hidden="false" publicationId="48fc-15aa-b307-9443" page="336">
+      <description>When any Wound Test is made for an attack with the Shred (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Shred (X) Special Rule, then if a wound is inflicted by that Wound Test , the Damage of that wound is increased by 1. Note that the Shred (X) Special Rule may only be triggered by a Wound Test and has no effect when making an Armour Penetration Test.</description>
+    </rule>
+    <rule name="Shrouded [X]" id="7a30-15e2-38e3-2fd3" hidden="false" publicationId="48fc-15aa-b307-9443" page="337">
+      <description>A Model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Shrouded Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
+    </rule>
+    <rule name="Skyfire" id="8114-a714-c55d-fd54" hidden="false" publicationId="48fc-15aa-b307-9443" page="337">
+      <description>A Hit Test made for a Weapon with the Skyfire Special Rule ignores any Rule that would require attacks made targeting an enemy Unit that contains any Models with the Flyer Sub-Type to be made as Snap Shots. Instead such an attack makes a normal Hit Test using the Ballistic Skill Characteristic of the attacking Model - this includes attacks made as part of any Reaction. A Unit that includes any Models with any Tactical Status may not benefit from the effects of this Special Rule.</description>
+    </rule>
+    <rule name="Stun [X]" id="e9cc-c19f-fb3e-f982" hidden="false" page="337">
+      <description>If a Shooting Attack made for a Weapon or Model with this Special Rules inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Stunned Status. The value of X is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an Attack with this Special Rule</description>
+    </rule>
+    <rule name="Support Unit" id="02dd-604c-ed2a-08c9" hidden="false" publicationId="48fc-15aa-b307-9443" page="337">
+      <description>A Unit that includes any Models with the Support Unit (X) Special Rule may only ever score a maximum number of Victory Points equal to the value of X for Controlling an Objective, regardless of the Value of that Objective, or any other Special Rules Models in that Unit might have (such as the Line (X) Special Rule).</description>
+    </rule>
+    <rule name="Suppressive [X]" id="8204-12ce-2a4b-8071" hidden="false" publicationId="48fc-15aa-b307-9443" page="338">
+      <description>If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Suppressed Status, and if the Check is passed then there is no further effect. The value of X attached to this Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+    </rule>
+    <rule name="Template" id="160e-08d5-20ab-ab2f" hidden="false" publicationId="48fc-15aa-b307-9443" page="338">
+      <description>When making attacks for a Weapon or other effect that has the Template Special Rule, or otherwise uses a Template , no Hit Tests are made for the attack. Instead, when directed to make Hit Tests for such an attack, a single Template is placed to determine how many Hits are generated. A Template must be placed so that its narrow end is touching the Base of the Model, the edge of a Model&apos;s Hull (if it has the Vehicle Type) or other point being used to make the attack, and so that no part of the Template covers or touches a friendly Model&apos;s Base, Hull or otherwise would inflict Hits on a friendly Model. Within these restrictions, the Player making the attack may place the Template in an orientation of their choosing as long as at least one Model from the original Target Unit remains under the Template. If the Template cannot be placed under these restrictions, such as if it cannot be placed without covering or touching friendly Models, then no attack may be made.
+
+
+Once the Template has been placed, a number of Hits using the Profile of the Weapon or effect are inflicted on the Target Unit equal to the number of Models touched or covered by the Template. If the Weapon or attack has a Firepower Characteristic greater than 1 then only a single Model touched or covered by the Template is equal to the Firepower Characteristic of the attack or Weapon. If more than one enemy Unit has Models that are touched or covered by the Template in its final position, then Hits are inflicted on all such Units as noted above, Hits on Units other than the original target form a new Fire Group that must be placed to one side and used to resolve a separate Shooting Attack on the additional Target Unit once all attacks and Fire Groups from the original Shooting Attack have been fully resolved. When resolving Armour Penetration Tests for Hits inflicted by a Weapon with this Special Rule, the position of the Model that was used to make the attack is used to determine which Armour Facing is used.</description>
+    </rule>
+    <rule name="Twin-linked" id="4e8a-961f-c7b0-c4ba" hidden="false" publicationId="48fc-15aa-b307-9443" page="25">
+      <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
+    </rule>
+    <rule name="Vanguard [X]" id="5fd3-921c-823c-01b9" hidden="false" publicationId="48fc-15aa-b307-9443" page="339">
+      <description>A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+
+
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+
+
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

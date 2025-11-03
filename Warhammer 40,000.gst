@@ -543,36 +543,20 @@
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
       <categoryLinks>
         <categoryLink id="d5de-ee57-ad4b-e4b7" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
-        <categoryLink id="16fc-8e39-ee82-cf96" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
-        <categoryLink id="c932-1176-dc9-b390" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f08b-2179-601f-9af" type="min"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="f08b-2179-601f-9af">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bdc0-c0d-72d7-87e2" shared="true" id="1fe4-8f37-4c24-271"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="880c-c7e-4a43-a0c1" shared="true" id="f16a-b2cd-1da5-4050"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink id="b3ba-1e1a-a92d-60d2" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
-        <categoryLink id="6d77-b79d-3ccb-6bf6" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink id="f5d5-b603-69b3-411c" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink id="6503-057c-cb62-badb" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
-        <categoryLink id="87ea-37d2-7b40-c708" name="Beast" hidden="false" targetId="4c3e-9310-a516-3590" primary="false"/>
-        <categoryLink id="8e39-465e-7cfc-3085" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
-        <categoryLink id="2c76-65c5-bad0-8208" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
-        <categoryLink id="8243-857b-2133-8887" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
-        <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
-        <categoryLink id="9198-c35d-71cd-eea3" name="Fortification" hidden="false" targetId="19d7-9c74-2140-5851" primary="false"/>
-        <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
-        <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="HH3-0 Lord of War" hidden="false" id="bb05-cb9d-0d01-0b34" targetId="876c-9691-cd73-0502"/>
+        <categoryLink name="HH3-0 Warlord" hidden="false" id="697c-5f96-b031-5c70" targetId="8f3c-6f46-1ee4-507a"/>
+        <categoryLink name="HH3-1 High Command" hidden="false" id="f86a-86af-02b4-c456" targetId="ba9c-84df-1ce6-c776"/>
+        <categoryLink name="HH3-2 Command" hidden="false" id="b8cb-06e8-ae39-52b5" targetId="0904-6f98-6fff-5dce"/>
+        <categoryLink name="HH3-3 Retinue" hidden="false" id="4637-e274-6ea2-80dd" targetId="3fac-e5cf-dd97-83a3"/>
+        <categoryLink name="HH3-4 Elites" hidden="false" id="20ad-378c-15a1-2a91" targetId="e8e8-aa94-352b-b9c8"/>
+        <categoryLink name="HH3-5 Troops" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
+        <categoryLink name="HH3-6 Support" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
+        <categoryLink name="HH3-8 Recon" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
+        <categoryLink name="HH3-9 Fast Attack" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
+        <categoryLink name="HH3-10 Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
+        <categoryLink name="HH3-11 Heavy Transport" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
+        <categoryLink name="HH3-12 Armour" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
+        <categoryLink name="HH3-13 War-Engine" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="78" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="79" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -523,6 +523,21 @@
     <categoryEntry name="Faction: Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
     <categoryEntry name="Faction: Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
     <categoryEntry name="Faction: Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
+    <categoryEntry id="876c-9691-cd73-0502" name="HH3-0 Lord of War" hidden="false"/>
+    <categoryEntry id="8f3c-6f46-1ee4-507a" name="HH3-0 Warlord" hidden="false"/>
+    <categoryEntry id="ba9c-84df-1ce6-c776" name="HH3-1 High Command" hidden="false"/>
+    <categoryEntry id="0904-6f98-6fff-5dce" name="HH3-2 Command" hidden="false"/>
+    <categoryEntry id="3fac-e5cf-dd97-83a3" name="HH3-3 Retinue" hidden="false"/>
+    <categoryEntry id="fcaf-ba1e-6089-a427" name="HH3-8 Recon" hidden="false"/>
+    <categoryEntry id="7118-6f6e-f38b-effc" name="HH3-5 Troops" hidden="false"/>
+    <categoryEntry id="e8e8-aa94-352b-b9c8" name="HH3-4 Elites" hidden="false"/>
+    <categoryEntry id="abf8-839e-3eec-5784" name="HH3-9 Fast Attack" hidden="false"/>
+    <categoryEntry id="156b-b843-fb2a-372b" name="HH3-10 Transport" hidden="false"/>
+    <categoryEntry id="1b26-4f05-3cd3-c517" name="HH3-13 War-Engine" hidden="false"/>
+    <categoryEntry id="4f24-53bb-d3c2-f854" name="HH3-6 Support" hidden="false"/>
+    <categoryEntry id="6f29-635a-b3d7-321a" name="HH3-7 Heavy Assault" hidden="false"/>
+    <categoryEntry id="e1f4-4d21-8e8b-ced1" name="HH3-11 Heavy Transport" hidden="false"/>
+    <categoryEntry id="46ab-9d40-180a-231e" name="HH3-12 Armour" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">

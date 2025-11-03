@@ -513,13 +513,13 @@ by 1.</characteristic>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson weapons" id="af7f-ea16-bb95-a1ed" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e" sortIndex="2">
+            <selectionEntryGroup name="Sponson weapons" id="af7f-ea16-bb95-a1ed" hidden="false" defaultSelectionEntryId="none" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="338d-2f3a-e46a-e447"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b7-b00-6ac8-f41b"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="338d-2f3a-e46a-e447"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c0b7-b00-6ac8-f41b"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Two Heavy Bolters" id="4ce6-236f-894f-91aa" hidden="false">
+                <selectionEntryGroup name="Two Heavy Bolters" id="4ce6-236f-894f-91aa" hidden="false" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="d307-34b9-3380-de4b" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
@@ -529,7 +529,7 @@ by 1.</characteristic>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Two Heavy Flamers" id="862f-1d10-5ae4-8010" hidden="false">
+                <selectionEntryGroup name="Two Heavy Flamers" id="862f-1d10-5ae4-8010" hidden="false" sortIndex="2">
                   <entryLinks>
                     <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="b098-6ffb-a30d-d82e" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
@@ -539,7 +539,7 @@ by 1.</characteristic>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Two Volkite Culverins" id="b937-d25e-0c37-0bff" hidden="false">
+                <selectionEntryGroup name="Two Volkite Culverins" id="b937-d25e-0c37-0bff" hidden="false" sortIndex="4">
                   <entryLinks>
                     <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="285a-1f54-a3d5-a7b1" type="selectionEntry" targetId="46fc-921a-5488-72ff">
                       <constraints>
@@ -549,7 +549,7 @@ by 1.</characteristic>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Two Lascannons" id="ec9c-260c-5714-143f" hidden="false">
+                <selectionEntryGroup name="Two Lascannons" id="ec9c-260c-5714-143f" hidden="false" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="887b-4aa9-ee11-ee35" type="selectionEntry" targetId="2104-d210-1cc8-5910">
                       <constraints>
@@ -575,56 +575,47 @@ by 1.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="6e0e-95f7-3db6-c91c" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e74-78aa-afd8-fb6a-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e74-78aa-afd8-fb6a-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e74-78aa-afd8-fb6a"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="3447-b297-416d-8e95" type="selectionEntry" targetId="9ce7-8734-f3ed-8600">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03a-4ce6-2ea1-c469-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03a-4ce6-2ea1-c469-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03a-4ce6-2ea1-c469"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="b8cc-d790-53c1-af58" type="selectionEntry" targetId="dc35-b9c9-5814-e278">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7693-b731-67e7-a589-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7693-b731-67e7-a589-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7693-b731-67e7-a589"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="a183-0f5b-f524-3e1f" type="selectionEntry" targetId="932d-479b-29d9-66e5">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eae-dd97-59b1-d92d-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eae-dd97-59b1-d92d-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eae-dd97-59b1-d92d"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="abfa-8af9-ce64-2393" type="selectionEntry" targetId="af53-1947-d7e1-70cb">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="564f-56fa-ee25-9187-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="564f-56fa-ee25-9187-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="564f-56fa-ee25-9187"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="07a9-7736-b2e8-bb23" type="selectionEntry" targetId="3b9d-c39d-544c-eee1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c25-c742-be5b-a722-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c25-c742-be5b-a722-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c25-c742-be5b-a722"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="da53-1dce-8932-3368" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f0c-a368-f1ad-20c6-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f0c-a368-f1ad-20c6-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f0c-a368-f1ad-20c6"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="7877-17a7-5050-818f" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0614-3f74-85bc-3697-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0614-3f74-85bc-3697-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0614-3f74-85bc-3697"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="8013-5e98-a87c-a80f" type="selectionEntry" targetId="baaa-ce78-fca1-3572">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34e6-6db3-6fa8-c605-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34e6-6db3-6fa8-c605-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34e6-6db3-6fa8-c605"/>
                   </constraints>
                 </entryLink>
               </entryLinks>

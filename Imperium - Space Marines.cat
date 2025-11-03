@@ -418,10 +418,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Leader" type="rule" id="fbce-2cd6-5a2e-ad36" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Astartes Banner" hidden="false" type="profile" id="2518-a891-3e93-cf7e" targetId="4873-996f-a8a2-bcb1"/>
-        <infoLink name="Oath of Moment" hidden="false" type="rule" id="cc6e-fb7-411d-1491" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Templar Vows" id="4666-a96d-daf7-8f2c" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="3ca6-7594-661a-263b" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
@@ -455,7 +452,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="98db-fff3-b1b2-e22f">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="b5a9-e1ca-f5ee-44ff" primary="false" name="Faction: Adeptus Astartes"/>
@@ -484,16 +486,20 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="ec88-2045-1b9e-3868" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="a6d9-40da-3746-8488" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="a6d9-40da-3746-8488" hidden="false" defaultSelectionEntryId="none">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d79-6853-a3e5-89ff"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="629a-7ca3-942b-ae0"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="ea7c-8a6f-3243-c2ae" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
                 <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="857e-b816-c55c-c19d" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
                 <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="bcd9-ff24-c648-c45b" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="f2cb-1144-24ec-2b87" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="f2cb-1144-24ec-2b87" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="6079-91ff-019a-7e44" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="9d15-cd74-206d-04af" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="f0a7-628a-a097-75b4" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="b1f7-66a6-dafd-fc82" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="7d2a-25fc-7a15-fc0e" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponson Weapons" id="af7f-ea16-bb95-a1ed" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
@@ -546,7 +552,26 @@ You can attach this model to one of the above units even if one Captain, Chapte
             </selectionEntryGroup>
             <selectionEntryGroup name="Centreline" id="dcb6-d784-f483-18b7" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="2aef-baa3-45de-274b" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="2aef-baa3-45de-274b" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3144-528b-5e79-a4e7-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3144-528b-5e79-a4e7-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wargear Options" id="4d62-9009-b1ad-3036" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="WR - MS Hunter-Killer Missile" hidden="false" id="5189-0e16-e81c-414e" type="selectionEntry" targetId="49a2-e607-462c-9ce8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4844-2c40-669e-bbf4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Searchlights" hidden="false" id="e0c3-9d01-87ea-424f" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9580-6a6d-13f5-51fd"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2333,8 +2358,8 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Anti-" id="6aee-b4ca-d292-c4f2" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-        <infoLink name="4Lone Operative" id="1035-7159-5bcd-21b3" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Limited [X]" id="6aee-b4ca-d292-c4f2" hidden="false" type="rule" targetId="cce9-4c79-c2c6-54d0"/>
+        <infoLink name="Armourbane" id="1035-7159-5bcd-21b3" hidden="false" type="rule" targetId="9ff9-792a-c539-5ad7"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="afff-ffc9-f33b-3844" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3475,644 +3500,818 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <categoryLink name="Ranged Weapon" hidden="false" id="7ff7-7013-524d-5eaf" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="ac7c-0c4e-e442-f439">
+    <selectionEntry type="model" import="true" name="0 Typhon Heavy Siege Tank" hidden="false" id="71e6-fb89-4b5f-ded8">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="f9f4-cde7-0d64-9dbb" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="cc96-07ea-fefa-1242" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="c241-a1be-3327-9aee" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="bd6c-2e9a-75d6-05d5" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="661f-be6f-e1e1-37ee" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="0a8a-a184-7048-81a6" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="c5bb-974f-02b8-5ac0" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="fb10-8448-b2bd-1b9b" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4a57-e386-3918-3862" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="93bd-4743-0fcb-ab5a" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a76e-bf72-6799-8649" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b271-d6ea-821f-9d14" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bbf5-227d-e31e-922e" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="458f-63aa-f8f0-3caf" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="791f-c891-e209-1c73" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c6fc-4633-0695-f42f" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e65c-4ce3-388a-1109">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9116-2b25-d254-17fa">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe3d-1b5c-9cd9-ecfb">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc2a-cac1-8990-0685">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="98df-f66d-549f-e304" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="4fcf-baa3-9c73-8ae8" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="687e-bb64-609f-d6c6" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="ecc9-aca9-1a14-a7fb" hidden="false" defaultSelectionEntryId="none">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8753-28e0-287c-a598"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea9d-ba38-c329-d7b4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb4-ddbf-3f07-b951"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="8482-f4ab-5895-c1b3" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="74cd-c670-ff71-e29e" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="5bed-c53f-a361-58cb" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="fa77-c548-7715-9c21" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="520d-2b23-dc46-315a" type="selectionEntry" targetId="baaa-ce78-fca1-3572" sortIndex="9"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="fa29-a3bb-1bc6-44c8" type="selectionEntry" targetId="dc35-b9c9-5814-e278" sortIndex="4"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="2c0a-9d70-b46b-a9f3" type="selectionEntry" targetId="9ce7-8734-f3ed-8600" sortIndex="2"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="51d1-6eac-6f21-40af" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720" sortIndex="8"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="8f3a-b46f-ea40-4853" type="selectionEntry" targetId="650c-b3c0-1b76-9004" sortIndex="1"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="fe0b-9811-e7c7-b90f" type="selectionEntry" targetId="d9be-bdff-9885-9f6d" sortIndex="7"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="6fa6-4a77-ffbc-fafd" type="selectionEntry" targetId="af53-1947-d7e1-70cb" sortIndex="5"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="ea3e-a399-dce9-625b" type="selectionEntry" targetId="3b9d-c39d-544c-eee1" sortIndex="6"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="b794-d622-a5c5-0326" type="selectionEntry" targetId="932d-479b-29d9-66e5" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="fb4b-7b76-e9ee-fb9e" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="063a-0754-5022-087f" hidden="false" defaultSelectionEntryId="ad9f-eb77-ff76-8d38">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="301b-6a15-41b4-ef38"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb98-2f80-5023-eb02"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d2e-4c10-4f7f-9c23"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9413-8027-599f-442f"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="735e-8d4f-07fe-fcad">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="ad9f-eb77-ff76-8d38" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="71f4-cd13-315d-d4a2" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="d979-e69c-34ab-ff15" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4ffb-f21a-6edf-73b5-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4ffb-f21a-6edf-73b5-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4c0d-ed68-c492-4835"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22e2-8cfd-d48c-8cea"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="047b-e5ef-ef5e-3765">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="d99f-2972-73fd-259d" sortIndex="2">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="af9d-497f-6ac8-91a3" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="1df9-52d8-54a2-cc39" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0090-cd0f-be54-f0eb-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0090-cd0f-be54-f0eb-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6553-8007-d2dd-6dde"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="99f3-c59d-c142-d348"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="8795-d4ed-12bd-5c3a"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="58a2-cf7c-a5ea-c1a1"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="8dcb-c50b-0264-2c00" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="ed6b-7df8-e8be-4f7f" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bad6-6196-2705-b996"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eea6-046c-7e4f-eba2"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="f10d-32d9-470d-fcab" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="b4da-f9f7-1712-213b" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="353a-1231-fef7-0868"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a618-c03a-d115-1420"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="c222-d3a3-6a89-3011" hidden="false">
+            <selectionEntryGroup name="Centreline" id="8155-d8f5-6ac1-9c23" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="1aef-1f6a-5f28-652b" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - AC Dreadhammer Siege Cannon" hidden="false" id="d33f-ead7-4482-6063" type="selectionEntry" targetId="6ccb-cd80-9436-302e">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cc7-30e1-d3ec-f723"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cd0-858a-bf01-91e3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wargear Options" id="25db-0da7-7013-c931" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="WR - MS Hunter-Killer Missile" hidden="false" id="15f6-f546-8eb7-a8ff" type="selectionEntry" targetId="49a2-e607-462c-9ce8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa08-57c8-9891-b70d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Searchlights" hidden="false" id="790a-a286-dcb2-8d2b" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1b5-dc0c-2129-733f"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Smokescreen" id="13a6-dacd-5d36-cc7c" hidden="false" type="profile" targetId="f6f3-7a32-8350-7e34"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="0 Glaive Super Heavy Special Weapons Tank" hidden="false" id="cd15-95ff-0b23-31f0">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="650"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="5758-9362-1e59-f52f" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="2c92-d59a-d9db-3643" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="30bf-2d53-6c17-d7d8" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="43ab-b407-1317-af52" primary="true" name="HH3-0 Lord of War"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0d46-e6c5-af32-3995" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="5d98-f34d-301c-9576" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="3feb-fac4-cce2-9a17" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c01d-44aa-1109-bd47" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Glaive" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fc61-deec-ed50-1764">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-13-12</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">18</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="5c1e-51f3-785d-f4d6" hidden="false" sortIndex="2">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pintle Weapon" id="bfee-38df-4cbb-7c5d" hidden="false" defaultSelectionEntryId="none">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e10-4f9f-6bc5-77cc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9ff-8d80-1700-81b5"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="54ad-dff9-09e8-693b" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="1a25-1ad2-b32e-16e6" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="ef68-8659-c386-0a1b" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="a379-d4b9-58f4-87bf" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="57a1-2031-9f65-6fb4" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="21cb-9408-fc32-b20f" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="63a2-c65e-1ab2-f98f" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="7c66-9824-588c-812b" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="0318-7daf-d686-7149" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson Weapons" id="9403-2ff5-08f1-e6ed" hidden="false" defaultSelectionEntryId="2dac-29fd-f7af-0cb0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5606-dd9c-1ed3-14c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec84-be2a-24ea-fc2c"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannon Arrays" hidden="false" id="2dac-29fd-f7af-0cb0" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon Array" hidden="false" id="2952-e0a2-f558-8e47" type="selectionEntry" targetId="f33b-daa0-87ed-f7dc">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b546-69a1-1628-e456"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7c33-83af-0529-f79a"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Laser Destroyers" hidden="false" id="770a-d8d8-371c-f45c" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Laser Destroyer" hidden="false" id="611a-5c3a-84cb-cb6c" type="selectionEntry" targetId="5c0e-2fba-909f-c6d7">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5e15-e9fa-c4a7-94e1"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f53c-7e44-891e-4162"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Gravis Heavy Bolter Batteries" hidden="false" id="c95a-63aa-5f9b-bc6c" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - BW Gravis Heavy Bolter Battery" hidden="false" id="8f9d-dc27-011e-08b3" type="selectionEntry" targetId="123a-78e0-4461-3824">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="26da-a1fc-ac4f-5ac5"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dd21-b514-0afe-36d4"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Turret" id="9048-330d-e191-0720" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="WR - VK Volkite Carronade" hidden="false" id="2f4f-f761-546d-5b11" type="selectionEntry" targetId="6322-6abe-40df-93cc">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fb9-fae4-e2dd-1347"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72d-8590-9cfb-1a90"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hull (Front)" id="8429-500b-7b7d-4700" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c94-79e1-b3f8-a602"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f53-6612-c363-5803"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="980c-817a-f20f-02aa" type="selectionEntry" targetId="d9be-bdff-9885-9f6d" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7469-3ed7-1732-82a0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="5b25-6bc3-fdee-a29d" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ef-30b0-e098-b3fb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wargear Options" id="74d7-eace-f0b8-f7d5" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="WR - MS Hunter-Killer Missile" hidden="false" id="9523-ed97-4be4-4af7" type="selectionEntry" targetId="49a2-e607-462c-9ce8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8a-e599-414b-1c67"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Searchlights" hidden="false" id="69bc-cd26-149e-fd55" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9051-25f9-0ce7-2663"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="27a4-5913-8660-933e">
+    <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="b595-1515-8df3-78e4">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="1d90-26da-2823-25de" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="efc5-79e7-e9f6-f11a" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="55db-f123-1ec0-8417" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="26cf-9e09-1a3a-6780" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="dbf5-af17-83b2-e9a7" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="d12e-933a-b2b2-51ca" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="1c01-ae82-4007-91d7" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="08d6-5085-c553-41a3" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="757c-0e93-61d5-bd73" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="65dc-3fe6-e639-b44d" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="967a-6a33-ffb3-d745" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5cbd-7519-4afd-8922" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="64f1-f9c1-909b-6fe6" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="b70c-8290-4208-c320" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="6a58-7a2f-ccca-91d2" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="856d-3dd6-fc14-1a13" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cd3f-ef77-bc99-c23c">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="35c4-63be-5c61-6778">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5105-734d-096a-11be">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d74e-68df-50ef-8796">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="879f-a27b-2d2d-4670" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="e8b4-6d13-cd0d-f2d6" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="6aab-21ec-4696-ed23" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="0d1b-5eb2-f2d5-eeb1" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5530-45da-1c15-bed2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02f-643a-c0ae-23b6"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b234-ecf5-5420-9614"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8a7-a95b-7786-6af5"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="03a6-0414-a7a8-7865" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="6acd-a0dc-06ed-74bd" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="c13c-be22-3837-9cc8" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="ef23-f7a8-50ec-c388" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="8706-efca-738a-337e" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="288d-6ddc-e9aa-a173" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="0659-e46c-8f49-9d38" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="baff-ba5a-c585-7fb7" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="abfd-032e-8999-ee4b" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="b54d-15b4-4feb-869b" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="fd2f-bcd2-573b-236c" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="c519-8edd-5b4e-5b1b" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="53d7-287d-4f94-6c69" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="f029-3e05-b9c9-588e" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="3f52-362e-2f33-9c07" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f63-e78e-cc26-cbee"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6698-72a8-b8bb-f6c9"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec5c-2c32-b9b7-8216"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f42c-d65f-d2e2-bbfa"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="9bd4-c96c-cb28-cfd4">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="c9c7-faed-d750-b617">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="90e3-4038-8d29-9078" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="d999-d3d4-6839-9446" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="403d-80ac-7036-0045-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="403d-80ac-7036-0045-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d7bd-4527-03b1-d3df"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e20-0d5c-ba9b-cfed"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="cf27-80ab-5cc4-87ea">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="2126-22fe-9eab-f90c">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="7d5b-20da-f3a0-c12d" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="b7de-d30e-bac1-5fd0" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0c83-7e70-f0dc-6e6e-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c83-7e70-f0dc-6e6e-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a036-087a-0748-fd04"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa26-379a-5dbe-4858"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="ac5a-6f50-d0fd-8c67"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="3f81-5557-d2c0-8ce2"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="9b8c-de0f-4d8c-4a68">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="45c8-d4fc-a428-0200" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cb87-e79c-3f28-d424"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b99-b12b-bd20-dca4"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="825e-92d5-fc11-564e">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="8659-76b3-851a-4fc9" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b9bb-833b-18ea-17cb"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b4af-2a82-795c-3f04"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="faa2-20a6-294e-efba" hidden="false">
+            <selectionEntryGroup name="Centreline" id="48b9-efb4-48dc-3fc5" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="c7ff-4865-5c16-119e" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="97be-f910-6afb-3b8d" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e9a-5597-a75f-3e6b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18af-5cdc-b563-abe7"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="21d7-7118-5156-0949">
+    <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="a82e-63c4-ab8e-44d2">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="acf4-1736-8222-3604" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="eb8d-37cd-5aee-9444" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="3685-2ecf-30db-0a65" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="e8ee-7832-fada-6931" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="3806-383c-36f4-5e24" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="de24-5aa0-f6cc-180c" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="3fea-4e09-8dd8-ff02" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="03d0-ced8-c4ae-03a5" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7379-7d82-b950-21af" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="cf05-4972-82ae-1dfe" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4e50-ff65-b44e-833c" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5e46-b6b3-fee4-0100" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="49ac-011d-fd8b-8630" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="97e5-670a-87fe-3325" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f335-d831-b4dd-87f5" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="ede2-daac-c646-fd39" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="906e-c453-d1cc-b9ef">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4af7-a200-4aa7-58e8">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="65cb-a939-70cc-ac15">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b824-d966-ed03-6859">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="5709-f3db-d511-7bab" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="cb0c-ee6b-7fab-1847" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="4190-f473-caef-daac" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="89d5-a364-e2e6-583a" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41d8-75cb-c441-c199"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60c3-71af-1520-8697"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eea-a002-f903-f44b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="066e-cb29-2c6b-a306"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="eedf-0dc4-dccc-2a2d" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="6e0b-f13c-4896-4250" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="597d-4088-4adf-f464" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="6750-9974-cd5e-c0af" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="bf82-be5a-1911-52a2" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="3715-ee85-78f5-57c2" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="86ef-2a34-771d-3f07" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="a654-a459-04ee-35b3" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="2ed8-7be3-7cf4-a281" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="8e70-2a98-1a5c-5401" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="725b-118d-f0b8-baab" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="dc64-e5aa-98c3-be15" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="b85e-55b9-8f24-5fd6" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="5036-db94-8cb8-8079" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="a212-185e-9755-1ca6" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="931f-ed35-6ba6-8a05"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6de6-05af-0b3d-d4c5"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="147a-8907-0f9a-ec02"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd4d-33f4-3927-98c2"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="2e4e-352a-ecaa-7abf">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="b6cb-9cf9-6f4d-aca5">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="0781-9433-a1e2-6c58" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="f41e-ca55-25fe-0157" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a50d-15fc-edf4-2369-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a50d-15fc-edf4-2369-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e2c0-4009-0109-7aad"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f22-ff0e-3f78-4943"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="8f4e-d9d6-9121-ec70">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="8b0f-eb2c-9aae-6804">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="0ed6-814c-4ae3-3f3d" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="c328-c211-3f34-6171" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="885e-e814-9aa1-42f3-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="885e-e814-9aa1-42f3-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8fdc-1bd4-46ad-d9f7"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8d8d-fd39-eb9f-8160"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="36a0-4398-88ae-db20"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="0fae-5a53-2272-f267"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="8f36-33c7-ed3d-a181">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="ad5c-af7c-7266-c593" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fccd-b395-4ed8-b74f"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5ceb-f471-6f92-ba51"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="e345-9c97-5187-5adf">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="0239-cd7a-a87a-ea70" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7cbf-c18b-d56d-2e64"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2a5-c98a-0e10-da96"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="7cdd-213c-d6d1-affc" hidden="false">
+            <selectionEntryGroup name="Centreline" id="d387-68ed-ce24-9056" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="6155-8cc9-7d00-3236" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="6c6c-09fe-6f80-ffe1" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="521b-896a-5adc-1f02"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f6-5267-ca03-e5eb"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="b1b7-c112-3bd8-0199">
+    <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="b466-d269-603b-7abe">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="d8cd-42de-4ed6-bf4e" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="a517-93e5-b2a3-31cc" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="e586-222e-559c-c224" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="5eff-9a1d-6efa-a02e" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="63f2-e871-f18b-5a89" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="7b39-3756-d497-5d69" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="48d7-cb46-0a10-46d4" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="5f4c-793e-5bf5-b36c" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1380-c79c-0216-8760" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="626b-eb8b-f932-c10f" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="d058-bf06-6b55-1af0" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="ffe9-16b8-10af-0e7f" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6e5a-7d9b-b47a-b329" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="127f-12de-7e31-0eb5" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="891e-d47c-de97-a1d6" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4081-08c7-8531-01cc" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5df2-a321-d67d-e454">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6d55-9497-c022-77ae">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a1c9-ce0f-3f45-6256">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a2e-20f8-9936-3f10">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="412f-e94b-a533-164b" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="24d4-2b4d-e383-5043" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="7a79-f201-44e0-584d" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="5d39-6ac8-9cde-e9ed" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c0a-efbb-d95d-44fa"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2d-8d7b-85e1-2661"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80a5-adca-b526-79f6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a981-1a80-ece6-664c"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="bfe8-dd87-f448-1320" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="66ff-05b3-5667-2dfb" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="8303-86cd-bf1d-2e9a" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="5194-8a1e-0996-b62b" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="5461-eddc-8743-31fd" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="dde7-ba3b-e78a-323e" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="d4e3-72f9-5855-8f96" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="07b6-3db7-af6e-47cf" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="a953-504a-d9b6-52e2" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="dd07-ecb7-2a4e-68cf" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="7855-d98a-7b05-2c88" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="e85d-6028-4169-1235" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="76b0-9522-d9a2-8fb8" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="9320-32f5-51fd-8f77" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="1b25-65c9-d27b-bdc5" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d710-c3a9-7622-c8fd"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9a8-9c45-3025-8121"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc85-9f9f-6cb3-85ae"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f56d-a627-a8d3-8a61"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="1389-d8ba-0f58-e9ff">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="2b00-1e5d-8ee9-a9b1">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="fc0d-f027-7972-95a3" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="b4c2-5d1d-693f-231a" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c2f3-d268-a0b9-3e17-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f3-d268-a0b9-3e17-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="399c-d143-1f28-881e"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4afb-52f4-b7bc-bbb4"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="d9e3-f42d-dbd9-f0ed">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="8617-c11a-6cd0-93b4">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="bd44-0eb3-4ced-9c59" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="8765-4ce7-5f96-d27a" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e8a2-a7cc-4fa7-d051-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e8a2-a7cc-4fa7-d051-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8b09-0b83-302b-4abc"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b132-cb60-d95a-515c"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="b794-5c98-3bac-a589"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="a836-2c6d-e696-9509"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="cbfa-6fbf-1503-fe86">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="2540-3c8b-f216-c422" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8d25-bf23-9155-4a1b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a76-2f8f-173e-ee88"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="f2e0-43f3-8099-6965">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="9541-aad6-2ee5-8018" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a8e0-61a2-5281-49ab"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a481-400e-ada9-d650"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="5a2e-619b-0836-4a12" hidden="false">
+            <selectionEntryGroup name="Centreline" id="2fe8-f434-1c5b-1352" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="48c2-d205-fbcb-44fb" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="6c53-1c3c-9b15-9101" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7596-164c-f400-37f6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02b0-2dae-7753-5ac7"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="32a0-5adb-0cbe-1a09">
+    <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="3dc8-dd3b-b6e8-d3f0">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="3213-eef4-c7e9-8c3e" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="0b5f-ca8a-455a-c270" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="00e0-abda-85d6-9a8d" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="3378-619e-c97a-2a8f" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="e429-63f8-ef8b-3f82" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="a014-9c10-c5ec-a4d2" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="19d7-6f7c-fb7f-a1d3" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="1341-2c06-2fad-04d0" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a333-9706-98fb-9b1a" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="4746-0610-13e8-a8ae" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9d14-18b3-5de8-827a" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0bb5-79b6-7e0b-6b19" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="873c-c3dc-86dc-d11b" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="10a4-b0bb-6850-2a77" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9548-3e21-9737-a216" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5d01-8dde-3f86-a83b" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9613-2b99-f1dd-b03d">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5a3d-7356-84c6-0cd0">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4826-14de-63aa-07d7">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2b1-09df-c546-e8fd">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="9220-ab46-488d-a4d1" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="dc74-bce7-6184-a557" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="5e1a-f126-1a3e-32a8" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="d9c8-9e72-0949-15f1" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="836a-26af-048b-3551"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3682-d8aa-1971-cde8"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9896-4771-4103-43e7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c4b-b7c2-fd1b-284e"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="2732-9e91-82ea-c04f" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="73bc-c73e-378a-d07e" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="6fb5-5901-d64b-a8a0" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="0dbc-b90c-7028-0374" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="b0b2-fa2a-f88a-e4d3" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="7aa0-f72c-2216-35c9" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="e3e1-fc59-8788-a273" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="c868-9d1d-f726-63b5" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="219f-fa74-139d-84e8" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="06f4-c2d3-a815-1ddd" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="6203-91ea-2bc5-cdae" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="43eb-09f1-d921-338a" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="8a9f-0569-ab81-be55" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="fc37-9d24-538c-cf4f" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="0ba7-a02a-b304-15fe" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="520f-1faf-0eb5-7b23"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57aa-2cda-8a45-6c43"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e109-7867-8475-03df"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e6-8d54-091d-c3fc"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="24d9-2042-8652-77fb">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="fc16-ef7c-83f7-7d43">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="6f92-82f0-0fef-7621" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="83ba-5004-a806-5e21" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0d54-d726-af6e-8ea7-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0d54-d726-af6e-8ea7-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9bb7-b0a0-c989-5154"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5b9c-190f-2d9c-54c4"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="be9f-a5ab-66b1-35b0">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="55e2-cc72-1435-676d">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="0654-ebd6-83fd-4bf3" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="22d5-8059-6852-b906" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6e29-f1dc-2ae4-016f-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6e29-f1dc-2ae4-016f-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="539b-0de9-5098-035c"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5938-018d-a1cd-46ab"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="5796-b7f8-8576-632d"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="8a91-a5c4-9e56-3514"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="625c-e53a-35e8-5a01">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="fd45-bc62-d8fd-dd07" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5a7a-21cd-3426-f346"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="12d2-95a7-8c40-0a5c"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="13e3-fcc3-cbda-0d3b">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="9523-d55e-d4d6-1485" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="09dc-bea7-89c3-4dc5"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="508a-fd8f-835d-82dc"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="df12-169d-44bc-09ae" hidden="false">
+            <selectionEntryGroup name="Centreline" id="185a-b685-cdba-effe" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="413e-72ab-db8a-330d" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="c1d4-7ed3-42ed-3658" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c1a-395c-4b69-3cf6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcfe-ecce-ecbc-6b85"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="f260-01c1-5584-082a">
+    <selectionEntry type="model" import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="824b-d7a7-457d-04b5">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="2414-7184-e937-b4b9" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="7506-b26b-360d-6f87" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="4a94-3672-6c22-9c76" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="4bfb-3345-f2d8-3303" primary="true" name="HH3-0 Lord of War"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="b2b6-7d26-47ab-94ce" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="f872-d15a-a965-3685" primary="false" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="ecdc-3285-4762-7ab4" primary="false" name="Titanic"/>
+        <categoryLink targetId="876c-9691-cd73-0502" id="be8e-6c23-3e41-fe35" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6834-3ef9-5168-a537" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="bf7c-f92a-c52a-4379" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c934-39b6-ce09-eab9" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="438c-24ef-e802-c091" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="02e4-09ab-7614-1f5d" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="af4e-809e-6e13-c539" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f8db-cbfd-542d-2531" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a928-f814-859f-7c4b" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fdd0-6cbd-94e8-4bb8">
+        <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0a8d-8623-0dc0-bc62">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2dea-9805-dca6-1c70">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c9b-1187-f692-92e8">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14-14-13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="7f2b-6927-dc5e-b14a" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="df21-eb4d-0aa8-8687" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="92be-d79a-272b-70d1" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
+            <selectionEntryGroup name="Pintle Weapon" id="6e3e-19e8-4fbc-32a0" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ed2-cdcf-f916-9401"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f471-4c3b-1618-3e5b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d25e-5b37-fa24-13b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7743-bc6d-3f0a-e28d"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="3675-dad7-df2a-9a76" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="e50c-ee55-fa84-bf1e" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="bf6e-e32b-8a24-d03c" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="a452-7a76-e648-0bca" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="e87a-802f-1a4a-b77c" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="eeca-ef26-17ab-8390" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="84d8-11bb-f803-7829" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+                <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="f514-f214-40aa-6ed1" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="1c01-33de-5ce8-c4ad" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+                <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="a92f-4ab7-d4c7-b5ce" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+                <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="27c2-21cf-85bd-fb30" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+                <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="b475-7d5f-0902-39c7" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+                <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="da5a-2593-b760-fa56" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="22fb-b29b-0d48-d8e0" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
+            <selectionEntryGroup name="Sponson Weapons" id="2dd0-e06e-2a33-19bd" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d953-69c3-3680-c909"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51ff-2bed-143f-053e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0c4-7dab-0da8-9c79"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d585-4436-66ab-a5a5"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="accf-7651-a0cd-587c">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="593f-ef0c-8b02-9e5a">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="50de-caa6-4333-161b" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="5c99-aa65-c7ac-f749" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2c55-5267-a9c4-3375-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2c55-5267-a9c4-3375-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1049-83b4-4a80-e885"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5418-1031-9fa0-9963"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="dfac-0dec-8db1-aeda">
+                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="251a-3724-6f8c-4e83">
                   <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="c400-3379-1838-d6a1" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="d796-f990-2710-8cf1" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f26c-3d78-cd40-2459-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f26c-3d78-cd40-2459-max"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="55c6-aaaf-bf11-5372"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b50e-d450-6ef1-1bf5"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="3f6b-ff36-6fe1-3c2f"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="b03d-1d41-97e8-6c9d"/>
+                <selectionEntry type="upgrade" import="true" name="Two Volkite Culverins" hidden="false" id="92ff-a50d-89af-d060">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="f22b-87d3-2074-3e44" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e024-4e49-3a31-d6ca"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1cc6-d014-b2ed-7c25"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="6c01-c2cb-33ea-8b6d">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="f010-3302-5055-5cfc" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1bad-12ba-2363-37a1"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="db9b-ac10-01a0-003a"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="4c1f-cd68-b1c1-90e0" hidden="false">
+            <selectionEntryGroup name="Centreline" id="0fad-e278-4a9e-d18d" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="e10f-6575-679b-2797" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="0 " hidden="false" id="c9b5-e658-0b24-923b">
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="525"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="41cc-c5e0-4c11-7d76" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="bd58-4a21-22f5-ed51" primary="false" name="Vehicle"/>
-        <categoryLink targetId="5929-ad51-d006-e008" id="29ee-199c-1b77-dafa" primary="false" name="Titanic"/>
-        <categoryLink targetId="876c-9691-cd73-0502" id="19f5-8df2-dc8c-9c9a" primary="true" name="HH3-0 Lord of War"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2f09-377d-b1cd-a74a" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3fbc-7e91-5866-0993" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f77e-260a-acbd-aee8" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4326-b0dd-3baf-68b9" includeChildSelections="true"/>
-      </constraints>
-      <profiles>
-        <profile name="Astraeus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="986a-a6ae-2b17-0b47">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Suppression Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a931-d3fc-fd94-1738">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more attacks made with its twin macro-accelerator cannon this phase. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="082c-9709-74f7-75ff">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="e2fb-1222-abe4-ac0e" hidden="false" sortIndex="2">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="7eb6-56f6-6668-5125" hidden="false" defaultSelectionEntryId="ea7c-8a6f-3243-c2ae">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="163b-68cd-75b8-df19"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d26c-a3aa-3a46-4346"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="d281-6ef5-a7b9-2a95" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
-                <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="040f-7811-0b88-c61b" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
-                <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="a68b-942b-ed8d-f4cb" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
-                <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="27fd-ac65-67de-eb53" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson Weapons" id="39ed-be27-7159-d7bc" hidden="false" defaultSelectionEntryId="31a8-32e4-d39f-cd1e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78ba-d77d-5123-4f5b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd55-7252-de5b-5dcb"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="a037-28c2-18f0-f9e8">
-                  <entryLinks>
-                    <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="293f-5922-cd9a-fe8d" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6c52-a2d0-e4e3-7ff0-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c52-a2d0-e4e3-7ff0-max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="c528-2c79-798f-96bd">
-                  <entryLinks>
-                    <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="2464-94e7-da91-e44b" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="28ed-5702-eed3-3e3b-min"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="28ed-5702-eed3-3e3b-max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="4d41-d9d4-c691-785a"/>
-                <selectionEntry type="upgrade" import="true" name="Two plasma eradicators" hidden="false" id="badd-4580-e95e-9dbf"/>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Centreline" id="71ee-5351-bfcc-a30a" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="81d2-5d63-1d2c-21cd" type="selectionEntry" targetId="5635-44cb-a025-46ff"/>
+                <entryLink import="true" name="WR - LW Neutron Laser Battery" hidden="false" id="2326-d48e-5999-9c9f" type="selectionEntry" targetId="5635-44cb-a025-46ff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f197-060e-5223-a49f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="398a-a285-d34b-a49f"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4204,148 +4403,6 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23da-d33f-3805-f52e"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="d2dc-693e-b491-b16d" name="Gladius Task Force" hidden="false" collective="false" import="true" type="upgrade" page="2">
-          <profiles>
-            <profile id="97dc-f938-f6e9-7c79" name="Combat Doctrines" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all Adeptus Astartes units from your army with this ability. You can only select each Combat Doctrine once per battle.
-
-
-DEVASTATOR DOCTRINE 
-This unit is eligible to shoot in a turn in which it Advanced.
-
-TACTICAL DOCTRINE
-This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
-
-ASSAULT DOCTRINE
-This unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="2b34-80e4-4414-d228" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unforgiven Task Force" hidden="false" id="3caf-c168-c372-51b1">
-          <profiles>
-            <profile name="Grim Resolve" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f222-fd2e-80f5-9bc6">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an Adeptus Astartes unit from your army is Battle-shocked, change the Objective Control characteristic of models in that unit to 1, instead of 0.
-In your Command phase, select one Adeptus Astartes unit from your army; until the start of your next Command phase, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Black Spear Task Force" hidden="false" id="4459-12f0-bc-142b">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Mission Tactics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ddc7-4019-defe-325e">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, you can select one of the Mission Tactics listed below. Until the start of your next Command phase, that Mission Tactic is active and its effects apply to all units from your army with this ability. Each Mission Tactic can only be selected once per battle. 
-
-
-**FUROR TACTICS**
- While this Mission Tactic is active, weapons equipped by ADEPTUS ASTARTES units from your army have the [SUSTAINED HITS 1] ability. 
-
-
-**MALLEUS TACTICS** 
-While this Mission Tactic is active, weapons equipped by ADEPTUS ASTARTES units from your army have the [LETHAL HITS] ability. 
-
-
-**PURGATUS TACTICS** 
-While this Mission Tactic is active, each time an ADEPTUS ASTARTES unit from your army makes an attack, if a Critical Hit is scored, that attack has the [PRECISION] ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Kill Teams" id="8472-7f00-395e-e104" hidden="false">
-              <description>Each time an attack targets a KILL TEAM unit from your army that contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what result is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest Toughness characteristic.
-
-For the purposes of determining which models can embark within a TRANSPORT model, KILL TEAM models follow the normal restrictions listed on the TRANSPORT model.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Liberator Assault Group" hidden="false" id="5ff-1ac3-bc73-8273">
-          <profiles>
-            <profile name="The Red Thirst" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3b1d-d38-bc89-c856">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Adeptus Astartes unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 2 to the Strength characteristic and add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Anvil Siege Force" hidden="false" id="b7d2-99c0-a2ed-3dce">
-          <profiles>
-            <profile name="Shield of the Imperium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f43-6de3-63d7-8267">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by **^^Adeptus Astartes^^** models from your army have the **[HEAVY]** ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model&apos;s unit Remained Stationary this turn, add 1 to the Wound roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="4Heavy" id="daa6-3191-9905-64e0" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ironstorm Spearhead" hidden="false" id="aa86-1617-4029-fcd7">
-          <profiles>
-            <profile name="Armoured Wrath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ba53-6dfa-8921-403c">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per phase for each Adeptus Astartes unit in your army, you can re-roll one Hit roll, one Wound roll, or one Damage roll made for a model in that unit</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Firestorm Assault Force" hidden="false" id="abb4-dc89-4e0-9150">
-          <profiles>
-            <profile name="Close-Range Eradication" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af39-1c9a-2190-ca12">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12&quot;, add 1 to the Strength characteristic of that attack.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Stormlance Task Force" hidden="false" id="50ed-e07c-8f6b-b035">
-          <profiles>
-            <profile name="Lightning Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="10ce-24dc-556d-1a38">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vanguard Spearhead" hidden="false" id="cdda-2bc8-a746-80f">
-          <profiles>
-            <profile name="Shadow Masters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b82-3871-2ea1-6025">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets an Adeptus Astartes unit from your army, unless the attacking model is within 12&quot;, subtract 1 from the Hit roll and the target has the Benefit of Cover against that attack.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="1st Company Task Force" hidden="false" id="5d64-4100-80e-c8f3">
           <profiles>
             <profile name="1st Company Task Force" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d573-3f65-174b-2734">
@@ -4354,452 +4411,6 @@ For the purposes of determining which models can embark within a TRANSPORT model
               </characteristics>
             </profile>
           </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Inner Circle Task Force" hidden="false" id="a141-49c8-fd84-4c6d">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Vowed Target" hidden="false" id="b6fc-b93d-1d1e-39e5" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Movement phase, select one of
-the following:
-■ Defensive Footing: Select one objective marker
-you control. Until the start of your next Movement
-phase, that objective marker is your Vowed
-objective marker.
-■ Aggressive Push: Select one or more objective
-markers you do not control. Until the start of your
-next Movement phase, each of those objective
-markers is one of your Vowed objective markers. If
-a rule refers to a unit or model being within range of
-your Vowed objective marker, that rule takes effect
-if that unit or model is within range of one or more of
-your Vowed objective markers.
-Each time a Deathwing Infantry unit from your army
-makes an attack that targets a unit within range of
-one or more of your Vowed objective markers, add 1
-to the Wound roll.’</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Company of Hunters" hidden="false" id="41e6-d47c-5e68-e066">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Masters of Manoeuvre" hidden="false" id="f91-37e5-7b97-97bf" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Adeptus Astartes^^ units from your army are eligible to shoot in a turn in which they Advanced or Fell Back.
-^^Adeptus Astartes Mounted^^ units from your army are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.
-
-
-^^Outrider squad^^ units from your army gain the ^^Battleline^^ keyword.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Lost Brethren" hidden="false" id="9d32-d514-00a8-6423">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="A Noble Death in Combat" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e1ca-6d27-b48d-0d05">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Death Company model from your army makes a melee attack, re-roll a Wound roll of 1 if that model&apos;s unit is below Starting Strength; if that model&apos;s unit is Below Half-strength, you can re-roll the Wound roll instead.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Angelic Host" hidden="false" id="657c-469d-679e-f3aa">
-          <profiles>
-            <profile name="Upon Wings of Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7509-57cf-90ab-faa8">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent&apos;s turn, you can select a number of Adeptus Astartes Jump Pack units from your army (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
-
-
-Incursion - Up to 1 unit
-Strike Force - Up to 2 units
-Onslaught - Up to 3 units
-
-
-Once you have made your selections, remove those units from the battlefield and place them into Strategic Reserves. In the Reinforcements step of your next Movement phase, set each of those units up using their Deep Strike ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lion&apos;s Blade Task Force" hidden="false" id="bef5-925f-b143-d219">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="In the Lion&apos;s Claws" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c7f-47cd-4840-6035">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">- Each time an enemy unit (excluding MONSTERS and VEHICLES) within Engagement Range of one or more RAVENWING units from your army Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests. 
-- Each time a DEATHWING unit from your army declares a charge, if one or more targets of that charge are within Engagement Range of one or more RAVENWING units from your army, add 2 to the Charge roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Librarius Conclave" hidden="false" id="ce39-a420-4206-827c">
-          <profiles>
-            <profile name="Pyschic Disciplines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf7e-bdca-d5b7-1043">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, select one of the following Psychic Disciplines. Until the end of the battle round, that Psychic Discipline is active and its effects apply to all Adeptus Astartes Psyker units from your army. 
-
-
-Biomancy Discipline
-Add 2&quot; to the Move characteristic of models in this unit. 
-
-
-Divination Discipline
-Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.
-
-
-Pyromancy Discipline
-Each time a ranged attack made by a model in this unit targets an enemy unit within 12&quot;, improve the Armour Penetration characteristic of that attack by 1.
-
-
-Telekinesis Discipline
-Each time a ranged attack targets this unit, subtract 1 from the Strength characteristic of that attack.
-
-
-Telepathy Discipline
-Each time a model in this unit makes an attack, you can ignore any or all modifiers to that attack’s Weapon Skill or Ballistic Skill characteristics and/or any or all modifiers to the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wrathful Procession" hidden="false" id="1242-7b3f-a47e-503a">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Wrathful Procession" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bae-8930-94fc-3c52">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, you can select one of the Litanies listed below. If you do, until the end of the battle round, that Litany is active and its effects apply to all Adeptus Astartes Infantry and
-Adeptus Astartes Mounted units from your army.
-
-
-Chorus of Relentless Hate
-Add 2&quot; to the Move characteristic of models in this unit and add 1 to Advance rolls made for it.
-
-
-Rite of Perfervid Wrath
-Add 1 to the Strength characteristic of melee weapons equipped by models in this unit.
-
-
-Chant of Deathless Devotion
-Models in this unit have a 5+ invulnerable save against ranged attacks</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Champions of Fenris" hidden="false" id="afb4-59c7-fa93-55f6">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="The Great Wolf Watches" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b57-1deb-49b5-9682">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s Charge phase, each Adeptus Astartes Infantry and Adeptus Astartes Walker unit from your army that is within 3&quot; of one or more enemy units and would be eligible to declare a charge against one or more of those units can declare a charge against one or more of those units, and you resolve that charge as if it were your Charge phase. If that charge is successful,
-your unit does not receive any Charge bonus this turn. 
-
-
-While Adeptus Astartes Terminator units from your army are not Battle‑shocked, add 1 to the Objective Control characteristic of models in those units.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Angelic Inheritors" hidden="false" id="dcc7-f9de-d4f2-69d0">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Legacy of the Angel" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d8f2-0c87-9000-ccab">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select two of the Angelic Legacy abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all Adeptus  Astartes Character units from your army.
-
-
-Sanguinary Grace: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
-
-
-Carmine Wrath: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.
-
-
-Their Appointed Hour: You can re‑roll Advance and Charge rolls made for this unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wrath of the Rock" hidden="false" id="9d23-833a-17cb-2d7d">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Dutiful Tenacity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="836c-7320-a359-d8fb">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets an ^^**Adeptus Astartes Infantry^^** or ^^**Adeptus Astartes Mounted^^** unit from your army, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Saga of the Hunter" hidden="false" id="31c2-3bbc-d0b2-ba92">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Pack&apos;s Quarry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a0b-b1d9-44b9-cc59">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in a SPACE WOLVES unit from your army makes a melee attack that targets an enemy unit, if that enemy unit is within Engagement Range of one or more other ADEPTUS ASTARTES units from your army, or if the attacking unit contains more models than that enemy unit.
-
-■ Add 1 to the Hit roll
-■ If you Saga is completed(see below), add 1 to the Wound roll as well
-
-
-Saga of the Hunter
-At the start of the first battle round your Quarry tally is 0. Each time an ADEPTUS ASTARTES unit from your army fights, after all those attacks have been resolved, add 1 to your Quarry tally for each enemy unit destroyed by those attacks. 
-
-
-Once your Quarry tally is equal to or greater than the number shown in the table below(depending on the battle size), you Saga is completed. 
-
-
-Incusion - 2
-Strike Force - 3
-Onslaught - 4</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Saga of the Bold" hidden="false" id="41dc-6769-c30c-b96c">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Heroes All" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="355b-36bf-d7a5-f688">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an **^^Adeptus Astartes^^** unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks
-
-■ If you Saga is completed (see below), you can re-roll one Hit roll, one Wound roll, and one Damage roll. 
-■ Otherwise, if that unit is a **^^Space Wolves Character^^** unit, you can re-roll one Hit roll, one Wound roll, or one Damage roll. 
-
-Saga of the Bold
-Each time a **^^Space Wolves Character^^** unit from your army does one of the following, that unit achieves a Boast. Once three or more different Boasts have been achieved by units from your army, your saga is completed
-
-■ Your Hide as a Trophy: That unit destroys your Oath of Moment target
-■ Slay Them All: That unit destroys your Oath of Moment target, and that is the second Oath of Moment target destroyed by that unit in this battle. 
-■ Overrun Their Position: At the end of either player&apos;s turn, that unit is wholly within your opponent&apos;s deployment zone. 
-■ Hold the Line: From the second battle round onwards, at the end of your Command phase, that unit is within range of an objective marker you control that is not within your deployment zone.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Saga of the Beastslayer" hidden="false" id="98ed-f58a-3e6e-63a6">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Legendary Slayers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="078c-ee2e-ed97-1c95">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ADEPTUS ASTARTES model from your army makes an attack, if that attack targets a CHARACTER, MONSTER or VEHICLE unit or if your Saga is completed(see below), that attack has the [LETHAL HITS] ability
-
-
-Saga of the Beastslayer
-At the start of the first battle round, your Beastslayer tally is 0, and you determine your Beastslayer target by halving the number of units from your opponent&apos;s army (including those embarked within TRANSPORTS) that have one or more of the following keywords (rounding up): CHARACTER, MONSTER, VEHICLE
-
-
-Each time an ADEPTUS ASTARTES unit from your army shoots or fights, after all of those attacks have been resolved, add 1 to your Beastslayer tally for each enemy unit with one or more of the keywords destroyed by those attacks: CHARACTER, MONSTER, VEHICLE. 
-
-
-Once your Beastslayer tally is equal to or greater than your Beastslayer target your Saga is completed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Companions of Vehemence" hidden="false" id="9d80-7508-5cd0-2f9e">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Righteous Fervour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0af9-6853-ca60-e4bd">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for Adeptus Astartes unit from your army.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vindication Task Force" hidden="false" id="f148-3273-e98f-427a">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Purge and Sanctify" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8066-728a-7de3-13f0">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Each time an attack targets an ANCIENT unit from your army, if that unit is within range of one or more objective markers and the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll. 
-
-
-■ Each time a CRUSADER SQUAD unit from your army makes a Righteous Zeal move, that unit can end that move as close as possible to the closest objective marker instead of as close as possible to the closest enemy unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Godhammer Assault Force" hidden="false" id="b6cd-9baf-8351-8dec">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Shock and Awe" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c85-5406-e115-208a">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Each time an ADEPTUS ASTARTES unit from your army declares a charge, if it disembarked from a TRANSPORT this turn, after selecting the targets of that charge, select one of those targets; that enemy unit must take a Battle-shock test. 
-
-
-■ Each time an ADEPTUS ASTARTES unit from your army makes a melee attack, if it disembarked from a TRANSPORT this turn, add 1 to the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Forgefather&apos;s Seekers" hidden="false" id="e073-8fe8-5b59-48f0">
-          <profiles>
-            <profile name="Vulkan&apos;s Quest" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d79c-5139-031a-48b6">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12&quot;, add 1 to the Strength characteristic of that attack.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Seeker&apos;s Companions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6756-5b85-3dae-4bdf">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If your army includes Vulkan He&apos;stan, during your turn, each Infernus Squad unit from your army is eligible to do one of the following
-
-
-■ Start to perform an Action in a turn in which it Advanced
-■ Shoot in a turn in which it started to perform an Action</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2261-79a5-19d9-1668" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Shield" hidden="false" id="1dea-4c70-8d4d-3415">
-          <profiles>
-            <profile name="Wrath of Dorn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1d68-ff0c-1b4d-2672">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll a Wound roll of 1
-
-
-Each time a model in a DARNATH LYSANDER unit from your army makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5d6e-fd3-330a-11dd" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shadowmark Talon" hidden="false" id="dd81-2af4-e7d9-bd07">
-          <profiles>
-            <profile name="Masters of Shadow" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eefc-32aa-b11c-94d1">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets an Adeptus Astartes unit from your army, unless the attacking model is within 12&quot;, subtract 1 from the Hit roll and the target has the Benefit of Cover against that attack.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Unparalleled Tactician" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5633-a349-08ca-f240">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, if an Aethon Shaan model from your army is on the battlefield, you can use the Into Darkness Stratagem for 0CP.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6e59-e1ee-47ad-6ce5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -4933,48 +4544,6 @@ Each time a model in a DARNATH LYSANDER unit from your army makes an attack that
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <sharedRules>
-    <rule name="Oath of Moment" id="3b76-4053-ece9-6e7d" hidden="false">
-      <description>If your Army Faction is **^^Adeptus Astartes^^**, at the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:
-■ You can reroll the Hit roll
-■ If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the **^^Black Templars^^**, **^^Blood Angels^^**, **^^Dark Angels^^**, **^^Deathwatch^^** or **^^Space Wolves^^** keywords, add 1 to the Wound roll as well.</description>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
-    <rule name="Templar Vows" id="f26c-4b28-aaea-40cf" hidden="false">
-      <description>If your Army Faction is **^^Adeptus Astartes^^**, at the start of the first battle round, select one of the following Vows to be active for **^^Adeptus Astartes^^** units from your army. While a Vow is active for your army, that unit has the associated ability below. 
-
-**Abhor the Witch, Destroy the Witch**
-■ Each time this unit declares a charge, if one or more targets of that charge have the **^^Psyker^^** keyword, you can re-roll the Charge roll. Melee weapons equipped by models in this unit have the **[PRECISION]** ability while targeting **^^Psyker^^** units. 
-
-**Accept Any Challenge, No Matter the Odds**
-■ Each time a model in this unit makes a melee attack, if the Strength characteristic of that attack is less than or equal to the Toughness characteristic of the target, add 1 to the wound roll
-
-**Suffer Not the Unclean to Live**
-■ This unit is eligible to declare a charge in a turn in which it Fell Back, and each time a model in this unit makes a Pile-in or Consolidation move, it does not need to end that move closer to the closest enemy model, provided it ends that move as close as possible to the nearest enemy unit. 
-
-**Uphold the Honour of the Emperor**
-If this unit has the **^^Infantry^^** keyword:
-■ At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent&apos;s level of control over that objective marker is greater than yours at the end of the phase. 
-■ If the mission you are playing features Actions, this unit is eligible to start to perform an Action in a turn in which it Advanced.</description>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
-  </sharedRules>
-  <infoLinks>
-    <infoLink name="Oath of Moment" id="001d-723a-56e2-f202" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
-    <infoLink name="Templar Vows" id="19ab-a61f-9a09-a0f0" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-  </infoLinks>
   <entryLinks>
     <entryLink import="true" name="0 Cerberus Heavy Tank Destroyer" hidden="false" id="d7ed-9ed8-5c47-564f" type="selectionEntry" targetId="98db-fff3-b1b2-e22f"/>
   </entryLinks>

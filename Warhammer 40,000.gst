@@ -1135,6 +1135,99 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Explodes [5+]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5631-3649-ddad-d1ab">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Explodes [6+]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9a35-2152-302c-7d8d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f6f3-7a32-8350-7e34">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
+
+
+The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.Cost:
+
+
+The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.Target:
+
+
+For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.Process:
+
+
+
+
+    The Active Player continues to resolve this Shooting Attack as normal.
+
+
+    All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.
+
+
+
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Explodes [4+]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dee5-cb18-0cc9-4495">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eef9-65d9-0815-c999">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
+
+
+The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
+
+
+The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
+
+
+The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
+
+
+
+
+    Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+
+
+    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.
+
+
+
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shieldwall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c033-9478-b1bf-e39d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
+
+
+The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.Cost:
+
+
+The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.Target:
+
+
+For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.Process:
+
+
+
+
+    The Active Player continues to resolve this Shooting Attack as normal.
+
+
+    All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared
+
+
+
+</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapon Modifications" id="f9da-852a-d7f0-92e9" hidden="false">

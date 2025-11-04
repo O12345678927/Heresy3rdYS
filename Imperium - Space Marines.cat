@@ -155,7 +155,7 @@
         <categoryLink targetId="5c0e-4c31-d51b-e470" id="1527-94f9-b9d7-783b" primary="false" name="Warlord"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="5 Aggressor Squad" hidden="false" id="129d-2da5-66f3-f4ec">
+    <selectionEntry type="unit" import="true" name="5 Tactical Squad" hidden="false" id="129d-2da5-66f3-f4ec">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -183,11 +183,29 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapons" id="a7ee-9c04-5f8b-90b1" hidden="false" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="7ff1-2eae-7e58-9b27" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2"/>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="a694-b67e-764f-f791" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1"/>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="7ff1-2eae-7e58-9b27" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22db-193a-68e7-0018-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22db-193a-68e7-0018-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="a694-b67e-764f-f791" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15a3-88ec-2c19-3515-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15a3-88ec-2c19-3515-max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapons" id="eaf5-b4a8-ac5d-cf88" hidden="false" sortIndex="2"/>
+                <selectionEntryGroup name="Melee Weapons" id="eaf5-b4a8-ac5d-cf88" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="bafc-1aa4-bcda-f7eb" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
+                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="69ba-b2df-8f56-548d" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e368-e27f-0ac8-c21f"/>
+                  </constraints>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Tac Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1e1c-d08e-8203-4145">
@@ -211,11 +229,26 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae34-cf90-93ac-aa95"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Option" id="1270-ab3c-2561-4179" hidden="false" defaultSelectionEntryId="d25d-19a1-628d-c100">
+                <selectionEntryGroup name="Weapon Options" id="1270-ab3c-2561-4179" hidden="false" defaultSelectionEntryId="d25d-19a1-628d-c100">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c6c-f490-ad6d-41a9"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8271-7c15-cca3-7609"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c6c-f490-ad6d-41a9"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8271-7c15-cca3-7609"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="97c3-232b-778b-d7ff" type="selectionEntry" targetId="6405-fec3-02c6-6908"/>
+                    <entryLink import="true" name="WGL - Pistols" hidden="false" id="dd60-32b6-7ee6-4ae9" type="selectionEntry" targetId="0101-11ea-abf0-5e5b"/>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="5886-2654-f26d-b10a" type="selectionEntry" targetId="abef-d9e0-d03a-bbda">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e78f-9957-1ff9-e4c0"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="aac0-248f-79d2-e6e9" type="selectionEntry" targetId="de2c-8068-a8eb-e218"/>
+                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="e668-c29a-c555-69ab" type="selectionEntry" targetId="3218-eb6d-6b24-db3d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fb6-b4fa-e870-7e1d"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -233,6 +266,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="83a8-4ed5-dc8c-8e31" type="selectionEntry" targetId="9bec-8280-30b5-f94a"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -240,7 +276,7 @@
       <modifiers>
         <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="129d-2da5-66f3-f4ec" childId="72d4-ff18-9328-2bce" shared="true" id="c997-19f1-338e-a1ad"/>
+            <condition type="atLeast" value="10" field="selections" scope="129d-2da5-66f3-f4ec" childId="72d4-ff18-9328-2bce" shared="true" id="c997-19f1-338e-a1ad"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -493,14 +529,16 @@ Hull (Front) - HK</characteristic>
           <characteristics>
             <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
             <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">5</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="233a-3131-1927-8c27" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - Absolver Bolt Pistol" hidden="false" id="f004-d49c-48f6-0105">
       <profiles>
@@ -1103,7 +1141,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="9dc7-1054-a334-07f8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="9dc7-1054-a334-07f8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="fd5d-7026-c37a-0ab1" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1124,7 +1162,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="cd66-5982-ca1b-b581" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="cd66-5982-ca1b-b581" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="20f9-7a91-890b-0bd2" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1145,7 +1183,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="1d84-265a-c9f8-eec4" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="1d84-265a-c9f8-eec4" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="bcb6-2ae4-e826-02a5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1166,7 +1204,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="95ac-1b27-0303-30ce" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="95ac-1b27-0303-30ce" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="141f-99c1-52d8-a1c7" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1187,7 +1225,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="81b4-d3c9-5b7f-02b4" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="81b4-d3c9-5b7f-02b4" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="83e4-1959-53af-bd29" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1208,7 +1246,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="0d5a-cbf6-6121-3a95" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="0d5a-cbf6-6121-3a95" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e48c-4e02-5649-053b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1250,7 +1288,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="83fd-6d7f-6c38-5e6f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="83fd-6d7f-6c38-5e6f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4ef1-dd19-a945-5f30" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1271,7 +1309,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="951f-7718-7607-be26" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="951f-7718-7607-be26" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e2e3-95aa-6a89-2aee" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1292,7 +1330,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="9624-02a9-bc12-4924" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="9624-02a9-bc12-4924" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4d90-a299-5397-2246" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1313,7 +1351,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="fd90-05b3-996f-1510" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="fd90-05b3-996f-1510" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f66f-06ac-f856-0819" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1334,7 +1372,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="b470-67f8-3c72-7f51" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="b470-67f8-3c72-7f51" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ff70-796c-cab9-336c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1355,7 +1393,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="c2ea-4f03-8c4a-dc72" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="c2ea-4f03-8c4a-dc72" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a08a-6172-19d7-49d6" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1376,7 +1414,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="c04f-4986-4377-d1a9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="c04f-4986-4377-d1a9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="65a3-44d1-a10d-d330" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1397,7 +1435,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="5977-ec96-662f-30fa" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="5977-ec96-662f-30fa" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3ea1-6d59-6365-f094" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1418,7 +1456,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="d6f1-fdc4-da00-c0b9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="d6f1-fdc4-da00-c0b9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="89c8-9ec9-9445-e19a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1439,7 +1477,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="5bb7-54f3-7ec0-7571" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="5bb7-54f3-7ec0-7571" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="429a-dc11-7275-5228" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1460,7 +1498,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="3f96-3503-af7f-5a50" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="3f96-3503-af7f-5a50" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="bafc-2862-16e2-0134" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1481,7 +1519,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="b8b9-4f01-1d41-8001" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="b8b9-4f01-1d41-8001" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="8a2e-51ca-7428-cf54" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1502,7 +1540,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="125e-0861-e7c2-d879" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="125e-0861-e7c2-d879" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1ba2-bf0e-e780-8e97" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1523,7 +1561,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="1c94-f90d-27ce-cfa2" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="1c94-f90d-27ce-cfa2" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f91c-71d2-79ef-deda" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1544,7 +1582,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e43d-8088-488c-69e5" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e43d-8088-488c-69e5" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="64e8-4249-2142-5aa6" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1565,7 +1603,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="a4d7-54c8-31aa-1b0a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="a4d7-54c8-31aa-1b0a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3955-006b-442c-e2bc" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1586,7 +1624,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="cdb5-1509-391d-e5d1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="cdb5-1509-391d-e5d1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4283-f26b-e4e9-c5d0" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1607,7 +1645,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="b1d8-3f10-2585-cd1b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="b1d8-3f10-2585-cd1b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e258-d27a-64e9-3d3e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1628,7 +1666,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="4f23-7e83-e76d-7bb9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="4f23-7e83-e76d-7bb9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2cd4-f42d-add7-b957" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1649,7 +1687,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="c3d2-7dd7-01b3-d69f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="c3d2-7dd7-01b3-d69f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="cd07-e764-e381-fa9b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1670,7 +1708,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="45b7-0337-4e88-5b38" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="45b7-0337-4e88-5b38" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="9b5c-af00-6885-7712" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1691,7 +1729,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="dd4e-d60b-60d0-1246" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="dd4e-d60b-60d0-1246" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="9a5f-e200-4877-6365" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1712,7 +1750,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="f492-6e94-abf1-1b22" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="f492-6e94-abf1-1b22" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="64b0-3ba2-23f2-1391" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1755,7 +1793,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="5971-8f7e-ba7d-4604" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="5971-8f7e-ba7d-4604" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e4b4-2314-16ca-b00c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1776,7 +1814,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="2dfc-eec0-752d-a0d1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="2dfc-eec0-752d-a0d1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="0661-7bb5-bbc9-92b9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1797,7 +1835,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="9294-2b04-3d0f-c2bc" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="9294-2b04-3d0f-c2bc" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ffcf-b97a-b93f-6cd4" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1818,7 +1856,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="f6f7-b181-c25e-f2fb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="f6f7-b181-c25e-f2fb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4d80-29e1-0f9c-386a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1839,7 +1877,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="d962-8c77-67fe-0c6a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="d962-8c77-67fe-0c6a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="8eef-d961-9d64-6619" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1860,7 +1898,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="7553-4621-c63e-34fd" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="7553-4621-c63e-34fd" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="644f-1677-49e1-8524" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1881,7 +1919,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="f9de-1fa2-c34d-fde0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="f9de-1fa2-c34d-fde0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2e20-c6dd-612a-af85" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1902,7 +1940,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="9299-2cfb-2ba2-7271" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="9299-2cfb-2ba2-7271" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="9fe3-b5e2-670b-e902" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1945,7 +1983,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="98e3-0ac1-4501-067d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="98e3-0ac1-4501-067d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d5f5-e377-b754-5955" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1966,7 +2004,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="6675-7c4b-2a8b-bf8d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="6675-7c4b-2a8b-bf8d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="b270-ba2b-f6e7-4a3d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -1987,7 +2025,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="001f-9b34-8f6e-5f58" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="001f-9b34-8f6e-5f58" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="345a-f1a8-0ea8-af64" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2008,7 +2046,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="3662-32d7-4b0f-423f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="3662-32d7-4b0f-423f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="06b7-4dc6-6d46-3c5f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2029,7 +2067,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="4ac7-9272-facf-42e8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="4ac7-9272-facf-42e8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ddcc-5129-bc69-6d3f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2074,7 +2112,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="caed-07ef-8ffd-48b8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="caed-07ef-8ffd-48b8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a557-51ce-3200-8fb2" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2095,7 +2133,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="3086-dc28-32fa-0a13" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="3086-dc28-32fa-0a13" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="cefb-d483-3f16-60d8" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2116,7 +2154,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="fc80-b0b2-258b-7039" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="fc80-b0b2-258b-7039" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5c26-7a97-47ca-a466" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2137,7 +2175,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e58a-e29a-1158-85d9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e58a-e29a-1158-85d9" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3eb0-7087-78a3-ad29" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2158,7 +2196,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="1aa7-e98e-a8ec-dd8f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="1aa7-e98e-a8ec-dd8f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d7b9-d9f1-db24-c381" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2179,7 +2217,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="7985-e443-1093-0664" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="7985-e443-1093-0664" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4b42-2eb8-e897-53cf" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2200,7 +2238,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="6793-77f1-3245-d3e2" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="6793-77f1-3245-d3e2" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="063d-7a12-4a89-d63e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2221,7 +2259,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="64ef-00da-a616-5abc" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="64ef-00da-a616-5abc" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="8172-c0e4-60af-c1ba" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2242,7 +2280,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="20ae-a7d9-4c50-10bb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="20ae-a7d9-4c50-10bb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="343a-2076-d222-81fe" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2263,7 +2301,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="0a09-4b59-32a8-571d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="0a09-4b59-32a8-571d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="7ba7-656a-e94b-1ad3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2306,7 +2344,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="6ca8-2c6c-c807-ea28" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="6ca8-2c6c-c807-ea28" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d040-b341-d606-2279" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2327,7 +2365,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="7cbd-130d-97bf-209b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="7cbd-130d-97bf-209b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1cca-ff16-b029-021f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2348,7 +2386,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e006-353b-e5d0-af3c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e006-353b-e5d0-af3c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3d3b-7432-d81a-8b88" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2369,7 +2407,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="ddf5-2c32-2cc7-6757" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="ddf5-2c32-2cc7-6757" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="791d-e4c4-4e12-7fcb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2390,7 +2428,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e286-a742-da2a-c7e6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e286-a742-da2a-c7e6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ebb7-7950-18e7-36b7" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2411,7 +2449,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="80f9-b70b-e27a-b82a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="80f9-b70b-e27a-b82a" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="af7b-a9f0-1856-58ac" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2432,7 +2470,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="42b5-db80-8a2b-9075" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="42b5-db80-8a2b-9075" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="c359-95e7-b456-bc6c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2453,7 +2491,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="cc0e-f654-e955-2764" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="cc0e-f654-e955-2764" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="33cd-d8d3-6d0e-94ca" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2474,7 +2512,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="a151-ca36-1ae7-2ac3" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="a151-ca36-1ae7-2ac3" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="b994-9e5f-5c4e-fd9a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2495,7 +2533,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="345a-1912-7a61-c26b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="345a-1912-7a61-c26b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="81ad-bed5-02a6-5a23" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2516,7 +2554,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="0da9-acfe-c464-04de" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="0da9-acfe-c464-04de" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4989-c191-28a5-5646" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2537,7 +2575,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="71be-bbfe-4f05-c539" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="71be-bbfe-4f05-c539" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3a60-c5d8-5818-4e89" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2558,7 +2596,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="9b2d-cf72-5c03-3b51" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="9b2d-cf72-5c03-3b51" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="30bf-5431-7a87-b854" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2579,7 +2617,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="cccc-17f8-1f38-b1d0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="cccc-17f8-1f38-b1d0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e9bf-b559-7836-f129" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2600,7 +2638,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="264b-d57f-c5a6-ff04" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="264b-d57f-c5a6-ff04" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="df9b-df63-6e2e-3c7d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2621,7 +2659,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="2445-6ec9-2e15-de44" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="2445-6ec9-2e15-de44" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ba40-97cb-9502-441c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2642,7 +2680,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="11aa-22cd-3a2e-885c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="11aa-22cd-3a2e-885c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="25e1-a27b-101b-d490" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2663,7 +2701,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="0aef-777b-1d9c-1ec1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="0aef-777b-1d9c-1ec1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4a75-1e9e-6515-e08d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2684,7 +2722,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="72ac-6aed-9e61-d812" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="72ac-6aed-9e61-d812" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ca86-c5f7-b17f-d3ee" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2705,7 +2743,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="d1ba-466f-319b-e232" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="d1ba-466f-319b-e232" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="bbf6-f757-2a8c-387b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2726,7 +2764,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="a971-3b5e-12dd-7ebf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="a971-3b5e-12dd-7ebf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="389a-fecb-c349-6679" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2747,7 +2785,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="bc81-c8e5-e307-2fbf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="bc81-c8e5-e307-2fbf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1610-5257-8495-b11e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2768,7 +2806,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="a73c-dd0b-4f94-380c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="a73c-dd0b-4f94-380c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="6804-6004-c6e2-2ef0" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2789,7 +2827,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="5ee9-de19-b949-131e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="5ee9-de19-b949-131e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4f85-b8b3-f09e-e087" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2810,7 +2848,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="c084-7392-7a40-db7c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="c084-7392-7a40-db7c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="891e-3d28-9d34-7b4a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2831,7 +2869,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="231b-7eaf-318d-3645" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="231b-7eaf-318d-3645" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2ef3-a91c-5a28-b404" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2852,7 +2890,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="ee76-40b7-0763-77ea" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="ee76-40b7-0763-77ea" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="0ef5-a597-200a-08af" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2873,7 +2911,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="de6f-120f-faf3-f63e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="de6f-120f-faf3-f63e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="97d8-0627-1df0-ef85" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2894,7 +2932,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="ce8c-653d-5d90-d7ff" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="ce8c-653d-5d90-d7ff" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d525-62ca-92e0-f035" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2915,7 +2953,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="fb14-2c66-ea18-7750" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="fb14-2c66-ea18-7750" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a2d4-e392-0287-686e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2936,7 +2974,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="b614-f1a4-2e54-09b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="b614-f1a4-2e54-09b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="42af-1528-97ba-80d5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2957,7 +2995,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="29b4-fd3b-5d93-5384" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="29b4-fd3b-5d93-5384" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1535-49da-454a-2d0b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2978,7 +3016,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="bccb-b500-cb80-f272" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="bccb-b500-cb80-f272" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a7a7-5b0b-be00-b093" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2999,7 +3037,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="0aac-0aa2-cb21-1525" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="0aac-0aa2-cb21-1525" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="344b-2b0d-40ac-e059" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3020,7 +3058,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="dd1c-89f3-a539-8e1d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="dd1c-89f3-a539-8e1d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="6645-a469-6346-3fc4" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3041,7 +3079,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="921e-16b0-ed87-23ef" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="921e-16b0-ed87-23ef" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="eebe-c520-be18-04b8" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3062,7 +3100,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="3c37-b4a8-1e77-99b1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="3c37-b4a8-1e77-99b1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ba87-c873-1f6c-c22a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3083,7 +3121,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="678e-1e7a-442a-543f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="678e-1e7a-442a-543f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5964-8695-690d-99cd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3104,7 +3142,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e24a-c15c-addf-eb7e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e24a-c15c-addf-eb7e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5b2a-fcf3-b039-88c5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3125,7 +3163,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="d102-9c79-532f-39ed" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="d102-9c79-532f-39ed" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3b1f-19e0-5aed-abd0" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3146,7 +3184,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="e81a-709d-cc26-1ea0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="e81a-709d-cc26-1ea0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="64f5-4c74-bbc3-53fd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3167,7 +3205,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="51a6-7094-3913-838b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="51a6-7094-3913-838b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5cd2-d075-afe9-5e81" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3188,7 +3226,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="985f-05c4-19ff-e8b1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="985f-05c4-19ff-e8b1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ffc0-4268-e9e5-8894" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3209,7 +3247,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="264c-1283-f0fe-c794" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="264c-1283-f0fe-c794" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2532-02f6-46dd-da58" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3248,7 +3286,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="db04-4739-cfec-b168" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="db04-4739-cfec-b168" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5024-9626-771d-1ade" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3269,7 +3307,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="8ccb-e988-0b5c-558b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="8ccb-e988-0b5c-558b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f3ab-d227-a080-10d3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3290,7 +3328,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="12d8-bbbf-7389-6858" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="12d8-bbbf-7389-6858" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="85af-a118-3994-4c8b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3311,7 +3349,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="8c07-1b34-f586-ea82" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="8c07-1b34-f586-ea82" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="9118-6bc6-73ba-850f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3332,7 +3370,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="661a-0ea7-2e1c-6361" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="661a-0ea7-2e1c-6361" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5e9e-f152-6707-8d9c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3353,7 +3391,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="dfef-7d0a-4eac-f688" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="dfef-7d0a-4eac-f688" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2ee6-25f8-def6-daab" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3374,7 +3412,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="73ba-1b20-3b51-e819" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="73ba-1b20-3b51-e819" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a1e0-63aa-7bb2-3bc6" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3395,7 +3433,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="724a-0ec1-2af7-1b9b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="724a-0ec1-2af7-1b9b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f028-8001-f2bd-276e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3416,7 +3454,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="4Pistol" id="ddab-cd3a-b0c3-0cae" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Critical Hit [X]" id="ddab-cd3a-b0c3-0cae" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="7ff7-7013-524d-5eaf" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -4407,6 +4445,787 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Smokescreen" id="14f7-3a08-d276-50a4" hidden="false" type="profile" targetId="f6f3-7a32-8350-7e34"/>
         <infoLink name="Assault Vehicle" id="3c5d-1be5-527c-ff85" hidden="false" type="rule" targetId="9572-5c6c-cfe0-1e77"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Chainaxe, Heavy" hidden="false" id="4dee-abf1-6bb8-64cd">
+      <profiles>
+        <profile name="Heavy Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6fdb-dc20-2b64-fd56">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="45c0-52b3-7595-6b36" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Gravis Chainfist" hidden="false" id="c38a-bf53-d98f-f0e9">
+      <profiles>
+        <profile name="Gravis Chainfist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ebf0-914f-6456-9fbe">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane, Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="814c-f770-9c8c-20fb" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Chainsword, Heavy" hidden="false" id="fa43-2513-ab3a-602c">
+      <profiles>
+        <profile name="Heavy Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2a5b-31b8-18a9-d56b">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="3dd0-5311-9284-be12" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Chain Bayonet" hidden="false" id="b1c9-5841-58f4-1a15">
+      <profiles>
+        <profile name="Chain Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="357b-f1b8-6de1-0c83">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">5</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="27a5-06be-7609-6b5c" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Chainfist" hidden="false" id="8465-d20e-39bf-4938">
+      <profiles>
+        <profile name="Chainfist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a37a-4760-18c1-6bda">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane, Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="1226-4816-10d4-7931" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Gravis Chainfists, Paired" hidden="false" id="eb61-d1c8-45c9-ae4d">
+      <profiles>
+        <profile name="Paired Gravis Chainfists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ebdd-84b1-f24e-23b8">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane, Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="0701-32e1-296a-2d58" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CW Chainaxe" hidden="false" id="3683-e7f0-2f4b-90c0">
+      <profiles>
+        <profile name="Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="555b-7e57-b785-ce09">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">5</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Shred (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred [X]" id="5829-d15a-fa51-cde5" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CH Charnabal Sabre" hidden="false" id="7855-ef37-7687-898d">
+      <profiles>
+        <profile name="Charnabal Sabre" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="678a-b114-c385-8596">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Duellist&apos;s Edge [X]" id="82fb-a837-22ce-6fe0" hidden="false" type="rule" targetId="d556-bb60-fb92-ac00"/>
+        <infoLink name="Breaching [X]" id="83d0-93c2-cdf9-65cf" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - CH Charnabal Tabar" hidden="false" id="5f30-86ca-f6de-6378">
+      <profiles>
+        <profile name="Charnabal Tabar" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="58cd-de27-63a8-c5e2">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Duellist&apos;s Edge [X]" id="6da7-12a1-6594-e554" hidden="false" type="rule" targetId="d556-bb60-fb92-ac00"/>
+        <infoLink name="Breaching [X]" id="b9f8-9a15-dc76-55a0" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - FW Force Sword" hidden="false" id="b666-a0d4-0aa9-6a4a">
+      <profiles>
+        <profile name="Force Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8dab-4203-6e51-428b">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Force (D)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force [X]" id="e9e0-58a5-d212-14fb" hidden="false" type="rule" targetId="e070-309d-b64a-c2b9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - FW Force Maul" hidden="false" id="8a8c-b40d-dcbc-8efe">
+      <profiles>
+        <profile name="Force Maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f5b6-ab7e-8e67-315f">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Force (D)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force [X]" id="c445-5e2d-8ffb-7444" hidden="false" type="rule" targetId="e070-309d-b64a-c2b9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - FW Force Staff" hidden="false" id="434e-6849-a10d-812b">
+      <profiles>
+        <profile name="Force Staff" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="438a-bcd8-f4d4-4395">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Force (D)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force [X]" id="3c6c-7f70-4797-0d2c" hidden="false" type="rule" targetId="e070-309d-b64a-c2b9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - FW Force Axe" hidden="false" id="f1ba-bf9a-959a-a5ab">
+      <profiles>
+        <profile name="Force Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="56b2-2a4b-05a7-38e2">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Force (D)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force [X]" id="1269-a5ba-6a13-74e3" hidden="false" type="rule" targetId="e070-309d-b64a-c2b9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PWB Power Sword" hidden="false" id="33c0-c731-6332-abd9">
+      <profiles>
+        <profile name="Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bb3c-7cc7-0495-399b">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="7a2c-8ca3-3a80-0251" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PWB Power Axe" hidden="false" id="8859-51a5-6d6b-2399">
+      <profiles>
+        <profile name="Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8e48-b125-7176-2070">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="5d32-207e-739b-e4f7" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PWB Power Lance" hidden="false" id="aa1b-5788-a6e3-a27a">
+      <profiles>
+        <profile name="Power Lance" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ba4d-0a59-eabe-89df">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="fbd1-6d09-3cc5-fd0b" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PWB Power Maul" hidden="false" id="2975-63fe-6785-8fc2">
+      <profiles>
+        <profile name="Power Maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="26ab-5e39-a0f0-d367">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="543a-55fb-7936-53a7" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Power Fist" hidden="false" id="1baf-9935-793e-d59a">
+      <profiles>
+        <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f11f-4cfc-e008-54bd">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Gravis Power Fist" hidden="false" id="1ddf-8751-f872-39b0">
+      <profiles>
+        <profile name="Gravis Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="fb7b-960e-6a31-9301">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Gravis Power Fist, Paired" hidden="false" id="7fd2-c57d-b6b7-1cb4">
+      <profiles>
+        <profile name="Paired Gravis Power Fists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2bf2-cc37-072f-33a1">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">+1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Thunder Hammer" hidden="false" id="4539-25d0-3d92-3e27">
+      <profiles>
+        <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5649-52ba-6faa-40df">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="d071-8d24-adcd-8539">
+      <profiles>
+        <profile name="Paired Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a935-d956-965f-3068">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">+2</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="66f8-2d9a-25c3-13f0" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+        <infoLink name="Rending [X]" id="5732-2f50-f1a3-6931" hidden="false" type="rule" targetId="aa2e-ddbb-740f-ee9c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Saturnine War Axe" hidden="false" id="5d9b-5e21-6d90-624e">
+      <profiles>
+        <profile name="Saturnine War Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df7c-63e0-c4a0-125f">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Reaping Blow (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reaping Blow [X]" id="290d-b185-aaac-6f62" hidden="false" type="rule" targetId="da32-5ba3-09cd-ce68"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Saturnine Disruption Fist" hidden="false" id="9f9c-cfd7-a211-0450">
+      <profiles>
+        <profile name="Saturnine Disruption Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1875-b789-2a45-336c">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Lightning Claws" hidden="false" id="de5c-c3bf-4522-59b9">
+      <profiles>
+        <profile name="Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="45b9-8a50-d660-cb6e">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+), Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending [X]" id="2b84-474c-7b16-d3c5" hidden="false" type="rule" targetId="aa2e-ddbb-740f-ee9c"/>
+        <infoLink name="Breaching [X]" id="3dff-e544-827d-29b3" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Saturnine Concussion Hammer" hidden="false" id="1f5b-0faa-abb5-e5bb">
+      <profiles>
+        <profile name="Saturnine Concussion Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8ddf-40d6-a72f-db05">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">x2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Critical Hits (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Hit [X]" id="b0cd-9b40-7d09-2ed5" hidden="false" type="rule" targetId="371f-f3b6-41b2-8337"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PW Crozius Arcanum" hidden="false" id="e275-bbb3-8432-6f17">
+      <profiles>
+        <profile name="Crozius Arcanum" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0f96-6e4c-8ea0-b31c">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching [X]" id="e645-e203-cc69-5a16" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - PR Paragon Blade" hidden="false" id="6a44-999e-0e9d-4a25">
+      <profiles>
+        <profile name="Paragon Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e3d5-d2b7-3717-0f62">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+1</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Critical Hit (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Hit [X]" id="534f-ace7-8175-861f" hidden="false" type="rule" targetId="371f-f3b6-41b2-8337"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Lascutter" hidden="false" id="3e07-e700-97bb-adbc">
+      <profiles>
+        <profile name="Lascutter" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4234-d245-b16f-2d87">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">12</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Krak Grenades" hidden="false" id="a7b6-3239-6a1f-8926">
+      <profiles>
+        <profile name="Krak Grenades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1612-cc6f-8f44-57e8">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Detonation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Melta Bombs" hidden="false" id="9bec-8280-30b5-f94a">
+      <profiles>
+        <profile name="Melta Bombs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d2e0-9ded-221b-e040">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">9</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane, Detonation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Leviathan Siege Claw" hidden="false" id="1cb4-ef08-3b18-833d">
+      <profiles>
+        <profile name="Leviathan Siege Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6506-da82-260d-4e97">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Leviathan Siege Claw, Paired" hidden="false" id="8631-eb5c-0450-8480">
+      <profiles>
+        <profile name="Paired Leviathan Siege Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ee9a-26e2-6f86-f2d8">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">+1</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Leviathan Siege Drill" hidden="false" id="b0fd-4f19-d031-b9d1">
+      <profiles>
+        <profile name="Leviathan Siege Drill" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1179-8c78-3efa-c3cb">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="4e69-579a-1fb2-58de" hidden="false" type="rule" targetId="9ff9-792a-c539-5ad7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Leviathan Siege Drill, Paired" hidden="false" id="d8fc-d253-09b0-cbaf">
+      <profiles>
+        <profile name="Paired Leviathan Siege Drill" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d19d-e51d-4d4b-504b">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">+4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Armourbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Bayonet" hidden="false" id="1935-ecc2-48f0-8fe2">
+      <profiles>
+        <profile name="Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1b2a-d7fc-bc1f-64ea">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">5</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Pistols" hidden="false" id="0101-11ea-abf0-5e5b">
+      <entryLinks>
+        <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="6844-09bd-e992-8e60" type="selectionEntry" targetId="8645-a3bd-d923-ab37"/>
+        <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="add7-0c89-d7bb-d483" type="selectionEntry" targetId="8aac-882d-5c06-f2f4"/>
+        <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="5fad-e164-7d38-2103" type="selectionEntry" targetId="2345-048c-1b33-469b"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="362a-6af1-9492-1947"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Terminator Melee" hidden="false" id="a7d3-40cc-2e60-ac5b">
+      <entryLinks>
+        <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="f978-adf7-a42b-69b3" type="selectionEntry" targetId="1baf-9935-793e-d59a"/>
+        <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="0486-7622-8bac-f99a" type="selectionEntry" targetId="4539-25d0-3d92-3e27"/>
+        <entryLink import="true" name="WM - CW Chainfist" hidden="false" id="e1bb-fc93-97ea-a23c" type="selectionEntry" targetId="8465-d20e-39bf-4938"/>
+        <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="8e79-a352-8814-ce40" type="selectionEntry" targetId="de5c-c3bf-4522-59b9"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Special Weapons" hidden="false" id="8680-2e8c-b073-f384">
+      <entryLinks>
+        <entryLink import="true" name="WR - FW Flamer" hidden="false" id="91bd-5c13-74fc-c8e0" type="selectionEntry" targetId="ff03-f6a5-f0ee-9584"/>
+        <entryLink import="true" name="WR - AW Rotor Cannon" hidden="false" id="70c4-ffd5-2142-f61d" type="selectionEntry" targetId="29be-0e80-5373-0e1c"/>
+        <entryLink import="true" name="WR - VK Volkite Caliver" hidden="false" id="c388-d193-6eb6-88c0" type="selectionEntry" targetId="c859-7a59-17e3-3ed6"/>
+        <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="082a-d392-2b07-6479" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
+        <entryLink import="true" name="WR - PL Plasma Gun" hidden="false" id="396f-7fe2-f04c-f601" type="selectionEntry" targetId="b713-934a-10c8-907f"/>
+        <entryLink import="true" name="WR - MT Meltagun" hidden="false" id="c446-9a63-cebd-2953" type="selectionEntry" targetId="07ad-e36f-01a0-631c"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Sergeant Melee" hidden="false" id="6405-fec3-02c6-6908">
+      <entryLinks>
+        <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="b180-cae5-77ff-7d29" type="selectionEntry" targetId="1567-4a0d-198b-c5eb"/>
+        <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="bf0a-96e8-de56-6dc7" type="selectionEntry" targetId="de5c-c3bf-4522-59b9"/>
+        <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="11e6-237c-f15e-b7df" type="selectionEntry" targetId="1baf-9935-793e-d59a"/>
+        <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="a64b-22b8-4b6e-8a6b" type="selectionEntry" targetId="4539-25d0-3d92-3e27"/>
+        <entryLink import="true" name="WGL - Power Weapons" hidden="false" id="b5bb-c5d2-30eb-ea59" type="selectionEntry" targetId="3e95-1de2-c466-29c6"/>
+        <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="281f-b0c9-6354-31a2" type="selectionEntry" targetId="7855-ef37-7687-898d"/>
+        <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="69dd-6f33-dd6c-a09f" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7db-a790-2ec4-0d6c"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Combi-Weapons" hidden="false" id="de2c-8068-a8eb-e218">
+      <entryLinks>
+        <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="0e92-adf7-8372-55df" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+        <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="deaa-58e1-4968-6108" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+        <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="a516-5c37-78db-e7b9" type="selectionEntry" targetId="85aa-eeac-0726-dec8"/>
+        <entryLink import="true" name="WR - CW Combi-Disintegrator" hidden="false" id="0e62-5449-dce2-f6e0" type="selectionEntry" targetId="c55d-3f8e-c917-cb84"/>
+        <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="0468-c070-bf08-097e" type="selectionEntry" targetId="85aa-eeac-0726-dec8"/>
+        <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="f23b-843f-915d-774f" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+        <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="db84-0a0f-fd77-2a6c" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+        <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="ff0e-8eab-5c26-22a4" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f65a-1ff3-b292-d0f9"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Officer" hidden="false" id="acae-3303-62c4-3f5d">
+      <entryLinks>
+        <entryLink import="true" name="WR - BW Bolter" hidden="false" id="8a40-4a71-6635-39a7" type="selectionEntry" targetId="3218-eb6d-6b24-db3d"/>
+        <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="8d27-015f-4d69-e7ee" type="selectionEntry" targetId="1567-4a0d-198b-c5eb"/>
+        <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="b557-6251-e85f-4b2c" type="selectionEntry" targetId="ee9e-f254-bc53-abbf"/>
+        <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="910c-7924-f5e7-cbf6" type="selectionEntry" targetId="8aac-882d-5c06-f2f4"/>
+        <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="84eb-0086-8267-0026" type="selectionEntry" targetId="7855-ef37-7687-898d"/>
+        <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="0da9-a953-2234-15b4" type="selectionEntry" targetId="8645-a3bd-d923-ab37"/>
+        <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="2cd7-1cea-df74-f0b0" type="selectionEntry" targetId="2345-048c-1b33-469b"/>
+        <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="d870-75f3-ffcd-a8b4" type="selectionEntry" targetId="1baf-9935-793e-d59a"/>
+        <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="43b3-4d82-96c5-6ed8" type="selectionEntry" targetId="4539-25d0-3d92-3e27"/>
+        <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="071f-51e8-4106-9988" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0"/>
+        <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="8098-8bdf-eb9b-8107" type="selectionEntry" targetId="de5c-c3bf-4522-59b9"/>
+        <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="199d-f837-2bda-8918" type="selectionEntry" targetId="abef-d9e0-d03a-bbda"/>
+        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="45ec-474b-bae8-ce97" type="selectionEntry" targetId="4c36-af12-2cea-0887"/>
+        <entryLink import="true" name="WG - Boarding Shield" hidden="false" id="642d-a4f7-915f-58a8" type="selectionEntry" targetId="1bcd-99cb-c69f-c61d"/>
+        <entryLink import="true" name="WGL - Power Weapons" hidden="false" id="8504-56fe-af92-769e" type="selectionEntry" targetId="3e95-1de2-c466-29c6"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Equipment" hidden="false" id="0553-2f8b-ca3f-ad9f">
+      <entryLinks>
+        <entryLink import="true" name="WG - Nuncio-Vox" hidden="false" id="a3bf-f8cb-7f25-17af" type="selectionEntry" targetId="f1a0-c3ff-54bc-64e9"/>
+        <entryLink import="true" name="WG - Augury Scanner" hidden="false" id="b90c-bbaf-42a2-6302" type="selectionEntry" targetId="5f6d-780d-19c0-d6dd"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="82b8-e565-3014-0340"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Heavy Weapons" hidden="false" id="09b0-e1a7-e051-2d3b">
+      <entryLinks>
+        <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="d6de-8bd2-dec0-88fb" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+        <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="a6a9-7c54-03fa-4492" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+        <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="e620-8af1-dd95-cc8b" type="selectionEntry" targetId="2104-d210-1cc8-5910"/>
+        <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="fda1-ba0f-ebb6-e1c9" type="selectionEntry" targetId="46fc-921a-5488-72ff"/>
+        <entryLink import="true" name="WR - PL Plasma Cannon" hidden="false" id="b85f-8899-2add-866d" type="selectionEntry" targetId="90c8-8a68-8aa1-ea33"/>
+        <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="a04d-5258-7b69-8e00" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+        <entryLink import="true" name="WR - MS Missile Launcher" hidden="false" id="54b1-27da-894a-c1de" type="selectionEntry" targetId="ba93-f6b0-d11b-3215"/>
+        <entryLink import="true" name="WR - AW Autocannon" hidden="false" id="07ea-796d-e7ad-7ce2" type="selectionEntry" targetId="c6c2-63e6-0182-1f67"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Pintle Weapons" hidden="false" id="6355-d93f-ac5c-24a0">
+      <entryLinks>
+        <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="dbbf-220f-eae5-a542" type="selectionEntry" targetId="650c-b3c0-1b76-9004"/>
+        <entryLink import="true" name="WR - MT Multi-Melta" hidden="false" id="a91c-eaeb-f529-dff9" type="selectionEntry" targetId="baaa-ce78-fca1-3572"/>
+        <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="86bc-c700-034c-66f0" type="selectionEntry" targetId="9ce7-8734-f3ed-8600"/>
+        <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="b878-6355-f7e3-beaf" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720"/>
+        <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="a597-a4d4-5600-c49c" type="selectionEntry" targetId="d9be-bdff-9885-9f6d"/>
+        <entryLink import="true" name="WR - MS Havoc Launcher" hidden="false" id="3942-3835-7666-48f0" type="selectionEntry" targetId="3b9d-c39d-544c-eee1"/>
+        <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="42dc-d232-cbcb-8e3b" type="selectionEntry" targetId="932d-479b-29d9-66e5"/>
+        <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="71c3-1b30-7665-6057" type="selectionEntry" targetId="dc35-b9c9-5814-e278"/>
+        <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="a7b8-5cff-5e43-e55f" type="selectionEntry" targetId="af53-1947-d7e1-70cb"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75ee-8444-20c2-69cd"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Sponson Weapons" hidden="false" id="be7c-59e3-4b6f-3314">
+      <entryLinks>
+        <entryLink import="true" name="WR - VK Volkite Culverin" hidden="false" id="5151-d0c3-30f7-4e8d" type="selectionEntry" targetId="46fc-921a-5488-72ff">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="77cf-124e-c43a-168a-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="77cf-124e-c43a-168a-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="WR - BW Heavy Bolter" hidden="false" id="bf90-1ed0-4f1a-838f" type="selectionEntry" targetId="d9be-bdff-9885-9f6d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a064-d349-43b2-6184-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a064-d349-43b2-6184-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="WR - LW Lascannon" hidden="false" id="97b0-9ac1-fb35-597c" type="selectionEntry" targetId="2104-d210-1cc8-5910">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fc1b-69c8-4821-e56f-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fc1b-69c8-4821-e56f-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="WR - FW Heavy Flamer" hidden="false" id="ce2a-a2dd-f8de-66ff" type="selectionEntry" targetId="a2d7-edf4-f7f1-6720">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f07a-a968-d7ae-57a5-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f07a-a968-d7ae-57a5-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3872-7ca2-c896-27a6"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4906-e4c1-457c-503c"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WG - Nuncio-Vox" hidden="false" id="f1a0-c3ff-54bc-64e9">
+      <profiles>
+        <profile name="Nuncio-Vox" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0234-0249-77a2-e17d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that includes one or more Models with a nuncio-vox, and there are one or more friendly Models on the Battlefield with the Command Sub-Type, then the Controlling Player may activate the nuncio-vox during the Start Phase of their Turn as the Active Player. When activated, the Controlling Player may make a Check to remove a single Tactical Status from all Models in the Unit that includes the nuncio-vox. This Check is made using the Characteristics of any one friendly Model on the Battlefield with the Command Sub-Type, Chosen by the Controlling Player (using Cool, unless attempting to remove Routed, in which case Leadership is used). A nuncio-vox can only be activated once per Turn, and each Friendly Model on the Battlefield with the Command Sub-Type may only be used once per Start Phase as part of this Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WG - Augury Scanner" hidden="false" id="5f6d-780d-19c0-d6dd">
+      <profiles>
+        <profile name="Augury Scanner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d7f3-b8b6-1e78-e32d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Shooting Attack made by a Unit that includes any Models with an augury scanner inflicts any Hits (excluding Hits from attacks made as Snap Shots), Shrouded Damage Mitigation Rolls cannot be made against those Hits.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WG - Vexilla" hidden="false" id="d766-ab9a-8eca-2927">
+      <profiles>
+        <profile name="Vexilla" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc18-79e1-bf4a-1389">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point for each Unit in that Combat that has any Models that have a vexilla.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WGL - Power Weapons" hidden="false" id="3e95-1de2-c466-29c6">
+      <entryLinks>
+        <entryLink import="true" name="WM - PWB Power Sword" hidden="false" id="3f92-004d-fa53-deb4" type="selectionEntry" targetId="33c0-c731-6332-abd9"/>
+        <entryLink import="true" name="WM - PWB Power Lance" hidden="false" id="6a57-4cd2-d2da-3205" type="selectionEntry" targetId="aa1b-5788-a6e3-a27a"/>
+        <entryLink import="true" name="WM - PWB Power Maul" hidden="false" id="a3bc-bb95-7437-71e1" type="selectionEntry" targetId="2975-63fe-6785-8fc2"/>
+        <entryLink import="true" name="WM - PWB Power Axe" hidden="false" id="3fd2-10ab-5136-3810" type="selectionEntry" targetId="8859-51a5-6d6b-2399"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f763-b7f8-c4ec-9e73"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WG - Combat Shield" hidden="false" id="4c36-af12-2cea-0887">
+      <profiles>
+        <profile name="Argyrum Boarding Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6267-dfea-5011-0d76">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with an Argyrum Boarding Shield may add 1 to Invulnerable Saves made against Melee Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WG - Boarding Shield" hidden="false" id="1bcd-99cb-c69f-c61d">
+      <profiles>
+        <profile name="Argyrum Boarding Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d139-72df-a3c2-9d12">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with an Argyrum Boarding Shield may add 1 to Invulnerable Saves made against Melee Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

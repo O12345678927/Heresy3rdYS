@@ -54,7 +54,7 @@
       <characteristicTypes>
         <characteristicType id="914c-b413-91e3-a132" name="IM"/>
         <characteristicType id="2337-daa1-6682-b110" name="AM"/>
-        <characteristicType id="ab33-d393-96ce-ccba" name="S"/>
+        <characteristicType id="ab33-d393-96ce-ccba" name="SM"/>
         <characteristicType id="41a0-1301-112a-e2f2" name="AP"/>
         <characteristicType id="3254-9fe6-d824-513e" name="D"/>
         <characteristicType id="893f-9000-ccf7-648e" name="Keywords"/>
@@ -671,6 +671,12 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
     </rule>
     <rule name="Rapid Tracking" id="d810-0c13-10d7-8a43" hidden="false" publicationId="48fc-15aa-b307-9443" page="326">
       <description>Each time a Model makes a Shooting Attack as part of the Intercept Advanced Reaction, it&apos;s Controlling Player can select a Weapon with this Special Rule for that Shooting Attack, even if it is not a Defensive Weapon.</description>
+    </rule>
+    <rule name="AAAAAA" id="8bf7-8812-923d-29e4" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
+      <description>When any Hit Test is made for an attack with the Critical Hit (X) Special Rule, if the result of the Dice Roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Critical Hit (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Critical Hit&apos;.
+
+
+A Critical Hit automatically inflicts a wound without any dice being rolled, counting as the roll of a &apos;6&apos; for any variable Special Rules that might be triggered by a Wound Test, and increases the Damage of the Hit by +1.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

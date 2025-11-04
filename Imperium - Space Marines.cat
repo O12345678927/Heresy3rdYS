@@ -5462,5 +5462,6 @@ Hull (Front) - HK</characteristic>
     <entryLink import="true" name="0 Sokar Stormbird" hidden="false" id="9c51-77f6-22cc-b6be" type="selectionEntry" targetId="70c1-984e-84e2-0e20"/>
     <entryLink import="true" name="0 Thunderhawk Gunship" hidden="false" id="0bcb-5936-b447-20ac" type="selectionEntry" targetId="824b-d7a7-457d-04b5"/>
     <entryLink import="true" name="0 Typhon Heavy Siege Tank" hidden="false" id="cdd8-22e4-dc69-cf07" type="selectionEntry" targetId="71e6-fb89-4b5f-ded8"/>
+    <entryLink import="true" name="5 Tactical Squad" hidden="false" id="887e-08d4-8a13-c2e4" type="selectionEntry" targetId="129d-2da5-66f3-f4ec"/>
   </entryLinks>
 </catalogue>

@@ -69,11 +69,11 @@
   <categoryEntries>
     <categoryEntry id="9cfd-1c32-585f-7d5c" name="Character" hidden="false"/>
     <categoryEntry id="4f3a-f0f7-6647-348d" name="Epic Hero" hidden="false"/>
-    <categoryEntry id="cf47-a0d7-7207-29dc" name="Infantry" hidden="false"/>
+    <categoryEntry id="cf47-a0d7-7207-29dc" name="T Infantry" hidden="false"/>
     <categoryEntry id="9693-cf84-fe69-37a9" name="Monster" hidden="false"/>
     <categoryEntry id="e338-111e-d0c6-b687" name="Battleline" hidden="false"/>
     <categoryEntry id="ba07-411c-2832-1f79" name="Dedicated Transport" hidden="false"/>
-    <categoryEntry id="14a0-40c9-2748-ae6e" name="Mounted" hidden="false"/>
+    <categoryEntry id="14a0-40c9-2748-ae6e" name="T Cavalry" hidden="false"/>
     <categoryEntry id="2d7f-1892-2fd0-e29c" name="Captain" hidden="false"/>
     <categoryEntry id="5a61-81ac-eb7c-a87e" name="Grenades" hidden="false"/>
     <categoryEntry id="aff3-d6a3-2a95-9dc" name="Imperium" hidden="false"/>
@@ -82,8 +82,8 @@
     <categoryEntry id="c619-2086-bbcf-69c9" name="Fly" hidden="false"/>
     <categoryEntry id="6df-937-16bc-8c1a" name="Smoke" hidden="false"/>
     <categoryEntry id="13bf-2bee-3ae0-b414" name="Psyker" hidden="false"/>
-    <categoryEntry id="dbd4-63-af05-998" name="Vehicle" hidden="false"/>
-    <categoryEntry id="6dda-e157-334d-e93a" name="Walker" hidden="false"/>
+    <categoryEntry id="dbd4-63-af05-998" name="T Vehicle" hidden="false"/>
+    <categoryEntry id="6dda-e157-334d-e93a" name="T Automata" hidden="false"/>
     <categoryEntry id="75e8-57c4-40e3-1817" name="Transport" hidden="false"/>
     <categoryEntry id="63f1-e6e8-f6f6-a4f0" name="Aircraft" hidden="false"/>
     <categoryEntry id="19d7-9c74-2140-5851" name="Fortification" hidden="false"/>
@@ -189,17 +189,30 @@
     <categoryEntry id="ba9c-84df-1ce6-c776" name="HH3-1 High Command" hidden="false"/>
     <categoryEntry id="0904-6f98-6fff-5dce" name="HH3-2 Command" hidden="false"/>
     <categoryEntry id="3fac-e5cf-dd97-83a3" name="HH3-3 Retinue" hidden="false"/>
-    <categoryEntry id="fcaf-ba1e-6089-a427" name="HH3-8 Recon" hidden="false"/>
-    <categoryEntry id="7118-6f6e-f38b-effc" name="HH3-5 Troops" hidden="false"/>
+    <categoryEntry id="fcaf-ba1e-6089-a427" name="HH3-8 War-Engine" hidden="false"/>
+    <categoryEntry id="7118-6f6e-f38b-effc" name="HH3-5 Heavy Assault" hidden="false"/>
     <categoryEntry id="e8e8-aa94-352b-b9c8" name="HH3-4 Elites" hidden="false"/>
-    <categoryEntry id="abf8-839e-3eec-5784" name="HH3-9 Fast Attack" hidden="false"/>
-    <categoryEntry id="156b-b843-fb2a-372b" name="HH3-10 Transport" hidden="false"/>
-    <categoryEntry id="1b26-4f05-3cd3-c517" name="HH3-13 War-Engine" hidden="false"/>
-    <categoryEntry id="4f24-53bb-d3c2-f854" name="HH3-6 Support" hidden="false"/>
-    <categoryEntry id="6f29-635a-b3d7-321a" name="HH3-7 Heavy Assault" hidden="false"/>
-    <categoryEntry id="e1f4-4d21-8e8b-ced1" name="HH3-11 Heavy Transport" hidden="false"/>
-    <categoryEntry id="46ab-9d40-180a-231e" name="HH3-12 Armour" hidden="false"/>
+    <categoryEntry id="abf8-839e-3eec-5784" name="HH3-9 Transport" hidden="false"/>
+    <categoryEntry id="156b-b843-fb2a-372b" name="HH3-10 Heavy Transport" hidden="false"/>
+    <categoryEntry id="1b26-4f05-3cd3-c517" name="HH3-13 Armour" hidden="false"/>
+    <categoryEntry id="4f24-53bb-d3c2-f854" name="HH3-6 Troops" hidden="false"/>
+    <categoryEntry id="6f29-635a-b3d7-321a" name="HH3-7 Support" hidden="false"/>
+    <categoryEntry id="e1f4-4d21-8e8b-ced1" name="HH3-11 Recon" hidden="false"/>
+    <categoryEntry id="46ab-9d40-180a-231e" name="HH3-12 Fast Attack" hidden="false"/>
     <categoryEntry name="Faction: Adeptus Astartes" id="6e7-40c-58d9-e402" hidden="false"/>
+    <categoryEntry id="d6b5-2c21-4f66-ca25" name="Heavy" hidden="false"/>
+    <categoryEntry id="0745-8673-b17c-4538" name="ST Command" hidden="false"/>
+    <categoryEntry id="859f-be0e-1903-6b36" name="T Walker" hidden="false"/>
+    <categoryEntry id="0ca8-f4cf-a38d-272c" name="T Paragon" hidden="false"/>
+    <categoryEntry id="29dd-98c9-d055-6590" name="ST Unique" hidden="false"/>
+    <categoryEntry id="d3ac-f77f-9245-6007" name="ST Transport" hidden="false"/>
+    <categoryEntry id="0a41-3757-2a98-ffaf" name="ST Sergeant" hidden="false"/>
+    <categoryEntry id="34e8-3437-08e8-5414" name="ST Antigrav" hidden="false"/>
+    <categoryEntry id="f7ad-661c-2ee0-dc51" name="ST Skrimish" hidden="false"/>
+    <categoryEntry id="404c-a563-6f23-c151" name="ST Light" hidden="false"/>
+    <categoryEntry id="4804-dad8-1459-5e1f" name="ST Specialist" hidden="false"/>
+    <categoryEntry id="01f0-7e36-baeb-b8f9" name="ST Heavy" hidden="false"/>
+    <categoryEntry id="9c5c-aa59-0c1e-caba" name="ST Champion" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">

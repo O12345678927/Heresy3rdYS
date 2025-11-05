@@ -2736,20 +2736,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Cyclonic Melta Lance" hidden="false" id="de90-4146-ca3f-c43b">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="372c-8c72-8d44-d965">
+        <profile name="Cyclonic Melta Lance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="372c-8c72-8d44-d965">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (8)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="0da9-acfe-c464-04de" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Melta" id="0da9-acfe-c464-04de" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
+        <infoLink name="Heavy [X]" id="0217-c858-1b9c-fd8b" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4989-c191-28a5-5646" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2757,20 +2758,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Gravis Melta Cannon" hidden="false" id="0cb1-c274-0960-e5e9">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="75e3-a0b5-ea0d-2133">
+        <profile name="Gravis Melta Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="75e3-a0b5-ea0d-2133">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (8)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="71be-bbfe-4f05-c539" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="71be-bbfe-4f05-c539" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="84d3-04d4-d4ac-684a" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3a60-c5d8-5818-4e89" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2778,20 +2780,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Magna-Melta Cannon" hidden="false" id="3be6-67ad-0b80-9722">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0f04-7c74-86ed-c51c">
+        <profile name="Magna-Melta Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0f04-7c74-86ed-c51c">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (12)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="9b2d-cf72-5c03-3b51" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="9b2d-cf72-5c03-3b51" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="7e89-8119-e11f-b2f5" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="30bf-5431-7a87-b854" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2799,20 +2802,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Melta Blast-Gun" hidden="false" id="0c01-f064-6c20-1b9a">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5727-9fe4-af1e-c39d">
+        <profile name="Melta Blast-Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5727-9fe4-af1e-c39d">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (24)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="cccc-17f8-1f38-b1d0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="cccc-17f8-1f38-b1d0" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="d1f6-683c-adfa-b317" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e9bf-b559-7836-f129" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2820,20 +2824,22 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Melta Cutters" hidden="false" id="2e73-c599-3269-5b44">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0981-a378-810c-ecd5">
+        <profile name="Melta Cutters" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0981-a378-810c-ecd5">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (3&quot;), Heavy (RS), Melta (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="264b-d57f-c5a6-ff04" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Blast [X]" id="264b-d57f-c5a6-ff04" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
+        <infoLink name="Melta [X]" id="8ccf-c023-074b-ff66" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
+        <infoLink name="Heavy [X]" id="c0c2-87b2-6f14-c9eb" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="df9b-df63-6e2e-3c7d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2841,20 +2847,20 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Meltagun" hidden="false" id="07ad-e36f-01a0-631c">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="418a-022c-1962-1284">
+        <profile name="Meltagun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="418a-022c-1962-1284">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta (6)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="2445-6ec9-2e15-de44" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Melta [X]" id="5286-c3be-3e96-db5b" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ba40-97cb-9502-441c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2862,20 +2868,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Multi-Melta" hidden="false" id="baaa-ce78-fca1-3572">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4523-054f-7f20-09ad">
+        <profile name="Multi-Melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4523-054f-7f20-09ad">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (8)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="11aa-22cd-3a2e-885c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="11aa-22cd-3a2e-885c" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="0403-b1d2-fd76-fad9" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="25e1-a27b-101b-d490" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2883,20 +2890,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Multi-Melta, Twin" hidden="false" id="61e2-6a14-bc15-39b0">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afd9-84df-aa7c-8941">
+        <profile name="Twin Multi-Melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afd9-84df-aa7c-8941">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (8)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="0aef-777b-1d9c-1ec1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="0aef-777b-1d9c-1ec1" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="c140-8db0-2673-f608" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4a75-1e9e-6515-e08d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2904,20 +2912,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Sentry Melta Array" hidden="false" id="06f2-785b-c346-062a">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="465d-5ad9-f764-f2a8">
+        <profile name="Sentry Melta Array" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="465d-5ad9-f764-f2a8">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy (RS), Melta (8)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="72ac-6aed-9e61-d812" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="72ac-6aed-9e61-d812" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="72ac-e571-7d93-d4e3" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ca86-c5f7-b17f-d3ee" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2925,20 +2934,22 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - MT Siege Melta Array" hidden="false" id="0d60-fa7e-0b7d-27dd">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e9f8-3bcb-9b58-5eca">
+        <profile name="Siege Melta Array" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e9f8-3bcb-9b58-5eca">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (5&quot;), Heavy (RS), Melta (6)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="d1ba-466f-319b-e232" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Heavy [X]" id="d1ba-466f-319b-e232" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
+        <infoLink name="Melta [X]" id="6e72-9d3c-58cf-be95" hidden="false" type="rule" targetId="a308-380a-3eeb-fc1b"/>
+        <infoLink name="Blast [X]" id="782c-da97-ee6a-d0c1" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="bbf6-f757-2a8c-387b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2946,20 +2957,23 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - PH Phosphex Bomb" hidden="false" id="420b-e01c-0649-9d53">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4cdf-09ed-67e0-e030">
+        <profile name="Phosphex Bomb" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4cdf-09ed-67e0-e030">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (3&quot;), Breaching (5+), Panic (3), Poisoned (3+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="a971-3b5e-12dd-7ebf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Blast [X]" id="a971-3b5e-12dd-7ebf" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
+        <infoLink name="Breaching [X]" id="7c91-9681-7199-3325" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+        <infoLink name="Poisoned [X]" id="a553-45ff-200a-98b4" hidden="false" type="rule" targetId="1185-553b-bda0-70cf"/>
+        <infoLink name="Panic [X]" id="af2b-4b6a-14b4-9a4d" hidden="false" type="rule" targetId="5e50-fc80-736f-cda4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="389a-fecb-c349-6679" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -2967,20 +2981,24 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - PH Phosphex Discharger" hidden="false" id="352e-203b-3cdf-5546">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8c96-61e8-6dc1-215a">
+        <profile name="Phosphex Discharger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8c96-61e8-6dc1-215a">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (3&quot;), Breaching (5+), Limited (3), Panic (3), Poisoned (3+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="bc81-c8e5-e307-2fbf" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Limited [X]" id="bc81-c8e5-e307-2fbf" hidden="false" type="rule" targetId="cce9-4c79-c2c6-54d0"/>
+        <infoLink name="Poisoned [X]" id="e21a-51e0-c40e-6300" hidden="false" type="rule" targetId="1185-553b-bda0-70cf"/>
+        <infoLink name="Blast [X]" id="9b16-e0e9-f42f-989b" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
+        <infoLink name="Breaching [X]" id="eaea-54ae-24cc-dc62" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+        <infoLink name="Panic [X]" id="1145-c92b-f94e-ef96" hidden="false" type="rule" targetId="5e50-fc80-736f-cda4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1610-5257-8495-b11e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3240,20 +3258,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - PW Particle Shredder" hidden="false" id="7789-274f-0fc7-e675">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e374-dd1c-e22c-77e6">
+        <profile name="Particle Shredder" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e374-dd1c-e22c-77e6">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">Template</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Breaching (6+), Overload (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="dd1c-89f3-a539-8e1d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Breaching [X]" id="dd1c-89f3-a539-8e1d" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
+        <infoLink name="Overload [X]" id="05a2-6889-8d4d-563c" hidden="false" type="rule" targetId="0d74-4d3b-89d8-6742"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="6645-a469-6346-3fc4" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3261,20 +3280,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - PW Particle Shredder, Heavy " hidden="false" id="b66a-4553-b20a-8fbd">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="51ba-e3b8-9899-049a">
+        <profile name="Heavy Particle Shredder" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="51ba-e3b8-9899-049a">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">Template</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">3</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Breaching (6+), Overload (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="921e-16b0-ed87-23ef" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Overload [X]" id="921e-16b0-ed87-23ef" hidden="false" type="rule" targetId="0d74-4d3b-89d8-6742"/>
+        <infoLink name="Breaching [X]" id="aca3-5e33-cc32-739d" hidden="false" type="rule" targetId="71d1-7c66-c8ef-2a7c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="eebe-c520-be18-04b8" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3282,20 +3302,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - RW Rad Grenades" hidden="false" id="eae8-2336-d946-9b0f">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1941-4066-a1bf-5e64">
+        <profile name="Rad Grenades" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1941-4066-a1bf-5e64">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">8&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Phage (T), Poisoned (2+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="3c37-b4a8-1e77-99b1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Phage [X]" id="3c37-b4a8-1e77-99b1" hidden="false" type="rule" targetId="24cf-93e4-6987-b91e"/>
+        <infoLink name="Poisoned [X]" id="58d8-c00d-f55b-e759" hidden="false" type="rule" targetId="1185-553b-bda0-70cf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ba87-c873-1f6c-c22a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3303,20 +3324,22 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - SW Concussive Resonator" hidden="false" id="b7a9-c47b-4648-c7c6">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="db2c-5fba-2089-6351">
+        <profile name="Concussive Resonator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="db2c-5fba-2089-6351">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">Template</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">5</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Overload (1), Stun (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="678e-1e7a-442a-543f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Stun [X]" id="678e-1e7a-442a-543f" hidden="false" type="rule" targetId="e9cc-c19f-fb3e-f982"/>
+        <infoLink name="Overload [X]" id="080f-8c95-ec31-f515" hidden="false" type="rule" targetId="0d74-4d3b-89d8-6742"/>
+        <infoLink name="Template" id="3cab-88ad-c524-0502" hidden="false" type="rule" targetId="160e-08d5-20ab-ab2f"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5964-8695-690d-99cd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3594,20 +3617,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - XW Grenade Harness" hidden="false" id="3283-2c35-ae16-91dc">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="13cc-127d-a263-dbf8">
+        <profile name="Grenade Harness" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="13cc-127d-a263-dbf8">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">6</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (3&quot;), Limited (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="73ba-1b20-3b51-e819" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Limited [X]" id="73ba-1b20-3b51-e819" hidden="false" type="rule" targetId="cce9-4c79-c2c6-54d0"/>
+        <infoLink name="Blast [X]" id="3851-ed56-7c77-b274" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a1e0-63aa-7bb2-3bc6" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3615,20 +3639,31 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - XW Grenade Launcher" hidden="false" id="76e9-5d91-d08a-bd42">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6544-4f59-7308-6880">
+        <profile name="Grenade Launcher - Frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6544-4f59-7308-6880">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">6</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast (3&quot;)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grenade Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7cd6-a1d4-92c4-e8ec">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">4</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="724a-0ec1-2af7-1b9b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Blast [X]" id="724a-0ec1-2af7-1b9b" hidden="false" type="rule" targetId="6da9-8b75-82b3-c8d6"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f028-8001-f2bd-276e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3636,20 +3671,21 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WR - XW Lascutter" hidden="false" id="daf1-d961-5e8c-a885">
       <profiles>
-        <profile name="Neutron Laser Battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="77a3-8c7f-62e7-27d7">
+        <profile name="Lascutter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="77a3-8c7f-62e7-27d7">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">8&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Armourbane, Ordnance (D)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="AAAAAA" id="ddab-cd3a-b0c3-0cae" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Ordnance [X]" id="ddab-cd3a-b0c3-0cae" hidden="false" type="rule" targetId="de3a-d7d0-a8a2-a8e4"/>
+        <infoLink name="Armourbane" id="69b6-2ba5-17e8-ec56" hidden="false" type="rule" targetId="9ff9-792a-c539-5ad7"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="7ff7-7013-524d-5eaf" targetId="eeda-8544-a2f3-3fab" primary="false"/>

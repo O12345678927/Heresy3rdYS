@@ -555,8 +555,8 @@ Units deployed using the Infiltrate (X) Special Rule are deployed at the same ti
 
 Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
     </rule>
-    <rule name="Melta" id="a308-380a-3eeb-fc1b" hidden="false" publicationId="48fc-15aa-b307-9443" page="26">
-      <description>Weapons with **[MELTA X]** in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
+    <rule name="Melta [X]" id="a308-380a-3eeb-fc1b" hidden="false" publicationId="48fc-15aa-b307-9443" page="26">
+      <description>If at least one Model in a Unit with the Vehicle Type that is targeted by a Shooting Attack made by a Model using a Weapon with this Special Rule is within a range equal to or less than the value specified by X, that attack has the Armourbane Special Rule and the Damage of Penetrating Hits caused by that attack is doubled.</description>
     </rule>
     <rule name="Move Through Cover" id="0c54-58fb-7d4b-8244" hidden="false" publicationId="48fc-15aa-b307-9443" page="333">
       <description>A Unit that includes at least one Model with the Move Through Cover Special Rule ignores the effects of Difficult Terrain and Dangerous Terrain. If called upon to take a Dangerous Terrain Test then such a Unit is assumed to automatically pass without any Dice being rolled.</description>

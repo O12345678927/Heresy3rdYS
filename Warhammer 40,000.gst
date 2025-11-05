@@ -219,6 +219,7 @@
         <categoryLink name="HH3-11 Heavy Transport" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
         <categoryLink name="HH3-12 Armour" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
         <categoryLink name="HH3-13 War-Engine" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
+        <categoryLink name="HH3-7 Heavy Assault" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
@@ -677,6 +678,9 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
 
 
 A Critical Hit automatically inflicts a wound without any dice being rolled, counting as the roll of a &apos;6&apos; for any variable Special Rules that might be triggered by a Wound Test, and increases the Damage of the Hit by +1.</description>
+    </rule>
+    <rule name="Combi" id="5cd1-1e50-bd06-7e9a" hidden="false" publicationId="48fc-15aa-b307-9443" page="328">
+      <description>Each time a Model makes a Shooting Attack with a Weapon Profile with this Special Rule, the Controlling Player can select another Profile from the same Weapon with this Special Rule and make attacks with it as part of the same Shooting Attack. Note that if that Profile also has the Limited (X) Special Rule, this does not allow it to be selected to make attacks more than the number of times equal to the value of that Special Rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

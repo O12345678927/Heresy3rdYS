@@ -8245,6 +8245,15 @@ Hull (Front) - HK</characteristic>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear Option" id="229c-64a5-39cc-769b" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="WG - Combat Shield" hidden="false" id="6064-728a-a241-54c4" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ac-7762-6b62-1c57"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Assault Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c534-d038-2951-e06d">
@@ -8261,17 +8270,6 @@ Hull (Front) - HK</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Wargear Option" hidden="false" id="6b54-1c9e-d11a-f035">
-                  <entryLinks>
-                    <entryLink import="true" name="WG - Combat Shield" hidden="false" id="6064-728a-a241-54c4" type="selectionEntry" targetId="4c36-af12-2cea-0887">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ac-7762-6b62-1c57"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="75d1-b360-10ae-5e17" sortIndex="1">
               <constraints>
@@ -8303,19 +8301,19 @@ Hull (Front) - HK</characteristic>
                     <entryLink import="true" name="WM - CW Chainaxe, Heavy" hidden="false" id="df7c-84a6-3e5d-0366" type="selectionEntry" targetId="4dee-abf1-6bb8-64cd" sortIndex="2">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcfc-1009-9b63-c45f"/>
-                        <constraint type="max" value="40" field="selections" scope="de10-1d0b-dc0d-052a" shared="true" id="b1a2-876f-cf54-1efe"/>
+                        <constraint type="max" value="40" field="selections" scope="1424-2ae6-8fc0-a655" shared="true" id="b1a2-876f-cf54-1efe" percentValue="true"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Pistol" id="1cf4-bf4c-6e4e-751e" hidden="false">
                       <entryLinks>
-                        <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="2c47-ea24-aa44-1514" type="selectionEntry" targetId="abef-d9e0-d03a-bbda">
+                        <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="2c47-ea24-aa44-1514" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1cc-71b1-1c3b-1d0d"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="WGL - Pistols" hidden="false" id="2cf1-c3f2-8184-04ec" type="selectionEntry" targetId="0101-11ea-abf0-5e5b">
+                        <entryLink import="true" name="WGL - Pistols" hidden="false" id="2cf1-c3f2-8184-04ec" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="2">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09a1-2901-a11b-d2af"/>
                           </constraints>

@@ -165,7 +165,7 @@
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6f5-7425-b205-cfa7" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6f5-7425-b205-cfa7" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2caf-2e6a-259c-4147" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="4f24-53bb-d3c2-f854" id="c39c-6fd5-50d7-05e4" primary="true" name="HH3-6 Troops"/>
       </categoryLinks>
@@ -206,9 +206,22 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e368-e27f-0ac8-c21f"/>
                   </constraints>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Equipment" id="2ab9-6a5d-a094-e0f4" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Equipment" hidden="false" id="d828-c5ce-50e8-9fad" type="selectionEntry" targetId="0553-2f8b-ca3f-ad9f"/>
+                    <entryLink import="true" name="WG - Vexilla" hidden="false" id="13b9-506e-8622-266f" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6c6-91c2-84ef-15f9"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8129-593b-6198-88f6"/>
+                  </constraints>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
-                <profile name="Tac Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1e1c-d08e-8203-4145">
+                <profile name="Tactical Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1e1c-d08e-8203-4145">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
                     <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
@@ -278,7 +291,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
-                <profile name="Tac Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3251-c470-415d-3804">
+                <profile name="Tactical Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3251-c470-415d-3804">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
                     <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
@@ -322,13 +335,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Line [2]" id="60fc-49de-d158-357f" hidden="false" type="profile" targetId="84c8-5d10-cab7-3b5b"/>
+        <infoLink name="Fury of the Legion" id="2d68-b326-051d-affc" hidden="false" type="profile" targetId="3257-3976-a065-8163"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ancient" hidden="false" id="6562-d718-b8e0-c457">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="87-79-5ac6-b220" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="87-79-5ac6-b220" primary="false" name="T Infantry"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c4e4-bb15-e913-a24" primary="true" name="Character"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9d6e-77ac-9e6b-4f9f" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="6276-f503-607a-8c81" primary="false" name="Imperium"/>
@@ -419,7 +436,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="b5a9-e1ca-f5ee-44ff" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="de6b-dcd9-2082-4e6c" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="de6b-dcd9-2082-4e6c" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="eac3-ddc4-ba19-f5d9" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="672c-aaf4-09ac-3c76" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -1743,7 +1760,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="1c94-f90d-27ce-cfa2" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="1c94-f90d-27ce-cfa2" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
         <infoLink name="Combi" id="2743-3ba6-8104-225c" hidden="false" type="rule" targetId="5cd1-1e50-bd06-7e9a"/>
       </infoLinks>
       <categoryLinks>
@@ -3630,7 +3647,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="730e-9e81-2057-b673" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="730e-9e81-2057-b673" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5b2a-fcf3-b039-88c5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3651,7 +3668,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="d102-9c79-532f-39ed" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="d102-9c79-532f-39ed" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
         <infoLink name="Heavy [X]" id="bc3f-5adb-c6da-7e49" hidden="false" type="rule" targetId="a47e-9194-f346-638f"/>
       </infoLinks>
       <categoryLinks>
@@ -3674,7 +3691,7 @@ Hull (Front) - HK</characteristic>
       </profiles>
       <infoLinks>
         <infoLink name="Suppressive [X]" id="e81a-709d-cc26-1ea0" hidden="false" type="rule" targetId="8204-12ce-2a4b-8071"/>
-        <infoLink name="Deflagarate [X]" id="14ea-be86-48a0-ca8b" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="14ea-be86-48a0-ca8b" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="64f5-4c74-bbc3-53fd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3695,7 +3712,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="51a6-7094-3913-838b" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="51a6-7094-3913-838b" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5cd2-d075-afe9-5e81" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3716,7 +3733,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="985f-05c4-19ff-e8b1" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="985f-05c4-19ff-e8b1" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="ffc0-4268-e9e5-8894" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3737,7 +3754,7 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Deflagarate [X]" id="264c-1283-f0fe-c794" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
+        <infoLink name="Deflagrate [X]" id="264c-1283-f0fe-c794" hidden="false" type="rule" targetId="120c-56fc-32c0-6453"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="2532-02f6-46dd-da58" targetId="eeda-8544-a2f3-3fab" primary="false"/>
@@ -3983,7 +4000,7 @@ Hull (Front) - HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="661f-be6f-e1e1-37ee" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="0a8a-a184-7048-81a6" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="0a8a-a184-7048-81a6" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="c5bb-974f-02b8-5ac0" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="fb10-8448-b2bd-1b9b" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -4122,7 +4139,7 @@ Hull (Front) - HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="5758-9362-1e59-f52f" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="2c92-d59a-d9db-3643" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="2c92-d59a-d9db-3643" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="30bf-2d53-6c17-d7d8" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="43ab-b407-1317-af52" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -4268,7 +4285,7 @@ Hull (Front) - Twin Heavy Bolter/Flamer, HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="dbf5-af17-83b2-e9a7" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="d12e-933a-b2b2-51ca" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="d12e-933a-b2b2-51ca" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="1c01-ae82-4007-91d7" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="08d6-5085-c553-41a3" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -4426,7 +4443,7 @@ Hull (Front) - Twin Heavy Bolter/Flamer, Demolisher Cannon, HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="b2b6-7d26-47ab-94ce" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="f872-d15a-a965-3685" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="f872-d15a-a965-3685" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="ecdc-3285-4762-7ab4" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="be8e-6c23-3e41-fe35" primary="true" name="HH3-0 Lord of War"/>
         <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="69a5-337c-14ce-0ecd" primary="false" name="Aircraft"/>
@@ -4527,7 +4544,7 @@ Hull (Front) - Lascannon</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="49e6-4802-06ed-0f2d" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="24f2-dab3-832d-f8d6" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="24f2-dab3-832d-f8d6" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="b7b3-d31d-c13c-f5ae" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="58fe-a417-f50e-65af" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -4673,7 +4690,7 @@ Hull (Front) - HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2c74-670b-b14e-3fd3" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="3b9d-e575-346e-8934" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="3b9d-e575-346e-8934" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="287d-7b8b-1877-804c" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="319e-2007-6b0e-44f8" primary="true" name="HH3-0 Lord of War"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="a71f-5941-f0f8-c370" primary="false" name="Transport"/>
@@ -4830,7 +4847,7 @@ Hull (Rear) - Twin Heavy Bolter</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="aa93-12ca-ea08-d690" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="c7c2-f4f9-7a1e-70f9" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="c7c2-f4f9-7a1e-70f9" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="28d5-a4e6-8c74-cb72" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="3200-4ffc-bda2-5048" primary="true" name="HH3-0 Lord of War"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="ce90-2007-3134-12a7" primary="false" name="Transport"/>
@@ -5612,8 +5629,17 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WGL - Equipment" hidden="false" id="0553-2f8b-ca3f-ad9f">
       <entryLinks>
-        <entryLink import="true" name="WG - Nuncio-Vox" hidden="false" id="a3bf-f8cb-7f25-17af" type="selectionEntry" targetId="f1a0-c3ff-54bc-64e9"/>
-        <entryLink import="true" name="WG - Augury Scanner" hidden="false" id="b90c-bbaf-42a2-6302" type="selectionEntry" targetId="5f6d-780d-19c0-d6dd"/>
+        <entryLink import="true" name="WG - Nuncio-Vox" hidden="false" id="a3bf-f8cb-7f25-17af" type="selectionEntry" targetId="f1a0-c3ff-54bc-64e9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48d3-7e15-4b93-cd49"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="050a-be73-5614-f114"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="WG - Augury Scanner" hidden="false" id="b90c-bbaf-42a2-6302" type="selectionEntry" targetId="5f6d-780d-19c0-d6dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c70-5f76-a66c-e362"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="82b8-e565-3014-0340"/>
@@ -5745,9 +5771,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b9df-d833-7022-b359" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b9df-d833-7022-b359" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="7e28-2c54-dcaf-cc7e" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="779c-4c1b-224c-6571" primary="true" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="779c-4c1b-224c-6571" primary="true" name="HH3-5 Heavy Assault"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5b05-06b2-3c73-fa44"/>
@@ -5887,7 +5913,7 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8627-6182-7f63-2927" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8627-6182-7f63-2927" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="f1a7-d9cd-9107-3edb" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="ba9c-84df-1ce6-c776" id="24d3-eda8-6c7d-2821" primary="true" name="HH3-1 High Command"/>
       </categoryLinks>
@@ -6029,9 +6055,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="d3df-bc93-82cf-c17c" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="d3df-bc93-82cf-c17c" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="1fa7-05e5-caa4-3feb" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="34d5-9ef9-ed33-85ca" primary="true" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="34d5-9ef9-ed33-85ca" primary="true" name="HH3-5 Heavy Assault"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d6bb-5e8f-5012-65b8"/>
@@ -6171,7 +6197,7 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="04cb-5720-b179-a0ba" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="04cb-5720-b179-a0ba" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="59c7-c8af-4fd4-c798" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="0904-6f98-6fff-5dce" id="4071-8114-e068-2199" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
@@ -6313,9 +6339,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="5128-2b37-212e-975f" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="5128-2b37-212e-975f" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="9df5-5c70-e4d1-8958" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="15ac-4bb2-827b-345e" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="15ac-4bb2-827b-345e" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="6f29-635a-b3d7-321a" id="dadd-1cb3-c998-92c5" primary="true" name="HH3-7 Support"/>
       </categoryLinks>
       <constraints>
@@ -6458,7 +6484,7 @@ Hull (Front) - HK</characteristic>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="fea0-efb1-c45f-445b" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="1b26-4f05-3cd3-c517" id="9607-837b-1d13-4aea" primary="true" name="HH3-13 Armour"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="a827-4fe0-c5d1-e849" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="a827-4fe0-c5d1-e849" primary="false" name="T Vehicle"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0680-b7a1-5e69-aa2a"/>
@@ -6598,7 +6624,7 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9548-ebfe-4d54-b877" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9548-ebfe-4d54-b877" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6739-b3d0-6c9a-90c5" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="e8e8-aa94-352b-b9c8" id="39ff-735a-e7ac-4ce8" primary="true" name="HH3-4 Elites"/>
       </categoryLinks>
@@ -6740,9 +6766,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="365e-d5cb-5c5e-c4ae" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="365e-d5cb-5c5e-c4ae" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="1405-6312-ca28-1fe9" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="1351-5376-f344-8d4e" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="1351-5376-f344-8d4e" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="e1f4-4d21-8e8b-ced1" id="aafb-ff65-0a51-1a3c" primary="true" name="HH3-11 Recon"/>
       </categoryLinks>
       <constraints>
@@ -6883,9 +6909,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="3a1a-453e-6dc2-8d2a" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="3a1a-453e-6dc2-8d2a" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="8871-ade2-a7e6-bc45" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="7939-cf1e-f937-d51a" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="7939-cf1e-f937-d51a" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="156b-b843-fb2a-372b" id="57cc-31e3-25b8-a51d" primary="true" name="HH3-10 Heavy Transport"/>
       </categoryLinks>
       <constraints>
@@ -7026,9 +7052,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ef13-ad56-ce09-199e" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ef13-ad56-ce09-199e" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="54ff-6be4-eafa-66a0" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="56a6-3284-ab4b-5b8a" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="56a6-3284-ab4b-5b8a" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="abf8-839e-3eec-5784" id="d5a3-3234-b03e-b7bb" primary="true" name="HH3-9 Transport"/>
       </categoryLinks>
       <constraints>
@@ -7169,7 +7195,7 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="1828-1503-609d-9b91" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="1828-1503-609d-9b91" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="cd89-04a0-8de4-97ac" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="3fac-e5cf-dd97-83a3" id="cbe1-6c6d-b0a3-4215" primary="true" name="HH3-3 Retinue"/>
       </categoryLinks>
@@ -7311,9 +7337,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b32e-0782-4628-3cae" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b32e-0782-4628-3cae" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="54db-13a9-8fb8-3888" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="f2e2-a58c-0b29-5ed6" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="f2e2-a58c-0b29-5ed6" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="46ab-9d40-180a-231e" id="7823-eff4-f026-d012" primary="true" name="HH3-12 Fast Attack"/>
       </categoryLinks>
       <constraints>
@@ -7454,9 +7480,9 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="2a77-3f75-aa2e-55db" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="2a77-3f75-aa2e-55db" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="e035-8b86-7cde-cf8a" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7118-6f6e-f38b-effc" id="6803-ad58-d529-6a93" primary="false" name="HH3-5 Troops"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="6803-ad58-d529-6a93" primary="false" name="HH3-5 Heavy Assault"/>
         <categoryLink targetId="fcaf-ba1e-6089-a427" id="1c9e-2390-26de-3c03" primary="true" name="HH3-8 War-Engine"/>
       </categoryLinks>
       <constraints>
@@ -7597,7 +7623,7 @@ Hull (Front) - HK</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="3dca-90e4-c599-4dc1" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="3dca-90e4-c599-4dc1" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="f488-6db3-634d-8118" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="4f24-53bb-d3c2-f854" id="5903-290e-7b76-b8d4" primary="true" name="HH3-6 Troops"/>
       </categoryLinks>
@@ -7740,7 +7766,7 @@ Hull (Front) - HK</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c6e2-98cf-d145-1a52" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="442d-095b-6940-1c63" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="442d-095b-6940-1c63" primary="false" name="T Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="c5d8-3d60-da21-e66c" primary="false" name="Super-Heavy"/>
         <categoryLink targetId="876c-9691-cd73-0502" id="2f85-fe03-0545-5dd1" primary="true" name="HH3-0 Lord of War"/>
       </categoryLinks>
@@ -7868,290 +7894,6 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Explodes [X]" id="24ad-8b47-ae35-0c30" hidden="false" type="rule" targetId="c1c8-8ad0-cda6-adae"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Breacher Squad" hidden="false" id="5f6a-4f24-2ad5-8e3e">
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6264-bdf7-d82e-540a" primary="false" name="Infantry"/>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="853d-3a38-3880-a177" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="4f24-53bb-d3c2-f854" id="fd06-f68b-5a27-5537" primary="true" name="HH3-6 Troops"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="da02-a28c-8a14-a50c"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Tactical Marines" hidden="false" id="e581-bbf1-b13c-da56" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Legionaries" hidden="false" id="d61d-f5ce-3549-ef0e" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="dff5-cd55-affb-5992"/>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="25fb-d909-ec59-0601"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapons" id="641f-4a57-23cb-bd06" hidden="false" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="7ba3-bfe8-80e8-7f92" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f92-d71b-4d10-82a5"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a17-d515-3af1-2274"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="96a5-2693-e52d-4b07" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04f8-c614-cf5f-f2bc"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de55-cce9-f922-2a70"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapons" id="f2df-36c8-122f-44b6" hidden="false" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="55d3-4307-b2ce-f5c9" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
-                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="40e9-1739-ade9-0ef2" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be94-b11d-e951-985f"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <profiles>
-                <profile name="Tac Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a161-a479-46ca-c6fd">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
-                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
-                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="b7d4-40e7-b129-f4d3" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee5d-f87e-6ebb-0e43"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="448b-b18d-bad1-ff02"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Options" id="667e-a43c-d673-8a08" hidden="false" defaultSelectionEntryId="e668-c29a-c555-69ab" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="63ec-0885-26f5-520d"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a1b3-2267-81b7-6f7a"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="15a2-62c6-b3b6-fef9" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="5">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6ba-575c-2421-5754"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Pistols" hidden="false" id="3946-9d25-f54d-8117" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7ac-3462-972c-d610"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="4b96-5821-ac8f-3cf6" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db8c-ed68-d5ce-72df"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="d024-577a-c577-6ad6" type="selectionEntry" targetId="de2c-8068-a8eb-e218" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="394d-a8cd-af8c-6ad0"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="1d80-5775-9e3b-9e30" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a172-06e1-a912-445e"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <profiles>
-                <profile name="Tac Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3c94-0e05-ff69-b9b7">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
-                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
-                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="cced-23b4-d926-f579" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d8c-4543-3e1c-6a05"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="atLeast" value="10" field="selections" scope="5f6a-4f24-2ad5-8e3e" childId="e581-bbf1-b13c-da56" shared="true" id="6bd3-44ff-8d20-9d25"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Despoiler Squad" hidden="false" id="0196-fbad-83dd-220a">
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6d8b-654c-18ef-0d89" primary="false" name="T Infantry"/>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="66bc-7ae0-cfc7-d8e1" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="4f24-53bb-d3c2-f854" id="48b7-483c-e451-b828" primary="true" name="HH3-6 Troops"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1068-b7b9-7c45-210e"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Tactical Marines" hidden="false" id="e739-c1e8-b219-7709" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Legionaries" hidden="false" id="c880-e204-e049-a0b2" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="19e6-5a54-b152-5a77"/>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="9630-8979-2900-ee29"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapons" id="d2e3-01a4-3be3-2fac" hidden="false" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="b0ed-a98c-fbbe-2c65" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fa8-9283-42d3-2545"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b16-e816-0a58-39f7"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="a275-73b3-1dce-fbff" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f71-cac9-6e5d-2f82"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="723d-1d2d-25a4-01eb"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapons" id="e8bd-471b-d18b-93cd" hidden="false" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="5fa1-4894-54e4-0b80" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
-                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="f736-8c2c-509c-ae4c" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796f-d006-853f-73b9"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <profiles>
-                <profile name="Tac Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7e9d-251d-1ff6-170b">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
-                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
-                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="af22-dc7e-5805-b56a" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="439b-d162-e691-ef52"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="279a-f34f-9806-0103"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Options" id="8b55-f266-815d-8554" hidden="false" defaultSelectionEntryId="e668-c29a-c555-69ab" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="02a7-5336-5ea1-a57e"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4163-b49e-e6c5-2575"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="da16-e0f9-e6b4-06d9" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="5">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44f7-c183-fd49-6c9b"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Pistols" hidden="false" id="d3fb-81fc-5fd9-3a9a" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbdb-c01e-ab57-4b00"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="f9a7-aa5b-cad3-60ae" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9943-03b0-ec1d-a030"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="ab12-4be9-b18c-4a68" type="selectionEntry" targetId="de2c-8068-a8eb-e218" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b58-9993-4d26-864a"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="2823-291b-ed68-3eae" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8503-62da-1ce7-32b6"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <profiles>
-                <profile name="Tac Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cb7e-401c-1228-3661">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
-                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
-                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="3663-bd52-6e52-e31d" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c774-42a4-3ef8-45fe"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="atLeast" value="10" field="selections" scope="0196-fbad-83dd-220a" childId="e739-c1e8-b219-7709" shared="true" id="6486-5897-1ad8-3abb"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="6 Assault Squad" hidden="false" id="1424-2ae6-8fc0-a655">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -8179,14 +7921,8 @@ Hull (Front) - HK</characteristic>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="e17f-adcd-5ca9-ba83"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapons" id="6775-3783-82ce-5433" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="Grenades" id="6775-3783-82ce-5433" hidden="false" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="cea4-2cda-335c-ac58" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccc7-1134-54b0-f279"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4948-ef15-16fe-6b0c"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="5e9b-7b89-297b-be10" type="selectionEntry" targetId="a7b6-3239-6a1f-8926" sortIndex="1">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="182e-a78d-6820-b0ca"/>
@@ -8245,27 +7981,36 @@ Hull (Front) - HK</characteristic>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Wargear Option" id="229c-64a5-39cc-769b" hidden="false">
+                <selectionEntryGroup name="Wargear Option" id="229c-64a5-39cc-769b" hidden="false" defaultSelectionEntryId="cea4-2cda-335c-ac58">
                   <entryLinks>
-                    <entryLink import="true" name="WG - Combat Shield" hidden="false" id="6064-728a-a241-54c4" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                    <entryLink import="true" name="WG - Combat Shield" hidden="false" id="6064-728a-a241-54c4" type="selectionEntry" targetId="4c36-af12-2cea-0887" sortIndex="2">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ac-7762-6b62-1c57"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="cea4-2cda-335c-ac58" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccc7-1134-54b0-f279"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4948-ef15-16fe-6b0c"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d12-e9a9-280c-b07b"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Assault Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c534-d038-2951-e06d">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
                     <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
                     <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
                     <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
                     <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
                     <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
                     <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">2</characteristic>
                     <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
                   </characteristics>
                 </profile>
@@ -8293,15 +8038,15 @@ Hull (Front) - HK</characteristic>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13cb-bd88-36ba-c371"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="8a99-b9a8-4593-7dfb" type="selectionEntry" targetId="de2c-8068-a8eb-e218" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce6-14c7-5d40-f840"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink import="true" name="WM - CW Chainaxe, Heavy" hidden="false" id="df7c-84a6-3e5d-0366" type="selectionEntry" targetId="4dee-abf1-6bb8-64cd" sortIndex="2">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcfc-1009-9b63-c45f"/>
                         <constraint type="max" value="40" field="selections" scope="1424-2ae6-8fc0-a655" shared="true" id="b1a2-876f-cf54-1efe" percentValue="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="93db-5e95-b109-a889" type="selectionEntry" targetId="d071-8d24-adcd-8539">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad44-6c9d-ccbc-e1b0"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -8318,6 +8063,11 @@ Hull (Front) - HK</characteristic>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09a1-2901-a11b-d2af"/>
                           </constraints>
                         </entryLink>
+                        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="d57f-2232-5fad-4513" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7688-ad7c-6cc1-a8d5"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73d7-453f-f7c3-81bc"/>
@@ -8329,14 +8079,14 @@ Hull (Front) - HK</characteristic>
               <profiles>
                 <profile name="Assault Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e4d9-a6b7-6581-9315">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
                     <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
                     <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
                     <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
                     <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
                     <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
                     <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
-                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">2</characteristic>
                     <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
                   </characteristics>
                 </profile>
@@ -8347,12 +8097,27 @@ Hull (Front) - HK</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110a-df3c-6325-7330"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="4318-d23f-8fa5-e272" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a531-1b93-9497-c9d7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bcf-008e-ddae-e9d2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="1f75-b0f4-1752-f7a1" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9dc-ec56-44bf-69bd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7430-e768-426d-4823"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <categoryLinks>
                 <categoryLink targetId="0a41-3757-2a98-ffaf" id="4310-daef-6412-d36f" primary="false" name="ST Sergeant"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="5389-2683-8dad-a97a" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
+          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -8362,6 +8127,10 @@ Hull (Front) - HK</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Vanguard [2]" id="c743-b6e4-d2af-fd83" hidden="false" type="profile" targetId="c5f5-1dbc-b05c-3c5e"/>
+        <infoLink name="Bulky [2]" id="14e3-c3e2-554b-48fa" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WG - Cognis-Signum" hidden="false" id="6b3e-65f4-ba36-f601">
       <profiles>
@@ -8471,6 +8240,609 @@ Hull (Front) - HK</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="6 Despoiler Squad" hidden="false" id="f748-15d5-eec2-1666">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="386d-a024-bf0c-8110" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="0974-3330-0965-bf8f" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="4f24-53bb-d3c2-f854" id="d768-abd7-2cf6-6d9e" primary="true" name="HH3-6 Troops"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5781-16cc-e18f-2a74"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Despoilers Marines" hidden="false" id="90b6-6c1f-a912-296c" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Legionaries" hidden="false" id="0408-8975-8a3b-1897" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="228c-8fdf-067c-db8e"/>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="93f9-66fa-ea76-d1be"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Grenades" id="a8fc-244d-2ab5-dd04" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="c2bb-94a7-a8f4-199d" type="selectionEntry" targetId="a7b6-3239-6a1f-8926" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09f1-4431-7aab-16cd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfe0-6940-c90a-d382"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="9786-5bdc-7517-1d51" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8414-d6be-1004-fcaf"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-5aac-a60b-b2b7"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weapons" id="4360-1459-5bf3-33a9" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="ab51-8976-363e-f4ec" type="selectionEntry" targetId="1567-4a0d-198b-c5eb" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e715-92fe-2ffb-738b"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="550c-40aa-6f53-c308"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e54e-6d43-e9d9-8d0b"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Special Melee Weapons" id="1f48-7059-b6ed-c03c" hidden="false" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="WM - CW Chainsword, Heavy" hidden="false" id="d8de-793b-16e8-d0a0" type="selectionEntry" targetId="fa43-2513-ab3a-602c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d427-bc06-d47e-5ca5" percentValue="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WGL - Power Weapons" hidden="false" id="03e4-ff21-b896-6fa2" type="selectionEntry" targetId="3e95-1de2-c466-29c6"/>
+                        <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="cbfb-4d1c-fca5-3611" type="selectionEntry" targetId="7855-ef37-7687-898d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad9f-b465-b255-7b18"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="20" field="selections" scope="90b6-6c1f-a912-296c" shared="true" id="28a7-38bf-44cb-3b6b" percentValue="true"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Special Pistols" id="338e-0315-6b03-3dc8" hidden="false" sortIndex="3">
+                      <entryLinks>
+                        <entryLink import="true" name="WGL - Pistols" hidden="false" id="aa33-dab0-4c82-8396" type="selectionEntry" targetId="0101-11ea-abf0-5e5b"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="20" field="selections" scope="90b6-6c1f-a912-296c" shared="true" id="8f58-ab7b-b2fb-dd0a" percentValue="true"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear Option" id="d829-c9d1-424c-a94d" hidden="false" defaultSelectionEntryId="cea4-2cda-335c-ac58">
+                  <entryLinks>
+                    <entryLink import="true" name="WG - Combat Shield" hidden="false" id="be3c-bf1d-3b35-df01" type="selectionEntry" targetId="4c36-af12-2cea-0887" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dd8-8802-f0c3-d03e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="834a-6a6f-e4c9-4925" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="602b-e293-0645-4aec"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8305-6784-f740-b99d"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee71-9e3d-17b2-fd45"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Equipment" id="d955-ed32-cf89-a3bc" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="WGL - Equipment" hidden="false" id="3b0b-8033-f030-0fa8" type="selectionEntry" targetId="0553-2f8b-ca3f-ad9f"/>
+                        <entryLink import="true" name="WG - Vexilla" hidden="false" id="e7aa-cf80-4bf8-a4e2" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04a7-5318-73ee-c3b7"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f7cb-5766-a0a8-ae14"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Despoiler Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8f99-bffc-415e-00f5">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">2</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="4ecb-f715-3b9b-bb3d" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa85-5703-f436-2c0f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec1d-6144-e666-0f47"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Options" id="2c0e-383b-c663-26fb" hidden="false" defaultSelectionEntryId="8075-945d-13b4-bef2" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1039-256d-b484-834c"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0541-00eb-d6b0-54f2"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="47e3-88d6-5f7e-ae17" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fabb-d9af-b7cb-d7ea"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WM - CW Chainsword, Heavy" hidden="false" id="8075-945d-13b4-bef2" type="selectionEntry" targetId="fa43-2513-ab3a-602c" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4607-c196-9a55-4552"/>
+                        <constraint type="max" value="20" field="selections" scope="90b6-6c1f-a912-296c" shared="true" id="67b3-a523-b2ca-b05c" percentValue="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="3f4f-6373-b948-8fa7" type="selectionEntry" targetId="d071-8d24-adcd-8539">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cce-c888-e8ab-0bd3"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="c8f6-7547-fa23-6ff3" type="selectionEntry" targetId="1567-4a0d-198b-c5eb" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e0-9b21-9ed3-1c86"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Pistol" id="d9b6-8762-fd38-d9c8" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="43a1-6eea-451c-4846" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="745f-ed6a-f7a0-d48e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WGL - Pistols" hidden="false" id="f663-7500-83a8-86e2" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f13-589e-563f-a2b7"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="f6ad-aeca-e995-b3d1" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d963-41ca-dc59-44ee"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecc5-9b78-923a-0371"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Despoiler Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1a82-10d9-92b2-a484">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">2</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="fa48-b825-ded6-b874" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4329-a1be-f117-aeb9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="16d0-62fa-4fec-801a" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e7a-ff73-d9e8-4c93"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f51-0414-96bd-b1b7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="ffd0-465b-86cc-6516" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afdb-f9f8-b0ac-5de0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="604e-7aa2-0a9e-f8d2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="0a41-3757-2a98-ffaf" id="908d-fedd-f7e1-b5f5" primary="false" name="ST Sergeant"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="b758-9558-a379-b334" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
+          </infoLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="f748-15d5-eec2-1666" childId="90b6-6c1f-a912-296c" shared="true" id="8277-e765-f838-bb8e"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line [2]" id="600b-c347-0883-0482" hidden="false" type="profile" targetId="84c8-5d10-cab7-3b5b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="6 Breacher Squad" hidden="false" id="664c-5153-9c4a-2ce1">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6746-b588-49a8-8e64" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="7534-5b4f-eace-ff77" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="4f24-53bb-d3c2-f854" id="d19a-bd5d-5691-20b0" primary="true" name="HH3-6 Troops"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c27e-15d3-748f-eace"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Breacher Marines" hidden="false" id="ad02-3244-e944-b92d" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Legionaries" hidden="false" id="a088-d90b-d746-fdf7" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="b0d8-a587-30ef-579f"/>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4edd-1a04-b7a0-1e5a"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapons" id="f7e8-3628-03c4-7623" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="93a2-f29c-ed5d-7b5a" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0047-226e-f018-bf45"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="719f-7b2d-0209-1442"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="1fe1-d3f5-4f1b-e376" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0d6-33b0-1ede-6980"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e152-63fb-784b-9636"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="c25b-6f26-182b-d805" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="ac70-f1fc-d309-03c6" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
+                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="972f-1699-87d9-0bba" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01fa-f015-56ae-f229"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Equipment" id="636c-def6-a530-43ed" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Equipment" hidden="false" id="a91b-849c-dfdb-74ff" type="selectionEntry" targetId="0553-2f8b-ca3f-ad9f"/>
+                    <entryLink import="true" name="WG - Vexilla" hidden="false" id="9f38-829b-b97c-c667" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c293-eeba-e024-8203"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4c38-6edd-5fd9-0129"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Breacher Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="95d0-ace1-e4e7-e861">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="e7e4-3f6d-f955-4323" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="de8d-8aab-c3df-2287" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="acd6-eea3-1704-4210" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f651-6f3e-19fd-81f6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c915-3fbc-f0e0-31df"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Options" id="2a7a-b190-38e7-a906" hidden="false" defaultSelectionEntryId="e668-c29a-c555-69ab" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c810-59c0-2a6e-05d9"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a3c-438b-7721-d2ac"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Pistol" id="c89b-9313-594c-4d88" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="1ddc-fa5b-83ad-99e6" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6356-b92c-1734-71e2"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WGL - Pistols" hidden="false" id="3761-3d1d-dd19-690a" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5d4-b812-b5e3-afa4"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e6d-9bb4-8c22-3752"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Bolter" id="b643-d9ae-c4a4-a508" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="WR - BW Bolter" hidden="false" id="c140-ca8c-6f2d-6a7c" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb3-c5d5-32e8-70fa"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="5550-2b69-0268-a0d4" type="selectionEntry" targetId="de2c-8068-a8eb-e218" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6983-f6df-faad-77f4"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="f58e-ff5a-cb3d-1ef1" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5d2-79ae-8e94-083d"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a6-89ed-7075-83f3"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Breacher Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a0f0-9c35-da1b-426e">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="307f-8ea6-ecd5-3605" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d5-727a-40d4-50b8"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="334e-bd9f-ca2e-e3e3" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ff7-14f8-1c45-ae37-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ff7-14f8-1c45-ae37-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="f282-e295-8913-f4b1" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf0c-b2c5-0dab-8769-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf0c-b2c5-0dab-8769-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="280" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="664c-5153-9c4a-2ce1" childId="ad02-3244-e944-b92d" shared="true" id="9920-a659-549d-78e4"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line [1]" id="ea8c-4d04-2ab9-6b9c" hidden="false" type="profile" targetId="8e06-a94a-ec7f-d4b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="7 Tactical Support Squad" hidden="false" id="2327-a6b4-a257-a5e0">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="afec-98d0-6010-da91" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="f2e3-c377-055b-0d75" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="7118-6f6e-f38b-effc" id="9ef5-37ce-7d06-ae17" primary="false" name="HH3-5 Heavy Assault"/>
+        <categoryLink targetId="6f29-635a-b3d7-321a" id="ecbe-7940-8279-1d5c" primary="true" name="HH3-7 Support"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="dc73-54cb-00dc-3b3c"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tactical Support Marines" hidden="false" id="8d30-02bf-fcea-8bc7" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Legionaries" hidden="false" id="8706-6d49-a4d8-1c91" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9ded-d3ed-cb88-1e8c"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d55f-01fd-2ebd-998d"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapons" id="d6c6-dc63-a13e-be0f" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="bae6-095f-d807-af1f" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0010-8141-87e4-44ed"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5352-3700-1295-2f6e"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Special Weapons" id="2220-66e9-783a-0a81" hidden="false" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="WGL - Special Weapons" hidden="false" id="1912-8e13-f8c9-3d3d" type="selectionEntry" targetId="8680-2e8c-b073-f384">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba6c-602e-9a53-7634"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="514d-8ef2-43b5-c6fa"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dcb-56be-d6f4-070a"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a06-8ad1-1b49-58d0"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="3692-1d98-45bb-9f5d" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="c63d-37e1-eaaf-95af" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
+                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="8e78-47d0-0338-6cc8" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f3e-7362-8f06-0169"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Equipment" id="f4be-4b06-f137-ea29" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Equipment" hidden="false" id="d621-444c-f8ea-cd9a" type="selectionEntry" targetId="0553-2f8b-ca3f-ad9f"/>
+                    <entryLink import="true" name="WG - Vexilla" hidden="false" id="5af4-9c97-cd89-4c0e" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee9c-e94f-0640-ea78"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8d8c-6136-553b-5227"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="T Support Legionary" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0a40-ee7d-68f1-c2c7">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="ff19-e6b1-75be-0c79" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c90-7d2b-e72f-2573"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="791b-a954-0c86-7e88"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Options" id="6be3-8bd8-3776-4f69" hidden="false" defaultSelectionEntryId="e668-c29a-c555-69ab" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8ffa-dee3-861e-5cb3"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d7ac-637b-0879-3c7e"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="d285-0a28-f099-a59c" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2377-b1f5-54d6-dcbd"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="ba1c-fcdc-9d70-e7a0" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd95-90b3-6c3f-3982"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WGL - Special Weapons" hidden="false" id="83c4-32d4-4d9c-56c0" type="selectionEntry" targetId="8680-2e8c-b073-f384">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23a8-d8e8-1f0b-cc3b-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a8-d8e8-1f0b-cc3b-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="T Support Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="54ba-fedd-f921-bda9">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="S" typeId="e404-7e45-0cc9-9a76">4</characteristic>
+                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
+                    <characteristic name="W" typeId="d786-d92f-d7da-c5fe">1</characteristic>
+                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8-7-7-7</characteristic>
+                    <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">4</characteristic>
+                    <characteristic name="A" typeId="1112-8c11-772b-6248">1</characteristic>
+                    <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="fe09-6d9e-a554-b4d7" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f079-ef20-4478-1bd0"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="10" field="selections" scope="2327-a6b4-a257-a5e0" childId="8d30-02bf-fcea-8bc7" shared="true" id="2813-eddf-73dc-f141"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -8531,17 +8903,98 @@ Hull (Front) - HK</characteristic>
     </profile>
     <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb0d-6fe1-d68a-62e2">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Bulky [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eb71-ace1-a9b9-8b23">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Bulky [4]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7209-8260-92e0-f3fd">
+    <profile name="Bulky [5]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7209-8260-92e0-f3fd">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Line [1]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e06-a94a-ec7f-d4b2">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
+
+
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [4]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7b4-34a3-0980-7faf">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [6]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe6d-e60e-6cd8-599e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Line [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84c8-5d10-cab7-3b5b">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
+
+
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Line [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b275-8c0c-3dfb-3a42">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
+
+
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5f5-1dbc-b05c-3c5e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [1]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e40-6178-3547-7f62">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7db7-6f4a-63db-0305">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fury of the Legion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3257-3976-a065-8163">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model with this Special Rule makes a Shooting Attack with a Bolter; that Bolter gains Heavy (FP) until that Shooting Attack is resolved</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -8706,7 +9159,10 @@ Hull (Front) - HK</characteristic>
     <entryLink import="true" name="0-LoW Sokar Stormbird" hidden="false" id="9c51-77f6-22cc-b6be" type="selectionEntry" targetId="70c1-984e-84e2-0e20"/>
     <entryLink import="true" name="0-LoW Thunderhawk Gunship" hidden="false" id="0bcb-5936-b447-20ac" type="selectionEntry" targetId="824b-d7a7-457d-04b5"/>
     <entryLink import="true" name="0-LoW Typhon Heavy Siege Tank" hidden="false" id="cdd8-22e4-dc69-cf07" type="selectionEntry" targetId="71e6-fb89-4b5f-ded8"/>
-    <entryLink import="true" name="5 Tactical Squad" hidden="false" id="887e-08d4-8a13-c2e4" type="selectionEntry" targetId="129d-2da5-66f3-f4ec"/>
+    <entryLink import="true" name="6 Breacher Squad" hidden="false" id="887e-08d4-8a13-c2e4" type="selectionEntry" targetId="664c-5153-9c4a-2ce1"/>
     <entryLink import="true" name="6 Assault Squad" hidden="false" id="0fbb-dfaa-a99f-3a13" type="selectionEntry" targetId="1424-2ae6-8fc0-a655"/>
+    <entryLink import="true" name="6 Tactical Squad" hidden="false" id="1ab4-7601-c7e0-b69d" type="selectionEntry" targetId="129d-2da5-66f3-f4ec"/>
+    <entryLink import="true" name="6 Despoiler Squad" hidden="false" id="ca29-a7e7-c52c-5eb6" type="selectionEntry" targetId="f748-15d5-eec2-1666"/>
+    <entryLink import="true" name="7 Tactical Support Squad" hidden="false" id="6a8c-38b1-5ca6-50a4" type="selectionEntry" targetId="2327-a6b4-a257-a5e0"/>
   </entryLinks>
 </catalogue>

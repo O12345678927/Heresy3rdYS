@@ -703,18 +703,9 @@ For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that w
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
       </characteristics>
     </profile>
-    <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eef9-65d9-0815-c999">
+    <profile name="Implacable Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eef9-65d9-0815-c999">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
-
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
-
-The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
-
-    Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
-
-    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Controlling Player of a Model with this Special Rule treats all Ranged Weapons such a Model has that do not have any variant of the Heavy (X) Special Rule or Ordnance (X) Special Rule as having the Assault Trait.</characteristic>
       </characteristics>
     </profile>
     <profile name="Shieldwall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c033-9478-b1bf-e39d">
@@ -729,6 +720,38 @@ For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the ta
     The Active Player continues to resolve this Shooting Attack as normal.
 
     All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="585f-8624-0c1f-364e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
+The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
+
+The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
+
+The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
+
+    Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+
+    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Slow and Purposeful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7985-d413-e285-9940">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In Step 4 of the Resolution Sub-Phase, a Player that has won Combat cannot choose for a Unit that includes any Models with this Special Rule to Pursue, and must instead select another eligible option for that Unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Outflank" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1172-8503-f9ae-96ec">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit made up entirely of Models with this Special Rule that enters play from Reserves may do so from any point on the Battlefield Edge. The Unit may not enter play from any point that is within the Opposing Player&apos;s Deployment Zone or withing 7&quot;&quot; of any enemy Model.
+
+
+Note that a Unit Embarked on a Model with the Outflank Special Rule does not need to have the Outflank Special Rule in order for the Model it is Embarked upon to benefit from it. A Model that enters the Battlefield from a point outside of the Controlling Player&apos;s Deployment Zone by means of this Special Rule, and any Units Embarked on such a Model, may not have a Charge declared for them in the Player Turn on which they enter play.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Firestorm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9265-9760-7c7c-5def">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots. In addition, after making Volley Attacks in Step 4 of the Charge Procedure, a Unit containing any Models with this Special Rule is not required to make a Charge Roll in Step 5. If the Controlling Player chooses not to make a Charge Roll in Step 5 of the Charge Procedure then the Charge Procedure ends immediately.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

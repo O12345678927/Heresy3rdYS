@@ -224,15 +224,15 @@
         <categoryLink name="HH3-2 Command" hidden="false" id="b8cb-06e8-ae39-52b5" targetId="0904-6f98-6fff-5dce"/>
         <categoryLink name="HH3-3 Retinue" hidden="false" id="4637-e274-6ea2-80dd" targetId="3fac-e5cf-dd97-83a3"/>
         <categoryLink name="HH3-4 Elites" hidden="false" id="20ad-378c-15a1-2a91" targetId="e8e8-aa94-352b-b9c8"/>
-        <categoryLink name="HH3-5 Troops" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
-        <categoryLink name="HH3-6 Support" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
-        <categoryLink name="HH3-8 Recon" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
-        <categoryLink name="HH3-9 Fast Attack" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
-        <categoryLink name="HH3-10 Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
-        <categoryLink name="HH3-11 Heavy Transport" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
-        <categoryLink name="HH3-12 Armour" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
-        <categoryLink name="HH3-13 War-Engine" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
-        <categoryLink name="HH3-7 Heavy Assault" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
+        <categoryLink name="HH3-5 Heavy Assault" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
+        <categoryLink name="HH3-6 Troops" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
+        <categoryLink name="HH3-8 War-Engine" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
+        <categoryLink name="HH3-9 Transport" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
+        <categoryLink name="HH3-10 Heavy Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
+        <categoryLink name="HH3-11 Recon" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
+        <categoryLink name="HH3-12 Fast Attack" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
+        <categoryLink name="HH3-13 Armour" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
+        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
@@ -245,12 +245,12 @@
           </constraints>
         </categoryLink>
         <categoryLink id="57d9-fc38-a603-fdd2" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
-        <categoryLink id="ee07-d0f5-deb6-b64c" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink id="ee07-d0f5-deb6-b64c" name="T Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink id="6d07-c461-1f18-a3eb" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink id="d9fd-28fe-bd15-d67e" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
+        <categoryLink id="d9fd-28fe-bd15-d67e" name="T Cavalry" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink id="9835-544c-d9d1-72bf" name="Beast" hidden="false" targetId="4c3e-9310-a516-3590" primary="false"/>
         <categoryLink id="bc76-9342-c298-99c9" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
-        <categoryLink id="61bf-bd6b-cba7-70b2" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink id="61bf-bd6b-cba7-70b2" name="T Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink id="5db7-9406-f21f-2de0" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
         <categoryLink id="fe2b-ae0-8572-b6ff" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Retinue" hidden="false" id="d932-86b9-29ec-c799" targetId="cc77-a53-fca8-f48e"/>
@@ -301,12 +301,12 @@
           </constraints>
         </categoryLink>
         <categoryLink name="Battleline" hidden="false" id="ceb5-d65a-179b-cfdd" targetId="e338-111e-d0c6-b687" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="9447-a1b3-41e2-8e71" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="T Infantry" hidden="false" id="9447-a1b3-41e2-8e71" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Swarm" hidden="false" id="a8d2-e42d-2d2d-5b61" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink name="Mounted" hidden="false" id="2252-2bf7-54da-f3e3" targetId="14a0-40c9-2748-ae6e" primary="false"/>
+        <categoryLink name="T Cavalry" hidden="false" id="2252-2bf7-54da-f3e3" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink name="Beast" hidden="false" id="c56a-baf2-b6e3-dc10" targetId="4c3e-9310-a516-3590" primary="false"/>
         <categoryLink name="Monster" hidden="false" id="8eef-7007-d7a2-a968" targetId="9693-cf84-fe69-37a9" primary="false"/>
-        <categoryLink name="Vehicle" hidden="false" id="f68a-2d0c-fd7b-9460" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink name="T Vehicle" hidden="false" id="f68a-2d0c-fd7b-9460" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Drone" hidden="false" id="1285-e936-26c8-b9bd" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
         <categoryLink name="Dedicated Transport" hidden="false" id="8ef9-4038-9434-2ed0" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Fortification" hidden="false" id="9521-ccd2-1cb5-eef5" targetId="19d7-9c74-2140-5851" primary="false"/>
@@ -687,21 +687,13 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
     <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f6f3-7a32-8350-7e34">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
 The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.Cost:
-
 
 The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.Target:
 
-
 For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.Process:
 
-
-
-
     The Active Player continues to resolve this Shooting Attack as normal.
-
 
     All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
@@ -714,21 +706,13 @@ For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that w
     <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eef9-65d9-0815-c999">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
 The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
-
 
 The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
 
-
 The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
 
-
-
-
     Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
-
 
     In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
@@ -736,21 +720,13 @@ The Target Unit is always the Unit which is the target of a Shooting Attack that
     <profile name="Shieldwall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c033-9478-b1bf-e39d">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-
-
 The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.Cost:
-
 
 The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.Target:
 
-
 For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.Process:
 
-
-
-
     The Active Player continues to resolve this Shooting Attack as normal.
-
 
     All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
       </characteristics>

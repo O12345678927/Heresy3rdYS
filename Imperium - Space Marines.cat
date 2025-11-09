@@ -5744,9 +5744,9 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WG - Combat Shield" hidden="false" id="4c36-af12-2cea-0887">
       <profiles>
-        <profile name="Argyrum Boarding Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6267-dfea-5011-0d76">
+        <profile name="Combat Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6267-dfea-5011-0d76">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with an Argyrum Boarding Shield may add 1 to Invulnerable Saves made against Melee Attacks</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with a Combat Shield gains a 5+ Invulnerable Save against Melee Weapons. In Addition a Model with a Combat Shield gains a +1 modifier to Focus Rolls</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5759,6 +5759,9 @@ Hull (Front) - HK</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Shieldwall" id="ec0a-1c6c-e2b6-6b5b" hidden="false" type="profile" targetId="c033-9478-b1bf-e39d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="0-WL  Warlord" hidden="false" id="7a94-b9b3-648a-9d82">
       <costs>
@@ -8008,7 +8011,6 @@ Hull (Front) - HK</characteristic>
                     </entryLink>
                     <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="cea4-2cda-335c-ac58" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="1">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccc7-1134-54b0-f279"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4948-ef15-16fe-6b0c"/>
                       </constraints>
                     </entryLink>
@@ -8040,7 +8042,7 @@ Hull (Front) - HK</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764d-cd18-2124-c6de"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Options" id="8c5a-637c-66b2-2e9a" hidden="false" defaultSelectionEntryId="e668-c29a-c555-69ab" sortIndex="1">
+                <selectionEntryGroup name="Weapon Options" id="8c5a-637c-66b2-2e9a" hidden="false" defaultSelectionEntryId="dc56-307e-a00e-5265" sortIndex="1">
                   <constraints>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9ddd-b530-f384-a642"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fa9d-c70b-5d9d-7228"/>

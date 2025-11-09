@@ -766,5 +766,17 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
     The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Heavy Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aeb8-fb3a-2f04-8e4c">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">    A Model with the Command Sub-Type may join and leave Units.
+
+
+
+    A Model with the Command Sub-Type may Issue and Accept Challenges.
+
+
+    The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>

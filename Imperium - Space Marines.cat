@@ -9546,7 +9546,7 @@ Hull (Front) - HK</characteristic>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6019-7e43-bca7-e9ff"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff3c-dcb5-74a8-a7dc"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ff3c-dcb5-74a8-a7dc"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Combi-Weapons" id="2861-6549-ac71-896f" hidden="false" sortIndex="4">
@@ -9613,7 +9613,7 @@ Hull (Front) - HK</characteristic>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dda7-50f7-5e95-f101"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd37-c4ed-ca98-e071"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cd37-c4ed-ca98-e071"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -9632,7 +9632,7 @@ Hull (Front) - HK</characteristic>
                 <condition type="atLeast" value="1" field="selections" scope="fa73-0cbc-bec0-a937" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="2+" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" scope="root-entry"/>
+            <modifier type="set" value="2+" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" scope="f082-233e-50a2-549e"/>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="1d2d-7d3c-21e6-94e5" type="selectionEntry" targetId="d071-8d24-adcd-8539" sortIndex="3">

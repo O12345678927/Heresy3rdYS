@@ -8589,10 +8589,19 @@ Hull (Front) - HK</characteristic>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Equipment" id="636c-def6-a530-43ed" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="WGL - Equipment" hidden="false" id="a91b-849c-dfdb-74ff" type="selectionEntry" targetId="0553-2f8b-ca3f-ad9f"/>
                     <entryLink import="true" name="WG - Vexilla" hidden="false" id="9f38-829b-b97c-c667" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c293-eeba-e024-8203"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c293-eeba-e024-8203"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WG - Augury Scanner" hidden="false" id="f794-2b05-faa8-9632" type="selectionEntry" targetId="5f6d-780d-19c0-d6dd">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="df59-9aeb-201c-9817"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WG - Nuncio-Vox" hidden="false" id="eab1-039f-6e9f-065e" type="selectionEntry" targetId="f1a0-c3ff-54bc-64e9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="d360-afb0-be3d-6cd6"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>

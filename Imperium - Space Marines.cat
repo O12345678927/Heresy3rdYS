@@ -12088,22 +12088,20 @@ Hull (Front) - HK</characteristic>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="b1f3-47a5-ecdd-0d03" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="7c2f-de7e-99c9-b12c">
           <infoLinks>
+            <infoLink name="Slow and Purposeful" id="6b18-1f05-cf2d-bc60" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
             <infoLink name="Command Sub-Type" id="3893-ee8a-6ed4-cf24" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Heavy Sub-Type" id="0fe0-a4cf-89ac-e54d" hidden="false" type="profile" targetId="aeb8-fb3a-2f04-8e4c"/>
             <infoLink name="Implacable Advance" id="4dbf-a3e4-a7ad-9b1e" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
             <infoLink name="Invulnerable Save (4+)" id="e7ce-0c57-676d-0829" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Officer of the Line (2)" id="ef82-d3b4-d72a-138d" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
-            <infoLink name="Slow and Purposeful" id="6b18-1f05-cf2d-bc60" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
             <infoLink name="Bulky [2]" id="45f8-fe58-ab52-7178" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
           </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f617-0379-4966-66a4-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-0379-4966-66a4-max"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="2 Centurion, Tartaros" hidden="false" id="7610-177b-8486-b0ae">
       <costs>

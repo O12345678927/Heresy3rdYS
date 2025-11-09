@@ -5705,12 +5705,36 @@ Hull (Front) - HK</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Special Weapons" id="59ea-ce95-6f0c-e426" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="082a-d392-2b07-6479" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
-            <entryLink import="true" name="WR - AW Rotor Cannon" hidden="false" id="70c4-ffd5-2142-f61d" type="selectionEntry" targetId="29be-0e80-5373-0e1c"/>
-            <entryLink import="true" name="WR - FW Flamer" hidden="false" id="91bd-5c13-74fc-c8e0" type="selectionEntry" targetId="ff03-f6a5-f0ee-9584"/>
-            <entryLink import="true" name="WR - MT Meltagun" hidden="false" id="c446-9a63-cebd-2953" type="selectionEntry" targetId="07ad-e36f-01a0-631c"/>
-            <entryLink import="true" name="WR - PL Plasma Gun" hidden="false" id="396f-7fe2-f04c-f601" type="selectionEntry" targetId="b713-934a-10c8-907f"/>
-            <entryLink import="true" name="WR - VK Volkite Caliver" hidden="false" id="c388-d193-6eb6-88c0" type="selectionEntry" targetId="c859-7a59-17e3-3ed6"/>
+            <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="082a-d392-2b07-6479" type="selectionEntry" targetId="fa31-dc69-6f5c-c160">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a4e-6d61-338e-78ce"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WR - AW Rotor Cannon" hidden="false" id="70c4-ffd5-2142-f61d" type="selectionEntry" targetId="29be-0e80-5373-0e1c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e7b-426c-72a9-32b5"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WR - FW Flamer" hidden="false" id="91bd-5c13-74fc-c8e0" type="selectionEntry" targetId="ff03-f6a5-f0ee-9584">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff0f-dcc0-c006-6d8f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WR - MT Meltagun" hidden="false" id="c446-9a63-cebd-2953" type="selectionEntry" targetId="07ad-e36f-01a0-631c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f45-e0e7-b18d-f4b8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WR - PL Plasma Gun" hidden="false" id="396f-7fe2-f04c-f601" type="selectionEntry" targetId="b713-934a-10c8-907f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc14-6864-a21c-65a7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WR - VK Volkite Caliver" hidden="false" id="c388-d193-6eb6-88c0" type="selectionEntry" targetId="c859-7a59-17e3-3ed6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24dc-a733-7034-30a2"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

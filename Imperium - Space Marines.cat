@@ -9412,6 +9412,13 @@ Hull (Front) - HK</characteristic>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="0" field="65f4-3ad1-7c2b-317d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="bc78-2671-5e88-cea8" childId="de5c-c3bf-4522-59b9" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Pistol Options" id="46c4-1707-c308-c9e4" hidden="false" defaultSelectionEntryId="435a-3160-b88a-9708">
               <entryLinks>
@@ -9617,15 +9624,15 @@ Hull (Front) - HK</characteristic>
           <modifiers>
             <modifier type="set" value="1" field="ff35-96d2-3154-769f">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="fa73-0cbc-bec0-a937" childId="8098-8bdf-eb9b-8107" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="fa73-0cbc-bec0-a937" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="set" value="1" field="1a2e-db7e-8f2b-d871">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="fa73-0cbc-bec0-a937" childId="8098-8bdf-eb9b-8107" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="fa73-0cbc-bec0-a937" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="2+" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" scope="unit"/>
+            <modifier type="set" value="2+" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" scope="root-entry"/>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="1d2d-7d3c-21e6-94e5" type="selectionEntry" targetId="d071-8d24-adcd-8539" sortIndex="3">
@@ -9965,6 +9972,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
     <entryLink import="true" name="6 Tactical Squad" hidden="false" id="1ab4-7601-c7e0-b69d" type="selectionEntry" targetId="129d-2da5-66f3-f4ec"/>
     <entryLink import="true" name="6 Despoiler Squad" hidden="false" id="ca29-a7e7-c52c-5eb6" type="selectionEntry" targetId="f748-15d5-eec2-1666"/>
     <entryLink import="true" name="7 Tactical Support Squad" hidden="false" id="6a8c-38b1-5ca6-50a4" type="selectionEntry" targetId="2327-a6b4-a257-a5e0"/>
-    <entryLink import="true" name="1 Praetor w/ Jump Pack" hidden="false" id="8630-dede-06c7-da15" type="selectionEntry" targetId="f082-233e-50a2-549e"/>
+    <entryLink import="true" name="1 Praetor" hidden="false" id="8630-dede-06c7-da15" type="selectionEntry" targetId="9aac-a0c7-bd9e-de6d"/>
+    <entryLink import="true" name="1 Praetor w/ Jump Pack" hidden="false" id="3477-2eef-0b53-cb30" type="selectionEntry" targetId="f082-233e-50a2-549e"/>
   </entryLinks>
 </catalogue>

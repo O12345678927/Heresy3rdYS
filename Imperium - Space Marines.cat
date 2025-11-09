@@ -10961,11 +10961,19 @@ Hull (Front) - HK</characteristic>
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Invulnerable Save (5+)" id="9784-ce3e-6fe0-2611" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
-        <infoLink name="Officer of the Line" id="a999-69a2-b928-56a3" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
-        <infoLink name="Command Sub-Type" id="b873-421b-b152-0d68" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="3d6d-8a7e-627d-952b">
+          <infoLinks>
+            <infoLink name="Command Sub-Type" id="b873-421b-b152-0d68" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
+            <infoLink name="Invulnerable Save (5+)" id="9784-ce3e-6fe0-2611" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
+            <infoLink name="Officer of the Line (2)" id="a999-69a2-b928-56a3" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4eba-0c07-aea3-644f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eba-0c07-aea3-644f-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Outrider" hidden="false" id="74da-0640-0cda-6050">
       <costs>
@@ -11889,13 +11897,21 @@ Hull (Front) - HK</characteristic>
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Invulnerable Save (5+)" id="bcc4-3feb-3733-a68f" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
-        <infoLink name="Bulky [2]" id="db20-4639-a17e-261f" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
-        <infoLink name="Command Sub-Type" id="bc3f-0357-2712-d9ea" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
-        <infoLink name="Officer of the Line" id="1e2b-e015-cae7-e122" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
-        <infoLink name="Deep Strike" id="c7d5-225c-0a8d-e250" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="8627-6dd8-281c-8f24">
+          <infoLinks>
+            <infoLink name="Invulnerable Save (5+)" id="bcc4-3feb-3733-a68f" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
+            <infoLink name="Bulky [2]" id="db20-4639-a17e-261f" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
+            <infoLink name="Command Sub-Type" id="bc3f-0357-2712-d9ea" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
+            <infoLink name="Officer of the Line (2)" id="1e2b-e015-cae7-e122" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
+            <infoLink name="Deep Strike" id="c7d5-225c-0a8d-e250" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba82-e5e5-beaf-9215-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba82-e5e5-beaf-9215-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="2 Centurion, Cataphractii" hidden="false" id="c332-950a-ede3-2955">
       <costs>
@@ -12100,6 +12116,10 @@ Hull (Front) - HK</characteristic>
             <infoLink name="Officer of the Line (2)" id="ef82-d3b4-d72a-138d" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
             <infoLink name="Bulky [2]" id="45f8-fe58-ab52-7178" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80a2-88f9-b64d-3c4f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a2-88f9-b64d-3c4f-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -12294,7 +12314,9 @@ Hull (Front) - HK</characteristic>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="b2c0-6990-bc6e-5cb2" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="d3db-6cf9-d567-9126">
           <infoLinks>
             <infoLink name="Bulky [2]" id="f9b6-6d56-4cef-733e" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
             <infoLink name="Command Sub-Type" id="571a-791c-faba-4872" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
@@ -12302,8 +12324,12 @@ Hull (Front) - HK</characteristic>
             <infoLink name="Invulnerable Save (4+)" id="1f80-6f3c-6eb0-8108" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Officer of the Line (2)" id="8fd0-e669-dfde-76bf" hidden="false" type="profile" targetId="e3ea-4e06-ded0-7d7e"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f47-a846-780e-dc8b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f47-a846-780e-dc8b-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

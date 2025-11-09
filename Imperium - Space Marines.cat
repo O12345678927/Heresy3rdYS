@@ -5702,14 +5702,18 @@ Hull (Front) - HK</characteristic>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WGL - Special Weapons" hidden="false" id="8680-2e8c-b073-f384">
-      <entryLinks>
-        <entryLink import="true" name="WR - FW Flamer" hidden="false" id="91bd-5c13-74fc-c8e0" type="selectionEntry" targetId="ff03-f6a5-f0ee-9584"/>
-        <entryLink import="true" name="WR - AW Rotor Cannon" hidden="false" id="70c4-ffd5-2142-f61d" type="selectionEntry" targetId="29be-0e80-5373-0e1c"/>
-        <entryLink import="true" name="WR - VK Volkite Caliver" hidden="false" id="c388-d193-6eb6-88c0" type="selectionEntry" targetId="c859-7a59-17e3-3ed6"/>
-        <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="082a-d392-2b07-6479" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
-        <entryLink import="true" name="WR - PL Plasma Gun" hidden="false" id="396f-7fe2-f04c-f601" type="selectionEntry" targetId="b713-934a-10c8-907f"/>
-        <entryLink import="true" name="WR - MT Meltagun" hidden="false" id="c446-9a63-cebd-2953" type="selectionEntry" targetId="07ad-e36f-01a0-631c"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Special Weapons" id="59ea-ce95-6f0c-e426" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="082a-d392-2b07-6479" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
+            <entryLink import="true" name="WR - AW Rotor Cannon" hidden="false" id="70c4-ffd5-2142-f61d" type="selectionEntry" targetId="29be-0e80-5373-0e1c"/>
+            <entryLink import="true" name="WR - FW Flamer" hidden="false" id="91bd-5c13-74fc-c8e0" type="selectionEntry" targetId="ff03-f6a5-f0ee-9584"/>
+            <entryLink import="true" name="WR - MT Meltagun" hidden="false" id="c446-9a63-cebd-2953" type="selectionEntry" targetId="07ad-e36f-01a0-631c"/>
+            <entryLink import="true" name="WR - PL Plasma Gun" hidden="false" id="396f-7fe2-f04c-f601" type="selectionEntry" targetId="b713-934a-10c8-907f"/>
+            <entryLink import="true" name="WR - VK Volkite Caliver" hidden="false" id="c388-d193-6eb6-88c0" type="selectionEntry" targetId="c859-7a59-17e3-3ed6"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WGL - Sergeant Melee" hidden="false" id="6405-fec3-02c6-6908">
       <entryLinks>

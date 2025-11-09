@@ -7950,7 +7950,7 @@ Hull (Front) - HK</characteristic>
                     </entryLink>
                     <entryLink import="true" name="WM - CW Chainaxe, Heavy" hidden="false" id="fe07-d0f6-f65d-16e9" type="selectionEntry" targetId="4dee-abf1-6bb8-64cd" sortIndex="3">
                       <constraints>
-                        <constraint type="max" value="40" field="selections" scope="de10-1d0b-dc0d-052a" shared="true" id="785a-d584-4166-5193" percentValue="true"/>
+                        <constraint type="max" value="40" field="selections" scope="unit" shared="true" id="785a-d584-4166-5193" percentValue="true"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e09d-cb9b-f41e-4eb9"/>
                       </constraints>
                     </entryLink>
@@ -7994,7 +7994,7 @@ Hull (Front) - HK</characteristic>
                         </entryLink>
                       </entryLinks>
                       <constraints>
-                        <constraint type="max" value="20" field="selections" scope="de10-1d0b-dc0d-052a" shared="true" id="65ea-cfca-8afb-b963" percentValue="true"/>
+                        <constraint type="max" value="20" field="selections" scope="unit" shared="true" id="65ea-cfca-8afb-b963" percentValue="true"/>
                       </constraints>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -8145,13 +8145,13 @@ Hull (Front) - HK</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110a-df3c-6325-7330"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="4318-d23f-8fa5-e272" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="4318-d23f-8fa5-e272" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6" sortIndex="3">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a531-1b93-9497-c9d7"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bcf-008e-ddae-e9d2"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="1f75-b0f4-1752-f7a1" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="1f75-b0f4-1752-f7a1" type="selectionEntry" targetId="a7b6-3239-6a1f-8926" sortIndex="4">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9dc-ec56-44bf-69bd"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7430-e768-426d-4823"/>
@@ -8588,17 +8588,17 @@ Hull (Front) - HK</characteristic>
                   <entryLinks>
                     <entryLink import="true" name="WG - Vexilla" hidden="false" id="9f38-829b-b97c-c667" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="664c-5153-9c4a-2ce1" shared="true" id="c293-eeba-e024-8203"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c293-eeba-e024-8203"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="WG - Augury Scanner" hidden="false" id="f794-2b05-faa8-9632" type="selectionEntry" targetId="5f6d-780d-19c0-d6dd">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="a088-d90b-d746-fdf7" shared="true" id="df59-9aeb-201c-9817"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="df59-9aeb-201c-9817"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="WG - Nuncio-Vox" hidden="false" id="eab1-039f-6e9f-065e" type="selectionEntry" targetId="f1a0-c3ff-54bc-64e9">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="887e-08d4-8a13-c2e4" shared="true" id="d360-afb0-be3d-6cd6"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="d360-afb0-be3d-6cd6"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>

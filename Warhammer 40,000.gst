@@ -32,13 +32,13 @@
         <characteristicType name="I" id="0990-e6c5-0acd-5fd5"/>
         <characteristicType name="A" id="1112-8c11-772b-6248"/>
         <characteristicType name="WS" id="a1bd-cb83-dd70-d309"/>
+        <characteristicType name="BS" id="d5fd-b8fa-b61e-1106"/>
       </characteristicTypes>
     </profileType>
     <profileType id="f77d-b953-8fa4-b762" name="Ranged Weapons">
       <characteristicTypes>
         <characteristicType id="9896-9419-16a1-92fc" name="Range"/>
         <characteristicType id="3bb-c35f-f54-fb08" name="FP"/>
-        <characteristicType id="94d-8a98-cf90-183e" name="BS"/>
         <characteristicType id="2229-f494-25db-c5d3" name="S"/>
         <characteristicType id="9ead-8a10-520-de15" name="AP"/>
         <characteristicType id="a354-c1c8-a745-f9e3" name="D"/>

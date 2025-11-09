@@ -754,5 +754,17 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots. In addition, after making Volley Attacks in Step 4 of the Charge Procedure, a Unit containing any Models with this Special Rule is not required to make a Charge Roll in Step 5. If the Controlling Player chooses not to make a Charge Roll in Step 5 of the Charge Procedure then the Charge Procedure ends immediately.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Command Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fa06-f87e-28cd-376d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">    A Model with the Command Sub-Type may join and leave Units.
+
+
+
+    A Model with the Command Sub-Type may Issue and Accept Challenges.
+
+
+    The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>

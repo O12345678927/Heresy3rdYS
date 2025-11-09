@@ -9423,6 +9423,25 @@ Hull (Front) - HK</characteristic>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77f0-288d-27dd-0c5a"/>
                   </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Bayonet" id="2dc8-b1f6-f4c6-474f" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="a64e-fa75-ef78-4d30" type="selectionEntry" targetId="b1c9-5841-58f4-1a15">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b77-f2b5-aedf-6c4e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="c864-2b84-546f-56c8" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86fd-ef17-6744-493d"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f5b-efa8-6f93-9860"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="WR - AW Astartes Shotgun" hidden="false" id="f858-8a6d-d93e-35e6" type="selectionEntry" targetId="2c35-d5d6-a44f-c2d0" sortIndex="2">
                   <constraints>
@@ -9739,6 +9758,7 @@ Hull (Front) - HK</characteristic>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Invulnerable Save" id="33d2-3941-2f7b-fef1" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="a268-b608-3a86-3a51" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Jump Pack" hidden="false" id="b327-45a2-4d96-fb7c">
@@ -10112,6 +10132,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Bulky [2]" id="1fe8-b716-9fa2-311d" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
         <infoLink name="Deep Strike" id="96c3-0fc1-6100-b7cc" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
         <infoLink name="Invulnerable Save" id="b897-714d-4ebf-4d7d" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="2151-c1f9-1bf4-7a9a" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Cataphractii" hidden="false" id="2ad7-a8cc-7e66-fea9">
@@ -10318,6 +10339,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Bulky [2]" id="b269-6b02-23e2-d595" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
         <infoLink name="Slow and Purposeful" id="aea1-3495-1877-7de1" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
         <infoLink name="Invulnerable Save" id="cd76-ba23-5b79-ef28" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="3c65-a2d9-60f8-f126" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Tartaros" hidden="false" id="e472-3ffc-caad-ba97">
@@ -10522,6 +10544,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Implacable Advance" id="2bc5-450f-7993-84bd" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
         <infoLink name="Bulky [2]" id="a400-cb48-6457-55e3" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
         <infoLink name="Invulnerable Save" id="9185-68f0-d9ee-15ef" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="fafb-360a-6290-e8d9" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Saturnine" hidden="false" id="6564-dd50-22c5-64d8">
@@ -10626,6 +10649,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Invulnerable Save" id="f444-0f79-ea4e-ac0c" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Slow and Purposeful" id="9bec-0d17-4580-6cc8" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
         <infoLink name="Bulky [4]" id="1a34-7aa1-0f59-ec16" hidden="false" type="profile" targetId="f7b4-34a3-0980-7faf"/>
+        <infoLink name="Command Sub-Type" id="d387-d0d6-d5db-ca5e" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WG - Saturnine Teleportation Transponder" hidden="false" id="f980-597a-0804-84ae">
@@ -10816,6 +10840,7 @@ Hull (Front) - HK</characteristic>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Invulnerable Save" id="9784-ce3e-6fe0-2611" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="a999-69a2-b928-56a3" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Outrider" hidden="false" id="74da-0640-0cda-6050">
@@ -11120,6 +11145,9 @@ Hull (Front) - HK</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c359-e7af-fad4-1cfa"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -11134,6 +11162,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Bulky [2]" id="3eee-145e-87a8-1de8" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
         <infoLink name="Implacable Advance" id="3558-98ee-a7b8-4b93" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
         <infoLink name="Firestorm" id="3101-9e58-0408-24d9" hidden="false" type="profile" targetId="9265-9760-7c7c-5def"/>
+        <infoLink name="Command Sub-Type" id="a3cc-d7bd-6137-d60a" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="1 Praetor, Jetbike" hidden="false" id="339f-18f5-d4ff-214d">
@@ -11464,6 +11493,7 @@ Hull (Front) - HK</characteristic>
         <infoLink name="Bulky [3]" id="82aa-53bc-c202-186b" hidden="false" type="profile" targetId="eb71-ace1-a9b9-8b23"/>
         <infoLink name="Deep Strike" id="896d-4cd3-072d-f8c6" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
         <infoLink name="Invulnerable Save" id="608f-3229-d6e2-2553" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Command Sub-Type" id="eaaa-4f82-de97-54ae" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

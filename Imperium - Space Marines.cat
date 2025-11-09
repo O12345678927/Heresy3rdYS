@@ -8576,18 +8576,15 @@ Hull (Front) - HK</characteristic>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e152-63fb-784b-9636"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="de8d-8aab-c3df-2287" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapons" id="c25b-6f26-182b-d805" hidden="false" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="ac70-f1fc-d309-03c6" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
-                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="972f-1699-87d9-0bba" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01fa-f015-56ae-f229"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Equipment" id="636c-def6-a530-43ed" hidden="false">
+                <selectionEntryGroup name="Equipment" id="636c-def6-a530-43ed" hidden="false" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="WG - Vexilla" hidden="false" id="9f38-829b-b97c-c667" type="selectionEntry" targetId="d766-ab9a-8eca-2927">
                       <constraints>
@@ -8606,8 +8603,19 @@ Hull (Front) - HK</characteristic>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4c38-6edd-5fd9-0129"/>
+                    <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="4c38-6edd-5fd9-0129"/>
                   </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapons" id="7649-3a11-1daf-b329" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="e7e4-3f6d-f955-4323" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WM - 01 Close Combat Weapon" hidden="false" id="a10a-07c9-dc73-1703" type="selectionEntry" targetId="ebcb-7120-0796-2928"/>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -8625,20 +8633,6 @@ Hull (Front) - HK</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="e7e4-3f6d-f955-4323" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ca-1e7d-0c73-0683-max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="de8d-8aab-c3df-2287" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c7-7b61-0b73-0f66-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="acd6-eea3-1704-4210" sortIndex="1">
               <constraints>
@@ -9015,6 +9009,20 @@ Hull (Front) - HK</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - 01 Close Combat Weapon" hidden="false" id="ebcb-7120-0796-2928">
+      <profiles>
+        <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9eb3-0642-7c80-5cb2">
+          <characteristics>
+            <characteristic name="IM" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="AM" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="SM" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

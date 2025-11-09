@@ -9689,12 +9689,12 @@ Hull (Front) - HK</characteristic>
           <modifiers>
             <modifier type="set" value="1" field="ff35-96d2-3154-769f">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="3477-2eef-0b53-cb30" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="f082-233e-50a2-549e" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="set" value="1" field="1a2e-db7e-8f2b-d871">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="f082-233e-50a2-549e" childId="d071-8d24-adcd-8539" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>

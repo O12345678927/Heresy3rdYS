@@ -12098,6 +12098,10 @@ Hull (Front) - HK</characteristic>
             <infoLink name="Slow and Purposeful" id="6b18-1f05-cf2d-bc60" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
             <infoLink name="Bulky [2]" id="45f8-fe58-ab52-7178" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f617-0379-4966-66a4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-0379-4966-66a4-max"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>

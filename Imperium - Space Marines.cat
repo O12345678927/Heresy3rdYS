@@ -9816,7 +9816,9 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false" sortIndex="4">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="ad20-29a5-6702-52e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eff-7b5e-9ef9-75fc"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec45-43cb-0223-22d4"/>
@@ -9825,8 +9827,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <infoLink name="Command Sub-Type" id="a268-b608-3a86-3a51" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Invulnerable Save (4+)" id="33d2-3941-2f7b-fef1" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Jump Pack" hidden="false" id="b327-45a2-4d96-fb7c">
       <costs>
@@ -10208,20 +10210,22 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="8db0-0341-02fb-88f2" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="5f9d-78a0-5eed-48c9">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ac-2d55-b839-e36b"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaf4-e747-1711-4bc4"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Bulky [2]" id="1fe8-b716-9fa2-311d" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
             <infoLink name="Antigrav Sub-Type" id="c04c-afd9-d682-e57f" hidden="false" type="profile" targetId="df82-be63-e4f8-7338"/>
+            <infoLink name="Bulky [2]" id="1fe8-b716-9fa2-311d" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
+            <infoLink name="Command Sub-Type" id="8136-ef96-2679-e59b" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Invulnerable Save (4+)" id="b897-714d-4ebf-4d7d" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Deep Strike" id="96c3-0fc1-6100-b7cc" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
-            <infoLink name="Command Sub-Type" id="8136-ef96-2679-e59b" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Terminator Cataphractii" hidden="false" id="2ad7-a8cc-7e66-fea9">
       <costs>
@@ -10414,21 +10418,23 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="fb4f-0f22-ade4-d5b9" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="76ac-178a-cddb-10bd">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ca-c43a-e3ee-9f13"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc76-008b-0875-bd09"/>
           </constraints>
           <infoLinks>
+            <infoLink name="Bulky [2]" id="b269-6b02-23e2-d595" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
             <infoLink name="Command Sub-Type" id="3c65-a2d9-60f8-f126" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Heavy Sub-Type" id="2151-c1f9-1bf4-7a9a" hidden="false" type="profile" targetId="aeb8-fb3a-2f04-8e4c"/>
             <infoLink name="Implacable Advance" id="e734-7ba4-5336-f730" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
             <infoLink name="Invulnerable Save (4+)" id="cd76-ba23-5b79-ef28" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Slow and Purposeful" id="aea1-3495-1877-7de1" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
-            <infoLink name="Bulky [2]" id="b269-6b02-23e2-d595" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Terminator Tartaros" hidden="false" id="e472-3ffc-caad-ba97">
       <costs>
@@ -10620,7 +10626,9 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="cb2b-a55c-c120-14b6" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="c123-1f20-3aec-b424">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7c1-a65a-0984-92bf"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f41a-b15f-908f-aefd"/>
@@ -10631,8 +10639,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <infoLink name="Implacable Advance" id="2bc5-450f-7993-84bd" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
             <infoLink name="Invulnerable Save (4+)" id="9185-68f0-d9ee-15ef" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Saturnine" hidden="false" id="6564-dd50-22c5-64d8">
       <costs>
@@ -10725,20 +10733,22 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8448-f79c-9735-2aa8"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="b52f-28f8-5409-5142" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="5f0f-c692-3683-7d6c">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad6-142e-5ce6-8bfd"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50f9-568c-9792-8c05"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Invulnerable Save (4+)" id="f444-0f79-ea4e-ac0c" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Bulky [4]" id="1a34-7aa1-0f59-ec16" hidden="false" type="profile" targetId="f7b4-34a3-0980-7faf"/>
             <infoLink name="Command Sub-Type" id="d387-d0d6-d5db-ca5e" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Implacable Advance" id="c37b-522a-9ddd-2b9d" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
+            <infoLink name="Invulnerable Save (4+)" id="f444-0f79-ea4e-ac0c" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Slow and Purposeful" id="9bec-0d17-4580-6cc8" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WG - Saturnine Teleportation Transponder" hidden="false" id="f980-597a-0804-84ae">
       <profiles>
@@ -11347,7 +11357,9 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="da70-f723-0747-057b"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="6bc7-002f-313a-8167" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="5a2e-2a57-2ba0-b37b">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="224e-1c1f-23d5-acd9"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7422-b2b3-dc7a-e567"/>
@@ -11360,8 +11372,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <infoLink name="Invulnerable Save (4+)" id="9bbd-f537-c37f-0a21" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Outflank" id="84f6-70e6-1a28-4d61" hidden="false" type="profile" targetId="1172-8503-f9ae-96ec"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="1 Praetor, Mounted Jetbike" hidden="false" id="339f-18f5-d4ff-214d">
       <costs>
@@ -11681,20 +11693,22 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c1d4-c29e-4a25-bf85"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="911f-c675-1437-fdd0" hidden="false">
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="aae7-284e-464e-2b63">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6786-c4d4-28d2-992e"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bec-586d-97e7-40a6"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Bulky [3]" id="82aa-53bc-c202-186b" hidden="false" type="profile" targetId="eb71-ace1-a9b9-8b23"/>
             <infoLink name="Antigrav Sub-Type" id="eaaa-4f82-de97-54ae" hidden="false" type="profile" targetId="df82-be63-e4f8-7338"/>
+            <infoLink name="Bulky [3]" id="82aa-53bc-c202-186b" hidden="false" type="profile" targetId="eb71-ace1-a9b9-8b23"/>
+            <infoLink name="Command Sub-Type" id="b1fe-1f40-e24d-6b95" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
             <infoLink name="Invulnerable Save (4+)" id="608f-3229-d6e2-2553" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
             <infoLink name="Deep Strike" id="896d-4cd3-072d-f8c6" hidden="false" type="rule" targetId="63d7-88b8-443d-dbb6"/>
-            <infoLink name="Command Sub-Type" id="b1fe-1f40-e24d-6b95" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
           </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="2 Centurion, Jump Pack" hidden="false" id="0c8f-53e8-f9e1-25fa">
       <costs>

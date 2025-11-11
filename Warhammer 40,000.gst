@@ -39,7 +39,7 @@
       <characteristicTypes>
         <characteristicType id="9896-9419-16a1-92fc" name="Range"/>
         <characteristicType id="3bb-c35f-f54-fb08" name="FP"/>
-        <characteristicType id="2229-f494-25db-c5d3" name="S"/>
+        <characteristicType id="2229-f494-25db-c5d3" name="RS"/>
         <characteristicType id="9ead-8a10-520-de15" name="AP"/>
         <characteristicType id="a354-c1c8-a745-f9e3" name="D"/>
         <characteristicType id="7f1b-8591-2fcf-d01c" name="Keywords"/>
@@ -664,9 +664,7 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
   <sharedProfiles>
     <profile id="fa4e-5ac8-11a6-78d2" name="Fortification" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is only within Engagement Range of one or more ^^**Fortifications**^^ from your army:
-- That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.
-- Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
       </characteristics>
     </profile>
     <profile name="Lord of Deceit (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8332-466b-a51f-63ab">
@@ -687,14 +685,15 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
     <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f6f3-7a32-8350-7e34">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.Cost:
+The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction
 
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.Target:
 
-For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.Process:
+Target:
+For a Smokescreen Advanced Reaction, this Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.
 
+
+Process:
     The Active Player continues to resolve this Shooting Attack as normal.
-
     All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
     </profile>
@@ -711,28 +710,28 @@ For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that w
     <profile name="Shieldwall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c033-9478-b1bf-e39d">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.Cost:
+The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction. For a Shieldwall! Reaction, this Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.
 
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.Target:
 
-For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.Process:
-
+Process:
     The Active Player continues to resolve this Shooting Attack as normal.
-
     All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
       </characteristics>
     </profile>
     <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="585f-8624-0c1f-364e">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.Cost:
+    The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction
 
-The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.Target:
 
-The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.Process:
 
+
+Target:
+    The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.
+
+
+    Process:
     Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
-
     In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
     </profile>
@@ -745,7 +744,6 @@ The Target Unit is always the Unit which is the target of a Shooting Attack that
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit made up entirely of Models with this Special Rule that enters play from Reserves may do so from any point on the Battlefield Edge. The Unit may not enter play from any point that is within the Opposing Player&apos;s Deployment Zone or withing 7&quot;&quot; of any enemy Model.
 
-
 Note that a Unit Embarked on a Model with the Outflank Special Rule does not need to have the Outflank Special Rule in order for the Model it is Embarked upon to benefit from it. A Model that enters the Battlefield from a point outside of the Controlling Player&apos;s Deployment Zone by means of this Special Rule, and any Units Embarked on such a Model, may not have a Charge declared for them in the Player Turn on which they enter play.</characteristic>
       </characteristics>
     </profile>
@@ -756,26 +754,256 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
     </profile>
     <profile name="Command Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fa06-f87e-28cd-376d">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">    A Model with the Command Sub-Type may join and leave Units.
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Command Sub-Type may join and leave Units
 
 
 
-    A Model with the Command Sub-Type may Issue and Accept Challenges.
+A Model with the Command Sub-Type may Issue and Accept Challenges
 
 
-    The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
+The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aeb8-fb3a-2f04-8e4c">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">    A Model with the Command Sub-Type may join and leave Units.
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Command Sub-Type may join and leave Units.
+A Model with the Command Sub-Type may Issue and Accept Challenges.
+The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7db7-6f4a-63db-0305">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
 
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
 
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
 
-    A Model with the Command Sub-Type may Issue and Accept Challenges.
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb0d-6fe1-d68a-62e2">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eb71-ace1-a9b9-8b23">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [4]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7b4-34a3-0980-7faf">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [5]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7209-8260-92e0-f3fd">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bulky [6]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe6d-e60e-6cd8-599e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fury of the Legion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3257-3976-a065-8163">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model with this Special Rule makes a Shooting Attack with a Bolter; that Bolter gains Heavy (FP) until that Shooting Attack is resolved</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db19-dee7-9530-ef0e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
+      </characteristics>
+      <comment>4+</comment>
+    </profile>
+    <profile name="Invulnerable Save (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af2e-f9cb-e69a-f8c5">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
+      </characteristics>
+      <comment>5+</comment>
+    </profile>
+    <profile name="Invulnerable Save (6+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a9fc-a0ee-91f1-04b4">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6+</characteristic>
+      </characteristics>
+      <comment>6+</comment>
+    </profile>
+    <profile name="Line [1]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e06-a94a-ec7f-d4b2">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
 
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Line [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84c8-5d10-cab7-3b5b">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
 
-    The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</characteristic>
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Line [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b275-8c0c-3dfb-3a42">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
+
+Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Master of the Legion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdf1-64a5-906c-3474">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Officer of the Line (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e3ea-4e06-ded0-7d7e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">X Additional Detachments instead of 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shrouded (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9a42-af05-9903-5bb5">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Shrouded (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e657-6116-2a7d-1593">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly Adeptus Astartes unit that is Battle-shocked and within 12&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shrouded (6+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="21d8-bab0-ca11-fa1b">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly Adeptus Astartes unit that is Battle-shocked and within 12&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [1]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e40-6178-3547-7f62">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vanguard [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5f5-1dbc-b05c-3c5e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes a majority of Models with the Vanguard (X) Special Rule may only ever score 1 Victory Point for Controlling an Objective, regardless of that Objective&apos;s value (see Core Missions in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). However, the Player that controls a Unit that includes a majority of Models with the Vanguard (X) Special Rule gains Victory Points equal to the value of the X in the Vanguard (X) Special Rule, in addition to any Victory Points scored for controlling an Objective, whenever either of the following two statuses are fulfilled:
+
+    If an attack made for a Unit that includes a majority of Models with the Vanguard (X) Special Rule causes the last Model in an enemy Unit that is Controlling or Contesting an Objective to be Removed as a Casualty.
+
+    If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
+
+Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Duellist&apos;s Edge (1)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cff4-4947-5f0a-4bdc">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Duellist&apos;s Edge (3)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb08-52e9-7aae-9313">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Duellist&apos;s Edge (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e70d-223a-c041-293c">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Fear (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8f63-9c29-3d46-0b80">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Fear (1)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c1a-13f4-17a7-57cc">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Fear (3)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c454-b334-e35d-ab97">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Hatred (Psykers)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40c0-49cc-5efb-f550">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Infiltrate (12)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b282-97f1-aa5a-0f1d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Infiltrate (9)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b4f1-b68c-f0da-5399">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Infiltrate (6)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd4b-6210-efe8-b8d6">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Feel No Pain (6+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3bd-3c57-6f84-2b2c">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Feel No Pain (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cbea-d890-4ad1-d99f">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Feel No Pain (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="10d4-e11f-1c98-19a0">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Battlesmith (1)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f1b-9524-7549-98a7">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Battlesmith (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ac96-84f2-bd27-b68e">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Specialist Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c38-d339-1cf1-9888">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Specialist Sub-Type may join and leave Units
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bitter Duty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4344-e0d6-5c34-3938">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes any Models with this Special Rule can only join Units or be joined by other Models with this Special Rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Antigrav Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df82-be63-e4f8-7338">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Unit that includes only Models with the Antigrav Sub-Type may ignore the effects of any and all Terrain it passes over during movement, including passing over Impassable Terrain without penalty or restriction. However, such Units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain Tests as normal.
+
+A Unit that includes only Models with the Antigrav Sub-Type may ignore both friendly and enemy Models and Units when Moving. However,, when moving over a friendly Unit all Models with the Antigrav Sub-Type must end their move at least 1&quot; away from all models that are not part of the same Unit, or if moving over an enemy Unit, must end their move at least 1&quot; away from any enemy Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Auto-Repair (6+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c3b-5af4-7694-950a">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Auto-Repair (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2229-0ef9-d9d1-45e4">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Auto-Repair (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f35b-1368-bad7-e9ed">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
       </characteristics>
     </profile>
   </sharedProfiles>

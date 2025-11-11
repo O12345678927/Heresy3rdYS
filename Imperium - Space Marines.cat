@@ -9818,7 +9818,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false" sortIndex="4">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404d-c974-b2b6-d3de"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eff-7b5e-9ef9-75fc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec45-43cb-0223-22d4"/>
           </constraints>
           <infoLinks>
             <infoLink name="Command Sub-Type" id="a268-b608-3a86-3a51" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>

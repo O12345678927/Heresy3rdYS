@@ -9818,7 +9818,6 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cb-0400-8436-38dd"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404d-c974-b2b6-d3de"/>
           </constraints>
           <infoLinks>
@@ -15672,7 +15671,7 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="2 Consul, Optae, Jump Pack" hidden="false" id="58d4-818e-a57f-d0b6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -16105,6 +16104,7 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e18-86f7-f6d5-86d0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5224-a92e-82ba-3334"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Legion Pintle Weapons" id="407b-8299-0e60-8543" hidden="false">

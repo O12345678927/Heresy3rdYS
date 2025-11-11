@@ -9464,19 +9464,19 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="2f13-96b3-4925-01ca" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="3">
+        <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="2f13-96b3-4925-01ca" type="selectionEntry" targetId="9bec-8280-30b5-f94a" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7710-4195-b8e7-375b"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="WG - Cyber-Familiar" hidden="false" id="fa5e-a506-9232-193e" type="selectionEntry" targetId="9a59-29de-c1eb-1781" sortIndex="4">
+        <entryLink import="true" name="WG - Cyber-Familiar" hidden="false" id="fa5e-a506-9232-193e" type="selectionEntry" targetId="9a59-29de-c1eb-1781" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf3b-ceb9-9915-d65c"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Options" id="ab4e-b11c-25c4-36bb" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Weapon Options" id="ab4e-b11c-25c4-36bb" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Bolter Options" id="3704-a2b6-66a6-62c0" hidden="false" defaultSelectionEntryId="00e9-1f98-721d-a1b1">
               <entryLinks>
@@ -9816,7 +9816,7 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false">
+        <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404d-c974-b2b6-d3de"/>
           </constraints>

@@ -9818,8 +9818,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="2acb-06c1-9a3f-3acb" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10cb-0400-8436-38dd-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cb-0400-8436-38dd-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cb-0400-8436-38dd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404d-c974-b2b6-d3de"/>
           </constraints>
           <infoLinks>
             <infoLink name="Command Sub-Type" id="a268-b608-3a86-3a51" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
@@ -10210,8 +10210,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="8db0-0341-02fb-88f2" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb04-7d5e-f308-b60f-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb04-7d5e-f308-b60f-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ac-2d55-b839-e36b"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaf4-e747-1711-4bc4"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky [2]" id="1fe8-b716-9fa2-311d" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
@@ -10416,8 +10416,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="fb4f-0f22-ade4-d5b9" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5260-3d54-db62-d881-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5260-3d54-db62-d881-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ca-c43a-e3ee-9f13"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc76-008b-0875-bd09"/>
           </constraints>
           <infoLinks>
             <infoLink name="Command Sub-Type" id="3c65-a2d9-60f8-f126" hidden="false" type="profile" targetId="fa06-f87e-28cd-376d"/>
@@ -10622,8 +10622,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="cb2b-a55c-c120-14b6" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65ad-413a-683e-9d93-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65ad-413a-683e-9d93-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7c1-a65a-0984-92bf"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f41a-b15f-908f-aefd"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky [2]" id="a400-cb48-6457-55e3" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
@@ -10727,8 +10727,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="b52f-28f8-5409-5142" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2176-4b02-e44c-18da-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2176-4b02-e44c-18da-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad6-142e-5ce6-8bfd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50f9-568c-9792-8c05"/>
           </constraints>
           <infoLinks>
             <infoLink name="Invulnerable Save (4+)" id="f444-0f79-ea4e-ac0c" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
@@ -11349,8 +11349,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="6bc7-002f-313a-8167" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67e7-85ab-a70c-0904-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67e7-85ab-a70c-0904-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="224e-1c1f-23d5-acd9"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7422-b2b3-dc7a-e567"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky [2]" id="3eee-145e-87a8-1de8" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
@@ -11683,8 +11683,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         </selectionEntryGroup>
         <selectionEntryGroup name="Rules and Traits" id="911f-c675-1437-fdd0" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff0f-768e-1aa2-d2ef-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff0f-768e-1aa2-d2ef-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6786-c4d4-28d2-992e"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bec-586d-97e7-40a6"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky [3]" id="82aa-53bc-c202-186b" hidden="false" type="profile" targetId="eb71-ace1-a9b9-8b23"/>
@@ -13324,14 +13324,9 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67fb-dcbf-ecc3-8839"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="5e8e-79a4-7889-5a13" type="selectionEntry" targetId="9bec-8280-30b5-f94a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d7-363b-640e-73b1"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8c05-253e-a99f-ac08"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8c05-253e-a99f-ac08"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8c33-68cb-4e64-8b60"/>
           </constraints>
           <modifiers>
@@ -13359,6 +13354,11 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="feff-c9ac-f145-9d61-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feff-c9ac-f145-9d61-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="5e8e-79a4-7889-5a13" type="selectionEntry" targetId="9bec-8280-30b5-f94a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d7-363b-640e-73b1"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -15971,14 +15971,9 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05dd-7dc9-cb73-74ed"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="b4c1-53d9-aedf-d128" type="selectionEntry" targetId="9bec-8280-30b5-f94a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad0-a41f-8319-344c"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0ff6-7ddb-dc12-ad26"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0ff6-7ddb-dc12-ad26"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4980-d815-716c-fd8a"/>
           </constraints>
           <modifiers>
@@ -16006,6 +16001,11 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c89-9d29-bc67-0c9c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9170-215c-fa1f-302f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WM - XT Melta Bombs" hidden="false" id="b4c1-53d9-aedf-d128" type="selectionEntry" targetId="9bec-8280-30b5-f94a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad0-a41f-8319-344c"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -16076,12 +16076,12 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
               <entryLinks>
                 <entryLink import="true" name="WR - BW Bolter" hidden="false" id="429f-0fad-fa9f-744b" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c27-09a9-a13a-fdc1"/>
+                    <constraint type="max" value="1" field="selections" scope="9689-aafe-4f4c-ee24" shared="true" id="7c27-09a9-a13a-fdc1"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="b10b-6798-9b37-a023" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b5b-0e50-b50b-f042"/>
+                    <constraint type="max" value="1" field="selections" scope="9689-aafe-4f4c-ee24" shared="true" id="8b5b-0e50-b50b-f042"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -16094,18 +16094,17 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
               <entryLinks>
                 <entryLink import="true" name="WR - BW Bolter" hidden="false" id="cc46-aaad-48c4-fb3a" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86c3-8c08-3449-4c9a"/>
+                    <constraint type="max" value="1" field="selections" scope="419d-1a33-97c6-1d0b" shared="true" id="86c3-8c08-3449-4c9a"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="c82a-7828-0441-bfe0" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6859-8105-46eb-1874"/>
+                    <constraint type="max" value="1" field="selections" scope="419d-1a33-97c6-1d0b" shared="true" id="6859-8105-46eb-1874"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e18-86f7-f6d5-86d0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1d6-243e-1bd3-2b32"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Legion Pintle Weapons" id="407b-8299-0e60-8543" hidden="false">
@@ -16158,6 +16157,10 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2db9-6893-0d97-6c41"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8881-9697-7d74-4717"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>

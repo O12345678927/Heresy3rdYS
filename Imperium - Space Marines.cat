@@ -24136,20 +24136,17 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
               <entryLinks>
                 <entryLink import="true" name="WR - GW Charge Cannon" hidden="false" id="8efe-a8a4-31a9-4c61" type="selectionEntry" targetId="71e4-21a8-ce6a-ee05">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0644-fa2e-b5c8-8886-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0644-fa2e-b5c8-8886-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0644-fa2e-b5c8-8886"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - AC Morbus Bombard" hidden="false" id="5a4b-3427-043c-18e6" type="selectionEntry" targetId="d8d6-e999-813a-2b04">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2f5-e6a7-8897-5a77-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f5-e6a7-8897-5a77-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f5-e6a7-8897-5a77"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="WR - MS Spicula Rocket System" hidden="false" id="d693-168f-4d18-ed8a" type="selectionEntry" targetId="2123-1015-d6ad-716e">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79af-d478-5ccd-6424-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79af-d478-5ccd-6424-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79af-d478-5ccd-6424"/>
                   </constraints>
                 </entryLink>
               </entryLinks>

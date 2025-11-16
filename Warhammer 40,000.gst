@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="79" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="80" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -108,12 +108,7 @@
     <categoryEntry id="b88e-1b0c-b79f-5cdf" name="Faction: 10 Iron Hands" hidden="false"/>
     <categoryEntry id="97aa-d0e4-71c7-96c3" name="Faction: 07 Imperial Fists" hidden="false"/>
     <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: 05 White Scars" hidden="false"/>
-    <categoryEntry id="5c0e-4c31-d51b-e470" name="Warlord" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16ac-a6c9-6d9a-d6d5" type="min"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d50-6d29-4f91-8f73" type="max"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="5c0e-4c31-d51b-e470" name="Warlord" hidden="false"/>
     <categoryEntry id="9c0e-7e25-4580-e439" name="Daemon" hidden="false"/>
     <categoryEntry id="6474-0ce3-6b5a-120c" name="Primarch" hidden="false"/>
     <categoryEntry id="4f09-0141-6c70-6c5a" name="Daemon Prince" hidden="false"/>
@@ -684,15 +679,10 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
     </profile>
     <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f6f3-7a32-8350-7e34">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction
 
-
-Target:
 For a Smokescreen Advanced Reaction, this Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.
 
-
-Process:
     The Active Player continues to resolve this Shooting Attack as normal.
     All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
@@ -718,20 +708,9 @@ Process:
     All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
       </characteristics>
     </profile>
-    <profile name="Medic!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="585f-8624-0c1f-364e">
+    <profile name="Medic! (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="585f-8624-0c1f-364e">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Trigger:
-    The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction
-
-
-
-
-Target:
-    The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.
-
-
-    Process:
-    Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
     In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
     </profile>
@@ -755,8 +734,6 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
     <profile name="Command Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fa06-f87e-28cd-376d">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Command Sub-Type may join and leave Units
-
-
 
 A Model with the Command Sub-Type may Issue and Accept Challenges
 
@@ -975,8 +952,7 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
     </profile>
     <profile name="Specialist Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c38-d339-1cf1-9888">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Specialist Sub-Type may join and leave Units
-</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Specialist Sub-Type may join and leave Units</characteristic>
       </characteristics>
     </profile>
     <profile name="Bitter Duty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4344-e0d6-5c34-3938">
@@ -1004,6 +980,18 @@ A Unit that includes only Models with the Antigrav Sub-Type may ignore both frie
     <profile name="Auto-Repair (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f35b-1368-bad7-e9ed">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Medic! (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc5-7b85-3735-aa98">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medic! (6+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3abe-db52-5d9c-d349">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+    In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

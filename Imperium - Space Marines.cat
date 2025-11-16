@@ -24129,26 +24129,10 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1d9c-d58f-b7f0-5292"/>
       </constraints>
-      <profiles>
-        <profile name="Arquitor Bombard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f362-15c4-165b-f7cd">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8</characteristic>
-            <characteristic name="S" typeId="e404-7e45-0cc9-9a76">-</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">13-12-10</characteristic>
-            <characteristic name="W" typeId="d786-d92f-d7da-c5fe">6</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
-            <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">-</characteristic>
-            <characteristic name="A" typeId="1112-8c11-772b-6248">-</characteristic>
-            <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">-</characteristic>
-            <characteristic name="BS" typeId="d5fd-b8fa-b61e-1106">4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="fd7c-2201-2a81-2153">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="0797-cff0-bca4-4925" hidden="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Centreline" id="59f9-0628-35da-8fea" hidden="false" defaultSelectionEntryId="5a4b-3427-043c-18e6" sortIndex="1">
+            <selectionEntryGroup name="Centreline" id="59f9-0628-35da-8fea" hidden="false" defaultSelectionEntryId="5a4b-3427-043c-18e6">
               <entryLinks>
                 <entryLink import="true" name="WR - GW Charge Cannon" hidden="false" id="8efe-a8a4-31a9-4c61" type="selectionEntry" targetId="71e4-21a8-ce6a-ee05">
                   <constraints>
@@ -24174,7 +24158,7 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce7-fa9d-7ebc-9da0"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponsons" id="69d7-2b92-d6a2-68d1" hidden="false" sortIndex="2" defaultSelectionEntryId="a69f-363f-7b3e-83b6">
+            <selectionEntryGroup name="Sponsons" id="69d7-2b92-d6a2-68d1" hidden="false" defaultSelectionEntryId="a69f-363f-7b3e-83b6">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2 Volkite Culverin" hidden="false" id="1329-9e00-ed47-5a12" sortIndex="5">
                   <entryLinks>
@@ -24232,7 +24216,7 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="906b-6b04-21b8-daa3"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Pintle Weapons" id="39c3-8051-1b6f-5d91" hidden="false" sortIndex="3" defaultSelectionEntryId="none">
+            <selectionEntryGroup name="Pintle Weapon" id="39c3-8051-1b6f-5d91" hidden="false" defaultSelectionEntryId="none">
               <entryLinks>
                 <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="0ae5-93f5-96e9-90f1" type="selectionEntry" targetId="650c-b3c0-1b76-9004" sortIndex="1">
                   <constraints>
@@ -24285,8 +24269,8 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wargear" hidden="false" id="acd3-436b-796f-aad7">
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="e047-1d31-e200-b35e" hidden="false">
           <entryLinks>
             <entryLink import="true" name="WG - Searchlights" hidden="false" id="b202-1f91-aca7-149e" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
               <constraints>
@@ -24299,7 +24283,25 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Arquitor Bombard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f362-15c4-165b-f7cd">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8</characteristic>
+            <characteristic name="S" typeId="e404-7e45-0cc9-9a76">-</characteristic>
+            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">13-12-10</characteristic>
+            <characteristic name="W" typeId="d786-d92f-d7da-c5fe">6</characteristic>
+            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">-</characteristic>
+            <characteristic name="A" typeId="1112-8c11-772b-6248">-</characteristic>
+            <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">-</characteristic>
+            <characteristic name="BS" typeId="d5fd-b8fa-b61e-1106">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="8873-35d1-1a6f-81ad">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8516-6d19-6c2b-5bec-min"/>
@@ -24975,35 +24977,13 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0816-0c79-15c1-75ff"/>
       </constraints>
-      <profiles>
-        <profile name="13 Scorpius Missile Tank" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c016-3a7f-f5eb-d47c">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10</characteristic>
-            <characteristic name="S" typeId="e404-7e45-0cc9-9a76">-</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">12-11-10</characteristic>
-            <characteristic name="W" typeId="d786-d92f-d7da-c5fe">5</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
-            <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">-</characteristic>
-            <characteristic name="A" typeId="1112-8c11-772b-6248">-</characteristic>
-            <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">-</characteristic>
-            <characteristic name="BS" typeId="d5fd-b8fa-b61e-1106">4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="0c4f-d61b-d23a-1ca7">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="48ab-58cb-288c-4f21" hidden="false">
           <entryLinks>
             <entryLink import="true" name="WR - MS Scorpius Missile Launcher" hidden="false" id="49f5-ea5b-d0be-175e" type="selectionEntry" targetId="3598-756c-adea-ffea">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d64-c8cb-b6a4-3022-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d64-c8cb-b6a4-3022-max"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="WR - BW Bolter" hidden="false" id="2513-2585-86b3-20ac" type="selectionEntry" targetId="3218-eb6d-6b24-db3d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="380a-1b55-06c8-d9fc-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="380a-1b55-06c8-d9fc-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -25067,27 +25047,25 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="87de-30af-9a74-a153">
-          <profiles>
-            <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e57e-5938-9a75-6d84">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Turret - Scorpius Missile Launcher</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b4a-357d-c582-ee52-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b4a-357d-c582-ee52-max"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wargear" hidden="false" id="f716-be1e-408f-a1c3">
-          <entryLinks>
-            <entryLink import="true" name="WG - Searchlights" hidden="false" id="362c-cb1b-1856-110b" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bolter" hidden="false" id="7512-94f6-b986-ece3">
+              <entryLinks>
+                <entryLink import="true" name="WR - BW Bolter" hidden="false" id="2513-2585-86b3-20ac" type="selectionEntry" targetId="3218-eb6d-6b24-db3d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="380a-1b55-06c8-d9fc-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="380a-1b55-06c8-d9fc-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e468-cd0e-eb7d-f923"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe59-b0b2-6936-4e80-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe59-b0b2-6936-4e80-max"/>
               </constraints>
-            </entryLink>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="7bb0-1f8d-e78c-9b37" hidden="false">
+          <entryLinks>
             <entryLink import="true" name="WR - MS Hunter-Killer Missile" hidden="false" id="9166-8a69-428e-0a84" type="selectionEntry" targetId="49a2-e607-462c-9ce8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e8-df68-61cc-6769"/>
@@ -25098,7 +25076,45 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="862c-ba60-7dbd-793a"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="WG - Searchlights" hidden="false" id="362c-cb1b-1856-110b" type="selectionEntry" targetId="bb62-3f4a-9c03-b6cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e468-cd0e-eb7d-f923"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="13 Scorpius Missile Tank" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c016-3a7f-f5eb-d47c">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10</characteristic>
+            <characteristic name="S" typeId="e404-7e45-0cc9-9a76">-</characteristic>
+            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">12-11-10</characteristic>
+            <characteristic name="W" typeId="d786-d92f-d7da-c5fe">5</characteristic>
+            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="I" typeId="0990-e6c5-0acd-5fd5">-</characteristic>
+            <characteristic name="A" typeId="1112-8c11-772b-6248">-</characteristic>
+            <characteristic name="WS" typeId="a1bd-cb83-dd70-d309">-</characteristic>
+            <characteristic name="BS" typeId="d5fd-b8fa-b61e-1106">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="87de-30af-9a74-a153">
+          <profiles>
+            <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e57e-5938-9a75-6d84">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Turret - Scorpius Missile Launcher
+Pintle - Bolter + Pintle Weapon
+Front - Hunter-Killer Missile</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b4a-357d-c582-ee52-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b4a-357d-c582-ee52-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>

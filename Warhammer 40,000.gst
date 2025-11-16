@@ -679,11 +679,10 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
     </profile>
     <profile name="Smokescreen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f6f3-7a32-8350-7e34">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player. The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.
 
 For a Smokescreen Advanced Reaction, this Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.
 
-    The Active Player continues to resolve this Shooting Attack as normal.
     All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
     </profile>

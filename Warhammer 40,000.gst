@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="80" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="85" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -24,25 +24,22 @@
     <profileType id="c547-1836-d8a-ff4f" name="Unit">
       <characteristicTypes>
         <characteristicType id="e703-ecb6-5ce7-aec1" name="M"/>
-        <characteristicType name="S" id="e404-7e45-0cc9-9a76"/>
         <characteristicType name="T" id="3e6d-ad6a-d1d4-241e"/>
-        <characteristicType name="W" id="d786-d92f-d7da-c5fe"/>
         <characteristicType name="Sv" id="a157-f088-a28d-f77d"/>
-        <characteristicType name="LD" id="3346-bd44-b5cc-81ab"/>
-        <characteristicType name="I" id="0990-e6c5-0acd-5fd5"/>
-        <characteristicType name="A" id="1112-8c11-772b-6248"/>
-        <characteristicType name="WS" id="a1bd-cb83-dd70-d309"/>
-        <characteristicType name="BS" id="d5fd-b8fa-b61e-1106"/>
+        <characteristicType name="W" id="c9a4-2139-3b31-74ba"/>
+        <characteristicType name="LD" id="7fa0-be0e-6773-fad6"/>
+        <characteristicType name="WS" id="b920-5353-c784-06a4"/>
       </characteristicTypes>
     </profileType>
     <profileType id="f77d-b953-8fa4-b762" name="Ranged Weapons">
       <characteristicTypes>
         <characteristicType id="9896-9419-16a1-92fc" name="Range"/>
         <characteristicType id="3bb-c35f-f54-fb08" name="FP"/>
-        <characteristicType id="2229-f494-25db-c5d3" name="RS"/>
-        <characteristicType id="9ead-8a10-520-de15" name="AP"/>
-        <characteristicType id="a354-c1c8-a745-f9e3" name="D"/>
-        <characteristicType id="7f1b-8591-2fcf-d01c" name="Keywords"/>
+        <characteristicType id="2229-f494-25db-c5d3" name="BS"/>
+        <characteristicType id="9ead-8a10-520-de15" name="RS"/>
+        <characteristicType id="a354-c1c8-a745-f9e3" name="AP"/>
+        <characteristicType id="7f1b-8591-2fcf-d01c" name="D"/>
+        <characteristicType id="f3f2-c661-fe23-6477" name="Keywords"/>
       </characteristicTypes>
     </profileType>
     <profileType id="9cc3-6d83-4dd3-9b64" name="Abilities">
@@ -57,7 +54,7 @@
         <characteristicType id="ab33-d393-96ce-ccba" name="SM"/>
         <characteristicType id="41a0-1301-112a-e2f2" name="AP"/>
         <characteristicType id="3254-9fe6-d824-513e" name="D"/>
-        <characteristicType id="893f-9000-ccf7-648e" name="Keywords"/>
+        <characteristicType name="Keywords" id="97b6-7112-993d-c3a0"/>
       </characteristicTypes>
     </profileType>
     <profileType id="74f8-5443-9d6d-1f1e" name="Transport">
@@ -221,13 +218,13 @@
         <categoryLink name="HH3-4 Elites" hidden="false" id="20ad-378c-15a1-2a91" targetId="e8e8-aa94-352b-b9c8"/>
         <categoryLink name="HH3-5 Heavy Assault" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
         <categoryLink name="HH3-6 Troops" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
+        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
         <categoryLink name="HH3-8 War-Engine" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
         <categoryLink name="HH3-9 Transport" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
         <categoryLink name="HH3-10 Heavy Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
         <categoryLink name="HH3-11 Recon" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
         <categoryLink name="HH3-12 Fast Attack" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
         <categoryLink name="HH3-13 Armour" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
-        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">

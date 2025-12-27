@@ -28,7 +28,7 @@
         <characteristicType name="Sv" id="a157-f088-a28d-f77d"/>
         <characteristicType name="W" id="c9a4-2139-3b31-74ba"/>
         <characteristicType name="LD" id="7fa0-be0e-6773-fad6"/>
-        <characteristicType name="WS" id="b920-5353-c784-06a4"/>
+        <characteristicType name="WS/BS" id="b920-5353-c784-06a4"/>
       </characteristicTypes>
     </profileType>
     <profileType id="f77d-b953-8fa4-b762" name="Ranged Weapons">
@@ -51,10 +51,11 @@
       <characteristicTypes>
         <characteristicType id="914c-b413-91e3-a132" name="IM"/>
         <characteristicType id="2337-daa1-6682-b110" name="AM"/>
-        <characteristicType id="ab33-d393-96ce-ccba" name="SM"/>
-        <characteristicType id="41a0-1301-112a-e2f2" name="AP"/>
-        <characteristicType id="3254-9fe6-d824-513e" name="D"/>
-        <characteristicType name="Keywords" id="97b6-7112-993d-c3a0"/>
+        <characteristicType id="ab33-d393-96ce-ccba" name="WS"/>
+        <characteristicType id="41a0-1301-112a-e2f2" name="SM"/>
+        <characteristicType id="3254-9fe6-d824-513e" name="AP"/>
+        <characteristicType name="D" id="97b6-7112-993d-c3a0"/>
+        <characteristicType name="Keywords" id="f533-f68e-1fc8-11b4"/>
       </characteristicTypes>
     </profileType>
     <profileType id="74f8-5443-9d6d-1f1e" name="Transport">

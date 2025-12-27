@@ -540,12 +540,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <profiles>
         <profile name="Cerberus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c14d-f472-9ab7-7a86">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-14-13</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-14-13</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">12</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e487-81d1-fd96-8442">
@@ -4105,12 +4105,12 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Typhon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9116-2b25-d254-17fa">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-14-13</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-14-13</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">12</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db1c-2fcb-f476-8366">
@@ -4241,12 +4241,12 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Glaive" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fc61-deec-ed50-1764">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c9df-3db1-d073-ed57">
@@ -4384,12 +4384,12 @@ Hull (Front) - Twin Heavy Bolter/Flamer, HK</characteristic>
       <profiles>
         <profile name="Fellblade" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="35c4-63be-5c61-6778">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a10c-e271-1fd3-6332">
@@ -4541,17 +4541,20 @@ Hull (Front) - Twin Heavy Bolter/Flamer, Demolisher Cannon, HK</characteristic>
       <profiles>
         <profile name="Thunderhawk" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0a8d-8623-0dc0-bc62">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">18&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">13-13-13</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">18&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">13-13-13</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Thunderhawk Transport Bay" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eb1d-e9e9-9d3e-ad71">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">32
+
+
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0025-519d-0f77-fed8">
@@ -4637,12 +4640,12 @@ Hull (Front) - Lascannon</characteristic>
       <profiles>
         <profile name="Falchion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d9a1-bcc8-e00a-22b5">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2ad-bfe7-af66-9816">
@@ -4782,17 +4785,20 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Sokar Stormbird" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2232-8738-e0dd-6857">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-14-14</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-14-14</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">22</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Stormbird Transport Bay" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="28dd-6ded-0915-c293">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models of any Type may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6. In addition, one Rhino may be Embarked and is treated as having Bulky (12) for the purposes of Transport Capacity.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">52
+
+
+Models of any Type may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6. In addition, one Rhino may be Embarked and is treated as having Bulky (12) for the purposes of Transport Capacity.</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9ac5-26fb-89be-738a">
@@ -4935,17 +4941,19 @@ Hull (Rear) - Twin Heavy Bolter</characteristic>
       <profiles>
         <profile name="Mastodon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="74ac-32ee-b1cf-86d0">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">14-14-14</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M/I" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="S/T" typeId="e404-7e45-0cc9-9a76">14-14-14</characteristic>
+            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">20</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="W/BS" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
         <profile name="Mastodon Transport Bay" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc91-577d-86c7-f075">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">42
+
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
           </characteristics>
         </profile>
         <profile name="Weapon Layout" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc49-1712-4ed2-3739">

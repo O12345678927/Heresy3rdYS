@@ -219,13 +219,13 @@
         <categoryLink name="HH3-4 Elites" hidden="false" id="20ad-378c-15a1-2a91" targetId="e8e8-aa94-352b-b9c8"/>
         <categoryLink name="HH3-5 Heavy Assault" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
         <categoryLink name="HH3-6 Troops" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
+        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
         <categoryLink name="HH3-8 War-Engine" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
         <categoryLink name="HH3-9 Transport" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
         <categoryLink name="HH3-10 Heavy Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
         <categoryLink name="HH3-11 Recon" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
         <categoryLink name="HH3-12 Fast Attack" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
         <categoryLink name="HH3-13 Armour" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
-        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">

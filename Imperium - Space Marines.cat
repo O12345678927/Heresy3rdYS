@@ -17973,102 +17973,6 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="687c-11cf-f4fb-f243"/>
                           </constraints>
                         </selectionEntryGroup>
-                        <selectionEntryGroup name="Officer Wargear" id="aa4a-e521-c533-3f5c" hidden="false" sortIndex="7">
-                          <entryLinks>
-                            <entryLink import="true" name="WG - Boarding Shield" hidden="false" id="24fb-bf7d-51d8-0f7e" type="selectionEntry" targetId="1bcd-99cb-c69f-c61d" sortIndex="12">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7c-9279-2439-cf0b"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WG - Combat Shield" hidden="false" id="8600-d522-5006-39e9" type="selectionEntry" targetId="4c36-af12-2cea-0887" sortIndex="13">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b6-ec30-139c-2b7e"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="58cb-9256-08a7-381b" type="selectionEntry" targetId="7855-ef37-7687-898d" sortIndex="6">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5eb-4110-7437-b373"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="d47d-50ad-593d-61c0" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0" sortIndex="7">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18b7-3fc9-c906-fcf5"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="c6a2-30ba-84de-b47e" type="selectionEntry" targetId="1567-4a0d-198b-c5eb" sortIndex="8">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b919-2531-60cf-90b9"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="fe2e-c4ab-fdf2-6540" type="selectionEntry" targetId="de5c-c3bf-4522-59b9" sortIndex="9">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="829f-16a8-bdf5-2464"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="b462-26c5-0034-7755" type="selectionEntry" targetId="1baf-9935-793e-d59a" sortIndex="10">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="105a-b0e4-6225-231d"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="2f83-42a5-3654-3962" type="selectionEntry" targetId="4539-25d0-3d92-3e27" sortIndex="11">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6080-f715-85bf-384a"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="de04-4a9d-f1f1-d781" type="selectionEntry" targetId="8645-a3bd-d923-ab37" sortIndex="1">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be14-47cd-f7cf-e4f2"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="c627-4982-1618-a555" type="selectionEntry" targetId="ee9e-f254-bc53-abbf" sortIndex="2">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe17-27d4-4538-bf0c"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="93e9-69bc-c047-fc0b" type="selectionEntry" targetId="2345-048c-1b33-469b" sortIndex="3">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-1dd3-bb68-324a"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="6933-6040-5703-7911" type="selectionEntry" targetId="8aac-882d-5c06-f2f4" sortIndex="4">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6709-54ca-7eed-6b73"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3752-a5a9-ad1e-cd28"/>
-                          </constraints>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup name="Power Weapon" id="17e5-43f2-6fc0-09e5" hidden="false" sortIndex="5">
-                              <entryLinks>
-                                <entryLink import="true" name="WM - PWB Power Axe" hidden="false" id="5772-85d2-254b-f783" type="selectionEntry" targetId="8859-51a5-6d6b-2399">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8899-92d7-e7da-be9d"/>
-                                  </constraints>
-                                </entryLink>
-                                <entryLink import="true" name="WM - PWB Power Lance" hidden="false" id="76ee-412e-51a8-3565" type="selectionEntry" targetId="aa1b-5788-a6e3-a27a">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8cf-92aa-7792-3f86"/>
-                                  </constraints>
-                                </entryLink>
-                                <entryLink import="true" name="WM - PWB Power Maul" hidden="false" id="aaab-b797-094c-1e04" type="selectionEntry" targetId="2975-63fe-6785-8fc2">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f178-cb01-d5f9-fa0e"/>
-                                  </constraints>
-                                </entryLink>
-                                <entryLink import="true" name="WM - PWB Power Sword" hidden="false" id="5a97-77ac-79d7-f9b9" type="selectionEntry" targetId="33c0-c731-6332-abd9">
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5495-a262-d275-2f88"/>
-                                  </constraints>
-                                </entryLink>
-                              </entryLinks>
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a917-86c1-b29a-43f3"/>
-                              </constraints>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
-                        </selectionEntryGroup>
                         <selectionEntryGroup name="Sgt Melee Weapons" id="1ae9-9ad0-8713-6f7c" hidden="false" defaultSelectionEntryId="none">
                           <entryLinks>
                             <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="7289-ebe1-e2e0-c39a" type="selectionEntry" targetId="7855-ef37-7687-898d">
@@ -18143,7 +18047,7 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                           <modifiers>
                             <modifier type="set" value="true" field="hidden">
                               <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="2a6a-cad5-b932-ba2f" childId="ccdd-3987-11ed-90cd" shared="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="2a6a-cad5-b932-ba2f" childId="b923-2c4e-582c-3ce4" shared="true"/>
                               </conditions>
                             </modifier>
                           </modifiers>

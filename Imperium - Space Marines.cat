@@ -4553,7 +4553,6 @@ Hull (Front) - Twin Heavy Bolter/Flamer, Demolisher Cannon, HK</characteristic>
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">32
 
-
 Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
           </characteristics>
         </profile>
@@ -4797,7 +4796,6 @@ Hull (Front) - HK</characteristic>
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">52
 
-
 Models of any Type may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6. In addition, one Rhino may be Embarked and is treated as having Bulky (12) for the purposes of Transport Capacity.</characteristic>
           </characteristics>
         </profile>
@@ -4951,7 +4949,7 @@ Hull (Rear) - Twin Heavy Bolter</characteristic>
         </profile>
         <profile name="Mastodon Transport Bay" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc91-577d-86c7-f075">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">42
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">42 (Rear, Front)
 
 Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Sub-Type, and such a Model may not ever have any variant of Bulky greater than 6</characteristic>
           </characteristics>
@@ -5693,7 +5691,7 @@ Hull (Front) - HK</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WGL - Pistols" hidden="false" id="0101-11ea-abf0-5e5b">
       <entryLinks>
-        <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="6844-09bd-e992-8e60" type="selectionEntry" targetId="8645-a3bd-d923-ab37">
+        <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="6844-09bd-e992-8e60" type="selectionEntry" targetId="ee9e-f254-bc53-abbf">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dfe-615e-010a-a078"/>
           </constraints>
@@ -8328,9 +8326,9 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WG - Servo-Arm" hidden="false" id="6cf9-8ddb-74a6-712e">
       <profiles>
-        <profile name="Argyrum Boarding Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4cb-3278-3df6-2ec6">
+        <profile name="Servo-Arm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4cb-3278-3df6-2ec6">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with an Argyrum Boarding Shield may add 1 to Invulnerable Saves made against Melee Attacks</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the Controlling Player of a Model with a servo-arm selects the Repair option when activating the Battlesmith (X) Special Rule for that Model, increase the number of Hull Points or Wounds gained by the Target Model by +1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9323,8 +9321,8 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
             <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
-            <characteristic name="W" typeId="a157-f088-a28d-f77d">4</characteristic>
-            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10-9-9-8</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|9</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
@@ -9715,12 +9713,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Jump Pack Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="118c-42c0-d7d6-13ea">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10108,12 +10106,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Cataphractii Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1884-993d-5afd-8a2a">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">5</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10312,12 +10310,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Tartaros Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d16b-a86b-53cc-6ac2">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">5</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10515,12 +10513,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Saturnine Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7196-88d0-3c80-cd2d">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">6</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;/4</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/6</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">6</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10630,12 +10628,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Centurion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6032-d925-1175-9e82">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10915,12 +10913,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Outrider Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5276-6c3d-b607-f2f9">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">5/5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11236,12 +11234,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Jetbike Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="56b7-b8b3-51a0-c32b">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">5/5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10|9|9|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11566,12 +11564,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Jump Pack Centurion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4a8d-fbdc-e12b-9291">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11843,12 +11841,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Cataphractii Centurion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a0bf-e0e9-50ee-7e51">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">5</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12042,12 +12040,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Tartaros Centurion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="06e0-8d50-f01f-58df">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">5</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12239,12 +12237,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Jetbike Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3d6c-47b9-bf31-830c">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|7</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12561,12 +12559,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Outrider Praetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dbe7-a730-aabc-7617">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">4/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|7</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12873,12 +12871,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Optae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3a64-f53f-e01b-3a10">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">3+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">2/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13222,12 +13220,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Librarian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ebbb-51e8-af44-4fd1">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|7|9|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13395,14 +13393,14 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         <categoryLink targetId="0904-6f98-6fff-5dce" id="7227-c090-fe68-60fa" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Legion Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9f52-142a-b306-dd77">
+        <profile name="Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9f52-142a-b306-dd77">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13502,12 +13500,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Master of Signals" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0474-481d-51e8-b04a">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|7|7|10</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13598,12 +13596,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Esoterist" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e5bd-b8bf-c300-6ea1">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7|8|10|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14218,12 +14216,12 @@ Process:
       <profiles>
         <profile name="Vigilator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c856-f755-3b58-8f32">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">4/7</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14296,12 +14294,12 @@ Process:
       <profiles>
         <profile name="Praevian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f6ee-0b36-4dad-460d">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14430,12 +14428,12 @@ In addition, a Model with this Special Rule may join a Friendly Unit that includ
       <profiles>
         <profile name="Moritat" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1323-2bcf-abe2-5c29">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">4/6</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14535,12 +14533,12 @@ In addition, a Model with this Special Rule may join a Friendly Unit that includ
       <profiles>
         <profile name="Siege Breaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cc9b-2ab1-b65b-f3ab">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14666,12 +14664,12 @@ In addition, a Model with this Special Rule may join a Friendly Unit that includ
       <profiles>
         <profile name="Overseer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0932-ef1b-ca36-58a8">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14808,12 +14806,12 @@ In addition, a Model with this Special Rule may join a Friendly Unit that includ
       <profiles>
         <profile name="Herald" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="395f-c89a-579d-54cd">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106"/>
           </characteristics>
         </profile>
       </profiles>
@@ -14938,12 +14936,12 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
       <profiles>
         <profile name="Chaplain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="26e6-0948-4248-19b0">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|10|8|7</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15066,14 +15064,14 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
         <categoryLink targetId="0904-6f98-6fff-5dce" id="491a-c80b-926e-d8bb" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Optae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c925-886c-02ea-7e06">
+        <profile name="Jump Pack Optae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8518-3f3e-a18f-2a89">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">3+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">3+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">2/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15413,20 +15411,20 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="df93-05c5-9487-1fad" primary="false" name="T Infantry"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="d06e-374c-5583-30bb" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="0745-8673-b17c-4538" id="d018-a3f2-c63a-a468" primary="false" name="ST Command"/>
         <categoryLink targetId="0904-6f98-6fff-5dce" id="0aff-30ad-c12a-851c" primary="true" name="HH3-2 Command"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="68fe-eed3-da02-9ff4" primary="false" name="T Vehicle"/>
       </categoryLinks>
       <profiles>
         <profile name="Damocles Command Rhino" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9072-85e6-3358-a83d">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">12-11-10</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">-</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">12-11-10</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">5</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15549,7 +15547,12 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42e5-746a-1eb3-367a"/>
           </constraints>
           <profiles>
-            <profile name="Mobile Command Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b6f6-45e0-85ba-d8ac">
+            <profile name="Transport Capacity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b6f6-45e0-85ba-d8ac">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6 (Side, Rear)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mobile Command Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b2e-5855-74ab-cae4">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model with this Special Rule is required to make a Characteristic Check, the Controlling Player can use the required Characteristic for that Check from the Profile of one Model Embarked within this Model instead.</characteristic>
               </characteristics>
@@ -15610,14 +15613,14 @@ Process:
         <categoryLink targetId="0904-6f98-6fff-5dce" id="38f8-fa6f-a93d-3b04" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Librarian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="29b9-cc03-cbd5-e6d4">
+        <profile name="Jump Pack Librarian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="db74-da3d-640b-ca8f">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|7|9|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15790,14 +15793,14 @@ Process:
         <categoryLink targetId="0904-6f98-6fff-5dce" id="e950-5f21-83d3-2825" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Esoterist" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6a33-0782-4374-2516">
+        <profile name="Jump Pack Esoterist" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9ee5-1e9c-49cb-9980">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">7|8|10|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15897,14 +15900,14 @@ Process:
         <categoryLink targetId="0904-6f98-6fff-5dce" id="6c88-ed87-a480-47be" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Legion Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2204-0d65-c7bb-bd94">
+        <profile name="Jump Pack Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a344-f823-1d67-c5a4">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16006,14 +16009,14 @@ Process:
         <categoryLink targetId="0904-6f98-6fff-5dce" id="453b-5214-58ac-167d" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Chaplain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bc8f-1b8f-9bc5-f3c1">
+        <profile name="Jump Pack Chaplain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e476-9d13-ea9b-1ef3">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|10|8|7</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16123,14 +16126,14 @@ Process:
         <categoryLink targetId="0904-6f98-6fff-5dce" id="41c7-3e1d-a7a9-0e64" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Herald" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6b3e-b66b-ab3a-8a94">
+        <profile name="Jump Pack Herald" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6364-3dfb-4d55-e206">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106"/>
           </characteristics>
         </profile>
       </profiles>
@@ -16257,14 +16260,14 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
         <categoryLink targetId="0904-6f98-6fff-5dce" id="9ed5-2cba-7782-6a53" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Siege Breaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2bfb-5a00-b699-cdf1">
+        <profile name="Jump Pack Siege Breaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="452e-0916-8f58-e912">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16392,14 +16395,14 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
         <categoryLink targetId="0904-6f98-6fff-5dce" id="052e-a7ad-13c5-e61c" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Master of Signals" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2e9b-b2e2-174e-5ca8">
+        <profile name="Jump Pack Master of Signals" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="41c4-3810-7781-0adb">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|7|7|10</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16492,14 +16495,14 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
         <categoryLink targetId="0904-6f98-6fff-5dce" id="7037-6ed4-5c9f-728f" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Moritat Mortalis" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="da1c-8270-e834-9cc3">
+        <profile name="Moritat Mortalis" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ceef-f0e6-4d91-c38b">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|9|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">4/6</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16596,12 +16599,12 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
       <profiles>
         <profile name="Forge Lord" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8373-53fe-6249-ee21">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|10</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16744,14 +16747,14 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
         <categoryLink targetId="0904-6f98-6fff-5dce" id="4634-6dda-74ae-9920" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Forge Lord" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0471-126b-7bc4-889a">
+        <profile name="Jump Pack Forge Lord" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="21c1-937a-e46c-9a09">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">9|8|8|10</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16890,12 +16893,12 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
       <profiles>
         <profile name="Primus Medicae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e5df-1399-8ec1-bd3e">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17248,14 +17251,14 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
         <categoryLink targetId="0904-6f98-6fff-5dce" id="9606-fd1a-2985-9910" primary="true" name="HH3-2 Command"/>
       </categoryLinks>
       <profiles>
-        <profile name="Jump Pack Primus Medicae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9792-2755-9cc5-6452">
+        <profile name="Jump Pack Primus Medicae" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9a41-68f9-5ccf-e05f">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12</characteristic>
-            <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-            <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-            <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-            <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-            <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|8|8</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17621,41 +17624,243 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c481-6951-161e-7e0d"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapons" id="37e7-d950-25d2-9e77" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="Weapon Options" id="0094-b452-f746-3788" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="de9a-1370-02ce-187e" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
+                    <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="da9c-c10c-b878-7115" type="selectionEntry" targetId="d071-8d24-adcd-8539">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb14-0fb3-aaf6-88fa"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bfc-504f-ab40-c26f"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="2fa7-f44b-ae03-01fa" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c11d-52a3-2c93-3ba4"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8477-045e-e821-d25e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f353-dc2a-84e1-b61f"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapons" id="19a6-349d-7e97-8527" hidden="false" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="8f6b-626a-2501-8407" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2"/>
-                    <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="bffe-2a56-c80f-2965" type="selectionEntry" targetId="b1c9-5841-58f4-1a15"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Bolter Options" id="519e-ca73-9c87-1fa7" hidden="false" defaultSelectionEntryId="00e9-1f98-721d-a1b1">
+                      <entryLinks>
+                        <entryLink import="true" name="WR - BW Bolter" hidden="false" id="036c-bd44-a742-0d4d" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efa4-e81c-17a0-e583"/>
+                          </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Bayonet" id="8045-eef6-0f76-f7b3" hidden="false">
+                              <entryLinks>
+                                <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="1c90-9ad9-1119-de6f" type="selectionEntry" targetId="b1c9-5841-58f4-1a15">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec3b-62a4-abbc-ce1b"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="bc6f-2c32-8b26-43c8" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e3e-77e9-4604-f5a6"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d30-67ca-b7be-a626"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
+                        </entryLink>
+                        <entryLink import="true" name="WR - AW Astartes Shotgun" hidden="false" id="342f-e160-d131-4974" type="selectionEntry" targetId="2c35-d5d6-a44f-c2d0" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42dc-3e49-39b8-b0c9"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WR - DW Disintegrator Rifle" hidden="false" id="4200-d75d-2f13-66ac" type="selectionEntry" targetId="ac54-ddf8-8439-6073" sortIndex="6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f542-2df3-ed2a-3eda"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="4d91-6c0b-e7a6-e1dc" type="selectionEntry" targetId="fa31-dc69-6f5c-c160" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7de4-e68a-666c-653b"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d06-d77d-4e32-e7ac"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ccb5-9832-6fa4-4269"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Combi-Weapons" id="1430-c1a0-e165-24b9" hidden="false" sortIndex="4">
+                          <entryLinks>
+                            <entryLink import="true" name="WR - CW Combi-Disintegrator" hidden="false" id="2f2d-5e75-9228-5cf5" type="selectionEntry" targetId="c55d-3f8e-c917-cb84">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bf8-65d6-c9b1-02bf"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="f179-c199-a92c-d219" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e5d-0dd7-9842-ceb4"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="cbd7-7e56-9e75-601f" type="selectionEntry" targetId="af53-1947-d7e1-70cb">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e565-f424-f5af-56e4"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="7d79-9495-9f64-b796" type="selectionEntry" targetId="932d-479b-29d9-66e5">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fb8-0519-b17e-1d5e"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="8236-0dd4-1b77-3eee" type="selectionEntry" targetId="85aa-eeac-0726-dec8">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b3a-40d2-4ddf-4877"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="c56d-b2d2-a262-9e2e" type="selectionEntry" targetId="dc35-b9c9-5814-e278">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b52a-5b94-4b77-68b8"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="2012-83b0-b46a-124b" type="selectionEntry" targetId="9ce7-8734-f3ed-8600">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0d-34b5-00ae-413c"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9226-fdda-db87-c3a4"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Sgt Melee Weapons" id="b923-2c4e-582c-3ce4" hidden="false" defaultSelectionEntryId="none">
+                          <entryLinks>
+                            <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="d8bf-343b-285f-c2ff" type="selectionEntry" targetId="7855-ef37-7687-898d">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cc7-f084-59e8-e19c"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="78e1-62ca-1831-8ac5" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f573-df50-d188-c5d7"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="502f-a2c9-37ad-3f1f" type="selectionEntry" targetId="1567-4a0d-198b-c5eb">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64f4-efb7-ef9f-c647"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="dd76-d009-a3af-7f62" type="selectionEntry" targetId="de5c-c3bf-4522-59b9">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8313-7d51-08f3-22ef"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="7604-2267-3c7b-b403" type="selectionEntry" targetId="1baf-9935-793e-d59a">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83cd-68e8-1580-d655"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="4a61-cc6f-ba88-0247" type="selectionEntry" targetId="4539-25d0-3d92-3e27">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b143-005c-1c05-3fb4"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76cc-6770-e695-3074"/>
+                          </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Power Weapons" id="efea-d0db-012b-758a" hidden="false">
+                              <entryLinks>
+                                <entryLink import="true" name="WM - PWB Power Axe" hidden="false" id="49b8-febe-5f2a-466d" type="selectionEntry" targetId="8859-51a5-6d6b-2399">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f14-df6e-c7cb-1835"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Lance" hidden="false" id="0f76-4ae2-8678-fb57" type="selectionEntry" targetId="aa1b-5788-a6e3-a27a">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dc4-44c0-6c04-b1df"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Maul" hidden="false" id="57a1-5a78-a5e1-1282" type="selectionEntry" targetId="2975-63fe-6785-8fc2">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7964-c7c3-988b-1a95"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Sword" hidden="false" id="6807-e82c-ee60-8e93" type="selectionEntry" targetId="33c0-c731-6332-abd9">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2c2-b758-0f1d-d62a"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8216-2d4f-0553-afc2"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Pistol Options" id="15d8-60b6-36f4-389b" hidden="false" defaultSelectionEntryId="03f4-133d-4745-52c1">
+                      <entryLinks>
+                        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="7e00-f948-8b82-d6b6" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="0094-b452-f746-3788" childId="ccdd-3987-11ed-90cd" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e91-3fdd-b36a-be5d"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="06fb-29f9-4fef-d27b"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Pistols" id="19f4-a21b-6df6-2d9c" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="cd1e-56ed-2602-7f87" type="selectionEntry" targetId="ee9e-f254-bc53-abbf">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba65-bbcb-bf2a-d6da"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="1c1e-1c17-8e92-b201" type="selectionEntry" targetId="2345-048c-1b33-469b">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ee-addc-aa54-4fe6"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="4256-c07e-285b-7d6e" type="selectionEntry" targetId="abef-d9e0-d03a-bbda">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e61e-3a71-5128-e121"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="3194-9443-5fb3-2226" type="selectionEntry" targetId="8aac-882d-5c06-f2f4">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c67-79b1-b788-9e0c"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2282-6861-38b6-1b8f"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e28-5d18-bb6e-0358"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="148e-2772-a6a7-9c1c"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="148e-2772-a6a7-9c1c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d071-8d24-adcd-8539" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="7e28-5d18-bb6e-0358">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d071-8d24-adcd-8539" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Chosen" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="786b-c5d8-6842-55d2">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-                    <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-                    <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-                    <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/4</characteristic>
+                    <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+                    <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+                    <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|7|7</characteristic>
+                    <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17672,43 +17877,338 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a8b8-8816-9cdd-eb42"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="WGL - Sergeant Melee" hidden="false" id="b4d3-f1c3-18c2-ba80" type="selectionEntry" targetId="6405-fec3-02c6-6908" sortIndex="5">
+                    <entryLink import="true" name="WM - PW Lightning Claws, Paired" hidden="false" id="7a40-1847-d924-282d" type="selectionEntry" targetId="d071-8d24-adcd-8539">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b00b-869c-a7e7-dfeb"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Pistols" hidden="false" id="bc0f-aa3e-f851-9966" type="selectionEntry" targetId="0101-11ea-abf0-5e5b" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2caf-c71d-69c6-6ec0"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="0e02-19a8-3f05-6a81" type="selectionEntry" targetId="abef-d9e0-d03a-bbda" sortIndex="2">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8675-f0bb-2f7e-fc78"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WGL - Combi-Weapons" hidden="false" id="27b8-4b3c-19d8-a69f" type="selectionEntry" targetId="de2c-8068-a8eb-e218" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4c7-94d0-e4c7-8745"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="WR - BW Bolter" hidden="false" id="51a4-3263-7612-5215" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddda-5cb9-effe-8290"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bde1-8701-3962-6f35"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Bolter Options" id="d80f-a21f-d379-da2e" hidden="false" defaultSelectionEntryId="00e9-1f98-721d-a1b1">
+                      <entryLinks>
+                        <entryLink import="true" name="WR - BW Bolter" hidden="false" id="fab8-5e03-885f-601c" type="selectionEntry" targetId="3218-eb6d-6b24-db3d" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fed-ebe9-f170-8dff"/>
+                          </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Bayonet" id="e770-9857-d821-433f" hidden="false">
+                              <entryLinks>
+                                <entryLink import="true" name="WM - CW Chain Bayonet" hidden="false" id="6b37-22a1-02a7-fa1e" type="selectionEntry" targetId="b1c9-5841-58f4-1a15">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2de9-c441-3231-5883"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - XT Bayonet" hidden="false" id="1232-d0f1-a91b-7903" type="selectionEntry" targetId="1935-ecc2-48f0-8fe2">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed6e-f745-f899-34db"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15b9-e7f6-6b2c-3e43"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
+                        </entryLink>
+                        <entryLink import="true" name="WR - AW Astartes Shotgun" hidden="false" id="a39f-3534-7300-1561" type="selectionEntry" targetId="2c35-d5d6-a44f-c2d0" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dec4-9e99-1ad4-9cbb"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WR - DW Disintegrator Rifle" hidden="false" id="988b-d190-e4e8-209f" type="selectionEntry" targetId="ac54-ddf8-8439-6073" sortIndex="6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7138-109d-16b9-dd67"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="030f-754a-98b8-90ce" type="selectionEntry" targetId="fa31-dc69-6f5c-c160" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06d7-a1bd-0eb8-9080"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe3a-5321-985d-f658"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57fb-3595-c18f-62aa"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Combi-Weapons" id="ec66-abfb-5863-3bdb" hidden="false" sortIndex="4">
+                          <entryLinks>
+                            <entryLink import="true" name="WR - CW Combi-Disintegrator" hidden="false" id="b3ae-865b-1a0a-24b9" type="selectionEntry" targetId="c55d-3f8e-c917-cb84">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2221-50c4-94a4-cbd3"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="93b9-5bad-a59d-8822" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6482-6c13-11e0-0d68"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="dac0-ee9b-ac80-3ac2" type="selectionEntry" targetId="af53-1947-d7e1-70cb">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4121-84bb-384f-abfa"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="b5ee-899a-8891-ec92" type="selectionEntry" targetId="932d-479b-29d9-66e5">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a008-4410-1131-f614"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="d8f4-9ccc-2e89-0062" type="selectionEntry" targetId="85aa-eeac-0726-dec8">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="175d-0866-7d21-1546"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="ecb5-987b-09c3-9d70" type="selectionEntry" targetId="dc35-b9c9-5814-e278">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a9f-df7d-4f90-7ee6"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="6156-7f15-e5e5-dd92" type="selectionEntry" targetId="9ce7-8734-f3ed-8600">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8adc-ff52-f1fb-ed02"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="687c-11cf-f4fb-f243"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Officer Wargear" id="aa4a-e521-c533-3f5c" hidden="false" sortIndex="7">
+                          <entryLinks>
+                            <entryLink import="true" name="WG - Boarding Shield" hidden="false" id="24fb-bf7d-51d8-0f7e" type="selectionEntry" targetId="1bcd-99cb-c69f-c61d" sortIndex="12">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7c-9279-2439-cf0b"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WG - Combat Shield" hidden="false" id="8600-d522-5006-39e9" type="selectionEntry" targetId="4c36-af12-2cea-0887" sortIndex="13">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b6-ec30-139c-2b7e"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="58cb-9256-08a7-381b" type="selectionEntry" targetId="7855-ef37-7687-898d" sortIndex="6">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5eb-4110-7437-b373"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="d47d-50ad-593d-61c0" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0" sortIndex="7">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18b7-3fc9-c906-fcf5"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="c6a2-30ba-84de-b47e" type="selectionEntry" targetId="1567-4a0d-198b-c5eb" sortIndex="8">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b919-2531-60cf-90b9"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="fe2e-c4ab-fdf2-6540" type="selectionEntry" targetId="de5c-c3bf-4522-59b9" sortIndex="9">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="829f-16a8-bdf5-2464"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="b462-26c5-0034-7755" type="selectionEntry" targetId="1baf-9935-793e-d59a" sortIndex="10">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="105a-b0e4-6225-231d"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="2f83-42a5-3654-3962" type="selectionEntry" targetId="4539-25d0-3d92-3e27" sortIndex="11">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6080-f715-85bf-384a"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="de04-4a9d-f1f1-d781" type="selectionEntry" targetId="8645-a3bd-d923-ab37" sortIndex="1">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be14-47cd-f7cf-e4f2"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="c627-4982-1618-a555" type="selectionEntry" targetId="ee9e-f254-bc53-abbf" sortIndex="2">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe17-27d4-4538-bf0c"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="93e9-69bc-c047-fc0b" type="selectionEntry" targetId="2345-048c-1b33-469b" sortIndex="3">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-1dd3-bb68-324a"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="6933-6040-5703-7911" type="selectionEntry" targetId="8aac-882d-5c06-f2f4" sortIndex="4">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6709-54ca-7eed-6b73"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3752-a5a9-ad1e-cd28"/>
+                          </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Power Weapon" id="17e5-43f2-6fc0-09e5" hidden="false" sortIndex="5">
+                              <entryLinks>
+                                <entryLink import="true" name="WM - PWB Power Axe" hidden="false" id="5772-85d2-254b-f783" type="selectionEntry" targetId="8859-51a5-6d6b-2399">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8899-92d7-e7da-be9d"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Lance" hidden="false" id="76ee-412e-51a8-3565" type="selectionEntry" targetId="aa1b-5788-a6e3-a27a">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8cf-92aa-7792-3f86"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Maul" hidden="false" id="aaab-b797-094c-1e04" type="selectionEntry" targetId="2975-63fe-6785-8fc2">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f178-cb01-d5f9-fa0e"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Sword" hidden="false" id="5a97-77ac-79d7-f9b9" type="selectionEntry" targetId="33c0-c731-6332-abd9">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5495-a262-d275-2f88"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a917-86c1-b29a-43f3"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Sgt Melee Weapons" id="1ae9-9ad0-8713-6f7c" hidden="false" defaultSelectionEntryId="none">
+                          <entryLinks>
+                            <entryLink import="true" name="WM - CH Charnabal Sabre" hidden="false" id="7289-ebe1-e2e0-c39a" type="selectionEntry" targetId="7855-ef37-7687-898d">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02fc-4db6-3532-7301"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainaxe" hidden="false" id="885c-7736-2ea8-87cb" type="selectionEntry" targetId="3683-e7f0-2f4b-90c0">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a027-473f-080b-1c73"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - CW Chainsword" hidden="false" id="9c67-7a15-177d-465b" type="selectionEntry" targetId="1567-4a0d-198b-c5eb">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55da-87cb-5166-e201"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Lightning Claws" hidden="false" id="060f-b4a5-e62d-b5f0" type="selectionEntry" targetId="de5c-c3bf-4522-59b9">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="919b-2a2d-f296-a625"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Power Fist" hidden="false" id="8d77-f2a3-69c9-8bc5" type="selectionEntry" targetId="1baf-9935-793e-d59a">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7459-5829-76cb-d300"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WM - PW Thunder Hammer" hidden="false" id="4a57-54a0-918e-a240" type="selectionEntry" targetId="4539-25d0-3d92-3e27">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2eb-8ad9-8e16-e085"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0632-5415-2db2-2b28"/>
+                          </constraints>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Power Weapons" id="0fc9-546f-44c1-5d28" hidden="false">
+                              <entryLinks>
+                                <entryLink import="true" name="WM - PWB Power Axe" hidden="false" id="bf37-446a-f4b8-fbe0" type="selectionEntry" targetId="8859-51a5-6d6b-2399">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dafa-62b6-ab69-1c0f"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Lance" hidden="false" id="d51c-219c-76ab-383c" type="selectionEntry" targetId="aa1b-5788-a6e3-a27a">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76d8-260c-e603-d9f9"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Maul" hidden="false" id="291d-26a9-8b11-b458" type="selectionEntry" targetId="2975-63fe-6785-8fc2">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d422-18db-a423-dc0a"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="WM - PWB Power Sword" hidden="false" id="3423-c4bd-a975-5cb7" type="selectionEntry" targetId="33c0-c731-6332-abd9">
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f08-d9ee-0bc6-0e5a"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6850-200a-8d26-3740"/>
+                              </constraints>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Pistol Options" id="bd28-4bd1-3453-7feb" hidden="false" defaultSelectionEntryId="03f4-133d-4745-52c1">
+                      <entryLinks>
+                        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="77b7-7017-da65-93e9" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="2a6a-cad5-b932-ba2f" childId="ccdd-3987-11ed-90cd" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="381f-9a15-dfb7-752e"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6d7e-a39a-7749-e719"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Pistols" id="d4b0-f18b-db56-f63f" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="WR - FW Hand Flamer" hidden="false" id="08e8-a721-a37f-1dd1" type="selectionEntry" targetId="ee9e-f254-bc53-abbf">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76df-09ac-0ff7-5721"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="76b9-6187-380c-7a8d" type="selectionEntry" targetId="2345-048c-1b33-469b">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a00-e0f4-55c2-664a"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="54ec-e5a0-0c5f-e1a6" type="selectionEntry" targetId="8645-a3bd-d923-ab37">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fb3-82dc-cd91-f8bb"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="ddbe-de80-82e4-924d" type="selectionEntry" targetId="abef-d9e0-d03a-bbda">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab8c-849a-22f7-0c92"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="9d60-dab9-d2a1-9b1b" type="selectionEntry" targetId="8aac-882d-5c06-f2f4">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fe3-27b9-9504-2972"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <modifiers>
+                    <modifier type="set" value="1" field="a8b8-8816-9cdd-eb42">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d071-8d24-adcd-8539" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="9f1b-927a-3e46-e3e6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d071-8d24-adcd-8539" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Chosen Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8dcb-19c1-dab5-d24c">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7</characteristic>
-                    <characteristic name="T" typeId="3e6d-ad6a-d1d4-241e">4</characteristic>
-                    <characteristic name="Sv" typeId="a157-f088-a28d-f77d">2+</characteristic>
-                    <characteristic typeId="c9a4-2139-3b31-74ba" name="W"/>
-                    <characteristic typeId="7fa0-be0e-6773-fad6" name="LD"/>
-                    <characteristic typeId="b920-5353-c784-06a4" name="WS/BS"/>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/4</characteristic>
+                    <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+                    <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+                    <characteristic name="W" typeId="a157-f088-a28d-f77d">3/4</characteristic>
+                    <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|7|7</characteristic>
+                    <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -24406,6 +24906,445 @@ Front - Hunter-Killer Missile</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="2 Consul, Mortificator" hidden="false" id="24dc-8525-3dd1-b543">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="709a-3808-b73b-8db7" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="320b-6dfc-56bf-eed8" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0745-8673-b17c-4538" id="0186-fd93-6ef2-d755" primary="false" name="ST Command"/>
+        <categoryLink targetId="01f0-7e36-baeb-b8f9" id="b791-41ee-ca95-fe3b" primary="false" name="ST Heavy"/>
+        <categoryLink targetId="0904-6f98-6fff-5dce" id="ba1c-dc76-daf1-4f56" primary="true" name="HH3-2 Command"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mortificator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="745f-db59-d17a-3a9b">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|7|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Options" id="096c-cff7-d801-73a1" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1ec7-1420-c433-e7dc"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c22b-fe82-1181-204f"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bolt Pistol Options" id="5fa5-1350-6610-76b3" hidden="false" defaultSelectionEntryId="a0d6-1c4c-2a84-d62e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de78-dfb9-0a91-4cb7"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7f4c-b534-53fb-a2cd"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Legion Pistols" id="9e87-4b7f-f1a5-255c" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - DW Disintegrator Pistol" hidden="false" id="837e-6403-2822-bdec" type="selectionEntry" targetId="8645-a3bd-d923-ab37">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31fa-5b68-981c-c6c6"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - PL Plasma Pistol" hidden="false" id="3a1b-c642-efec-c9fb" type="selectionEntry" targetId="2345-048c-1b33-469b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c711-2651-4a7d-be67"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - VK Volkite Serpenta" hidden="false" id="843b-3652-3a70-99fb" type="selectionEntry" targetId="8aac-882d-5c06-f2f4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c69-b5fb-576b-8249"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e76-46bd-66aa-367c"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="WR - BW Bolt Pistol" hidden="false" id="a749-83e5-6acd-806c" type="selectionEntry" targetId="abef-d9e0-d03a-bbda">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67f7-1f2e-951f-e57d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="WM - XT Corposant Stave" hidden="false" id="b02a-4168-4d37-56b1" type="selectionEntry" targetId="bbf5-3277-316e-b2a8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c398-e969-e580-6256-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c398-e969-e580-6256-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="57b6-8e1c-8ed1-0c38" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="2c7d-8738-dd94-12f6" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e847-128a-8c32-1cad"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7b-c204-114f-43f3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="aca8-e201-607a-9ba5" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="693e-dc3b-f625-be8a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f5d-272e-55e2-d9f9"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="28c8-a1da-e90e-4e02">
+          <infoLinks>
+            <infoLink name="Invulnerable Save (5+)" id="6426-689f-8365-afa0" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
+            <infoLink name="Battlesmith (2)" id="bb37-51eb-2b80-409f" hidden="false" type="profile" targetId="ac96-84f2-bd27-b68e"/>
+            <infoLink name="Specialist Sub-Type" id="58e3-48f0-b5c9-89e4" hidden="false" type="profile" targetId="2c38-d339-1cf1-9888"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18ce-f08b-c415-f350"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da20-9d62-8eb3-1fc7"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="WG - Servo-Arm" hidden="false" id="16c4-84cf-4719-18f8" type="selectionEntry" targetId="6cf9-8ddb-74a6-712e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d622-4d78-7454-de79-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d622-4d78-7454-de79-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Keeper of Dreadnoughts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7117-fe8d-3520-008a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Mortificator unlocks the &apos;Dreadnought Talon&apos; Auxiliary Detachment - 3 War-Engine slots that can only be filled by Contemptor Dreadnoughts</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="WM - XT Corposant Stave" hidden="false" id="bbf5-3277-316e-b2a8">
+      <profiles>
+        <profile name="Corposant Stave" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d290-30a4-c087-8591">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
+            <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shock (Pinning, Stunned, Suppressed)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shock [X]" id="cc6b-6a3f-4a5a-6835" hidden="false" type="rule" targetId="48b2-777f-b668-2846"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="2 Consul, Mortificator, Cataphractii" hidden="false" id="9845-b283-3efb-ab4c">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b57d-9198-9243-32dd" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="1dfd-96cd-fff0-7263" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0745-8673-b17c-4538" id="6322-5b1f-d982-3b15" primary="false" name="ST Command"/>
+        <categoryLink targetId="01f0-7e36-baeb-b8f9" id="d951-4c7d-fed0-de6d" primary="false" name="ST Heavy"/>
+        <categoryLink targetId="0904-6f98-6fff-5dce" id="3df0-95ff-5c87-00dd" primary="true" name="HH3-2 Command"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cataphractii Mortificator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d1e5-9056-8c3e-9797">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|7|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Options" id="f5de-a6ac-801e-bd50" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1fa4-7c9a-addf-404c"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4dbb-8447-6779-386a"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Combi-Bolter Option" id="390f-f399-9906-b615" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Combi-Weapons" id="4bce-fe88-7655-7cd4" hidden="false" defaultSelectionEntryId="b8eb-2da3-6437-c39d">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - CW Combi-Disintegrator" hidden="false" id="20bf-d599-4658-aa98" type="selectionEntry" targetId="c55d-3f8e-c917-cb84">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2dc-afc9-fc43-63f6"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="b8eb-2da3-6437-c39d" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a129-155f-22e3-edfe"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="2a6a-e12b-d36f-b0db" type="selectionEntry" targetId="af53-1947-d7e1-70cb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d23-b8d5-a13b-fcb1"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="1000-77d4-c486-e55b" type="selectionEntry" targetId="932d-479b-29d9-66e5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2ee-9e0b-fd6c-bb06"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="b079-ef22-34d4-72ae" type="selectionEntry" targetId="85aa-eeac-0726-dec8">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2171-2056-3ec1-b746"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="fe19-c730-6b9a-5a3f" type="selectionEntry" targetId="dc35-b9c9-5814-e278">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d87c-1171-b05b-0875"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="61d5-0f9a-6087-a063" type="selectionEntry" targetId="9ce7-8734-f3ed-8600">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08ee-70cf-4d36-c545"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="999d-a815-04bf-276e"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="8a81-4de0-bdf6-ce37" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f25-171c-6239-c93f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f25-171c-6239-c93f-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="WM - XT Corposant Stave" hidden="false" id="37f8-aab3-4ad6-32e6" type="selectionEntry" targetId="bbf5-3277-316e-b2a8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="628a-630e-303a-db91-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="628a-630e-303a-db91-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="a437-4a19-d7fc-19ee" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="1dc9-d5af-6d61-0dcd" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b72-da94-6e9d-5a7b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04cb-d49d-189c-62cc"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="ec97-dbde-9e7b-c201" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="498c-f33d-51c7-4d24"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6167-8234-0959-bf02"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="9a30-fdb7-99e7-2250">
+          <infoLinks>
+            <infoLink name="Invulnerable Save (4+)" id="db84-ce61-eaee-d911" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+            <infoLink name="Slow and Purposeful" id="d7a8-6b69-216e-9098" hidden="false" type="profile" targetId="7985-d413-e285-9940"/>
+            <infoLink name="Specialist Sub-Type" id="afda-e190-0f64-2863" hidden="false" type="profile" targetId="2c38-d339-1cf1-9888"/>
+            <infoLink name="Battlesmith (2)" id="a9f8-b783-ccae-19a2" hidden="false" type="profile" targetId="ac96-84f2-bd27-b68e"/>
+            <infoLink name="Bulky [2]" id="93db-3bae-b3d9-9db9" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
+            <infoLink name="Implacable Advance" id="d731-e8af-858a-7bf2" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22b5-eb95-81a0-c82e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02d3-0989-2700-66cf"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="WG - Servo-Arm" hidden="false" id="b926-2a4b-1e2c-5fd1" type="selectionEntry" targetId="6cf9-8ddb-74a6-712e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7be0-67e9-01be-1fdb-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7be0-67e9-01be-1fdb-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Keeper of Dreadnoughts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dfb4-b74f-d996-4614">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Mortificator unlocks the &apos;Dreadnought Talon&apos; Auxiliary Detachment - 3 War-Engine slots that can only be filled by Contemptor Dreadnoughts</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="2 Consul, Mortificator, Cataphractii" hidden="false" id="c3bb-eba7-1269-15e7">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="cc89-126b-a3e7-974b" primary="false" name="T Infantry"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="3e00-c637-56d5-e04f" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0745-8673-b17c-4538" id="e1f7-1f8b-90ce-b00a" primary="false" name="ST Command"/>
+        <categoryLink targetId="01f0-7e36-baeb-b8f9" id="1075-e86d-f20f-9357" primary="false" name="ST Heavy"/>
+        <categoryLink targetId="0904-6f98-6fff-5dce" id="4ba7-7cfd-e8a2-0078" primary="true" name="HH3-2 Command"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tartaros Mortificator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c81a-5f7f-869e-1949">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
+            <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/5</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="W" typeId="a157-f088-a28d-f77d">3/3</characteristic>
+            <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">8|8|7|9</characteristic>
+            <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">5/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Options" id="d374-8efb-b98d-bf5b" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4d59-1429-27ec-2309"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d332-9bb4-3b57-fd3d"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Combi-Bolter Option" id="abd0-372d-242b-83e9" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Combi-Weapons" id="dd39-ae14-9161-1b56" hidden="false" defaultSelectionEntryId="b8eb-2da3-6437-c39d">
+                  <entryLinks>
+                    <entryLink import="true" name="WR - CW Combi-Disintegrator" hidden="false" id="5e20-6bd6-b351-00dd" type="selectionEntry" targetId="c55d-3f8e-c917-cb84">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8cf-8daf-f5a8-2b9f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - BW Combi-Bolter" hidden="false" id="54d5-028b-2d13-2b20" type="selectionEntry" targetId="650c-b3c0-1b76-9004">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d93-5624-c6f3-51a1"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Volkite" hidden="false" id="921b-53a9-77dc-221d" type="selectionEntry" targetId="af53-1947-d7e1-70cb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b581-a1e8-796b-61ca"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Melta" hidden="false" id="4bd8-4059-6659-dd19" type="selectionEntry" targetId="932d-479b-29d9-66e5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4b6-69bd-1e0e-e619"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Grenade" hidden="false" id="276f-c9cd-12a4-3373" type="selectionEntry" targetId="85aa-eeac-0726-dec8">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98e-a12d-d6c8-a41f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Plasma" hidden="false" id="d46f-ba64-4132-3dd4" type="selectionEntry" targetId="dc35-b9c9-5814-e278">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a54-336b-e185-aaef"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="WR - CW Combi-Flamer" hidden="false" id="0f13-c47d-0e1d-3118" type="selectionEntry" targetId="9ce7-8734-f3ed-8600">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d19-2089-5df3-c522"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91fd-d2b2-7bd0-f492"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="WR - VK Volkite Charger" hidden="false" id="9608-0384-9454-3cb1" type="selectionEntry" targetId="fa31-dc69-6f5c-c160"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c2e-4a12-0a7c-3c48-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c2e-4a12-0a7c-3c48-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="WM - XT Corposant Stave" hidden="false" id="2d4c-33d1-70d2-d733" type="selectionEntry" targetId="bbf5-3277-316e-b2a8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9f9-89ef-a1ed-864d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9f9-89ef-a1ed-864d-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="420c-a4b4-0188-d91b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="WG - Frag Grenades" hidden="false" id="f557-d9e6-9a31-12c4" type="selectionEntry" targetId="2fb3-4c90-2a66-88d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca2b-13e9-296b-b7b9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d592-d399-5ff9-13c8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="WM - XT Krak Grenades" hidden="false" id="617f-d213-fcd0-9957" type="selectionEntry" targetId="a7b6-3239-6a1f-8926">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3560-7e27-376b-efd7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2056-7d1b-0571-efd3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rules and Traits" hidden="false" id="75b2-c416-6b6f-80e5">
+          <infoLinks>
+            <infoLink name="Invulnerable Save (5+)" id="40a8-2a25-12dd-e3b0" hidden="false" type="profile" targetId="af2e-f9cb-e69a-f8c5"/>
+            <infoLink name="Specialist Sub-Type" id="de8f-3e04-3de0-f5a2" hidden="false" type="profile" targetId="2c38-d339-1cf1-9888"/>
+            <infoLink name="Battlesmith (2)" id="6d17-9321-3c03-581e" hidden="false" type="profile" targetId="ac96-84f2-bd27-b68e"/>
+            <infoLink name="Bulky [2]" id="40c9-9b4a-cdff-9444" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
+            <infoLink name="Implacable Advance" id="8392-d866-5308-c39f" hidden="false" type="profile" targetId="eef9-65d9-0815-c999"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f91c-c4bc-52bc-e0f8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0801-898d-5c1f-4183"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="WG - Servo-Arm" hidden="false" id="b0f2-43d7-c1b2-d878" type="selectionEntry" targetId="6cf9-8ddb-74a6-712e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5957-d6e5-be28-8ffe-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5957-d6e5-be28-8ffe-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Keeper of Dreadnoughts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0f6-3758-201b-a85b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Mortificator unlocks the &apos;Dreadnought Talon&apos; Auxiliary Detachment - 3 War-Engine slots that can only be filled by Contemptor Dreadnoughts</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="Index - Space Marines" hidden="false" id="8b50-6bb0-b6bb-e187" shortName="Index SM" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/06/uVN1M55L0U3dQeWZ.pdf" publicationDate="09/06/2023" publisher="Index - Space Marines"/>
@@ -24586,7 +25525,7 @@ Front - Hunter-Killer Missile</characteristic>
     <entryLink import="true" name="2 Centurion, Jump Pack" hidden="false" id="edf1-199c-e9b8-b570" type="selectionEntry" targetId="0c8f-53e8-f9e1-25fa"/>
     <entryLink import="true" name="2 Consul, Optae" hidden="false" id="c3c6-db63-4743-965a" type="selectionEntry" targetId="dd90-8fc5-c763-b166"/>
     <entryLink import="true" name="2 Consul, Overseer" hidden="false" id="8cf2-efbd-663c-1837" type="selectionEntry" targetId="e30d-4dd5-ca10-902f"/>
-    <entryLink import="true" name="2 Damocles Command Rhino" hidden="false" id="978f-d450-ec84-12ba" type="selectionEntry" targetId="ed9e-8dc8-110b-4cb6"/>
+    <entryLink import="true" name="3 Praetorian Command Squad - TODO" hidden="false" id="978f-d450-ec84-12ba" type="selectionEntry" targetId="b44a-bf5c-401c-6bbe"/>
     <entryLink import="true" name="2 Consul, Moritat" hidden="false" id="5e89-409e-9baa-f93c" type="selectionEntry" targetId="9345-3a78-a213-2484"/>
     <entryLink import="true" name="2 Consul, Praevian" hidden="false" id="021d-ac20-ebff-6400" type="selectionEntry" targetId="f976-bf05-7593-4d15"/>
     <entryLink import="true" name="2 Consul, Master of Signals" hidden="false" id="b8df-fd9e-af77-f7da" type="selectionEntry" targetId="8f3c-eadf-1654-89cc"/>
@@ -24600,5 +25539,6 @@ Front - Hunter-Killer Missile</characteristic>
     <entryLink import="true" name="2 Consul, Chaplain" hidden="false" id="f959-fc73-324c-75dc" type="selectionEntry" targetId="9ae8-23c7-8291-4724"/>
     <entryLink import="true" name="13 Scorpius Missile Tank7" hidden="false" id="ae45-9952-11b0-908f" type="selectionEntry" targetId="96cb-83bf-2ff6-d3ce"/>
     <entryLink import="true" name="13 Arquitor Bombard7" hidden="false" id="2a8f-d6cc-b5f2-3286" type="selectionEntry" targetId="b9d9-5325-9756-72d3"/>
+    <entryLink import="true" name="2 Damocles Command Rhino" hidden="false" id="da70-7c40-ed78-0578" type="selectionEntry" targetId="ed9e-8dc8-110b-4cb6"/>
   </entryLinks>
 </catalogue>

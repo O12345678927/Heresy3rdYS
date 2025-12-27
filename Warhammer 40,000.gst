@@ -939,12 +939,24 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
     </profile>
     <profile name="Battlesmith (1)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f1b-9524-7549-98a7">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Int Check for Vehicle within 6&quot;
+
+
+ Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+
+    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Battlesmith (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ac96-84f2-bd27-b68e">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Int Check for Vehicle within 6&quot;
+
+
+ Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+
+    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Specialist Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c38-d339-1cf1-9888">
@@ -971,12 +983,12 @@ A Unit that includes only Models with the Antigrav Sub-Type may ignore both frie
     </profile>
     <profile name="Auto-Repair (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2229-0ef9-d9d1-45e4">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</characteristic>
       </characteristics>
     </profile>
     <profile name="Auto-Repair (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f35b-1368-bad7-e9ed">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</characteristic>
       </characteristics>
     </profile>
     <profile name="Medic! (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc5-7b85-3735-aa98">

@@ -542,7 +542,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-14-13</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">12</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4107,7 +4107,7 @@ Hull (Front) - HK</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-14-13</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">12</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4243,7 +4243,7 @@ Hull (Front) - HK</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4386,7 +4386,7 @@ Hull (Front) - Twin Heavy Bolter/Flamer, HK</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4543,7 +4543,7 @@ Hull (Front) - Twin Heavy Bolter/Flamer, Demolisher Cannon, HK</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">18&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">13-13-13</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4642,7 +4642,7 @@ Hull (Front) - Lascannon</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-13-12</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">18</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4787,7 +4787,7 @@ Hull (Front) - HK</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-14-14</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">22</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -4943,7 +4943,7 @@ Hull (Rear) - Twin Heavy Bolter</characteristic>
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">14-14-14</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">-</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">-</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">20</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">-</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">-/4</characteristic>
@@ -9322,7 +9322,7 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;/5</characteristic>
             <characteristic name="T" typeId="e404-7e45-0cc9-9a76">4/4</characteristic>
-            <characteristic name="Sv" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
+            <characteristic name="SV" typeId="d786-d92f-d7da-c5fe">2+</characteristic>
             <characteristic name="W" typeId="a157-f088-a28d-f77d">4</characteristic>
             <characteristic name="LD" typeId="3346-bd44-b5cc-81ab">10-9-9-8</characteristic>
             <characteristic name="OC" typeId="d5fd-b8fa-b61e-1106">6/5</characteristic>

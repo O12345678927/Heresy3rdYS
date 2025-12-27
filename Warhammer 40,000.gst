@@ -25,7 +25,7 @@
       <characteristicTypes>
         <characteristicType id="e703-ecb6-5ce7-aec1" name="M"/>
         <characteristicType name="T" id="e404-7e45-0cc9-9a76"/>
-        <characteristicType name="Sv" id="d786-d92f-d7da-c5fe"/>
+        <characteristicType name="SV" id="d786-d92f-d7da-c5fe"/>
         <characteristicType name="W" id="a157-f088-a28d-f77d"/>
         <characteristicType name="LD" id="3346-bd44-b5cc-81ab"/>
         <characteristicType name="OC" id="d5fd-b8fa-b61e-1106"/>

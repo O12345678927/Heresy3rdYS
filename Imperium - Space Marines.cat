@@ -677,13 +677,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="209d-1afc-620a-c41a">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">5</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5066,13 +5066,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Heavy Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6fdb-dc20-2b64-fd56">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">4</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5084,13 +5084,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Gravis Chainfist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ebf0-914f-6456-9fbe">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+4</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane, Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane, Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5103,13 +5103,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Heavy Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2a5b-31b8-18a9-d56b">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">4</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5121,13 +5121,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Chain Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="357b-f1b8-6de1-0c83">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">5</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5139,13 +5139,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Chainfist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a37a-4760-18c1-6bda">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-1</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+6</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane, Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane, Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5158,31 +5158,32 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paired Gravis Chainfists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ebdd-84b1-f24e-23b8">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+4</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">4</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane, Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">4</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane, Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Shred [X]" id="0701-32e1-296a-2d58" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
+        <infoLink name="Armourbane" id="0701-32e1-296a-2d58" hidden="false" type="rule" targetId="9ff9-792a-c539-5ad7"/>
+        <infoLink name="Shred [X]" id="ad4c-1c50-401a-120a" hidden="false" type="rule" targetId="8668-b512-ce91-aa45"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="WM - CW Chainaxe" hidden="false" id="3683-e7f0-2f4b-90c0">
       <profiles>
         <profile name="Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="555b-7e57-b785-ce09">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">5</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Shred (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Shred (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5194,13 +5195,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Charnabal Sabre" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="678a-b114-c385-8596">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">+1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">-</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5232,13 +5233,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Force Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8dab-4203-6e51-428b">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Force (D)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Force (D)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5250,13 +5251,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Force Maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f5b6-ab7e-8e67-315f">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+3</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Force (D)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Force (D)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5268,13 +5269,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Force Staff" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="438a-bcd8-f4d4-4395">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">+1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">4</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Force (D)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Force (D)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5286,13 +5287,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Force Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="56b2-2a4b-05a7-38e2">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Force (D)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Force (D)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5304,13 +5305,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bb3c-7cc7-0495-399b">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5322,13 +5323,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8e48-b125-7176-2070">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (5+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5340,13 +5341,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Power Lance" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ba4d-0a59-eabe-89df">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">+1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Precision (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Precision (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5358,13 +5359,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Power Maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="26ab-5e39-a0f0-d367">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5376,13 +5377,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f11f-4cfc-e008-54bd">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+4</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5391,13 +5392,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Gravis Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="fb7b-960e-6a31-9301">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+3</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5406,13 +5407,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paired Gravis Power Fists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2bf2-cc37-072f-33a1">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">+1</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+3</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5421,13 +5422,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5649-52ba-6faa-40df">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-2</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+3</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5436,13 +5437,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paired Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a935-d956-965f-3068">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">+2</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+), Rending (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+), Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5455,13 +5456,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Saturnine War Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df7c-63e0-c4a0-125f">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Reaping Blow (2)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Reaping Blow (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5473,13 +5474,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Saturnine Disruption Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1875-b789-2a45-336c">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-2</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5488,13 +5489,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="45b9-8a50-d660-cb6e">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+), Rending (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+), Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5507,13 +5508,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Saturnine Concussion Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8ddf-40d6-a72f-db05">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">x2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Critical Hit (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Critical Hit (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5525,13 +5526,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Crozius Arcanum" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0f96-6e4c-8ea0-b31c">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (5+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5543,13 +5544,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paragon Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e3d5-d2b7-3717-0f62">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Critical Hit (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Critical Hit (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5561,13 +5562,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Lascutter" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4234-d245-b16f-2d87">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">=1</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">=12</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">4</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">4</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5576,13 +5577,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Krak Grenades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1612-cc6f-8f44-57e8">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">=6</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">4</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">2</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Detonation</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">2</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Detonation</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5594,13 +5595,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Melta Bombs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d2e0-9ded-221b-e040">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-3</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">=1</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-3</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">=9</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">4</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane, Detonation</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">4</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane, Detonation</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5613,13 +5614,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Leviathan Siege Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6506-da82-260d-4e97">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5628,13 +5629,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paired Leviathan Siege Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ee9a-26e2-6f86-f2d8">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">+1</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+2</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5643,13 +5644,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Leviathan Siege Drill" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1179-8c78-3efa-c3cb">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-2</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+4</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">3</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">3</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5661,13 +5662,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Paired Leviathan Siege Drill" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d19d-e51d-4d4b-504b">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-2</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-2</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">+4</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">4</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Armourbane</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">4</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Armourbane</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5679,13 +5680,13 @@ Hull (Front) - HK</characteristic>
       <profiles>
         <profile name="Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1b2a-d7fc-bc1f-64ea">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">5</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -9290,13 +9291,13 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
       <profiles>
         <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9eb3-0642-7c80-5cb2">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">-</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
             <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">-</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4"/>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724"/>
           </characteristics>
         </profile>
       </profiles>
@@ -15035,13 +15036,13 @@ During the Decide Victor Step, at the end of the Battle, the Controlling Player 
       <profiles>
         <profile name="Power Lash" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="47ff-de10-901a-3f3f">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">+1</characteristic>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">-</characteristic>
-            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">-</characteristic>
+            <characteristic name="WS" typeId="ab33-d393-96ce-ccba">+1</characteristic>
             <characteristic name="S" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="AP" typeId="3254-9fe6-d824-513e">3</characteristic>
-            <characteristic name="D" typeId="97b6-7112-993d-c3a0">1</characteristic>
-            <characteristic name="Keywords" typeId="f533-f68e-1fc8-11b4">Breaching (6+)</characteristic>
+            <characteristic name="D" typeId="893f-9000-ccf7-648e">1</characteristic>
+            <characteristic name="Keywords" typeId="3731-a3a6-2147-4724">Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>

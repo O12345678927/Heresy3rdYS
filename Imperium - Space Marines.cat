@@ -18042,20 +18042,6 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                       </selectionEntryGroups>
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Pistol Options" id="bd28-4bd1-3453-7feb" hidden="false" defaultSelectionEntryId="03f4-133d-4745-52c1">
-                      <entryLinks>
-                        <entryLink import="true" name="WG - Combat Shield" hidden="false" id="77b7-7017-da65-93e9" type="selectionEntry" targetId="4c36-af12-2cea-0887">
-                          <modifiers>
-                            <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="2a6a-cad5-b932-ba2f" childId="ccdd-3987-11ed-90cd" shared="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="298b-90ac-331c-d068"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="381f-9a15-dfb7-752e"/>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6d7e-a39a-7749-e719"/>
@@ -18089,6 +18075,18 @@ If a player chooses to apply the effects of a machinator array and makes two Bat
                               </constraints>
                             </entryLink>
                           </entryLinks>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Combat Shield (If equipped with Sgt Melee Weapon" id="33c0-216b-9e1f-369c" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="WG - Combat Shield" hidden="false" id="77b7-7017-da65-93e9" type="selectionEntry" targetId="4c36-af12-2cea-0887">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="298b-90ac-331c-d068"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934e-11f9-2f92-fd3a"/>
+                          </constraints>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntryGroup>

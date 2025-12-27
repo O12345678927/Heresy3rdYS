@@ -1003,5 +1003,10 @@ A Unit that includes only Models with the Antigrav Sub-Type may ignore both frie
     In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Champion Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="96ed-1e5b-17ac-f71d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Champion Sub-Type may issue and accept Challenges</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>

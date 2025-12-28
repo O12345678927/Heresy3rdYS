@@ -27656,7 +27656,7 @@ Front - Hunter-Killer Missile</characteristic>
     <entryLink import="true" name="2 Centurion, Jump Pack" hidden="false" id="edf1-199c-e9b8-b570" type="selectionEntry" targetId="0c8f-53e8-f9e1-25fa"/>
     <entryLink import="true" name="2 Consul, Optae" hidden="false" id="c3c6-db63-4743-965a" type="selectionEntry" targetId="dd90-8fc5-c763-b166"/>
     <entryLink import="true" name="2 Consul, Overseer" hidden="false" id="8cf2-efbd-663c-1837" type="selectionEntry" targetId="e30d-4dd5-ca10-902f"/>
-    <entryLink import="true" name="3 Praetorian Command Squad" hidden="false" id="978f-d450-ec84-12ba" type="selectionEntry" targetId="b44a-bf5c-401c-6bbe"/>
+    <entryLink import="true" name="3 Centurion Command Squad" hidden="false" id="978f-d450-ec84-12ba" type="selectionEntry" targetId="50e5-f151-c46e-eda0"/>
     <entryLink import="true" name="2 Consul, Moritat" hidden="false" id="5e89-409e-9baa-f93c" type="selectionEntry" targetId="9345-3a78-a213-2484"/>
     <entryLink import="true" name="2 Consul, Praevian" hidden="false" id="021d-ac20-ebff-6400" type="selectionEntry" targetId="f976-bf05-7593-4d15"/>
     <entryLink import="true" name="2 Consul, Master of Signals" hidden="false" id="b8df-fd9e-af77-f7da" type="selectionEntry" targetId="8f3c-eadf-1654-89cc"/>
@@ -27671,5 +27671,9 @@ Front - Hunter-Killer Missile</characteristic>
     <entryLink import="true" name="13 Scorpius Missile Tank7" hidden="false" id="ae45-9952-11b0-908f" type="selectionEntry" targetId="96cb-83bf-2ff6-d3ce"/>
     <entryLink import="true" name="13 Arquitor Bombard7" hidden="false" id="2a8f-d6cc-b5f2-3286" type="selectionEntry" targetId="b9d9-5325-9756-72d3"/>
     <entryLink import="true" name="2 Damocles Command Rhino" hidden="false" id="da70-7c40-ed78-0578" type="selectionEntry" targetId="ed9e-8dc8-110b-4cb6"/>
+    <entryLink import="true" name="3 Praetorian Command Squad" hidden="false" id="4a67-9ddc-3359-7a07" type="selectionEntry" targetId="b44a-bf5c-401c-6bbe"/>
+    <entryLink import="true" name="3 Praetorian Command Squad, Jump Pack" hidden="false" id="7ae1-c6e8-db72-dcd6" type="selectionEntry" targetId="7c8b-066a-a0a9-3ecf"/>
+    <entryLink import="true" name="3 Terminator Tartaros Command Squad" hidden="false" id="2bf8-6426-aeea-96ab" type="selectionEntry" targetId="df68-ef55-744b-b1b7"/>
+    <entryLink import="true" name="3 Terminator Cataphractii Command Squad" hidden="false" id="91c5-d063-b4b9-d531" type="selectionEntry" targetId="2185-b05a-7379-2759"/>
   </entryLinks>
 </catalogue>

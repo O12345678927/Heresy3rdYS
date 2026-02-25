@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="80" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer Age of Darkness 3.0" revision="93" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -24,25 +24,22 @@
     <profileType id="c547-1836-d8a-ff4f" name="Unit">
       <characteristicTypes>
         <characteristicType id="e703-ecb6-5ce7-aec1" name="M"/>
-        <characteristicType name="S" id="e404-7e45-0cc9-9a76"/>
-        <characteristicType name="T" id="3e6d-ad6a-d1d4-241e"/>
-        <characteristicType name="W" id="d786-d92f-d7da-c5fe"/>
-        <characteristicType name="Sv" id="a157-f088-a28d-f77d"/>
+        <characteristicType name="T" id="e404-7e45-0cc9-9a76"/>
+        <characteristicType name="SV" id="d786-d92f-d7da-c5fe"/>
+        <characteristicType name="W" id="a157-f088-a28d-f77d"/>
         <characteristicType name="LD" id="3346-bd44-b5cc-81ab"/>
-        <characteristicType name="I" id="0990-e6c5-0acd-5fd5"/>
-        <characteristicType name="A" id="1112-8c11-772b-6248"/>
-        <characteristicType name="WS" id="a1bd-cb83-dd70-d309"/>
-        <characteristicType name="BS" id="d5fd-b8fa-b61e-1106"/>
+        <characteristicType name="OC" id="d5fd-b8fa-b61e-1106"/>
       </characteristicTypes>
     </profileType>
     <profileType id="f77d-b953-8fa4-b762" name="Ranged Weapons">
       <characteristicTypes>
         <characteristicType id="9896-9419-16a1-92fc" name="Range"/>
-        <characteristicType id="3bb-c35f-f54-fb08" name="FP"/>
-        <characteristicType id="2229-f494-25db-c5d3" name="RS"/>
-        <characteristicType id="9ead-8a10-520-de15" name="AP"/>
-        <characteristicType id="a354-c1c8-a745-f9e3" name="D"/>
-        <characteristicType id="7f1b-8591-2fcf-d01c" name="Keywords"/>
+        <characteristicType id="3bb-c35f-f54-fb08" name="A"/>
+        <characteristicType id="2229-f494-25db-c5d3" name="BS"/>
+        <characteristicType id="9ead-8a10-520-de15" name="S"/>
+        <characteristicType id="a354-c1c8-a745-f9e3" name="AP"/>
+        <characteristicType id="7f1b-8591-2fcf-d01c" name="D"/>
+        <characteristicType name="Keywords" id="a164-0b4d-e6b4-eb92"/>
       </characteristicTypes>
     </profileType>
     <profileType id="9cc3-6d83-4dd3-9b64" name="Abilities">
@@ -52,12 +49,13 @@
     </profileType>
     <profileType id="8a40-4aaa-c780-9046" name="Melee Weapons">
       <characteristicTypes>
-        <characteristicType id="914c-b413-91e3-a132" name="IM"/>
-        <characteristicType id="2337-daa1-6682-b110" name="AM"/>
-        <characteristicType id="ab33-d393-96ce-ccba" name="SM"/>
-        <characteristicType id="41a0-1301-112a-e2f2" name="AP"/>
-        <characteristicType id="3254-9fe6-d824-513e" name="D"/>
-        <characteristicType id="893f-9000-ccf7-648e" name="Keywords"/>
+        <characteristicType id="914c-b413-91e3-a132" name="Range"/>
+        <characteristicType id="2337-daa1-6682-b110" name="A"/>
+        <characteristicType id="ab33-d393-96ce-ccba" name="WS"/>
+        <characteristicType id="41a0-1301-112a-e2f2" name="S"/>
+        <characteristicType id="3254-9fe6-d824-513e" name="AP"/>
+        <characteristicType id="893f-9000-ccf7-648e" name="D"/>
+        <characteristicType name="Keywords" id="3731-a3a6-2147-4724"/>
       </characteristicTypes>
     </profileType>
     <profileType id="74f8-5443-9d6d-1f1e" name="Transport">
@@ -221,13 +219,13 @@
         <categoryLink name="HH3-4 Elites" hidden="false" id="20ad-378c-15a1-2a91" targetId="e8e8-aa94-352b-b9c8"/>
         <categoryLink name="HH3-5 Heavy Assault" hidden="false" id="686f-ae89-9358-217a" targetId="7118-6f6e-f38b-effc"/>
         <categoryLink name="HH3-6 Troops" hidden="false" id="073a-ac4c-3df8-c9c1" targetId="4f24-53bb-d3c2-f854"/>
+        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
         <categoryLink name="HH3-8 War-Engine" hidden="false" id="93b7-bfc0-6ca7-bb7c" targetId="fcaf-ba1e-6089-a427"/>
         <categoryLink name="HH3-9 Transport" hidden="false" id="7e80-820e-d362-a899" targetId="abf8-839e-3eec-5784"/>
         <categoryLink name="HH3-10 Heavy Transport" hidden="false" id="411b-5d21-b7b1-4944" targetId="156b-b843-fb2a-372b"/>
         <categoryLink name="HH3-11 Recon" hidden="false" id="760f-c509-9863-7a4e" targetId="e1f4-4d21-8e8b-ced1"/>
         <categoryLink name="HH3-12 Fast Attack" hidden="false" id="c5bf-2808-ccb1-2f06" targetId="46ab-9d40-180a-231e"/>
         <categoryLink name="HH3-13 Armour" hidden="false" id="9134-d99f-e6fa-0c85" targetId="1b26-4f05-3cd3-c517"/>
-        <categoryLink name="HH3-7 Support" hidden="false" id="4ad2-ae01-f459-eef1" targetId="6f29-635a-b3d7-321a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
@@ -941,12 +939,24 @@ Note that the Vanguard (X) Special Rule may only be used to score Victory Points
     </profile>
     <profile name="Battlesmith (1)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f1b-9524-7549-98a7">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Int Check for Vehicle within 6&quot;
+
+
+ Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+
+    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Battlesmith (2)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ac96-84f2-bd27-b68e">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Int Check for Vehicle within 6&quot;
+
+
+ Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+
+    Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Specialist Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c38-d339-1cf1-9888">
@@ -973,12 +983,12 @@ A Unit that includes only Models with the Antigrav Sub-Type may ignore both frie
     </profile>
     <profile name="Auto-Repair (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2229-0ef9-d9d1-45e4">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</characteristic>
       </characteristics>
     </profile>
     <profile name="Auto-Repair (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f35b-1368-bad7-e9ed">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle type with this Special Rule, they ignore the usual Target Number of 6. Intead, the value of X attached to this Special Rule is used as the Target Number for that Repair Test.</characteristic>
       </characteristics>
     </profile>
     <profile name="Medic! (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc5-7b85-3735-aa98">
@@ -991,6 +1001,11 @@ A Unit that includes only Models with the Antigrav Sub-Type may ignore both frie
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
     In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Champion Sub-Type" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="96ed-1e5b-17ac-f71d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A Model with the Champion Sub-Type may issue and accept Challenges</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
